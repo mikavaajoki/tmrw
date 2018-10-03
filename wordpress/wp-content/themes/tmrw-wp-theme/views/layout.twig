@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="music, culture &#038; beautiful living. tmrw magazine a worldwide style and culture magazine with a subscription magazine and a refreshing online magazine blog.">
+	{% if fn('is_single') %}
+	<meta name="description" content="{{ post.article_details_standfirst }}">
+	<meta property="og:title" content="{{ post.title }}"/>
+	<meta property="og:image" content="{{ post.thumbnail|resize(200, 200) }}"/> <!-- site first image -->
+	<meta property="og:site_name" content="{{ post.title }}"/>
+	<meta property="og:description" content="{{ post.article_details_standfirst }}"/>
+	<meta property="og:url" content="{{ post.link }}"/>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@tmrwmag">
+	<meta name="twitter:creator" content="@tmrwmag">
+	<meta name="twitter:title" content="{{ post.title }}">
+	<meta name="twitter:description" content="{{ post.article_details_standfirst }}">
+	<meta name="twitter:image" content="{{ post.thumbnail|resize(300, 300) }}">	
+	{% else %}
+	<meta name="description" content="{{site.description}}">
+	<meta property="og:title" content="{{ site.name }}"/>
+	<meta property="og:image" content="{{theme.link}}/img/sukeban-logo.png"/> <!-- site first image -->
+	<meta property="og:site_name" content="{{ site.name }}"/>
+	<meta property="og:description" content="{{ site.description }}"/>
+	<meta property="og:url" content="{{ site.link }}"/>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@tmrwmag">
+	<meta name="twitter:creator" content="@tmrwmag">
+	<meta name="twitter:title" content="{{ site.name }}">
+	<meta name="twitter:description" content="{{ site.description }}">
+	<meta name="twitter:image" content="{{theme.link}}/img.png">	
+	{% endif %}
+
+
+	<title>   
+	{% if wp_title %}
+	    {{ wp_title }} - {{ site.name }}
+	{% else %}
+	    {{ site.name }}
+	{% endif %}
+	</title>
+  {{wp_head}}
+</head>
+<body>
+	
+{% block header %}
+	{% include 'partials/header.twig' %}
+{% endblock %}
+
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+	{% include 'partials/footer.twig' %}
+{% endblock %}
+
+{% block scripts %}
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+{{wp_footer}}
+{% endblock %}	
+</body>
+</html>

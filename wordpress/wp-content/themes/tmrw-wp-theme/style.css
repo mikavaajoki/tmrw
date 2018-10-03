@@ -1,0 +1,14 @@
+/*
+  Theme Name: tmrw-theme-main
+  Theme URI: https://www.danadeyemi.com 
+  Description: TMRW Website Theme 
+  Version: 1
+  Author: Dan Adeyemi
+  Author URI: http://www.danadeyemi.com
+*/
+
+.latest-content-item,
+#wpadminbar {
+  display: none;
+}
+

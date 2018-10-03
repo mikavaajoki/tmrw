@@ -1,0 +1,4 @@
+require:
+  - wp-cli/browse-command.php
+@tmrw-mag.test:
+  ssh: vagrant:tmrw-mag.test:/var/www/html
