@@ -1,0 +1,33 @@
+{
+  "name": "tmrw-mag",
+  "version": "1.0.0",
+  "description": "## Configuration",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-media-minmax": "^4.0.0",
+    "postcss-nesting": "^7.0.0",
+    "postcss-preset-env": "^6.0.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikavaajoki/tmrw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikavaajoki/tmrw/issues"
+  },
+  "homepage": "https://github.com/mikavaajoki/tmrw#readme"
+}

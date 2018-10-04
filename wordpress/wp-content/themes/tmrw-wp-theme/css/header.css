@@ -1,0 +1,6 @@
+.header {
+	height: 100px;
+	@media(width > 767px) {
+		height: 50px;
+	}
+}
