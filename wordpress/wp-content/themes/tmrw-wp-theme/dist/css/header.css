@@ -1,8 +1,0 @@
-.header {
-	height: 100px
-}
-@media(min-width: 768px) {
-	.header {
-		height: 50px
-}
-	}

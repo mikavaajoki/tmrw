@@ -1,0 +1,78 @@
+/* Article Header Container */
+
+.article-header-container {
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: ". . . . . . . . . . . . . ." ". . . . . . . . . . . . . ." ". . . . . . . . . . . . . ." ". . . . . . . . . . . . . .";
+}
+
+
+.article-body p {
+	margin: 0 210px 30px;
+}
+
+/* Article Header Image */
+
+.article-header-image-container {
+	grid-row: 1;
+	grid-column: 4/span 6;
+	height: 100%;
+
+}
+
+.article-header-image {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+/* Article Header Title */
+
+.article-header-title-container {
+  grid-row: 2;
+  grid-column: 3/span 8;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.article-header-title {
+	font-family: 'ClearfaceSerial', sans-serif;
+	font-size: 36px;
+	line-height: 1;
+	@media (width > 767px) {
+		font-size: 72px;
+	}
+}
+
+/* Article Header Strapline */
+
+.article-header-strapline-container {
+  grid-column: 5/span 4;
+  text-align: center;
+}
+
+.article-header-strapline {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+
+/* Article Header Standfirst */
+
+
+.article-header-standfirst-container {
+	grid-row: 4;
+	grid-column: 2/span 10;
+	text-align: left;
+}
+
+.article-header-standfirst {
+	font-family: 'ClearfaceSerial', sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	@media (width > 767px) {
+		font-size: 36px;
+	}
+}
+

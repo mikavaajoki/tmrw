@@ -1,0 +1,63 @@
+@font-face {font-family: 'ClearfaceSerial';src: url('fonts/Clearface-Serial.ttf') format('truetype');}
+@font-face {font-family: 'ClearfaceSerialItalic';src: url('fonts/Clearface-Serial-Italic.ttf') format('truetype');}
+
+
+html,body {
+    height:100%;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body {
+	font-family: 'ClearfaceSerial', sans-serif;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+
+p,h1,h2 {
+	color: black;
+	margin: 0;
+	padding: 0;
+	font-size: 100px;
+	line-height: 30px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	@media (width > 767px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.container {
+	margin: 0 120px;
+}
+
+p {
+	margin-bottom: 30px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 30px;
+  grid-template-rows: auto;
+  grid-template-areas: ". . . . . . . . . . . . . .";
+  margin: 0 120px;
+}
+
+img {
+	width: 100%;
+}
