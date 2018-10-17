@@ -99,18 +99,38 @@
 	font-weight: 300;
 	grid-column: 2/span 10;
 	margin-bottom: 30px;
-	font-size: 24px;
-	line-height: 1.25
+	font-size: 14px;
+	line-height: 1.25;
 
 	@media (width > 767px) {
-		font-size: 32px;
+		font-size: 16px;
 	}
 }
 
 
 .image-inline-container {
-		grid-column: 1/span 12;
-		margin: 0 -120px;
+	grid-column: 1/span 12;
+	height: 100%;
 }
 
+.image-inline-container-small {
+	grid-column: 4/span 6;
+}
 
+.image-inline-container-standard {
+	grid-column: 2/span 10;
+}
+
+.image-inline-container-large {
+	margin: 0;	
+}
+
+.image-inline-container-full-width {
+	margin: 0 -120px;	
+}
+
+.inline-image {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
