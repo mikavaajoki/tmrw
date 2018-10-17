@@ -32,10 +32,10 @@
 
 
 		<!-- Article Content -->
-		<section id="article-content">
+		<section class="article-content">
 
 				<!-- Article Body -->
-					<div class="article-body">
+					<div class="article-body grid-container-no-margin">
 						{% for block in post.get_field('blocks') %}
 							{% if block.acf_fc_layout == 'paragraph' %}
 								{{block.paragraph}}
