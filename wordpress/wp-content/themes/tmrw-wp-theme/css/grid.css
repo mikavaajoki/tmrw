@@ -1,0 +1,82 @@
+.grid-items {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.grid-item-container {
+	flex-basis: 320px;
+	margin-bottom: 80px;
+}
+
+
+/* Grid Item Image */
+
+.grid-item-image-container {
+	height: 460px;
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+.grid-item-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/* Grid Item Strapline */
+
+.grid-item-strapline-container {
+	margin-bottom: 30px;
+}
+
+.grid-item-strapline {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Grid Item Title */
+
+.grid-item-title-container {
+	margin-bottom: 30px;
+}
+
+.grid-item-title {
+	font-family: 'ClearfaceSerial', sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 1;
+}
+
+.grid-item-subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 1;
+}
+
+/* Grid Item Standfirst */
+
+.grid-item-standfirst-container {
+	margin-bottom: 30px;
+}
+
+.grid-item-standfirst {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+.grid-item-link {
+		font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1;
+}
+
