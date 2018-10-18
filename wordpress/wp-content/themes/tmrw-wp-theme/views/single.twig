@@ -47,7 +47,8 @@
 								<q>{{block.quote}}</q>	
 							{% elseif block.acf_fc_layout == 'image' %}
 								<div class="image-inline-container image-inline-container-{{block.width_}}">
-									<img class="inline-image" src="{{block.image.url}}" />	
+									<img class="inline-image" src="{{block.image.url}}" />
+									<p class="image-inline-caption image-inline-caption-{{block.width_}}">{{block.image_caption}}</p>	
 								</div>
 							{% endif %}
 						{% endfor %}
