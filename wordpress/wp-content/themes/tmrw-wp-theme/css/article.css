@@ -107,6 +107,7 @@
 	}
 }
 
+/* Article Inline Image */
 
 .image-inline-container {
 	grid-column: 1/span 12;
@@ -137,4 +138,18 @@
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
+}
+
+.article-credits {
+	margin: 60px 120px 50px !important; 
+}
+
+.article-credits p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	grid-column: 2/span 10;
+	text-align: center;
 }

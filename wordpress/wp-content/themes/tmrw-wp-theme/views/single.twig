@@ -54,9 +54,10 @@
 					</div>
 		
 				<!-- Article Credits -->
-				<div class="col-lg-2 article-credits">
+				<div class="article-credits grid-container">
+						<p>Words by {{writer.display_name}}</p>
 					{% for credit in post.get_field('article_details_credits') %}
-						<p>{{credit.title}}<br>{{credit.name}}</p>
+						<p>{{credit.title}} by {{credit.name}}</p>
 					{% endfor %}
 				</div>
 		</section>	
