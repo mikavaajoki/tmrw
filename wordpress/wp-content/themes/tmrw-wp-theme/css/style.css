@@ -40,6 +40,20 @@ li {
 	list-style-type: none;
 }
 
+q {
+	grid-column: 4/span 6;
+	font-size: 18px;
+	letter-spacing: -0.5px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-align: center;
+	@media (width > 767px) {
+		grid-column: 5/span 4;
+		letter-spacing: -0.75px;
+		font-size: 36px;
+	}
+}
+
 .container {
 	@media (width > 767px) {
 		margin: 0 120px;

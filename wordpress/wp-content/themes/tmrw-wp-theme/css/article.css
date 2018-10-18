@@ -126,7 +126,11 @@
 }
 
 .image-inline-container-full-width {
-	margin: 0 -120px;	
+	margin: 0;	
+	@media (width > 767px) {
+		margin: 0 -120px;	
+
+	}
 }
 
 .inline-image {
