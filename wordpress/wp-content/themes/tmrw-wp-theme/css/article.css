@@ -162,7 +162,11 @@
 /* Article Credits */
 
 .article-credits {
-	margin: 60px 120px 50px !important; 
+			margin: 30px 10px !important; 
+
+	@media (width > 767px) {
+		margin: 60px 120px 50px !important; 
+	}
 }
 
 .article-credits p {
