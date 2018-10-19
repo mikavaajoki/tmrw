@@ -1,5 +1,7 @@
 @font-face {font-family: 'ClearfaceSerial';src: url('fonts/Clearface-Serial.ttf') format('truetype');}
 @font-face {font-family: 'ClearfaceSerialItalic';src: url('fonts/Clearface-Serial-Italic.ttf') format('truetype');}
+@font-face {font-family: 'Poppins';src: url('fonts/Poppins-ExtraBold.ttf') format('truetype');}
+@font-face {font-family: 'WorkSans';src: url('fonts/WorkSans-Regular.otf') format('opentype');}
 
 
 html,body {
@@ -14,7 +16,7 @@ a {
 }
 
 body {
-	font-family: 'ClearfaceSerial', sans-serif;
+	font-family: 'WorkSans', sans-serif;
 	color: black;
 	margin: 0;
 	padding: 0;
@@ -23,7 +25,7 @@ body {
 
 p,h1,h2 {
 	color: black;
-	margin: 0;
+//	margin: 0;
 	padding: 0;
 	line-height: 30px;
 	letter-spacing: 0.5px;
@@ -33,6 +35,29 @@ p,h1,h2 {
 		font-size: 16px;
 		line-height: 22px;
 	}
+}
+
+h3 {
+	font-family: 'ClearfaceSerial', serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1em;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0;
+}
+
+p {
+	font-family: 'WorkSans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4em;
+	letter-spacing: 0;
 }
 
 li {
@@ -60,7 +85,6 @@ q {
 	}
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -70,8 +94,6 @@ q {
   	margin: 0 120px;
   }
 }
-
-
 .grid-container-no-margin {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

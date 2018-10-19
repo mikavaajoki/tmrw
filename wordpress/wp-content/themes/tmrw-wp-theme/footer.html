@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Fontello CSS -->
+	<link rel="stylesheet" href="css/fontello.css">
+
+	<!-- Footer CSS -->
+	<link rel="stylesheet" href="css/footer.css">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	
+
+</head>
+
+<body>
+	
+	<footer>
+
+		<div class="container">
+
+			<div class="footer-nav-bar">
+				<div  class="footer-nav">
+					<a class="footer-info-item" href="#">Home</a>
+					<a class="footer-info-item" href="#">Features</a>
+					<a class="footer-info-item" href="#">Magazine</a>
+					<a class="footer-info-item" href="#">Shop</a>
+				</div>
+				<div class="footer-logo">
+					<a href="#"><img src="img/tmrw-logo-white.svg"></a>
+				</div>
+				<div class="social-media">
+					<a class="footer-info-item" href="#">
+						<i class="icon-facebook"></i>
+					</a>
+					<a class="footer-info-item" href="#">
+						<i class="icon-twitter"></i>
+					</a>
+					<a class="footer-info-item" href="#">
+						<i class="icon-instagram"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="mailing-list">
+				<form method="post" action="" onSubmit="return validateForm();">
+					<h3>Subscribe to <br><span class="poppins">Our Mailing List</span></h3>
+					<p>
+						Join tmrw mailing list to receive the latest news and updates.
+					</p>
+					<div class="toggle-button">
+						<input type="checkbox" id="data_6_0" name="data_6" value="I agree to Terms of Service and Privacy Policy">
+						<label for="data_6_0"></label>
+						<div class="toggle-icon"></div>
+						<p>
+							I agree to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+						</p>
+					</div>
+					<div class="text-field">
+						<input type="text" id="data_4" name="data_4" placeholder="Your email address">
+						<input type="submit" name="skip_Submit" value="Subscribe">
+					</div>
+				</form>
+			</div>
+
+			<div class="credits">
+				<div class="site-credits">
+					<p>Website design & development by <a href="#">Studio Et Cetera</a>.</p>
+				</div>
+				<div class="copyright">
+					<p>&copy; 2012&mdash;2018 tmrw. All rights reserved.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+
+	<!-- Mailing List Form Validator-->
+	<script type="text/javascript">
+		function validateForm() {
+			if (isEmpty(document.getElementById('data_4').value.trim())) {
+				alert('Email is required!');
+				return false;
+			}
+			if (!validateEmail(document.getElementById('data_4').value.trim())) {
+				alert('Email must be a valid email address!');
+				return false;
+			}
+			return true;
+		}
+		function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+		function validateEmail(email) {
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+			return isEmpty(email) || re.test(email);
+		}
+	</script>
+
+</body>
+</html>
