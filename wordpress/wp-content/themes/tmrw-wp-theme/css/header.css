@@ -1,7 +1,11 @@
 /* header */
 
 .header {
-	margin-top: 25px;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	top: 0;
+	margin: 25px 0 0 0 !important;
 }
 
 .header .nav-link {
@@ -19,11 +23,16 @@
 	}
 }
 
+.nav-wrapper {
+	grid-column: 3/span 8;
+}
+
 .header-info {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
+	grid-column: 2/span 10;
 }
 
 .header-info-search {

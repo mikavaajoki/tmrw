@@ -1,3 +1,12 @@
+/* Latest Issue Container */
+
+.latest-issue-container {		
+	@media (width > 767px) {
+		padding-top: 140px;
+	}
+}
+
+
 /* Latest Issue Image */
 
 .latest-issue-image-container {
