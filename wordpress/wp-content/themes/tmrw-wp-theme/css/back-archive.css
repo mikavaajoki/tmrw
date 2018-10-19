@@ -7,10 +7,18 @@
 .back-archive-title-container {
 	grid-column: 1/span 12;
 	display: flex;
-	margin-bottom: 35px;
-	@media(width > 767px) {
-		margin-bottom: 70px;	
-	}
+	position: relative;
+}
+
+.back-archive-title-container .button-container {
+	align-self: center;
+	right: 0;
+	position: absolute;
+}
+
+.back-archive-title-container .button {
+	  border-color: white;
+	  color: white;
 }
 
 .back-archive-title {
