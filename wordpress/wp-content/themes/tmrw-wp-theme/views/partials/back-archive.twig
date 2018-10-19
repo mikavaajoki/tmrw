@@ -1,0 +1,26 @@
+<div class="back-archive-container">
+
+
+
+ 	
+ 	<div class="back-archive-wrapper grid-container">
+
+		<div class="back-archive-title-container">
+			<h2 class="back-archive-title">Back <span>Archive</span> </h2>
+			{% include 'components/button.twig' with { link: 'index.html', text: 'Shop All Volumes' } %}
+		</div>
+
+
+		<div class="back-archive-slider-container">
+			{% for issue in issues|slice(0,1) %}
+				{% include 'partials/grid-archive.twig' %}
+			{% endfor %}
+		</div>
+
+	</div>
+
+
+
+
+
+</div>	

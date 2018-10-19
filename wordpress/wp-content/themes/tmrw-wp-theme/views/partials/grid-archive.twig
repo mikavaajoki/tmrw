@@ -1,0 +1,18 @@
+<div class="grid-items">
+	{% for post in posts %}
+		<div class="grid-item-container">
+			
+			<div class="grid-item-image-container">
+				<img class="grid-item-image" src="{{Image(issue.cover_image).src}}" />
+			</div>
+
+			<div class="grid-item-title-container">
+				<h1 class="grid-item-title">Volume N<sup>o</sup> {{issue.volume_number}}</h1>
+				<h1 class="grid-item-subtitle">{{issue.title}}</h1>
+			</div>
+
+	
+			<a class="grid-item-link" href="/shop"> See Inside > </a>
+	</div>
+	{% endfor %}		
+</div>
