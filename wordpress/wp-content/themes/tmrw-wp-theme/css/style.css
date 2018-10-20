@@ -105,6 +105,7 @@ button {
 }
 
 q {
+	font-family: 'ClearfaceSerial', serif;
 	grid-column: 4/span 6;
 	font-size: 18px;
 	letter-spacing: -0.5px;
