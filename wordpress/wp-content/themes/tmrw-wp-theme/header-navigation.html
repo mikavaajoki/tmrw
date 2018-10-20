@@ -22,32 +22,56 @@
 
 <body>
 
-	<div class="header">
-			
-	<div class="container">
-		<div class="header-nav-bar">
-			<div  class="header-nav">
-				<a class="header-info-item" href="#">English</a>
-				<a class="header-info-item" href="#">Search</a>
-				<a class="header-info-item" href="#">Basket <span class="worksans">(</span>0<span class="worksans">)</span></a>
+	<div id="header">
+		<div class="container">
+			<div class="header-nav-bar-top">
+				<div class="header-nav">
+					<a class="nav-link" href="#">English</a>
+					<a class="nav-link" href="#">Search</a>
+					<a class="nav-link" href="#">Basket <span class="worksans">(</span>0<span class="worksans">)</span></a>
+				</div>
+				<div class="header-logo">
+					<a href="#"><img src="img/tmrw-logo-black.svg"></a>
+				</div>
+				<div class="social-media">
+					<a class="nav-link" href="#">
+						<i class="icon-facebook"></i>
+					</a>
+					<a class="nav-link" href="#">
+						<i class="icon-twitter"></i>
+					</a>
+					<a class="nav-link" href="#">
+						<i class="icon-instagram"></i>
+					</a>
+				</div>
 			</div>
-		<div class="header-logo">
-			<a href="#"><img src="img/tmrw-logo-black.svg"></a>
-		</div>
-		<div class="social-media">
-			<a class="header-info-item" href="#">
-				<i class="icon-facebook"></i>
-			</a>
-			<a class="header-info-item" href="#">
-				<i class="icon-twitter"></i>
-			</a>
-			<a class="header-info-item" href="#">
-				<i class="icon-instagram"></i>
-			</a>
+			<div class="header-nav-bar-bottom">
+				<a class="nav-link active" href="#">Home</a> / 
+				<a class="nav-link" href="#">Features</a> /
+				<a class="nav-link" href="#">Magazine</a> / 
+				<a class="nav-link" href="#">Shop</a>
+
+			</div>
 		</div>
 	</div>
 
+	<div class="content">
+		
 	</div>
+
+	<!-- Hide Header on Scroll -->
+	<script type="text/javascript">
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+		    	document.getElementById("header").style.top = "0";
+			} else {
+		    	document.getElementById("header").style.top = "-50px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
 
 </body>
 </html>
