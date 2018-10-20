@@ -57,7 +57,7 @@ h4 {
 }
 
 p {
-	font-family: 'WorkSans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.4em;
 	letter-spacing: 0;
@@ -75,12 +75,10 @@ sup {
 .poppins {
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: 0;
-	font-weight: 400;
 }
 
 .worksans {
-	font-family: 'WorkSans', sans-serif;
-	font-weight: 400;
+	font-family: 'Work Sans', sans-serif;
 }
 
 li {
