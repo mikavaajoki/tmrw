@@ -1,0 +1,30 @@
+<div class="grid-container latest-issue-container">
+ 	
+
+	<div class="latest-issue-image-container">
+		<img class="latest-issue-image" src="{{Image(issue.cover_image).src}}" />
+	</div>
+
+
+	<div class="latest-issue-title-container">
+			<h1 class="latest-issue-title">Volume N<sup>o</sup> {{issue.volume_number}}</h1>
+			<h1 class="latest-issue-subtitle">{{issue.title}}</h1>	
+	</div>
+
+
+
+	<div class="latest-issue-strapline-container">
+			<p class="latest-issue-strapline">Current Volume</p>
+	</div>
+
+
+
+	<div class="latest-issue-description-container">
+			<p class="latest-issue-description">{{issue.description}}</p>
+	</div>
+
+
+{% include 'components/button.twig' with { link: 'index.html', text: 'See Inside' } %}
+
+
+</div>	

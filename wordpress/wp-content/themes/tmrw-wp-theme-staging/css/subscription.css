@@ -1,0 +1,68 @@
+/* subscription */
+
+#subscription {
+	background-color: yellow;
+}
+
+#subscription .container {
+	padding: 100px 30px;
+	max-width: calc(1170px + 60px);
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#subscription .title {
+	padding: 0 15px 0 0;
+	width: 50%;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#subscription .title h2 {
+	margin: 0;
+}
+
+#subscription .info {
+	padding: 0 0 0 15px;
+	width: 50%;
+}
+
+#subscription .info h4 {
+	margin: 2px 0 10px 0;
+}
+
+#subscription .info p {
+	margin: 0;
+	line-height: 1.2em;
+	margin-bottom: 21px;
+}
+
+#subscription .info button {
+	margin-bottom: 20px;
+}
+
+#subscription .info button:hover {
+	background-color: black;
+	color: yellow;
+}
+
+@media only screen and (max-width: 940px) {
+
+	#subscription .container {
+		display: block;
+	}
+
+	#subscription .title {
+		padding: 0;
+		width: 100%;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	#subscription .info {
+		padding: 0;
+		width: 100%;
+	}
+}

@@ -1,0 +1,25 @@
+{% extends "layout.twig" %}
+
+{% block content %}	
+
+
+{% for issue in issues|slice(0,1) %}
+	{% include 'partials/latest-issue.twig' %}
+{% endfor %}
+
+{% include 'partials/back-archive.twig' %}
+
+{% endblock %}
+
+
+{% block scripts %}
+	{{ parent() }}
+	  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.back-archive-slider-container').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1
+      });
+    });
+  </script>
+{% endblock %}

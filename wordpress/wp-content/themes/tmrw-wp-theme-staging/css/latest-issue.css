@@ -1,0 +1,108 @@
+/* Latest Issue Container */
+
+.latest-issue-container {		
+	@media (width > 767px) {
+		padding-top: 140px;
+	}
+}
+
+
+/* Latest Issue Image */
+
+.latest-issue-image-container {
+	grid-column: 5/span 4;
+	margin-bottom: 45px;
+	box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+	@media (width > 767px) {
+		margin-bottom: 90px;
+	}	
+}
+
+
+/* Latest Issue Title */
+
+.latest-issue-title-container {
+	grid-column: 2/span 10;
+	margin-bottom: 25px;
+	text-align: center;
+	@media (width > 767px) {
+		margin-bottom: 55px;
+	}
+}
+
+.latest-issue-title {
+	font-family: 'ClearfaceSerial', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 1;
+	@media (width > 767px) {
+		font-size: 71px;
+	}
+}
+
+.latest-issue-title sup {
+	font-size: 20px;
+	@media (width > 767px) {
+		font-size: 41px;
+	}
+}
+
+.latest-issue-subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+		font-size: 32px;
+	line-height: 1;
+	@media (width > 767px) {
+		font-size: 74px;
+	}	
+}
+
+/* Latest Issue Strapline */
+
+.latest-issue-strapline-container {
+	grid-column: 4/span 6;
+	margin-bottom: 25px;
+	text-align: center;
+	@media (width > 767px) {
+		margin-bottom: 50px;
+	}
+}
+
+.latest-issue-strapline {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1;
+}
+
+/* Latest Issue Description */
+
+.latest-issue-description-container {
+	grid-column: 2/span 10;
+	margin-bottom: 25px;
+	@media (width > 767px) {
+		margin-bottom: 50px;
+	}
+}
+
+.latest-issue-description {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.25;
+
+	@media (width > 767px) {
+		font-size: 16px;
+	}
+}
+
+.latest-issue-container .button-container {
+	grid-column: 4/span 6;
+	text-align: center;
+	margin-bottom: 50px;
+	@media (width > 767px) {
+		margin-bottom: 100px;
+	}
+}
