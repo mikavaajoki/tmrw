@@ -126,12 +126,10 @@ footer p {
 
 .toggle-button {
 	position: relative;
-	display: inline-block;
 	margin-bottom: 30px;
 	display: flex;
-	justify-content: left;
-	align-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 }	
 
 .toggle-button input {
@@ -160,7 +158,6 @@ footer p {
 	left: 0;
 	width: 20px;
 	height: 20px;
-	margin-top: 10px;
 	transition: all 0.2s;
 	border: 2px solid white;
 }
@@ -168,8 +165,8 @@ footer p {
 .toggle-button .toggle-icon:before {
 	transition: 0.2s ease-out;
 	position: absolute;
-	top: 0px;
-	left: 3px;
+	top: 1px;
+	left: 4px;
 	content: "\2714";
 	color: white;
 	opacity: 0;
@@ -177,7 +174,7 @@ footer p {
 
 .toggle-button p {
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 24px;
 	display: inline-block;
 	margin-left: 15px;
 	margin-bottom: 0;
@@ -187,49 +184,36 @@ footer p {
 	text-decoration: underline;
 }
 
-.text-field input[type=text] {
+footer .text-field input[type=text] {
 	background: transparent;
 	outline: none;
 	border: 2px solid white;
 	width: 390px;
 	height: 46px;
-	margin: 0 5px 0 0;
 	padding: 0 15px;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
 	color: white;
+	margin: 0 15px 0 0;
 }
 
-@media only screen and (max-width: 641px) {
-	.text-field input[type=text] {
-		margin-bottom: 12px;
+@media only screen and (max-width: 665px) {
+	footer .text-field input[type=text] {
+		width: calc(100% - 30px);
+		margin-bottom: 15px;
 	}
 }
 
-.text-field input[type=text]::placeholder {
+footer .text-field input[type=text]::placeholder {
 	opacity: .5;
 }
 
-.text-field input[type=submit] {
-	box-shadow: none;
-	background: transparent;
-	outline: none;
-	height: 50px;
-	margin: 0;
-	padding: 0 40px;
-	border: 2px solid white;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 800;
-	font-size: 12px;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
+footer .mailing-list button {
 	color: white;
-	cursor: pointer;
-	-webkit-transition: background-color .3s, color .3s;
-	transition: background-color .3s, color .3s;
+ 	border: 2px solid white;
 }
 
-.text-field input[type=submit]:hover {
+footer .mailing-list button:hover {
 	background-color: white;
 	color: black;
 }
