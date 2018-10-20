@@ -214,14 +214,22 @@ footer p {
 	background: transparent;
 	height: 50px;
 	margin: 0;
-	padding: 0 30px;
+	padding: 0 40px;
 	border: 2px solid white;
 	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
 	font-size: 12px;
 	letter-spacing: 1.8px;
 	text-transform: uppercase;
 	color: white;
 	cursor: pointer;
+	-webkit-transition: background-color .3s, color .3s;
+	transition: background-color .3s, color .3s;
+}
+
+.text-field input[type=submit]:hover {
+	background-color: white;
+	color: black;
 }
 
 .credits p {
