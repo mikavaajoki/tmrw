@@ -6,8 +6,12 @@
 }
 
 .grid-item-container {
-	flex-basis: 320px;
-	margin-bottom: 80px;
+		flex-basis: 100%;
+		margin-bottom: 40px;
+	@media (width > 767px) {
+		flex-basis: 320px;
+		margin-bottom: 80px;
+	}
 }
 
 
@@ -15,8 +19,11 @@
 
 .grid-item-image-container {
 	height: 460px;
-  width: 320px;
+  width: 100%;
   margin-bottom: 30px;
+  @media (width > 767px) {
+  	width: 320px;
+  }
 }
 
 .grid-item-image {

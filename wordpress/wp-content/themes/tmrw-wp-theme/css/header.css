@@ -3,10 +3,14 @@
 .header {
 	position: fixed;
 	background-color: #fff;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	margin: 0!important;
 	z-index: 1;
+	height: 50px;
+	@media (width > 767px) {
+		height: 140px;
+	}
 }
 
 .header .nav-link {
@@ -27,6 +31,10 @@
 .nav-wrapper {
 	font-family: ClearfaceSerial,sans-serif;
 	grid-column: 3/span 8;
+	display: none;
+	@media (width > 767px) {
+		display: block;
+	}
 }
 
 .header-info {
