@@ -6,14 +6,18 @@
 
 	<div class="digital-features-sidebar-container">
 
-	<div class="digital-features-title-container">
-		<h1 class="digital-features-title">Digital</h1>
-		<h1 class="digital-features-subtitle">Features</h1>
-	</div>	
+			<p class="digital-features-strapline">Latest</p>
+			
+			<div class="digital-features-title-container">
+				<h1 class="digital-features-title">Digital</h1>
+				<h1 class="digital-features-subtitle">Features</h1>
+			</div>
+
+		{% include 'components/button.twig' with { link: '/features', text: 'Shop All Features' } %}
 
 	</div>	
 
-	{% include 'partials/grid.twig' %}
+	{% include 'partials/grid.twig' with { limit: '4' } %}
 
 </section>
 

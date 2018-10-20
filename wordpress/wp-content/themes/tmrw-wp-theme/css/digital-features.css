@@ -1,0 +1,54 @@
+.digital-features-container {
+	margin: 100px 120px !important;
+}
+
+.digital-features-sidebar-container {
+	grid-row: 1;
+	grid-column: 1/span 4;
+}
+
+.digital-features-container .grid-items {
+	grid-row: 1;
+	grid-column: 5/span 12;
+}
+
+
+.digital-features-strapline {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+
+/* Digital Features Title */
+
+.digital-features-title-container {
+  margin-bottom: 10px;
+	@media (width > 767px) {
+		margin-bottom: 50px;
+	}
+}
+
+.digital-features-title {
+	font-family: 'ClearfaceSerial', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 1;
+	@media (width > 767px) {
+		font-size: 71px;
+	}
+}
+
+.digital-features-subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+		font-size: 32px;
+	line-height: 1;
+	@media (width > 767px) {
+		font-size: 74px;
+	}	
+}
