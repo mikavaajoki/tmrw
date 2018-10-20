@@ -6,6 +6,7 @@
 	width: 100%;
 	top: 0;
 	margin: 25px 0 0 0 !important;
+	z-index: 1000000;
 }
 
 .header .nav-link {

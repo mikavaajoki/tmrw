@@ -3,6 +3,9 @@
 .article-header-container {
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-template-areas: ". . . . . . . . . . . . . ." ". . . . . . . . . . . . . ." ". . . . . . . . . . . . . ." ". . . . . . . . . . . . . .";
+	@media (width > 767px) {
+		padding-top: 140px;
+	}
 }
 
 /* Article Header Image */
@@ -125,6 +128,7 @@
 	position: relative;
 	grid-column: 1/span 12;
 	height: 100%;
+	margin-bottom: 30px !important;
 }
 
 .image-inline-container-small {
@@ -150,7 +154,7 @@
 .inline-image {
 	height: 100%;
 	width: 100%;
-	object-fit: fill;
+	object-fit: contain;
 }
 
 .image-inline-caption{
