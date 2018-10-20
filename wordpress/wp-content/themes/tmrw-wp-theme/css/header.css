@@ -2,11 +2,11 @@
 
 .header {
 	position: fixed;
-	background-color: white;
+	background-color: #fff;
 	width: 100%;
 	top: 0;
-	margin: 25px 0 0 0 !important;
-	z-index: 1000000;
+	margin: 0!important;
+	z-index: 1;
 }
 
 .header .nav-link {
@@ -25,6 +25,7 @@
 }
 
 .nav-wrapper {
+	font-family: ClearfaceSerial,sans-serif;
 	grid-column: 3/span 8;
 }
 

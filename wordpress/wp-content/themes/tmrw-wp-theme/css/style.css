@@ -1,8 +1,5 @@
 @font-face {font-family: 'ClearfaceSerial';src: url('fonts/Clearface-Serial.ttf') format('truetype');}
 @font-face {font-family: 'ClearfaceSerialItalic';src: url('fonts/Clearface-Serial-Italic.ttf') format('truetype');}
-@font-face {font-family: 'Poppins';src: url('fonts/Poppins-ExtraBold.ttf') format('truetype');}
-@font-face {font-family: 'WorkSans';src: url('fonts/WorkSans-Regular.otf') format('opentype');}
-
 
 html,body {
     height:100%;
@@ -30,6 +27,7 @@ p,h1,h2 {
 	letter-spacing: 0.5px;
 	font-weight: 400;
 	font-size: 12px;
+	margin: 0;
 	@media (width > 767px) {
 		font-size: 16px;
 		line-height: 22px;
@@ -42,7 +40,6 @@ h2 {
 	font-size: 67px;
 	line-height: 62px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 h3 {
@@ -51,14 +48,12 @@ h3 {
 	font-size: 24px;
 	line-height: 1em;
 	letter-spacing: 0.5px;
-	text-transform: uppercase;
 }
 
 h4 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 12px;
 	letter-spacing: 1.8px;
-	text-transform: uppercase;
 }
 
 p {
