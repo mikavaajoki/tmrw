@@ -16,6 +16,19 @@ footer a {
 	color: white;
 }
 
+footer p {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.mailing-list h3 {
+	text-transform: uppercase;
+}
+
+.mailing-list p {
+		margin-bottom: 30px;
+
+}
+
 .footer-nav-bar, 
 .credits {
 	display: flex;
@@ -114,7 +127,7 @@ footer a {
 .toggle-button {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: left;
 	align-content: center;
@@ -167,6 +180,7 @@ footer a {
 	line-height: 20px;
 	display: inline-block;
 	margin-left: 15px;
+	margin-bottom: 0;
 }
 
 .toggle-button a {
@@ -180,7 +194,7 @@ footer a {
 	height: 46px;
 	margin: 0 5px 0 0;
 	padding: 0 15px;
-	font-family: 'WorkSans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
 	color: white;
 }
