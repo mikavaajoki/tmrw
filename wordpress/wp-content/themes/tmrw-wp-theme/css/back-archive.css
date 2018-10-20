@@ -57,3 +57,35 @@
 .back-archive-slider-container .grid-item-link {
 	color:white !important;
 }
+
+.slick-next {
+	text-indent: -99999px;
+	border: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url(../../img/next-button.png);
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	right: -70px;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.slick-prev {
+	text-indent: -99999px;
+	border: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url(../../img/prev-button.png);
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: -70px;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
