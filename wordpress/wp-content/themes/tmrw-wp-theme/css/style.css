@@ -78,7 +78,9 @@ sup {
 	letter-spacing: 0;
 }
 
-h2 .poppins {
+h1 .poppins, 
+h2 .poppins,
+h3 .poppins {
 	font-weight: 800;
 }
 
