@@ -1,0 +1,15 @@
+.recommended-article-container {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50,50,50,0.8)), to(rgba(80,80,80,0.2)), color-stop(.5,#333333));
+}
+
+.recommended-article-header-container {
+	padding: 0!important;
+}
+
+.recommended-article-strapline-container {
+	margin: 25px 0 5px!important;
+	@media (width > 767px) {
+		margin: 50px 0 5px!important;
+	}
+}
+

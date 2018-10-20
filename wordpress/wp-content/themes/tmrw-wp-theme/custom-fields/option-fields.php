@@ -99,6 +99,29 @@ acf_add_local_field_group(array(
 				),
 			),
 		),
+		array(
+			'key' => 'field_5bcb54d21c5a2',
+			'label' => 'Recommended Feature',
+			'name' => 'recommended_feature',
+			'type' => 'post_object',
+			'instructions' => 'This is where you select the homepage recommended feature.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'post_type' => array(
+				0 => 'post',
+			),
+			'taxonomy' => array(
+			),
+			'allow_null' => 0,
+			'multiple' => 0,
+			'return_format' => 'object',
+			'ui' => 1,
+		),
 	),
 	'location' => array(
 		array(
