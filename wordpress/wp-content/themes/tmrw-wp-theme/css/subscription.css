@@ -1,10 +1,10 @@
-/* subscribtion */
+/* subscription */
 
-#subscribtion {
+#subscription {
 	background-color: yellow;
 }
 
-#subscribtion .container {
+#subscription .container {
 	padding: 100px 30px;
 	max-width: calc(1170px + 60px);
 	margin: 0 auto;
@@ -13,54 +13,54 @@
 	align-items: flex-start;
 }
 
-#subscribtion .title {
+#subscription .title {
 	padding: 0 15px 0 0;
 	width: 50%;
 	text-align: right;
 }
 
-#subscribtion .title h2 {
+#subscription .title h2 {
 	margin: 0;
 }
 
-#subscribtion .info {
+#subscription .info {
 	padding: 0 0 0 15px;
 	width: 50%;
 }
 
-#subscribtion .info h4 {
+#subscription .info h4 {
 	margin: 2px 0 10px 0;
 }
 
-#subscribtion .info p {
+#subscription .info p {
 	margin: 0;
 	line-height: 1.2em;
 	margin-bottom: 21px;
 }
 
-#subscribtion .info button {
+#subscription .info button {
 	margin-bottom: 20px;
 }
 
-#subscribtion .info button:hover {
+#subscription .info button:hover {
 	background-color: black;
 	color: yellow;
 }
 
 @media only screen and (max-width: 940px) {
 
-	#subscribtion .container {
+	#subscription .container {
 		display: block;
 	}
 
-	#subscribtion .title {
+	#subscription .title {
 		padding: 0;
 		width: 100%;
 		text-align: left;
 		margin-bottom: 20px;
 	}
 
-	#subscribtion .info {
+	#subscription .info {
 		padding: 0;
 		width: 100%;
 	}
