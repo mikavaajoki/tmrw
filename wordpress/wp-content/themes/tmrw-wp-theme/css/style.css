@@ -25,7 +25,6 @@ body {
 
 p,h1,h2 {
 	color: black;
-//	margin: 0;
 	padding: 0;
 	line-height: 30px;
 	letter-spacing: 0.5px;
@@ -37,6 +36,15 @@ p,h1,h2 {
 	}
 }
 
+h2 {
+	font-family: 'ClearfaceSerial', serif;
+	font-weight: 400;
+	font-size: 67px;
+	line-height: 62px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
 h3 {
 	font-family: 'ClearfaceSerial', serif;
 	font-weight: 400;
@@ -44,13 +52,13 @@ h3 {
 	line-height: 1em;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
 }
 
-.poppins {
+h4 {
 	font-family: 'Poppins', sans-serif;
-	letter-spacing: 0;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
 }
 
 p {
@@ -60,9 +68,47 @@ p {
 	letter-spacing: 0;
 }
 
+p.small {
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+sup {
+	font-size: .6em;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0;
+	font-weight: 400;
+}
+
+.worksans {
+	font-family: 'WorkSans', sans-serif;
+	font-weight: 400;
+}
+
 li {
 	text-decoration: none;
 	list-style-type: none;
+}
+
+button {
+	padding: 0;
+ 	border: none;
+ 	font: inherit;
+ 	color: inherit;
+ 	background-color: transparent;
+ 	cursor: pointer;
+ 	height: 50px;
+ 	padding: 0 40px;
+ 	border: 2px solid black;
+ 	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	-webkit-transition: background-color .3s, color .3s;
+	transition: background-color .3s, color .3s;
 }
 
 q {
