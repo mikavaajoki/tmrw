@@ -189,6 +189,7 @@ footer p {
 
 .text-field input[type=text] {
 	background: transparent;
+	outline: none;
 	border: 2px solid white;
 	width: 390px;
 	height: 46px;
