@@ -213,6 +213,7 @@ footer p {
 .text-field input[type=submit] {
 	box-shadow: none;
 	background: transparent;
+	outline: none;
 	height: 50px;
 	margin: 0;
 	padding: 0 40px;
