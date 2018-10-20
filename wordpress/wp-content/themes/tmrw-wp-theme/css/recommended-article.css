@@ -15,3 +15,16 @@
 .recommended-feature-button {
 	text-align: center;
 }
+
+.recommended-article-body {
+	  animation-name: opacity;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes opacity {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
