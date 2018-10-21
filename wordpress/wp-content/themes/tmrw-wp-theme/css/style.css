@@ -34,11 +34,21 @@ p,h1,h2 {
 	}
 }
 
+h1 {
+	font-family: 'ClearfaceSerial', serif;
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 1em;
+	letter-spacing: 3.5px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 h2 {
 	font-family: 'ClearfaceSerial', serif;
 	font-weight: 400;
 	font-size: 67px;
-	line-height: 62px;
+	line-height: 1em;
 	letter-spacing: 1px;
 }
 
@@ -49,20 +59,25 @@ h3 {
 	line-height: 1em;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 h4 {
 	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
 	font-size: 12px;
 	letter-spacing: 1.8px;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 p {
 	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.4em;
 	letter-spacing: 0;
+	margin: 0;
 }
 
 p.small {
@@ -144,6 +159,7 @@ q {
   	margin: 0 120px;
   }
 }
+
 .grid-container-no-margin {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

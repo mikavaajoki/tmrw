@@ -4,10 +4,6 @@
 	background-color: black;
 }
 
-* {
-//	border: 1px red solid;
-}
-
 #header.inverse {
 	background-color: black;
 }
@@ -20,4 +16,305 @@
 
 #header.inverse .header-navbar-bottom .nav-link:hover {
 	border-bottom: 1px solid white;
+}
+
+#magazine .grid-container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: none;
+	max-width: calc(1170px + 60px);
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+#magazine .grid-container section {
+	margin-bottom: 100px;
+}
+
+#magazine .grid-container section h1,
+#magazine .grid-container section h2,
+#magazine .grid-container section h3,
+#magazine .grid-container section h4,
+#magazine .grid-container section p,
+#magazine .grid-container section a {
+	color: white;
+}
+
+#magazine .grid-container section h1 {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#magazine .grid-container section h2 {
+	font-size: 36px;
+	line-height: 1em;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#magazine .grid-container section h3 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+#magazine .grid-container section hr {
+	border: 0;
+    height: 1px;
+    background: white;
+    margin-top: 100px;
+}
+
+#magazine .grid-container section a {
+	text-decoration: underline;
+}
+
+#magazine .grid-container section#about {
+	grid-column: 2 / span 10;
+	margin-top: 220px;
+}
+
+#magazine .grid-container section#about h2 {
+	line-height: 1.2em;
+	text-transform: none;
+}
+
+#magazine .grid-container section#contact {
+	grid-column: 2 / span 10;
+}
+
+#magazine .grid-container section#contact a {
+	text-decoration: none;
+}
+
+#magazine .grid-container .flex-container {
+	display: flex;
+}
+
+#magazine .grid-container .flex-container .left-container {
+	width: 50%;
+	padding-right: 15px;
+}
+
+#magazine .grid-container .flex-container .right-container {
+	width: 50%;
+	padding-left: 15px;
+}
+
+#magazine .grid-container section#contact h2 {
+	margin-bottom: 40px;
+}
+
+#magazine .grid-container section h4 {
+	margin-bottom: 5px;
+}
+
+#magazine .grid-container section p:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+#magazine .grid-container section#faq {
+	grid-column: 2/span 10;
+}
+
+#magazine .grid-container section#stockists {
+	grid-column: 2/span 10;
+}
+
+#magazine section#stockists .store_locator_plus #sl_div label.text, 
+#magazine section#stockists .store_locator_plus #addy_in_radius,
+#magazine section#stockists .store_locator_plus .slp_map {
+	display: none;
+}
+
+#magazine section#stockists .store_locator_plus .slp_search_form .search_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	margin-bottom: 40px
+}
+
+#magazine section#stockists .store_locator_plus input[type=text] {
+	background: transparent;
+	outline: none;
+	border: 2px solid white;
+	width: 290px;
+	height: 46px;
+	padding: 0 15px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	color: white;
+	margin: 0 15px 0 0;
+}
+
+#magazine section#stockists .store_locator_plus input[type=text]::placeholder {
+	opacity: .5;
+}
+
+#magazine section#stockists .store_locator_plus input[type=submit] {
+	outline: none;
+ 	border: none;
+ 	background-color: transparent;
+ 	cursor: pointer;
+ 	height: 50px;
+ 	padding: 0 40px;
+ 	border: 2px solid white;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	color: white;
+	-webkit-transition: background-color .3s, color .3s;
+	transition: background-color .3s, color .3s;
+}
+
+#magazine section#stockists .store_locator_plus input[type=submit]:hover {
+	background-color: white;
+	color: black;
+}
+
+@media only screen and (max-width: 518px) {
+
+	#magazine section#stockists .store_locator_plus .slp_search_form .search_box {
+		display: block;
+	}
+
+	#magazine section#stockists .store_locator_plus input[type=text] {
+		width: calc(100% - 30px);
+		margin-bottom: 15px;
+	}
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container {
+	display: flex;
+	flex-wrap: wrap;
+	cursor: default;
+	max-width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4em;
+	letter-spacing: 0;
+	margin: 0;
+	color: white;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container {
+	padding-top: 20px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper {
+	width: calc(33.33% - 30px);
+	margin: 0 15px 60px 0;
+	border-radius: 0;
+	border: 0;
+	cursor: default;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper:nth-child(3n - 1) {
+	margin: 0 15px 60px 15px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper:nth-child(3n) {
+	margin: 0 0 60px 15px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .results_row_left_column span,
+#magazine section#stockists .store_locator_plus .slp_results_container .location_secondary span {
+	display: block;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .location_name {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .location_distance {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .location_secondary {
+	margin-bottom: 10px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .slp_result_website {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#magazine section#stockists .store_locator_plus .slp_results_container .slp_result_website a {
+	text-decoration: none !important;
+}
+
+#magazine section#stockists p.stockist-enquiry {
+	clear: both;
+	max-width: 460px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+@media screen and (max-width: 768px) {
+
+	#magazine .grid-container section  {
+		grid-column: 1 / span 12 !important;
+	}
+
+	#magazine .grid-container .flex-container {
+		display: block;
+	}
+
+	#magazine .grid-container .flex-container .left-container,
+	#magazine .grid-container .flex-container .right-container{
+		width: 100%;
+		padding: 0;
+	}
+
+	#magazine .grid-container .flex-container .left-container p:last-child {
+		margin-bottom: 40px;
+	}
+
+	#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper:nth-child(odd) {
+		width: calc(50% - 15px);
+		margin: 0 15px 60px 0;
+	}
+
+	#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper:nth-child(even) {
+		width: calc(50% - 15px);
+		margin: 0 0 60px 15px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	
+	#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper:nth-child(odd),
+	#magazine section#stockists .store_locator_plus .slp_results_container .results_wrapper:nth-child(even) {
+		width: 100%;
+		margin: 0 0 60px 0;
+	}
+}
+
+#magazine footer .container {
+	padding-top: 0;
+}
+
+#magazine footer .container .footer-navbar {
+	border-top: 1px solid white;
+	padding-top: 100px;
 }

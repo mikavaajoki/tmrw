@@ -17,6 +17,9 @@
 	<!-- Header Navigation CSS -->
 	<link rel="stylesheet" href="css/header-navigation.css">
 
+	<!-- Footer CSS -->
+	<link rel="stylesheet" href="css/footer.css">
+
 	<!-- Magazine CSS -->
 	<link rel="stylesheet" href="css/magazine.css">
 	
@@ -57,7 +60,311 @@
 		</div>
 	</div>
 
-	<div class="content"></div>
+	<div class="grid-container">
+
+		<section id="about">
+			<h3>About the <span class="poppins">Magazine</span></h3>
+			<h1>We Like to<br> <span class="poppins">Look Forward</span></h1>
+			<h2>Put together by a family of writers, photographers and artists, tmrw is an independent lifestyle bible meets alternative encyclopedia, that packages music and culture in a manner that is both unique and radical. Driven by minimalism, design and the beautiful things in life, tmrw is all of your favourite things, as you’ve never seen them before.</h2>
+			<hr>
+		</section>
+
+		<section id="contact">
+			<div class="flex-container">
+				<div class="left-container">
+					<h2>Contact <span class="poppins">Details</span></h2>
+				</div>
+				<div class="right-container">
+					<h4>General enquires</h4>
+					<p><a href="mailto:">info@tmrwmagazine.com</a></p>
+					<h4>Order related queries</h4>
+					<p><a href="mailto:">orders@tmrwmagazine.com</a></p>
+					<h4>Address</h4>
+					<p>
+						5B Sunrise Business Park <br>
+						Higher Shaftesbury Road <br>
+						Dorset <br>
+						DT11 8ST <br>
+						United Kingdom
+					</p>
+				</div>	
+			</div>
+			<hr>
+		</section>
+
+		<section id="faq">
+			<h3>Frequently <span class="poppins">asked questions</span></h3>
+			<div class="flex-container">
+				<div class="left-container">
+					<h4>Do you offer worldwide shipping?</h4>
+					<p>Yes, we deliver to every address in the world.</p>
+					<h4>How do I find my nearest stockist?</h4>
+					<p>Find your local stockist using the store locator below. Worldwide shipping is also available on single copies via our shop.</p>
+					<h4>Why is each volume priced at £9.99?</h4>
+					<p>tmrw is of the highest quality and has been described as ‘more of a book than a magazine’. Each tmrw volume consists of 230+ pages of art and culture, that is perfect bound and printed in full colour on fsc-approved uncoated paper in the united kingdom. We are proud to be the only publication that offers 20+ pages to the cover story and 10+ pages to each inside music feature.</p>
+					<h4>Can I check the availability of stock on the shop?</h4>
+					<p>Stock check is currently not available, however all volumes have a limited print run and are sold on a first come first served basis.</p>
+					<h4>What makes tmrw different to other magazines?</h4>
+					<p>tmrw is perfect for your coffee table and is a must-have lifestyle bible. We pride ourselves on quality and distancing ourselves from the perception of a ‘magazine’.</p>
+					<h4>Do you offer a digital version of each volume?</h4>
+					<p>No, the content inside each volume is exclusive to print, however our website offers a taste of what you can find in each print edition.</p>
+				</div>
+				<div class="right-container">
+					<h4>How do I pay on the shop?</h4>
+					<p>You can pay securely on our web-store via Paypal or with a debit or credit card.</p>
+					<h4>What currency do I pay in?</h4>
+					<p>The store is priced in GBP (£) but will be converted to your local currency during the checkout process.</p>
+					<h4>Can I subscribe?</h4>
+					<p>You can subscribe to the next 6 months (3 print volumes) of tmrw or purchase each volume individually. </p>
+					<h4>Who do I contact if I have a query about my order?</h4>
+					<p>Please e-mail orders@tmrwmagazine.com</p>
+					<h4>Can I make changes to an order?</h4>
+					<p>You can set up an account when purchasing any product on the shop and this will give you the ability to make changes if required.</p>
+					<h4>I need more information, where do I look?</h4>
+					<p>Please e-mail info@tmrwmagazine.com for more info.</p>
+				</div>
+			</div>
+			<hr>
+		</section>
+
+		<section id="stockists">
+			<h3>Find the <span class="poppins">Closest Store</span></h3>
+
+			<div class="store_locator_plus">
+				<div id="sl_div">
+					<form id="searchForm" class="slp_search_form" action="" onsubmit='cslmap.searchLocations(); return false;'>
+						<div class="slp_search_container">
+							<div id="address_search" class="slp search_box">
+								<div id="addy_in_address" class="search_item">
+									<label for="addressInput" class="text length_18">Enter city or postcode</label>
+									<input class="label_text length_18" type="text" id="addressInput" name='addressInput' size='' value='' placeholder="Enter city or postcode"/>
+								</div>
+								<div class="search_item">
+									<div id="addy_in_radius">
+										<label for="radiusSelect" class="text length_6">Within</label>
+										<select id="radiusSelect">
+											<option value='10'>10 miles</option>
+											<option value='25'>25 miles</option>
+											<option value='50'>50 miles</option>
+											<option value='100'>100 miles</option>
+											<option value='200' selected='selected'>200 miles</option>
+											<option value='500'>500 miles</option>
+
+										</select>
+									</div>
+									<div id="radius_in_submit">
+										<input type="submit" class="slp_ui_button" value='Find' id="addressSubmit"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div id="map" class="slp_map"></div>
+					<div id="map_sidebar" class="slp_results_container">
+						<div class="results_wrapper" id="slp_results_wrapper_850">
+							<div id="slp_results_850" class="results_entry location_primary ">
+								<div class="results_row_left_column" id="slp_left_cell_850">
+									<span class="location_name">Stockist name</span>
+									<span class="location_distance">0.8 miles</span>
+								</div>
+								<div class="results_row_center_column location_secondary" id="slp_center_cell_850">
+									<span class="slp_result_address slp_result_street">Southbank</span>
+									<span class="slp_result_address slp_result_street2" style="display: none;"></span>
+									<span class="slp_result_address slp_result_citystatezip">London E8 4QJ</span>
+									<span class="slp_result_address slp_result_country">United Kingdom</span>
+									<span class="slp_result_address slp_result_phone" style="display: none;">01316290626</span>
+									<span class="slp_result_address slp_result_fax" style="display: none;"></span>
+								</div>
+								<div class="results_row_right_column location_tertiary" id="slp_right_cell_850">
+									<span class="slp_result_contact slp_result_website"><a href="#" target="_blank" class="storelocatorlink">Website</a><br></span>
+									<span class="slp_result_contact slp_result_email" style="display: none;"></span>
+									<span class="slp_result_contact slp_result_directions"><a href="https://maps.google.co.uk/maps?saddr=United%20Kingdom&amp;daddr=155%20West%20Port%2C%20Edinburgh%2C%20EH3%209DP%2C%20United%20Kingdom" target="_blank" class="storelocatorlink" style="display: none;">Directions</a></span>
+									<span class="slp_result_contact slp_result_hours" style="display: none;"></span>
+								</div>
+							</div>
+						</div>
+						<div class="results_wrapper" id="slp_results_wrapper_850">
+							<div id="slp_results_850" class="results_entry location_primary ">
+								<div class="results_row_left_column" id="slp_left_cell_850">
+									<span class="location_name">Stockist name</span>
+									<span class="location_distance">0.8 miles</span>
+								</div>
+								<div class="results_row_center_column location_secondary" id="slp_center_cell_850">
+									<span class="slp_result_address slp_result_street">Southbank</span>
+									<span class="slp_result_address slp_result_street2" style="display: none;"></span>
+									<span class="slp_result_address slp_result_citystatezip">London E8 4QJ</span>
+									<span class="slp_result_address slp_result_country">United Kingdom</span>
+									<span class="slp_result_address slp_result_phone" style="display: none;">01316290626</span>
+									<span class="slp_result_address slp_result_fax" style="display: none;"></span>
+								</div>
+								<div class="results_row_right_column location_tertiary" id="slp_right_cell_850">
+									<span class="slp_result_contact slp_result_website"><a href="#" target="_blank" class="storelocatorlink">Website</a><br></span>
+									<span class="slp_result_contact slp_result_email" style="display: none;"></span>
+									<span class="slp_result_contact slp_result_directions"><a href="https://maps.google.co.uk/maps?saddr=United%20Kingdom&amp;daddr=155%20West%20Port%2C%20Edinburgh%2C%20EH3%209DP%2C%20United%20Kingdom" target="_blank" class="storelocatorlink" style="display: none;">Directions</a></span>
+									<span class="slp_result_contact slp_result_hours" style="display: none;"></span>
+								</div>
+							</div>
+						</div>
+						<div class="results_wrapper" id="slp_results_wrapper_850">
+							<div id="slp_results_850" class="results_entry location_primary ">
+								<div class="results_row_left_column" id="slp_left_cell_850">
+									<span class="location_name">Stockist name</span>
+									<span class="location_distance">0.8 miles</span>
+								</div>
+								<div class="results_row_center_column location_secondary" id="slp_center_cell_850">
+									<span class="slp_result_address slp_result_street">Southbank</span>
+									<span class="slp_result_address slp_result_street2" style="display: none;"></span>
+									<span class="slp_result_address slp_result_citystatezip">London E8 4QJ</span>
+									<span class="slp_result_address slp_result_country">United Kingdom</span>
+									<span class="slp_result_address slp_result_phone" style="display: none;">01316290626</span>
+									<span class="slp_result_address slp_result_fax" style="display: none;"></span>
+								</div>
+								<div class="results_row_right_column location_tertiary" id="slp_right_cell_850">
+									<span class="slp_result_contact slp_result_website"><a href="#" target="_blank" class="storelocatorlink">Website</a><br></span>
+									<span class="slp_result_contact slp_result_email" style="display: none;"></span>
+									<span class="slp_result_contact slp_result_directions"><a href="https://maps.google.co.uk/maps?saddr=United%20Kingdom&amp;daddr=155%20West%20Port%2C%20Edinburgh%2C%20EH3%209DP%2C%20United%20Kingdom" target="_blank" class="storelocatorlink" style="display: none;">Directions</a></span>
+									<span class="slp_result_contact slp_result_hours" style="display: none;"></span>
+								</div>
+							</div>
+						</div>
+						<div class="results_wrapper" id="slp_results_wrapper_850">
+							<div id="slp_results_850" class="results_entry location_primary ">
+								<div class="results_row_left_column" id="slp_left_cell_850">
+									<span class="location_name">Stockist name</span>
+									<span class="location_distance">0.8 miles</span>
+								</div>
+								<div class="results_row_center_column location_secondary" id="slp_center_cell_850">
+									<span class="slp_result_address slp_result_street">Southbank</span>
+									<span class="slp_result_address slp_result_street2" style="display: none;"></span>
+									<span class="slp_result_address slp_result_citystatezip">London E8 4QJ</span>
+									<span class="slp_result_address slp_result_country">United Kingdom</span>
+									<span class="slp_result_address slp_result_phone" style="display: none;">01316290626</span>
+									<span class="slp_result_address slp_result_fax" style="display: none;"></span>
+								</div>
+								<div class="results_row_right_column location_tertiary" id="slp_right_cell_850">
+									<span class="slp_result_contact slp_result_website"><a href="#" target="_blank" class="storelocatorlink">Website</a><br></span>
+									<span class="slp_result_contact slp_result_email" style="display: none;"></span>
+									<span class="slp_result_contact slp_result_directions"><a href="https://maps.google.co.uk/maps?saddr=United%20Kingdom&amp;daddr=155%20West%20Port%2C%20Edinburgh%2C%20EH3%209DP%2C%20United%20Kingdom" target="_blank" class="storelocatorlink" style="display: none;">Directions</a></span>
+									<span class="slp_result_contact slp_result_hours" style="display: none;"></span>
+								</div>
+							</div>
+						</div>
+						<div class="results_wrapper" id="slp_results_wrapper_850">
+							<div id="slp_results_850" class="results_entry location_primary ">
+								<div class="results_row_left_column" id="slp_left_cell_850">
+									<span class="location_name">Stockist name</span>
+									<span class="location_distance">0.8 miles</span>
+								</div>
+								<div class="results_row_center_column location_secondary" id="slp_center_cell_850">
+									<span class="slp_result_address slp_result_street">Southbank</span>
+									<span class="slp_result_address slp_result_street2" style="display: none;"></span>
+									<span class="slp_result_address slp_result_citystatezip">London E8 4QJ</span>
+									<span class="slp_result_address slp_result_country">United Kingdom</span>
+									<span class="slp_result_address slp_result_phone" style="display: none;">01316290626</span>
+									<span class="slp_result_address slp_result_fax" style="display: none;"></span>
+								</div>
+								<div class="results_row_right_column location_tertiary" id="slp_right_cell_850">
+									<span class="slp_result_contact slp_result_website"><a href="#" target="_blank" class="storelocatorlink">Website</a><br></span>
+									<span class="slp_result_contact slp_result_email" style="display: none;"></span>
+									<span class="slp_result_contact slp_result_directions"><a href="https://maps.google.co.uk/maps?saddr=United%20Kingdom&amp;daddr=155%20West%20Port%2C%20Edinburgh%2C%20EH3%209DP%2C%20United%20Kingdom" target="_blank" class="storelocatorlink" style="display: none;">Directions</a></span>
+									<span class="slp_result_contact slp_result_hours" style="display: none;"></span>
+								</div>
+							</div>
+						</div>
+						<div class="results_wrapper" id="slp_results_wrapper_850">
+							<div id="slp_results_850" class="results_entry location_primary ">
+								<div class="results_row_left_column" id="slp_left_cell_850">
+									<span class="location_name">Stockist name</span>
+									<span class="location_distance">0.8 miles</span>
+								</div>
+								<div class="results_row_center_column location_secondary" id="slp_center_cell_850">
+									<span class="slp_result_address slp_result_street">Southbank</span>
+									<span class="slp_result_address slp_result_street2" style="display: none;"></span>
+									<span class="slp_result_address slp_result_citystatezip">London E8 4QJ</span>
+									<span class="slp_result_address slp_result_country">United Kingdom</span>
+									<span class="slp_result_address slp_result_phone" style="display: none;">01316290626</span>
+									<span class="slp_result_address slp_result_fax" style="display: none;"></span>
+								</div>
+								<div class="results_row_right_column location_tertiary" id="slp_right_cell_850">
+									<span class="slp_result_contact slp_result_website"><a href="#" target="_blank" class="storelocatorlink">Website</a><br></span>
+									<span class="slp_result_contact slp_result_email" style="display: none;"></span>
+									<span class="slp_result_contact slp_result_directions"><a href="https://maps.google.co.uk/maps?saddr=United%20Kingdom&amp;daddr=155%20West%20Port%2C%20Edinburgh%2C%20EH3%209DP%2C%20United%20Kingdom" target="_blank" class="storelocatorlink" style="display: none;">Directions</a></span>
+									<span class="slp_result_contact slp_result_hours" style="display: none;"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="flex-container">
+				<div class="left-container">
+				</div>
+				<div class="right-container">
+				</div>
+			</div>
+
+			<p class="stockist-enquiry small">
+				If you are interested in becoming a stockist or want to recommend a stockist, please email <a href="mailto:">info@tmrwmagazine.com</a>.
+			</p>
+
+		</section>
+
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer-navbar">
+				<div  class="footer-nav">
+					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="#">Features</a>
+					<a class="nav-link" href="#">Magazine</a>
+					<a class="nav-link" href="#">Shop</a>
+				</div>
+				<div class="footer-logo">
+					<a href="#"><img src="img/tmrw-logo-white.svg"></a>
+				</div>
+				<div class="social-media">
+					<a class="nav-link" href="#">
+						<i class="icon-facebook"></i>
+					</a>
+					<a class="nav-link" href="#">
+						<i class="icon-twitter"></i>
+					</a>
+					<a class="nav-link" href="#">
+						<i class="icon-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="mailing-list">
+				<form method="post" action="" onSubmit="return validateForm();">
+					<h3>Subscribe to <br><span class="poppins">Our Mailing List</span></h3>
+					<p>
+						Join tmrw mailing list to receive the latest news and updates.
+					</p>
+					<div class="toggle-button">
+						<input type="checkbox" id="data_6_0" name="data_6" value="I agree to Terms of Service and Privacy Policy">
+						<label for="data_6_0"></label>
+						<div class="toggle-icon"></div>
+						<p>
+							I agree to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+						</p>
+					</div>
+					<div class="text-field">
+						<input type="text" id="data_4" name="data_4" placeholder="Your email address"><button name="skip_Submit" value="Subscribe">Subscribe</button>
+					</div>
+				</form>
+			</div>
+			<div class="credits">
+				<div class="site-credits">
+					<p>Website design & development by <a href="#">Studio Et Cetera</a>.</p>
+				</div>
+				<div class="copyright">
+					<p>&copy; 2012&mdash;2018 tmrw. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Hide Header on Scroll -->
 	<script type="text/javascript">
@@ -70,6 +377,26 @@
 		    	document.getElementById("header").style.top = "-50px";
 			}
 			prevScrollpos = currentScrollPos;
+		}
+	</script>
+
+	<!-- Mailing List Form Validator-->
+	<script type="text/javascript">
+		function validateForm() {
+			if (isEmpty(document.getElementById('data_4').value.trim())) {
+				alert('Email is required!');
+				return false;
+			}
+			if (!validateEmail(document.getElementById('data_4').value.trim())) {
+				alert('Email must be a valid email address!');
+				return false;
+			}
+			return true;
+		}
+		function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+		function validateEmail(email) {
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+			return isEmpty(email) || re.test(email);
 		}
 	</script>
 
