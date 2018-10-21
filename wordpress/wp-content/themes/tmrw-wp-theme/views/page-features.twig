@@ -6,6 +6,22 @@
 
 	<div class="select-categories-container">
 		<h2 class="select-categories-title">Select <span>Categories</span> </h2>
+		<form class="select-categories-input-container">
+			<div class="select-categories-input-wrapper">
+					<input class="select-categories-input" type="radio" id="all"
+					name="category" value="all" checked />
+					<label class="select-categories-input-label" for="all">All</label>
+			</div>
+		 {% for category in categories %}
+			<div class="select-categories-input-wrapper">
+					<input class="select-categories-input" type="radio" id="{{category.name}}"
+					name="category" value="{{category.name}}"  />
+					<label class="select-categories-input-label" for="all">{{category.name}}</label>
+			</div>		 
+		 {% endfor %}
+		</form>
+
+
 	</div>	
 
 	{% include 'partials/grid.twig' %}
@@ -13,3 +29,6 @@
 </section>
 
 {% endblock %}
+
+
+

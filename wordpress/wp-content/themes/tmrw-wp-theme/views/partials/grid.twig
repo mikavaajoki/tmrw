@@ -2,7 +2,7 @@
 {% if limit %}
 <div class="grid-items">
 	{% for post in posts|slice(0,limit) %}
-		<div class="grid-item-container">
+		<div class="grid-item-container" data-category="{{post.category}}">
 			{% if post.thumbnail %}	
 				<div class="grid-item-image-container">
 					<img class="grid-item-image" src="{{post.thumbnail}}" />
@@ -37,7 +37,7 @@
 
 <div class="grid-items">
 	{% for post in posts %}
-		<div class="grid-item-container">
+		<div class="grid-item-container" data-category="{{post.category}}">
 			{% if post.thumbnail %}	
 				<div class="grid-item-image-container">
 					<img class="grid-item-image" src="{{post.thumbnail}}" />
