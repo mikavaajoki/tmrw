@@ -1,5 +1,19 @@
-@font-face {font-family: 'ClearfaceSerial';src: url('fonts/Clearface-Serial.ttf') format('truetype');}
-@font-face {font-family: 'ClearfaceSerialItalic';src: url('fonts/Clearface-Serial-Italic.ttf') format('truetype');}
+@font-face {
+    font-family: 'ClearfaceSerial';
+    src: url('ClearfaceSerial.woff2') format('woff2'),
+        url('ClearfaceSerial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClearfaceSerial';
+    src: url('ClearfaceSerial-Italic.woff2') format('woff2'),
+        url('ClearfaceSerial-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
 
 html,body {
     height:100%;
