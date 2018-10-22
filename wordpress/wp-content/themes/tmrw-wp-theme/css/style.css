@@ -34,11 +34,21 @@ p,h1,h2 {
 	}
 }
 
+h1 {
+	font-family: 'ClearfaceSerial', serif;
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 1em;
+	letter-spacing: 3.5px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 h2 {
 	font-family: 'ClearfaceSerial', serif;
 	font-weight: 400;
 	font-size: 67px;
-	line-height: 62px;
+	line-height: 1em;
 	letter-spacing: 1px;
 }
 
@@ -48,19 +58,26 @@ h3 {
 	font-size: 24px;
 	line-height: 1em;
 	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 h4 {
 	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
 	font-size: 12px;
 	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 p {
 	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.4em;
 	letter-spacing: 0;
+	margin: 0;
 }
 
 p.small {
@@ -77,8 +94,15 @@ sup {
 	letter-spacing: 0;
 }
 
+h1 .poppins, 
+h2 .poppins,
+h3 .poppins {
+	font-weight: 800;
+}
+
 .worksans {
 	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 }
 
 li {
@@ -87,7 +111,7 @@ li {
 }
 
 button {
-	padding: 0;
+	outline: none;
  	border: none;
  	font: inherit;
  	color: inherit;
@@ -97,6 +121,7 @@ button {
  	padding: 0 40px;
  	border: 2px solid black;
  	font-family: 'Poppins', sans-serif;
+ 	font-weight: 800;
 	font-size: 12px;
 	letter-spacing: 1.8px;
 	text-transform: uppercase;
@@ -134,6 +159,7 @@ q {
   	margin: 0 120px;
   }
 }
+
 .grid-container-no-margin {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

@@ -1,32 +1,32 @@
-<div class="header grid-container">
- 	
-	<div class="header-info">
 
-		<div class="header-info-search">
-			<button class="header-language header-info-item">English</button>
-			<button class="header-search header-info-item">Search</button>
-			<p class="header-basket header-info-item">Basket (0)</p>
+	<div id="header">
+		<div class="container">
+			<div class="header-navbar-top">
+				<div class="header-nav">
+					<a class="nav-link" href="#">English</a>
+					<a class="nav-link" href="#">Search</a>
+					<a class="nav-link" href="#">Basket <span class="worksans">(</span>0<span class="worksans">)</span></a>
+				</div>
+				<div class="header-logo">
+					<a href="#"><img src="{{theme.link}}/img/tmrw-logo-black.svg"></a>
+				</div>
+				<div class="social-media">
+					<a class="nav-link" href="{{options.social_.facebook}}">
+						<i class="icon-facebook"></i>
+					</a>
+					<a class="nav-link" href="{{options.social_.twitter}}">
+						<i class="icon-twitter"></i>
+					</a>
+					<a class="nav-link" href="{{options.social_.instagram}}">
+						<i class="icon-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="header-navbar-bottom">
+				<a class="nav-link active" href="/">Home</a> / 
+				<a class="nav-link" href="/features">Features</a> /
+				<a class="nav-link" href="/magazine">Magazine</a> / 
+				<a class="nav-link" href="/shop">Shop</a>
+			</div>
 		</div>
-
-		<a class="header-logo" href="/"><img src="{{theme.link}}/img/tmrw-logo-black.svg" alt="Tmrw Logo"></a>
-
-		<li class="social-media">
-			<a class="social-media-link" target="_blank" href="{{options.social_.facebook}}"><i class="icon-facebook"></i></a>
-			<a class="social-media-link" target="_blank" href="{{options.social_.twitter}}"><i class="icon-twitter"></i></a>
-			<a class="social-media-link" target="_blank" href="{{options.social_.instagram}}"><i class="icon-instagram"></i></a>
-			<a class="social-media-link" target="_blank" href="{{options.social_.tumblr}}"><i class="icon-tumblr"></i></a>
-		</li>
-
 	</div>
-
-
-	<nav class="nav-wrapper">
-		<li class="nav-item">
-			{% for item in menu.items %}
-			<a class="nav-link"  href="{{item.link}}">{{item.name}} /</a>
-			{% endfor %}	
-			</li>
-	</nav>
-
-
-</div>	
