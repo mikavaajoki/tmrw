@@ -10,12 +10,14 @@
 			<div class="select-categories-input-wrapper">
 					<input class="select-categories-input" type="radio" id="all"
 					name="category" value="all" checked />
+					<span class="select-categories-checkmark"></span>
 					<label class="select-categories-input-label" for="all">All</label>
 			</div>
 		 {% for category in categories %}
 			<div class="select-categories-input-wrapper">
 					<input class="select-categories-input" type="radio" id="{{category.name}}"
 					name="category" value="{{category.name}}"  />
+					<span class="select-categories-checkmark"></span>
 					<label class="select-categories-input-label" for="all">{{category.name}}</label>
 			</div>		 
 		 {% endfor %}

@@ -68,6 +68,41 @@
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+			<!-- Mailing List Form Validator-->
+	<script type="text/javascript">
+		function validateForm() {
+			if (isEmpty(document.getElementById('data_4').value.trim())) {
+				alert('Email is required!');
+				return false;
+			}
+			if (!validateEmail(document.getElementById('data_4').value.trim())) {
+				alert('Email must be a valid email address!');
+				return false;
+			}
+			return true;
+		}
+		function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+		function validateEmail(email) {
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+			return isEmpty(email) || re.test(email);
+		}
+	</script>
+
+		<!-- Hide Header on Scroll -->
+	<script type="text/javascript">
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+		    	document.getElementById("header").style.top = "0";
+			} else {
+		    	document.getElementById("header").style.top = "-50px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
+
 		
 {{wp_footer}}
 {% endblock %}	
