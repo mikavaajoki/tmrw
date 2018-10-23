@@ -1,0 +1,41 @@
+.shop-container {
+		@media (width > 767px) {
+		padding-top: 140px;
+	}
+}
+
+/*.select-categories-container {
+	grid-row: 1;
+	grid-column: 1/span 4;
+}
+
+.select-categories-title {
+	font-size: 24px;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.select-categories-title span {
+  font-family: Poppins,sans-serif;
+  font-weight: 800;
+}
+
+.features-container .grid-items {
+	grid-row: 1;
+	grid-column: 5/span 12;
+}
+
+.select-categories-input-label {
+	font-family: Poppins,sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	letter-spacingacing: 1px;
+}
+
+.select-categories-input-wrapper {
+	margin-bottom: 10px;
+}
+*/

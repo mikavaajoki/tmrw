@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "34446bf4fef716dfb979578326d87c87",
+    "packages": [
+        {
+            "name": "mindkomm/timber-integration-woocommerce",
+            "version": "0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mindkomm/timber-integration-woocommerce.git",
+                "reference": "aa80f0c70faa12d6f7563c7c984a46e48413a8ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mindkomm/timber-integration-woocommerce/zipball/aa80f0c70faa12d6f7563c7c984a46e48413a8ce",
+                "reference": "aa80f0c70faa12d6f7563c7c984a46e48413a8ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": "7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Timber\\Integrations\\WooCommerce\\": "lib/Timber/Integrations/WooCommerce"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Gaechter",
+                    "email": "lukas.gaechter@mind.ch",
+                    "homepage": "https://www.mind.ch"
+                }
+            ],
+            "description": "WooCommerce integration for Timber.",
+            "keywords": [
+                "integration",
+                "timber",
+                "twig",
+                "woocommerce"
+            ],
+            "time": "2018-09-06T11:59:17+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

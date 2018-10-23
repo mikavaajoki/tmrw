@@ -1,0 +1,8 @@
+{
+"require": {
+    "mindkomm/timber-integration-woocommerce": "^0.5.2"
+},
+	"extra": {
+	"wordpress-install-dir": "wp"
+	}
+}

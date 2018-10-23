@@ -11,10 +11,15 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+// Load Composer dependencies
+require_once 'vendor/autoload.php';
+require_once 'inc/WooCommerce_Theme.php';
+
 // Including the custom fields for projects
 include_once('custom-fields/post-fields.php');
 include_once('custom-fields/option-fields.php');
 include_once('custom-fields/issue-fields.php');
+
 
 add_filter('timber_context', 'add_to_context');
 
