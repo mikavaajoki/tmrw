@@ -4,6 +4,12 @@
 	}
 }
 
+.shop-container .grid-items {
+	grid-row: 1;
+	grid-column: 5/span 12;
+}
+
+
 /*.select-categories-container {
 	grid-row: 1;
 	grid-column: 1/span 4;
