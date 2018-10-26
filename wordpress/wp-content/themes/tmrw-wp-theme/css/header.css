@@ -11,6 +11,7 @@
 	width: 100%;
 	background-color: white;
 	transition: top .3s;
+	z-index: 10000;
 }
 
 #header .container {

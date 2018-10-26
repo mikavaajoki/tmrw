@@ -107,4 +107,26 @@ function add_theme_caps() {
 }
 
 
+
+
+
+add_action( 'after_setup_theme', 'remove_woocommerce_single_product', 1 );
+
+function remove_woocommerce_single_product() {
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+}
+
+
+add_action( 'after_setup_theme', 'add_product_desciption', 2 );
+
+function add_product_desciption() {
+   add_action( 'product_description', 'woocommerce_template_single_excerpt', 5 );
+ 
+}
+
+
 ?>

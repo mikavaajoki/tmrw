@@ -5,20 +5,28 @@
 <div class="container">
     <div id="product-{{ post.id }}" {{ fn('post_class', ['product', 'product--' ~ post.product.get_type()]) }}>
 
-
         {% if post.thumbnail %}
             <img src="{{ post.thumbnail.src }}">
         {% endif %}
 
 
         <div class="product-summary">
-            {##
-			 # woocommerce_single_product_summary hook.
-			 #
-			 # @hooked woocommerce_template_single_price - 10
-			 # @hooked woocommerce_template_single_add_to_cart - 30
-             #}
-            {% do action( 'woocommerce_single_product_summary' ) %}
+
+           {%
+                do action( 'product_description' ) 
+            %}
+       
+
+            <div class="grid-item-title-container">
+                <h1 class="grid-item-title">Volume N<sup>o</sup> {{post.issue_number}}</h1>
+                <h1 class="grid-item-subtitle">{{ post.title }}</h1>
+            </div>  
+
+            {% 
+                do action( 'woocommerce_single_product_summary' ) 
+            %}
+
+         
         </div>
 
 
