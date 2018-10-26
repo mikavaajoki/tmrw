@@ -1,0 +1,64 @@
+/* Shop Single Product */
+
+.product-container {		
+	@media (width > 767px) {
+		padding-top: 140px;
+	}
+}
+
+
+.product-details-container {
+	grid-row: 1;
+	grid-column: 1/span 12;	
+	margin-bottom: 25px;	
+	@media(width > 767px) {
+  	grid-column: 4/span 6;		
+  	margin-bottom: 50px;
+	}
+}
+
+.product-image-container {
+   margin: 0 50px 0 50px;
+	box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+	@media (width > 767px) {
+		margin-bottom: 60px;
+	}	
+}
+
+.price,
+.product-desription-title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+	@media (width > 767px) {
+		margin-bottom: 50px;
+	}
+}
+
+.price {
+	text-align: left;
+margin-bottom: 20px;
+
+}
+
+.price::after {
+	content:' (Excl. Delivery)';
+}
+
+.stock,
+.quantity {
+	display: none;
+}
+
+.product-purchase-container{
+
+	grid-row: 2;
+	grid-column: 1/span 12;
+	@media(width > 767px) {
+		grid-row: 1;
+		grid-column: 10/span 3;
+	}
+}
