@@ -2,36 +2,46 @@
 
 {% block content %}
 
-<div class="container">
-    <div id="product-{{ post.id }}" {{ fn('post_class', ['product', 'product--' ~ post.product.get_type()]) }}>
-
-        {% if post.thumbnail %}
-            <img src="{{ post.thumbnail.src }}">
-        {% endif %}
 
 
-        <div class="product-summary">
+<section class="grid-container product-container">
+    
+    <div class="product-container">
 
-           {%
+        <div class="product-image-container">
+            {% if post.thumbnail %}
+                <img src="{{ post.thumbnail.src }}">
+            {% endif %}
+        </div>    
+
+        <p class="product-desription-title">Description</p>
+
+        <div class="product-description-container">
+            {%
                 do action( 'product_description' ) 
             %}
-       
-
-            <div class="grid-item-title-container">
-                <h1 class="grid-item-title">Volume N<sup>o</sup> {{post.issue_number}}</h1>
-                <h1 class="grid-item-subtitle">{{ post.title }}</h1>
-            </div>  
-
-            {% 
-                do action( 'woocommerce_single_product_summary' ) 
-            %}
-
-         
         </div>
 
+    </div>  
 
-    </div>
+   
+    <div class="product-purchase-container">
+        <div class="grid-item-title-container">
+        <h1 class="grid-item-title">Volume N<sup>o</sup> {{post.issue_number}}</h1>
+        <h1 class="grid-item-subtitle">{{ post.title }}</h1>
+    </div>  
 
-</div>
+    {% 
+        do action( 'woocommerce_single_product_summary' ) 
+    %}     
+    </div>  
+
+
+
+</section>
+
+
+
+
 
 {% endblock %}
