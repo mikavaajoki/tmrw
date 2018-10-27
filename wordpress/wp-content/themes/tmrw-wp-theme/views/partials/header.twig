@@ -5,7 +5,7 @@
 				<div class="header-nav">
 					<a class="nav-link" href="#">English</a>
 					<a class="nav-link" href="#">Search</a>
-					<a class="nav-link" href="#">Basket <span class="worksans">(</span>0<span class="worksans">)</span></a>
+					{% include 'woocommerce/cart/fragment-link.twig' %}
 				</div>
 				<div class="header-logo">
 					<a href="#"><img src="{{theme.link}}/img/tmrw-logo-black.svg"></a>

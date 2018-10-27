@@ -1,0 +1,25 @@
+{% if posts %}
+<div class="grid-items">
+
+    {##
+     # Depending on your WooCommerce display settings, the `woocommerce_product_subcategories` function
+     # might reset the $wp_query global. By calling `have_posts()`, we check if there are posts we can
+     # display.
+     #}
+    {% for post in posts if fn('have_posts') %}
+            {% include 'woocommerce/teaser-product.twig' %}
+    {% endfor %}
+</div>
+
+{% elseif not fn('woocommerce_product_subcategories', [{
+    before: fn('woocommerce_product_loop_start', false),
+    after: fn('woocommerce_product_loop_end', false)
+}]) %}
+    {##
+     # woocommerce_no_products_found hook.
+     #
+     # @hooked wc_no_products_found - 10
+     #}
+    {% do action('woocommerce_no_products_found') %}
+
+{% endif %}

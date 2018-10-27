@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'ClearfaceSerial';
-    src: url('fonts/ClearfaceSerial.woff2') format('woff2'),
-        url('fonts/ClearfaceSerial.woff') format('woff');
+    src: url('../fonts/ClearfaceSerial.woff2') format('woff2'),
+        url('../fonts/ClearfaceSerial.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ClearfaceSerial';
-    src: url('fonts/ClearfaceSerial-Italic.woff2') format('woff2'),
-        url('fonts/ClearfaceSerial-Italic.woff') format('woff');
+    font-family: 'ClearfaceSerial Italic';
+    src: url('../fonts/ClearfaceSerial-Italic.woff2') format('woff2'),
+        url('../fonts/ClearfaceSerial-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }

@@ -1,0 +1,47 @@
+[
+    {
+        "name": "mindkomm/timber-integration-woocommerce",
+        "version": "0.5.2",
+        "version_normalized": "0.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mindkomm/timber-integration-woocommerce.git",
+            "reference": "aa80f0c70faa12d6f7563c7c984a46e48413a8ce"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mindkomm/timber-integration-woocommerce/zipball/aa80f0c70faa12d6f7563c7c984a46e48413a8ce",
+            "reference": "aa80f0c70faa12d6f7563c7c984a46e48413a8ce",
+            "shasum": ""
+        },
+        "require": {
+            "php": "7.*"
+        },
+        "time": "2018-09-06T11:59:17+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Timber\\Integrations\\WooCommerce\\": "lib/Timber/Integrations/WooCommerce"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Lukas Gaechter",
+                "email": "lukas.gaechter@mind.ch",
+                "homepage": "https://www.mind.ch"
+            }
+        ],
+        "description": "WooCommerce integration for Timber.",
+        "keywords": [
+            "integration",
+            "timber",
+            "twig",
+            "woocommerce"
+        ]
+    }
+]

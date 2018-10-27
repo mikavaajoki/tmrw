@@ -11,10 +11,15 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+// Load Composer dependencies
+require_once 'vendor/autoload.php';
+require_once 'inc/WooCommerce_Theme.php';
+
 // Including the custom fields for projects
 include_once('custom-fields/post-fields.php');
 include_once('custom-fields/option-fields.php');
 include_once('custom-fields/issue-fields.php');
+
 
 add_filter('timber_context', 'add_to_context');
 
@@ -99,6 +104,28 @@ function add_theme_caps() {
     $role->add_cap( 'read_private_issues' ); 
     $role->add_cap( 'delete_issue');  
   }
+}
+
+
+
+
+
+add_action( 'after_setup_theme', 'remove_woocommerce_single_product', 1 );
+
+function remove_woocommerce_single_product() {
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+  remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+}
+
+
+add_action( 'after_setup_theme', 'add_product_desciption', 2 );
+
+function add_product_desciption() {
+   add_action( 'product_description', 'woocommerce_template_single_excerpt', 5 );
+ 
 }
 
 

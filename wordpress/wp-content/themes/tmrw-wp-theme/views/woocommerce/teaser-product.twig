@@ -1,0 +1,22 @@
+<div class="grid-item-container">
+
+<div class="grid-item-image-container">
+    <img class="grid-item-image" src="{{ post.thumbnail.src }}" />
+</div>
+
+{##
+ # woocommerce_after_shop_loop_item_title hook.
+ #
+ # @hooked woocommerce_template_loop_price - 10
+ #}
+{% do action('woocommerce_after_shop_loop_item_title') %}
+
+
+<div class="grid-item-title-container">
+    <h1 class="grid-item-title">Volume N<sup>o</sup> {{post.issue_number}}</h1>
+    <h1 class="grid-item-subtitle">{{ post.title }}</h1>
+</div>  
+
+
+<a class="grid-item-link" href="{{ post.link }}"> See Inside > </a>
+</div>

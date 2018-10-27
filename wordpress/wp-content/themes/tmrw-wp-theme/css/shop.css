@@ -1,0 +1,11 @@
+.shop-container {
+		@media (width > 767px) {
+		padding-top: 140px;
+	}
+}
+
+.shop-container .grid-items {
+	grid-row: 1;
+	grid-column: 5/span 12;
+}
+
