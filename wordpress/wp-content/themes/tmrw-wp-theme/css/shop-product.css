@@ -44,12 +44,12 @@ margin-bottom: 20px;
 
 }
 
-.price::after {
+.product-container .price::after {
 	content:' (Excl. Delivery)';
 }
 
-.stock,
-.quantity {
+.product-container .stock,
+.product-container .quantity {
 	display: none;
 }
 

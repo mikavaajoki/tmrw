@@ -1,0 +1,27 @@
+#wpadminbar .smack-main-mode > .ab-item{
+    color:#fff;
+    background-color: #f44;
+    background-image: -moz-linear-gradient(bottom, #d00, #f44);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#d00), to(#f44));
+}
+
+#wpadminbar .smack-main-mode:hover > .ab-item{
+    background-color: #a30 !important;
+    color: white !important;
+    background-image: -moz-linear-gradient(bottom, #d00, #a30) !important;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#d00), to(#a30)) !important;
+}
+
+.main-mode-front {
+position: fixed; 
+width:100%;
+color: #fd1902;
+background-color: #d7ccca; 
+left: 0px;
+top: 0px; 
+box-shadow: 10px 10px 5px #888888;
+z-index: 999;
+text-align: center;
+font: 20px;
+padding: 20px;
+}

@@ -1,0 +1,21 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+
+
+<section class="grid-container cart-container">
+
+
+    {% filter shortcodes %}
+        [woocommerce_cart]
+    {% endfilter %}
+
+</section>
+
+
+
+
+
+{% endblock %}

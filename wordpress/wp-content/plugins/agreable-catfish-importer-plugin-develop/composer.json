@@ -1,0 +1,19 @@
+{
+  "name": "shortlist-digital/agreable-catfish-importer-plugin",
+  "type": "wordpress-plugin",
+  "description": "Wordpress plugin for Shortlist Media.",
+  "license": "MIT",
+  "require": {
+    "sunra/php-simple-html-dom-parser" : "~1.5",
+    "jarednova/mesh": "0.4"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "AgreableCatfishImporterPlugin\\": "app/"
+    }
+  }
+}
