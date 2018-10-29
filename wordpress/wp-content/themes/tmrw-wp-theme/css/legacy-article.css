@@ -1,0 +1,10 @@
+.legacy-article h2,
+.legacy-article p {
+	margin: 30px 235px;
+}
+
+.legacy-article img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

@@ -2,8 +2,8 @@
 
 add_theme_support( 'post-thumbnails' ); 
 add_action( 'init', 'register_issues' );
+add_action( 'init', 'register_legacy_posts' );
 add_action( 'admin_init', 'add_theme_caps');
-
 
 if( function_exists('acf_add_options_page') ) {
 	
@@ -91,6 +91,57 @@ function register_issues() {
   register_post_type( 'issue', $args );
 }
 
+
+function register_legacy_posts() {
+  $labels = array( 
+      'name' => _x( 'Legacy', 'legacy' ),
+      'singular_name' => _x( 'Legacy', 'legacy' ),
+      'add_new' => _x( 'Add New', 'legacy' ),
+      'add_new_item' => _x( 'Add New Legacy', 'Legacy' ),
+      'edit_item' => _x( 'Edit Legacy', 'Legacy' ),
+      'new_item' => _x( 'New Legacy', 'Legacy' ),
+      'view_item' => _x( 'View Legacy', 'Legacy' ),
+      'search_items' => _x( 'Search Legacy', 'Legacy' ),
+      'not_found' => _x( 'No Legacy found', 'Legacy' ),
+      'not_found_in_trash' => _x( 'No properties found in Trash', 'Legacy' ),
+      'parent_item_colon' => _x( 'Parent Legacy:', 'Legacy' ),
+      'menu_name' => _x( 'Legacy', 'Legacy' ),
+  );
+
+  $args = array( 
+      'labels' => $labels,
+      'hierarchical' => true,
+      'description' => 'Add new legacy',
+      'public' => true,
+      'show_ui' => true,
+      'show_in_menu' => true,
+      'menu_position'       => 8,
+      'show_in_rest'       => true,
+      'rest_base'          => 'legacy-api',
+      'rest_controller_class' => 'WP_REST_Posts_Controller',
+      'show_in_nav_menus' => true,
+      'publicly_queryable' => true,
+      'exclude_from_search' => false,
+      'has_archive' => true,
+      'query_var' => true,
+      'can_export' => true,
+      'taxonomies'  => array( 'category' ),
+      'supports' => array('thumbnail', 'editor', 'title'),
+      'capabilities' => array(
+          'edit_post' => 'edit_legacy',
+          'edit_posts' => 'edit_legacies',
+          'edit_others_posts' => 'edit_other_legacies',
+          'publish_posts' => 'publish_legacies',
+          'read_post' => 'read_legacy',
+          'read_private_posts' => 'read_private_legacies',
+          'delete_post' => 'delete_legacy'
+      ),
+      'map_meta_cap' => true
+  );
+
+  register_post_type( 'legacy', $args );
+}
+
 function add_theme_caps() {
   $roles = array('editor','administrator');
   // Loop through each role and assign capabilities
@@ -103,6 +154,13 @@ function add_theme_caps() {
     $role->add_cap( 'read_issue' ); 
     $role->add_cap( 'read_private_issues' ); 
     $role->add_cap( 'delete_issue');  
+    $role->add_cap( 'edit_legacy' ); 
+    $role->add_cap( 'edit_legacies' ); 
+    $role->add_cap( 'edit_other_legacies' ); 
+    $role->add_cap( 'publish_legacies' ); 
+    $role->add_cap( 'read_legacy' ); 
+    $role->add_cap( 'read_private_legacies' ); 
+    $role->add_cap( 'delete_legacy');  
   }
 }
 

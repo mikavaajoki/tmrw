@@ -1,0 +1,45 @@
+{% extends "layout.twig" %}
+
+{% block content %}	
+	
+		<!-- Article Header -->
+		<section id="article-header" class="grid-container article-header-container">
+
+				<div class="article-header-image-container">
+						<img class="article-header-image" src="{{post.thumbnail}}" />
+				</div>
+
+				<div class="article-header-title-container">
+					<h1 class="article-header-title">{{post.title}}</h1>
+					<h1 class="article-header-subtitle">{{post.get_field('article_details_subtitle') }}</h1>
+				</div>
+
+
+				<div class="article-header-strapline-container">
+						<p class="article-header-strapline">{{post.author}} / {{post.post_date|date("M j, Y")}} / {{post.category}}</p>
+				</div>
+
+
+				<div class="article-header-standfirst-container">
+						<h2 class="article-header-standfirst">{{post.article_details_standfirst}}</h2>
+				</div>
+
+
+		</section>
+
+
+		<!-- Article Content -->
+		<section class="article-content legacy-article">
+
+			{{post.content}}
+
+
+		</div>
+		
+				<!-- Article Credits -->
+				<div class="article-credits grid-container">
+						<p>Words by {{post.author}}</p>
+				</div>
+		</section>	
+
+{% endblock %}
