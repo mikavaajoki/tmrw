@@ -34,11 +34,29 @@ function add_to_context($data){
 
 
 add_action( 'after_setup_theme', 'register_my_menu' );
+add_action('after_setup_theme', 'setup_theme');
+
+function setup_theme(  ) {
+    // Theme setup code...
+    
+    // Filters the oEmbed process to run the responsive_embed() function
+    add_filter('embed_oembed_html', 'responsive_embed', 10, 3);
+}
+
 function register_my_menu() {
   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
 }
 
-
+/**
+ * Adds a responsive embed wrapper around oEmbed content
+ * @param  string $html The oEmbed markup
+ * @param  string $url  The URL being embedded
+ * @param  array  $attr An array of attributes
+ * @return string       Updated embed markup
+ */
+function responsive_embed($html, $url, $attr) {
+    return $html!=='' ? '<div class="embed-container">'.$html.'</div>' : '';
+}
 
 
 function register_issues() {
