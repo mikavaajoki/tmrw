@@ -204,5 +204,10 @@ function add_product_desciption() {
  
 }
 
+// rewrites custom post type name
+global $wp_rewrite;
+$legacy_structure = '/%category%/%postname%';
+$wp_rewrite->add_rewrite_tag("%legacy%", '([^/]+)', "legacy=");
+$wp_rewrite->add_permastruct('legacy', $legacy_structure, false);
 
 ?>

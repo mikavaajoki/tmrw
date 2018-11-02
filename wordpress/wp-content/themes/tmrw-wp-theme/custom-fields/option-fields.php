@@ -113,7 +113,7 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'post_type' => array(
-				0 => 'post',
+				0 => 'post'
 			),
 			'taxonomy' => array(
 			),
