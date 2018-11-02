@@ -1,8 +1,4 @@
-{{dump(recommended)}}
-
-
-{% set post = recommended %}
-
+{% set post = TimberPost(options.recommended_feature) %}
 {% set writer = post.get_field('article_details_author') %}
 
 <div class="recommended-article-container">

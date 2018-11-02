@@ -6,9 +6,9 @@ add_action( 'init', 'register_legacy_posts' );
 add_action( 'admin_init', 'add_theme_caps');
 
 if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page();
-	
+  
+  acf_add_options_page();
+  
 }
 
 // Load Composer dependencies
