@@ -1,0 +1,241 @@
+/* Feature */
+
+#feature {
+	margin: 200px 0 100px 0;
+}
+
+#feature .featured-image {
+	grid-column: 5 / span 4;
+	background-color: #FFE303;
+	width: 100%;
+	padding-top: calc((3 / 2) * 100%);
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 60px;
+}
+
+#feature .heading {
+	grid-column: 2 / span 10;
+	margin-bottom: 40px;
+}
+
+#feature .author-date-category{
+	grid-column: span 12;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#feature .credits {
+	grid-column: span 12;
+	text-align: center;
+	margin: 40px 0 0 0;
+}
+
+#feature .credits h4 {
+	line-height: 1.4em;
+}
+
+#feature .social-media {
+	grid-column: span 12;
+	text-align: center;
+	margin: 40px 0 0 0;
+}
+
+#feature .social-media .nav-link:not(:last-child) {
+	margin: 0 30px 0 0;
+}
+
+#feature .social-media  .nav-link i {
+	font-size: 15px;
+}
+
+#feature .stand-first {
+	grid-column: 3 / span 8;
+	margin-bottom: 40px;
+}
+
+#feature .stand-first h2 {
+	font-size: 36px;
+	line-height: 1.2em;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+#feature p {
+	grid-column: 3 / span 8;
+	margin-bottom: 20px;
+}
+
+#feature p.pull-quote {
+	grid-column: 5 / span 4;
+	font-family: 'Clearface Serial', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+	margin: 35px 0 50px 0;
+}
+
+#feature .image-container {
+	grid-column: 3 / span 8;
+	margin: 50px 0 60px 0;
+}
+
+#feature .image-container figure {
+	position: relative;
+}
+
+#feature .image-container figure::before {
+    content: attr(caption);
+    position: absolute;
+    writing-mode: vertical-rl;
+	text-orientation: mixed;
+	text-align: right;
+    height: calc(100% - 4px);
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    right: -10px;
+    bottom: 4px;
+    color: black;
+    font-size: 12px;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+#feature .image-container.small {
+	grid-column: 5 / span 4;
+}
+
+#feature .image-container.full-width {
+	grid-column: span 12;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+
+#feature .image-container.full-width figure::before {
+	height: calc(100% - 34px);
+    padding: 15px 20px;
+    right: 32px;
+    bottom: 4px;
+    color: white;
+}
+
+#feature .video-container {
+	grid-column: 3 / span 8;
+	position: relative;
+	padding-top: calc((9 / 16) * 100%);
+	height: 0;
+	margin: 60px 0;
+}
+
+#feature .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media all and (max-width: 1199px) {
+
+	#feature {
+		margin: 265px 0 100px 0;
+	}
+
+	#feature p.pull-quote {
+		grid-column: 4 / span 6;
+	}
+}
+
+@media all and (max-width: 991px) {
+
+	#feature .heading,
+	#feature .stand-first,
+	#feature p,
+	#feature .image-container,
+	#feature .video-container {
+		grid-column: 2 / span 10;
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	#feature {
+		margin: 305px 0 100px 0;
+	}
+
+	#feature .featured-image {
+		grid-column: 4 / span 6;
+	}
+
+	#feature .heading,
+	#feature .stand-first,
+	#feature p,
+	#feature .image-container,
+	#feature .video-container {
+		grid-column: span 12;
+	}
+
+	#feature p.pull-quote {
+		grid-column: 3 / span 8;
+	}
+
+	#feature .image-container.small {
+		grid-column: 4 / span 6;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#feature {
+		margin: 100px 0 60px 0;
+	}
+
+	#feature .featured-image {
+		grid-column: 3 / span 8;
+		margin-bottom: 50px;
+	}
+
+	#feature .author-date-category h4 {
+		line-height: 1.4em;
+	}
+
+	#feature .stand-first h2 {
+		font-size: 24px !important;
+	}
+
+	#feature p.pull-quote {
+		grid-column: 2 / span 10;
+		font-size: 24px;
+		letter-spacing: 0.5px;
+		margin: 25px 0 40px 0;
+	}
+
+	#feature .image-container,
+	#feature .video-container {
+		margin: 25px 0 40px 0;
+	}
+
+	#feature .image-container figure::before,
+	#feature .image-container.full-width figure::before {
+		height: calc(100% - 18px);
+	    padding: 6px 6px;
+	    right: 12px;
+	    color: white;
+	    font-size: 8px;
+	}
+
+	#feature .image-container.small figure::before {
+		height: calc(100% - 4px);
+	    padding: 0px 6px;
+	    right: -8px;
+	    color: black;
+	    font-size: 8px;
+	}
+}
+

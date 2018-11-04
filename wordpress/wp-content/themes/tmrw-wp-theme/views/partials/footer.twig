@@ -1,24 +1,24 @@
 <!-- Footer -->
-<footer>
+	<footer>
 		<div class="container">
-			<div class="footer-navbar">
+			<div class="container-nested footer-navbar">
 				<div  class="footer-nav">
-					<a class="nav-link" href="#">Home</a>
-					<a class="nav-link" href="#">Features</a>
-					<a class="nav-link" href="#">Magazine</a>
-					<a class="nav-link" href="#">Shop</a>
+					<h4><a class="nav-link" href="/">Home</a></h4>
+					<h4><a class="nav-link" href="/features">Features</a></h4>
+					<h4><a class="nav-link" href="/magazine">Magazine</a></h4>
+					<h4><a class="nav-link" href="/shop">Shop</a></h4>
 				</div>
 				<div class="footer-logo">
 					<a href="#"><img src="{{theme.link}}/img/tmrw-logo-white.svg"></a>
 				</div>
 				<div class="social-media">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{{options.social_.facebook}}">
 						<i class="icon-facebook"></i>
 					</a>
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{{options.social_.twitter}}">
 						<i class="icon-twitter"></i>
 					</a>
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="{{options.social_.instagram}}">
 						<i class="icon-instagram"></i>
 					</a>
 				</div>
@@ -29,25 +29,21 @@
 					<p>
 						Join tmrw mailing list to receive the latest news and updates.
 					</p>
-					<div class="toggle-button">
-						<input type="checkbox" id="data_6_0" name="data_6" value="I agree to Terms of Service and Privacy Policy">
-						<label for="data_6_0"></label>
-						<div class="toggle-icon"></div>
-						<p>
-							I agree to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-						</p>
-					</div>
+					<label class="checkbox-container">I agree to Terms of Service and Privacy Policy
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
 					<div class="text-field">
-						<input type="text" id="data_4" name="data_4" placeholder="Your email address"><button name="skip_Submit" value="Subscribe">Subscribe</button>
+						<input type="text" id="email" name="email" placeholder="Your email address"><button name="submit" value="Subscribe">Subscribe</button>
 					</div>
 				</form>
 			</div>
-			<div class="credits">
+			<div class="container-nested credits">
 				<div class="site-credits">
-					<p>Website design & development by <a href="#">Studio Et Cetera</a>.</p>
+					<p class="small">Website design & development by <a href="http://studioetcetera.co.uk/">Studio Et Cetera</a>.</p>
 				</div>
 				<div class="copyright">
-					<p>&copy; 2012&mdash;2018 tmrw. All rights reserved.</p>
+					<p class="small">&copy; 2012&mdash;{{ now|date('Y') }} tmrw. All rights reserved.</p>
 				</div>
 			</div>
 		</div>

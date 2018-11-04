@@ -1,0 +1,60 @@
+/* Subscription Module */
+
+#subscription {
+	background-color: #FFE303;
+	padding: 100px 0;
+}
+
+#subscription .title {
+	grid-column: span 6;
+	text-align: right;
+}
+
+#subscription .info {
+	grid-column: span 6;
+}
+
+#subscription .info h4 {
+	margin: 6px 0 10px 0;
+}
+
+#subscription .info p {
+	line-height: 1.2em;
+}
+
+#subscription .info button {
+	margin-bottom: 36px;
+}
+
+#subscription .info button:hover {
+	color: #FFE303;
+}
+
+@media all and (max-width: 828px) {
+
+	h2 {
+		font-size: 52px;
+		letter-spacing: .75px;
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	#subscription .title {
+		grid-column: span 12;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	#subscription .info {
+		grid-column: span 12;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#subscription {
+		padding: 60px 0;
+	}
+}
+

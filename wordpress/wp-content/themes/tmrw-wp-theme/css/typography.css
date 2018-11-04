@@ -1,0 +1,103 @@
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:800|Work+Sans:400');
+
+@font-face {
+    font-family: 'Clearface Serial';
+    src: url('../fonts/ClearfaceSerial.woff2') format('woff2'),
+        url('../fonts/ClearfaceSerial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.worksans {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.clearface-serial {
+	font-family: 'Clearface Serial', serif;
+	letter-spacing: 0;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	letter-spacing: 0;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	color: black;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-family: 'Clearface Serial', serif;
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Clearface Serial', serif;
+	font-weight: 400;
+	font-size: 67px;
+	line-height: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Clearface Serial', serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1em;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1em;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+p.small {
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+sup {
+	vertical-align: super;
+	font-size: .6em;
+}
+
+input[type=text] {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+}
+
+@media all and (max-width: 1199px) {}
+
+@media all and (max-width: 991px) {}
+
+@media all and (max-width: 768px) {}
+
+@media all and (max-width: 575px) {
+
+	h1, h2 {
+		font-size: 36px !important;
+	}
+}

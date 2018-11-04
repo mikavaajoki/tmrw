@@ -1,212 +1,268 @@
-@font-face {
-    font-family: 'ClearfaceSerial';
-    src: url('../fonts/ClearfaceSerial.woff2') format('woff2'),
-        url('../fonts/ClearfaceSerial.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+/* General */
 
-@font-face {
-    font-family: 'ClearfaceSerial Italic';
-    src: url('../fonts/ClearfaceSerial-Italic.woff2') format('woff2'),
-        url('../fonts/ClearfaceSerial-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-
-html,body {
+html, body {
     height:100%;
 }
 
-
-a {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
-
 body {
-	font-family: 'WorkSans', sans-serif;
-	color: black;
-	margin: 0;
-	padding: 0;
-}
-
-
-p,h1,h2 {
-	color: black;
-	padding: 0;
-	line-height: 30px;
-	letter-spacing: 0.5px;
-	font-weight: 400;
-	font-size: 12px;
-	margin: 0;
-	@media (width > 767px) {
-		font-size: 16px;
-		line-height: 22px;
-	}
-}
-
-h1 {
-	font-family: 'ClearfaceSerial', serif;
-	font-weight: 400;
-	font-size: 72px;
-	line-height: 1em;
-	text-transform: uppercase;
-	margin: 0;
-}
-
-h2 {
-	font-family: 'ClearfaceSerial', serif;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 1em;
-	letter-spacing: 1px;
-}
-
-h3 {
-	font-family: 'ClearfaceSerial', serif;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 1em;
-	letter-spacing: 0.5px;
-	text-transform: uppercase;
-	margin: 0;
-}
-
-h4 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 800;
-	font-size: 12px;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	margin: 0;
-}
-
-p {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.4em;
-	letter-spacing: 0;
-	margin: 0;
-}
-
-p.small {
-	font-size: 12px;
-	line-height: 1.2em;
-}
-
-sup {
-	font-size: .6em;
-}
-
-.poppins {
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: 0;
-}
-
-h1 .poppins, 
-h2 .poppins,
-h3 .poppins {
-	font-weight: 800;
-}
-
-.worksans {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-}
-
-li {
-	text-decoration: none;
-	list-style-type: none;
-}
-
-button {
-	outline: none;
- 	border: none;
- 	font: inherit;
- 	color: inherit;
- 	background-color: transparent;
- 	cursor: pointer;
- 	height: 50px;
- 	padding: 0 40px;
- 	border: 2px solid black;
- 	font-family: 'Poppins', sans-serif;
- 	font-weight: 800;
-	font-size: 12px;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	-webkit-transition: background-color .3s, color .3s;
-	transition: background-color .3s, color .3s;
-}
-
-q {
-	font-family: 'ClearfaceSerial', serif;
-	grid-column: 4/span 6;
-	font-size: 18px;
-	letter-spacing: -0.5px;
-	text-transform: uppercase;
-	margin-bottom: 30px;
-	text-align: center;
-	@media (width > 767px) {
-		grid-column: 5/span 4;
-		letter-spacing: -0.75px;
-		font-size: 36px;
-	}
-}
-
-.container {
-	@media (width > 767px) {
-		margin: 0 120px;
-	}
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: ". . . . . . . . . . . . . .";
-  @media(width > 767px) {
-  	margin: 0 120px;
-  }
-}
-
-.grid-container-no-margin {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: ". . . . . . . . . . . . . .";
+	overflow-x: hidden;
 }
 
 img {
 	width: 100%;
 }
 
-
-.embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-    grid-column: 1/span 12;
-    @media (width > 767px) {
-    	grid-column: 3/span 8;
-  	}
-
-    & iframe,& object,& embed { 
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+a {
+	outline: 0;
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;	
 }
 
-.embed-container + * {
-	margin-top: 30px;
+
+/* Grid */
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 30px;
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: calc(1170px + 60px);
+}
+
+.container-nested {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 30px;
+}
+
+
+/* Buttons & Forms */
+
+button {
+	outline: none;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+	height: 50px;
+	padding: 0 40px;
+	border: 2px solid black;
+	border-radius: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	transition: background-color .3s, color .3s;
+	margin: 20px 0;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+}
+
+input[type=text] {
+	background: transparent;
+	outline: none;
+	border: 2px solid black;
+	border-radius: 0;
+	height: 46px;
+	padding: 0 15px;
+}
+
+input[type=text]::placeholder {
+	color: black;
+	opacity: .25;
+}
+
+
+
+/* Checkbox Container */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 25px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    border: 2px solid white;
+    border-radius: 0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 2px;
+	width: 5px;
+	height: 11px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+/* Radio Container */
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 25px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: black;
+}
+
+
+
+/* Break Points & Display */
+
+.tablet-display {
+	display: none;
+}
+
+.tablet-hide: {
+	display: inline;
+}
+
+.mobile-display {
+	display: none;
+}
+
+.mobile-hide: {
+	display: inline;
+}
+
+@media all and (max-width: 1199px) {
+
+}
+
+@media all and (max-width: 991px) {
+	
+}
+
+@media all and (max-width: 768px) {
+
+	.tablet-display {
+		display: inline;
+	}
+
+	.tablet-hide {
+		display: none;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	.container {
+		grid-column-gap: 0px;
+	}
+
+	.container-nested {
+		grid-column-gap: 0px;
+	}
+
+	.mobile-display {
+		display: inline;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
 }

@@ -1,32 +1,36 @@
-
-	<div id="header">
-		<div class="container">
-			<div class="header-navbar-top">
-				<div class="header-nav">
-					<a class="nav-link" href="#">English</a>
-					<a class="nav-link" href="#">Search</a>
-					{% include 'woocommerce/cart/fragment-link.twig' %}
-				</div>
-				<div class="header-logo">
-					<a href="#"><img src="{{theme.link}}/img/tmrw-logo-black.svg"></a>
-				</div>
-				<div class="social-media">
-					<a class="nav-link" href="{{options.social_.facebook}}">
-						<i class="icon-facebook"></i>
-					</a>
-					<a class="nav-link" href="{{options.social_.twitter}}">
-						<i class="icon-twitter"></i>
-					</a>
-					<a class="nav-link" href="{{options.social_.instagram}}">
-						<i class="icon-instagram"></i>
-					</a>
-				</div>
+<header id="header">
+	<div class="container">
+		<div class="container-nested header-navbar-top">
+			<div class="header-nav">
+				<h4><a class="nav-link" href="#">English</a></h4>
+				<h4><a class="nav-link" href="#">Search</a></h4>
+				<h4>{% include 'woocommerce/cart/fragment-link.twig' %}</h4>
 			</div>
-			<div class="header-navbar-bottom">
-				<a class="nav-link active" href="/">Home</a> / 
-				<a class="nav-link" href="/features">Features</a> /
-				<a class="nav-link" href="/magazine">Magazine</a> / 
-				<a class="nav-link" href="/shop">Shop</a>
+			<div class="header-logo">
+				<a href="/"><img src="{{theme.link}}/img/tmrw-logo-black.svg"></a>
+			</div>
+			<div class="social-media">
+				<a class="nav-link" href="{{options.social_.facebook}}">
+					<i class="icon-facebook"></i>
+				</a>
+				<a class="nav-link" href="{{options.social_.twitter}}">
+					<i class="icon-twitter"></i>
+				</a>
+				<a class="nav-link" href="{{options.social_.instagram}}">
+					<i class="icon-instagram"></i>
+				</a>
 			</div>
 		</div>
+		<div class="header-navbar-bottom">
+			<a class="nav-link" href="/">Home</a> <span class="mobile-hide">/</span> <br class="mobile-display">
+			<a class="nav-link active" href="/features">Features</a> <span class="mobile-hide">/</span> <br class="mobile-display">
+			<a class="nav-link" href="/magazine">Magazine</a> <span class="mobile-hide">/</span> <br class="mobile-display">
+			<a class="nav-link" href="/shop">Shop</a>
+		</div>
+		<button id="nav-toggle" class="mobile-display collapsed" onclick="navToggle()">
+			<span class="icon-bar top-bar"></span>
+			<span class="icon-bar middle-bar"></span>
+			<span class="icon-bar bottom-bar"></span>
+		</button>
 	</div>
+</header>

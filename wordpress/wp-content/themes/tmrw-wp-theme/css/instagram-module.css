@@ -1,0 +1,38 @@
+/* Instagram Module */
+
+#instagram-module {
+	padding: 125px 0;
+	color: white;
+	text-shadow: 0 0 30px rgba(0,0,0,.5);
+	background-color: #CCCCCC;
+	background-position: left;
+	background-repeat: repeat-x;
+    background-size: 50%;
+}
+
+#instagram-module .title {
+	grid-column: span 12;
+	text-align: center;
+}
+
+#instagram-module .title a {
+	color: white;
+}
+
+@media all and (max-width: 768px) {
+
+	#instagram-module {
+		padding: 100px 0;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#instagram-module {
+		padding: 85px 0;
+		background-position: center;
+		background-repeat: no-repeat;
+	    background-size: cover;
+	}
+}
+

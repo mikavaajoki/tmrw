@@ -89,20 +89,47 @@
 		}
 	</script>
 
-		<!-- Hide Header on Scroll -->
+	<!-- Hide Header on Scroll -->
 	<script type="text/javascript">
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-			if (prevScrollpos > currentScrollPos) {
-		    	document.getElementById("header").style.top = "0";
-			} else {
-		    	document.getElementById("header").style.top = "-50px";
+		function onResize() {
+			if (document.documentElement.clientWidth > 575) {
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+					var currentScrollPos = window.pageYOffset;
+					var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+					if (prevScrollpos > currentScrollPos) {
+						document.getElementById("header").style.top = "0";
+					} else {
+						if (viewportWidth > 1199) {
+							document.getElementById("header").style.top = "-47px";
+						} else {
+							document.getElementById("header").style.top = "-128px";
+						} 
+					}
+					prevScrollpos = currentScrollPos;
+				}
 			}
-			prevScrollpos = currentScrollPos;
+			else {
+				document.getElementById("header").style.top = "-370px";
+			}
 		}
+		window.addEventListener("resize", onResize, true);
+		onResize();
 	</script>
 
+	<!-- Mobile Nav Toggle -->
+	<script type="text/javascript">
+		function navToggle() {
+			var header = document.getElementById("header");
+			var navToggle = document.getElementById("nav-toggle");
+			if (header.style.top === "0px") {
+				header.style.top = "-370px";
+			} else {
+				header.style.top = "0px";
+			};
+			navToggle.classList.toggle("collapsed");
+		}
+	</script>
 		
 {{wp_footer}}
 {% endblock %}	

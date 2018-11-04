@@ -1,0 +1,161 @@
+/* Instagram Module */
+
+#video-module {
+	padding: 100px 0;
+	color: white;
+	text-shadow: 0 0 30px rgba(0,0,0,.5);
+	width: 100%;
+    min-height: 201px;
+    position: relative;
+    overflow: hidden;
+}
+
+#video-module video {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    filter: blur(10px);
+}
+
+#video-module .title {
+	grid-column: span 5;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#video-module .play {
+	grid-column: span 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#video-module .play button {
+	border: 0;
+    padding: 0;
+    margin: 0;
+    width: 140px;
+	height: 140px;
+    background-image: url(../img/play-button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image .3s;
+}
+
+#video-module .play button:hover {
+	background-color: transparent;
+	background-image: url(../img/play-button-filled.png);
+}
+
+#video-module .info {
+	grid-column: span 5;
+	display: flex;
+	align-items: center;
+}
+
+#video-module .info p {
+	line-height: 1.2em;
+}
+
+#video-module .modal-window {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .3s;
+	width: 100%;
+	background-color: rgba(255,255,255,0.98);
+}
+
+#video-module .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#video-module .modal-window button#modal-close {
+	background-color: transparent;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	z-index: 1;
+}
+
+#video-module .modal-window button#modal-close:hover {
+	background-color: transparent;
+}
+
+#video-module .modal-window button#modal-close .icon-bar {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+	margin: 0;
+}
+
+#video-module .modal-window button#modal-close .top-bar {
+    transform: rotate(45deg);
+
+}
+
+#video-module .modal-window button#modal-close .bottom-bar {
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+#video-module .modal-window .modal-container {
+    width: 800px;
+    max-width: calc(100% - 60px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    color: black;
+}
+
+#video-module .modal-window .modal-container video {
+	width: 100%;
+	height: auto;
+	filter: none !important;
+}
+
+@media all and (max-width: 768px) {
+
+	#video-module .title {
+		grid-column: span 12;
+		text-align: left;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+	}
+
+	#video-module .play {
+		grid-column: span 12;
+		margin-bottom: 20px;
+	}
+
+	#video-module .info {
+		grid-column: span 12;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#video-module {
+		padding: 60px 0;
+	}
+}
+
