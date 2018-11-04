@@ -1,18 +1,41 @@
-<section class="grid-container digital-features-container">
-
-	<div class="digital-features-sidebar-container">
-
-			<p class="digital-features-strapline">Latest</p>
-			
-			<div class="digital-features-title-container">
-				<h1 class="digital-features-title">Digital</h1>
-				<h1 class="digital-features-subtitle">Features</h1>
+<section id="features" class="home">
+	<div class="container">
+		<div class="side-nav-column">
+			<div class="side-nav">
+				<h4>Latest</h4>
+				<h2>Digital <span class="poppins">Features</span></h2>
+				<a href="features.html">
+					<button class="tablet-hide">See All Features</button>
+				</a>
 			</div>
+		</div>
+		<div class="container-nested features-list">
+			
 
-		{% include 'components/button.twig' with { link: '/features', text: 'Shop All Features' } %}
+		{% for post in posts | slice(0,4) %}
 
-	</div>	
 
-	{% include 'partials/grid.twig' with { limit: '4' } %}
+			<div class="feature">
+				<a href="{{post.link}}">
+					<div class="featured-image" style="background-image: url('{{post.thumbnail}}');"></div>
+				</a>
+				<h4 class="date-category">Sep 11, 2018 <span class="worksans">/</span> Style</h4>
+				<h3>{{post.title}}<br><span class="poppins">{{post.get_field('article_details_subtitle') }}</span></h3>
+				<p>{{post.article_details_standfirst}}</p>
+				<a href="{{post.link}}">
+					<h4 class="link">Read Feature<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
+				</a>
+			</div>
+			
+	
+	{% endfor %}		
 
+
+			<div class="call-to-action tablet-display">
+				<a href="features.html">
+					<button>See All Features</button>
+				</a>
+			</div>
+		</div>
+	</div>
 </section>

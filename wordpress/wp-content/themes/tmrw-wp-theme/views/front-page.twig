@@ -69,5 +69,12 @@
 		}
 	</script>
 
+		<!-- Line Clamp -->
+	<script type="text/javascript" src="js/clamp.min.js"></script>
+	<script type="text/javascript">
+		var featureBody = document.querySelector("#recommended-feature p");
+		$clamp(featureBody, {clamp: 6});
+	</script>
+
 
 {% endblock %}
