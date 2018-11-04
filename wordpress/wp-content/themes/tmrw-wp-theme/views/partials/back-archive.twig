@@ -1,25 +1,26 @@
-<div class="back-archive-container">
-
-
-
- 	
- 	<div class="back-archive-wrapper grid-container">
-
-		<div class="back-archive-title-container">
-			<h2 class="back-archive-title">Back <span>Archive</span> </h2>
-			{% include 'components/button.twig' with { link: 'index.html', text: 'Shop All Volumes' } %}
+<section id="back-archive">
+	<div class="container">
+		<div class="heading">
+			<h2>Back <span class="poppins">Archive</span></h2>
 		</div>
-
-
-		<div class="back-archive-slider-container">
-			{% for issue in issues|slice(0,1) %}
-				{% include 'partials/grid-archive.twig' %}
+		<div class="call-to-action">
+				<button>Shop All Volumes</button>
+		</div>
+		<div class="carousel">
+			<div id="gradient-container">
+				<div id="gradient-left"></div>
+				<div id="gradient-right"></div>
+			</div>
+			<div id="slide-container" class="slide-container">				
+			{% for issue in issues %}
+				<div class="slide">
+					<img class="cover-image" src="{{Image(issue.cover_image).src}}">
+					<h3>Volume N<sup>o</sup> {{issue.volume_number}} <br><span class="poppins">{{issue.title}}</span></h3>
+					<a href="#"><h4>See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-white.png"></h4></a>
+				</div>
+				
 			{% endfor %}
+			</div>
 		</div>
-
 	</div>
-
-
-
-
-</div>	
+</section>
