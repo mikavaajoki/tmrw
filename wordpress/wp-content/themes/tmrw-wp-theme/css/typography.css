@@ -79,9 +79,27 @@ p.small {
 	line-height: 1.2em;
 }
 
+em {
+	font-style: italic;
+}
+
 sup {
 	vertical-align: super;
 	font-size: .6em;
+	text-transform: lowercase;
+}
+
+ul {
+	list-style-position: outside;
+}
+
+li {
+	list-style-type: disc;
+	margin-bottom: 10px;
+}
+
+li:last-of-type {
+	margin-bottom: 20px;
 }
 
 input[type=text] {
@@ -101,3 +119,4 @@ input[type=text] {
 		font-size: 36px !important;
 	}
 }
+

@@ -139,7 +139,7 @@
 }
 
 #magazine #stockists .store_locator_plus input[type=text]::placeholder {
-	opacity: .5;
+	color: white;
 }
 
 #magazine #stockists .store_locator_plus input[type=submit] {

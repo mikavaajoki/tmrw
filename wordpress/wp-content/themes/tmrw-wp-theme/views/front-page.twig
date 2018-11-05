@@ -11,10 +11,15 @@
 
 {% include 'partials/recommended-feature.twig' %}
 
+{% include 'partials/video-module.twig' %}
+
 {% include 'partials/digital-features.twig' %}
 
-
 {% endblock %}
+
+{% block btfad %}
+	{% include 'partials/instagram-module.twig' %}
+{% endblock %}	
 
 
 {% block scripts %}
@@ -74,6 +79,27 @@
 	<script type="text/javascript">
 		var featureBody = document.querySelector("#recommended-feature p");
 		$clamp(featureBody, {clamp: 6});
+	</script>
+
+		<!-- Video Module Loop -->
+	<script type="text/javascript">
+		var video = document.getElementById("video-loop");
+		var videoSource = video.getElementsByTagName('source')[0];
+		var videoSourceSrc = videoSource.src;
+		var mediaFragment = videoSourceSrc.substr(videoSourceSrc.indexOf("#")+1, videoSourceSrc.length);
+		var mediaFragmentBound1 = parseInt(mediaFragment.substr(mediaFragment.indexOf("=")+1, mediaFragment.indexOf(",")));
+		var mediaFragmentBound2 = parseInt(mediaFragment.substr(mediaFragment.indexOf(",")+1, mediaFragment.length));
+
+		video.addEventListener('timeupdate', function() {
+			checkMediaFragmentBounds(video, mediaFragmentBound1, mediaFragmentBound2);
+		});
+
+		function checkMediaFragmentBounds(video, x,y) {
+			if(video.currentTime > y) {
+				video.currentTime = x;
+				video.play();
+			}
+		}
 	</script>
 
 

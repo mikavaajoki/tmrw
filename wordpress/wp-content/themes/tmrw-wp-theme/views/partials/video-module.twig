@@ -1,17 +1,19 @@
+{% if options.video_module %}
+	
 	<section id="video-module">
-		<video id="video-loop" autoplay muted poster="img/behind-the-scenes-kris-wu-poster.jpg">
-			<source src="video/behind-the-scenes-kris-wu.mp4#t=2,8" type="video/mp4">
+		<video id="video-loop" autoplay muted loop poster="{{options.video_poster.url}}">
+			<source src="{{options.video}}#t=2,8" type="video/mp4">
 		</video>
 		<div class="container">
 			<div class="title">
-				<h2>Behind<br class="mobile-hide"> the Scenes<br> &mdash; <span class="poppins">Kris Wu</span></h2>
+				<h2>{{options.video_module.title}} &mdash; <span class="poppins">{{options.video_module.subtitle}}</span></h2>
 			</div>
 			<div class="play">
 				<a href="#video-module-modal"><button></button></a>
 			</div>
 			<div class="info">
 				<p>
-					See exclusive behind the scenes with our volume N<sup>o</sup> 26 coverstar Kris Wu.
+					{{options.video_module.description}}
 				</p>
 			</div>
 		</div>
@@ -23,9 +25,11 @@
 				</button>
 			</a>
 			<div class="modal-container">
-				<video controls poster="img/behind-the-scenes-kris-wu-poster.jpg">
-					<source src="video/behind-the-scenes-kris-wu.mp4" type="video/mp4">
+				<video controls poster="{{options.video_module.video_poster.url}}">
+					<source src="{{options.video_module.video}}" type="video/mp4">
 				</video>
 			</div>
 		</div>
 	</section>	
+
+{% endif %}

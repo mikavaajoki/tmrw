@@ -72,6 +72,11 @@ footer .mailing-list .checkbox-container {
 	margin-bottom: 30px;
 }
 
+footer .mailing-list .text-field {
+	display: flex;
+	align-items: center;
+}
+
 footer .mailing-list .text-field input[type=text] {
 	border: 2px solid white;
 	width: 390px;
@@ -142,6 +147,10 @@ footer .credits .copyright {
 }
 
 @media all and (max-width: 768px) {
+
+	footer .mailing-list .text-field {
+		display: inline;
+	}
 
 	footer .mailing-list .text-field input[type=text] {
 		width: calc(100% - 34px);

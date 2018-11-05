@@ -1,50 +1,50 @@
 <!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="container-nested footer-navbar">
-				<div  class="footer-nav">
-					<h4><a class="nav-link" href="/">Home</a></h4>
-					<h4><a class="nav-link" href="/features">Features</a></h4>
-					<h4><a class="nav-link" href="/magazine">Magazine</a></h4>
-					<h4><a class="nav-link" href="/shop">Shop</a></h4>
-				</div>
-				<div class="footer-logo">
-					<a href="#"><img src="{{theme.link}}/img/tmrw-logo-white.svg"></a>
-				</div>
-				<div class="social-media">
-					<a class="nav-link" href="{{options.social_.facebook}}">
-						<i class="icon-facebook"></i>
-					</a>
-					<a class="nav-link" href="{{options.social_.twitter}}">
-						<i class="icon-twitter"></i>
-					</a>
-					<a class="nav-link" href="{{options.social_.instagram}}">
-						<i class="icon-instagram"></i>
-					</a>
-				</div>
+<footer>
+	<div class="container">
+		<div class="container-nested footer-navbar">
+			<div  class="footer-nav">
+				<h4><a class="nav-link" href="/">Home</a></h4>
+				<h4><a class="nav-link" href="/features">Features</a></h4>
+				<h4><a class="nav-link" href="/magazine">Magazine</a></h4>
+				<h4><a class="nav-link" href="/shop">Shop</a></h4>
 			</div>
-			<div class="mailing-list">
-				<form method="post" action="" onSubmit="return validateForm();">
-					<h3>Subscribe to <br><span class="poppins">Our Mailing List</span></h3>
-					<p>
-						Join tmrw mailing list to receive the latest news and updates.
-					</p>
-					<label class="checkbox-container">I agree to Terms of Service and Privacy Policy
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-					<div class="text-field">
-						<input type="text" id="email" name="email" placeholder="Your email address"><button name="submit" value="Subscribe">Subscribe</button>
-					</div>
-				</form>
+			<div class="footer-logo">
+				<a href="/"><img src="{{theme.link}}/img/tmrw-logo-white.svg"></a>
 			</div>
-			<div class="container-nested credits">
-				<div class="site-credits">
-					<p class="small">Website design & development by <a href="http://studioetcetera.co.uk/">Studio Et Cetera</a>.</p>
-				</div>
-				<div class="copyright">
-					<p class="small">&copy; 2012&mdash;{{ now|date('Y') }} tmrw. All rights reserved.</p>
-				</div>
+			<div class="social-media">
+				<a class="nav-link" href="{{options.social_.facebook}}">
+					<i class="icon-facebook"></i>
+				</a>
+				<a class="nav-link" href="{{options.social_.twitter}}">
+					<i class="icon-twitter"></i>
+				</a>
+				<a class="nav-link" href="{{options.social_.instagram}}">
+					<i class="icon-instagram"></i>
+				</a>
 			</div>
 		</div>
-	</footer>
+		<div class="mailing-list">
+			<form method="post" action="" onSubmit="return validateForm();">
+				<h3>Subscribe to <br><span class="poppins">Our Mailing List</span></h3>
+				<p>
+					Join tmrw mailing list to receive the latest news and updates.
+				</p>
+				<label class="checkbox-container">I agree to Terms of Service and Privacy Policy
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<div class="text-field">
+					<input type="text" id="email" name="email" placeholder="Your email address"><button name="submit" value="Subscribe">Subscribe</button>
+				</div>
+			</form>
+		</div>
+		<div class="container-nested credits">
+			<div class="site-credits">
+				<p class="small">Website design & development by <a href="http://studioetcetera.co.uk/">Studio Et Cetera</a>.</p>
+			</div>
+			<div class="copyright">
+				<p class="small">&copy; 2012&mdash;{{ now|date('Y') }} tmrw. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
