@@ -1,31 +1,112 @@
 {% extends "layout.twig" %}
 
+
 {% block content %}	
 
-<section class="grid-container features-container">
 
-	<div class="select-categories-container">
-		<h2 class="select-categories-title">Select <span>Categories</span> </h2>
-		<form class="select-categories-input-container">
-			<div class="select-categories-input-wrapper">
-					<input class="select-categories-input" type="radio" id="all"
-					name="category" value="all" checked />
-					<span class="select-categories-checkmark"></span>
-					<label class="select-categories-input-label" for="all">All</label>
+	<section id="features">
+		<div class="container">
+			<div class="side-nav-column">
+				<div class="side-nav filters">
+					<h3>Select <span class="poppins">Category</span></h3>
+					
+
+					<label class="radio-container">All
+						<input type="radio" name="gategory" value="all" checked="checked">
+						<span class="checkmark"></span>
+					</label><br class="tablet-hide">
+
+
+
+				{% for category in categories %}
+
+
+					<label class="radio-container">{{category.name}}
+						<input type="radio" name="gategory" value="{{category.name}}">
+						<span class="checkmark"></span>
+					</label><br class="tablet-hide">
+					
+				{% endfor %}
+
+
+				</div>
 			</div>
-		 {% for category in categories %}
-			<div class="select-categories-input-wrapper">
-					<input class="select-categories-input" type="radio" id="{{category.name}}"
-					name="category" value="{{category.name}}"  />
-					<span class="select-categories-checkmark"></span>
-					<label class="select-categories-input-label" for="all">{{category.name}}</label>
-			</div>		 
-		 {% endfor %}
-		</form>
-	</div>	
 
-	{% include 'partials/grid.twig' %}
 
-</section>
+
+			<div class="container-nested features-list">
+				
+				{% for post in posts|slice(0,12) %}
+
+				<div class="feature {{post.category}}" style="display: none;">
+					<a href="f{{post.link}}">
+						<div class="featured-image" style="background-image: url({{post.thumbnail}});"></div>
+					</a>
+					<h4 class="date-category">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
+					<h3>{{post.title}}<br><span class="poppins">{{post.get_field('article_details_subtitle') }}</span></h3>
+					<p>{{post.article_details_standfirst}}</p>
+					<a href="{{post.link}}">
+						<h4 class="link">Read Feature<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
+					</a>
+				</div>
+
+			{% endfor %}
+				
+
+				<div class="call-to-action load-more">
+					<button id="load-more-button" >Load More</button>
+				</div>
+			</div>
+		</div>
+	</section>	
 
 {% endblock %}
+
+
+
+{% block scripts %}
+{{ parent() }}
+
+	<!-- Line Clamp -->
+	<script type="text/javascript" src="{{theme.link}}/js/clamp.min.js"></script>
+	<script type="text/javascript">
+		var featureBody = document.querySelector(".feature-body p");
+		$clamp(featureBody, {clamp: 6});
+	</script>
+
+	<!-- Radio Filters -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('input[type="radio"]').click(function(){
+				var inputValue = $(this).attr("value");
+        		var targetFeature = $("." + inputValue);
+        		$(".feature").not(targetFeature).hide();
+        		$(targetFeature).show();
+        		if ($(this).attr("value")=="all") {
+        			$(".feature").show();
+        		}
+			});
+		});
+	</script>
+
+	<!-- Load More -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".feature").slice(0, 8).show();
+			if ($(".feature:hidden").length != 0) {
+				$("#load-more-button").show();
+			}   
+			$("#load-more-button").on('click', function (e) {
+				e.preventDefault();
+				$(".feature:hidden").slice(0, 8).fadeIn('slow');
+				if ($(".feature:hidden").length == 0) {
+				$("#load-more-button").fadeOut('300');
+				}
+			});
+		});
+	</script>
+
+{% endblock %}
+
+
+
