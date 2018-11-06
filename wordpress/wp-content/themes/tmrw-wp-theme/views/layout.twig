@@ -59,8 +59,10 @@
 {% endblock %}
 
 
-{% block content %}
-{% endblock %}
+ <main id="swup" class="transition-fade">
+		{% block content %}
+		{% endblock %}
+ 	</main>
 
 {% block btfad %}
 {% endblock %}
@@ -78,6 +80,40 @@
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="{{theme.link}}/js/swup.min.js"></script>
+
+	<script type="text/javascript">
+
+		const swup = new Swup();    // only this line when included with script tag
+
+		swup.on('contentReplaced', function () {
+ 
+				console.log('happen');
+
+		if (window.location.pathname === '/features/') {
+							console.log('happen feature');
+
+			$(document).ready(function () {
+				$(".feature").slice(0, 8).show();
+				if ($(".feature:hidden").length != 0) {
+					$("#load-more-button").show();
+				}   
+				$("#load-more-button").on('click', function (e) {
+					e.preventDefault();
+					$(".feature:hidden").slice(0, 8).fadeIn('slow');
+					if ($(".feature:hidden").length == 0) {
+					$("#load-more-button").fadeOut('300');
+					}
+				});
+			});
+		}
+
+
+
+		});
+
+	</script>
 
 			<!-- Mailing List Form Validator-->
 	<script type="text/javascript">
