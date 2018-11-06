@@ -29,6 +29,15 @@ function add_to_context($data){
   $data['categories'] = Timber::get_terms('category', 'show_count=0&title_li=&hide_empty=0&exclude=1');
   $data['options'] = get_fields('options');
 
+
+  $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  $data['current_url'] = $actual_link;
+
+
+  // $current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
+  
+  // $data['page_slug'] = $current_page->post_name;
+
   return $data;
 }
 
