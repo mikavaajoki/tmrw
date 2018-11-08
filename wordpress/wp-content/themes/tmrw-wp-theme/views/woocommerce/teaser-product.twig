@@ -1,22 +1,10 @@
-<div class="grid-item-container">
-
-<div class="grid-item-image-container">
-    <img class="grid-item-image" src="{{ post.thumbnail.src }}" />
-</div>
-
-{##
- # woocommerce_after_shop_loop_item_title hook.
- #
- # @hooked woocommerce_template_loop_price - 10
- #}
-{% do action('woocommerce_after_shop_loop_item_title') %}
-
-
-<div class="grid-item-title-container">
-    <h1 class="grid-item-title">Volume N<sup>o</sup> {{post.issue_number}}</h1>
-    <h1 class="grid-item-subtitle">{{ post.title }}</h1>
-</div>  
-
-
-<a class="grid-item-link" href="{{ post.link }}"> See Inside > </a>
+<div class="product">
+    <a href="product.html">
+        <img class="product-image" src="{{ post.thumbnail.src }}">
+    </a>
+    <h4 class="price">{% do action('woocommerce_after_shop_loop_item_title') %} <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
+    <h3>Volume N<sup>o</sup> {{post.issue_number}}<br><span class="poppins">{{post.title}}</span></h3>
+    <a href="{{post.link}}">
+        <h4 class="link">See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
+    </a>
 </div>

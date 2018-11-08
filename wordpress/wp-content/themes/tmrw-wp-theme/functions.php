@@ -29,6 +29,9 @@ function add_to_context($data){
   $data['categories'] = Timber::get_terms('category', 'show_count=0&title_li=&hide_empty=0&exclude=1');
   $data['options'] = get_fields('options');
 
+  $issueArgs = array('post_type' => 'issue', 'posts_per_page' => 100);   
+  $data['issues'] = Timber::get_posts($issueArgs);
+
 
   $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
   $data['current_url'] = $actual_link;

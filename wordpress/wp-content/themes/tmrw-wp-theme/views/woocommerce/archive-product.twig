@@ -1,32 +1,121 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-<section class="grid-container shop-container">
-    <div class="select-categories-container">
-        <h2 class="select-categories-title">Sort <span>Products By</span> </h2>
-        
-        {#
-         # woocommerce_before_shop_loop hook.
-         #
-         # @hooked woocommerce_catalog_ordering - 30
-         #}
-        {% do action('woocommerce_before_shop_loop') %}
 
 
-        <form class="select-categories-input-container">
-            <div class="select-categories-input-wrapper">
-                    <input class="select-categories-input" type="radio" id="all"
-                    name="category" value="all" checked />
-                    <span class="select-categories-checkmark"></span>
-                    <label class="select-categories-input-label" for="all">All</label>
+<section id="shop">
+    <div class="container">
+        <div class="side-nav-column">
+            <div class="side-nav filters">
+                <h3>Sort <span class="poppins">Products</span></h3>
+                <label class="radio-container">Latest
+                    <input type="radio" name="gategory" value="latest" checked="checked">
+                    <span class="checkmark"></span>
+                </label><br class="tablet-hide">
+                <label class="radio-container">Popularity
+                    <input type="radio" name="gategory" value="popularity">
+                    <span class="checkmark"></span>
+                </label><br class="tablet-hide">
+                <label class="radio-container">Price: Low to High
+                    <input type="radio" name="gategory" value="price-low-to-high">
+                    <span class="checkmark"></span>
+                </label><br class="tablet-hide">
+                <label class="radio-container">Price: High to Low
+                    <input type="radio" name="gategory" value="price-high-to-low">
+                    <span class="checkmark"></span>
+                </label>
             </div>
-        </form>
-    </div>  
+        </div>
 
-    {% include 'partials/shop.twig' %}
 
-</section>
+
+
+        <div class="container-nested product-list">
+
+           
+        <!-- Latest Issue -->
+
+        {% for issue in issues|slice(0,1) %}
+
+
+            <div class="container-nested product latest">
+                <div class="image-column">
+                    <a href="product.html">
+                        <img class="product-image" src="{{Image(issue.cover_image).src}}">
+                    </a>
+                </div>
+                <div class="info-column">
+                    <div class="product-info">
+                        <h4 class="current-volume">Current Volume</h4>
+                        <h3>Volume N<sup>o</sup> {{issue.volume_number}}<br><span class="poppins">{{issue.title}}</span></h3>
+                        <h4 class="price">£9.99 <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
+                        <p>
+                           {{issue.description}}
+                        </p>
+                        <a href="product.html">
+                            <h4 class="link">See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+            <div class="product subscription">
+                <h2>Our Annual <span class="poppins">Subscribtion</span></h2>
+                <h4>UK £68.99 <span class="worksans">/</span> Eu + ROW £89.99 <span class="worksans">/</span> Asia £107.99</h4>
+                <p>Get our annual subscription now to access all printed only features and receive a free tmrw tote bag and a notebook.<sup> 1</sup></p>
+                <a href="{{site.url}}/product/six-month-subscription/">
+                    <button>Subscribe</button>
+                </a>
+                <p class="small"><sup>1 </sup>This offer is valid as long as stock of tote bags and notebooks last.</p>
+            </div>
+
+
+            {% if posts %}
+
+            {##
+             # Depending on your WooCommerce display settings, the `woocommerce_product_subcategories` function
+             # might reset the $wp_query global. By calling `have_posts()`, we check if there are posts we can
+             # display.
+             #}
+            {% for post in posts if fn('have_posts') %}
+
+                {% include 'woocommerce/teaser-product.twig' %}
+
+
+            {% endfor %}
+
+            {% elseif not fn('woocommerce_product_subcategories', [{
+            before: fn('woocommerce_product_loop_start', false),
+            after: fn('woocommerce_product_loop_end', false)
+            }]) %}
+            {##
+            # woocommerce_no_products_found hook.
+            #
+            # @hooked wc_no_products_found - 10
+            #}
+            {% do action('woocommerce_no_products_found') %}
+
+            {% endif %}
+
+
+        </div>
+    </div>
+
+
+
 
 {% endblock %}
+
+
+{% block btfad %}
+    {% include 'partials/instagram-module.twig' %}
+{% endblock %}  
+
+{% block subscription %}
+{% endblock %}
+
 
 

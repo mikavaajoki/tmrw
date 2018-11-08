@@ -1,25 +1,101 @@
-{% if posts %}
-<div class="grid-items">
 
-    {##
-     # Depending on your WooCommerce display settings, the `woocommerce_product_subcategories` function
-     # might reset the $wp_query global. By calling `have_posts()`, we check if there are posts we can
-     # display.
-     #}
-    {% for post in posts if fn('have_posts') %}
-            {% include 'woocommerce/teaser-product.twig' %}
-    {% endfor %}
-</div>
+<section id="shop">
+    <div class="container">
+        <div class="side-nav-column">
+            <div class="side-nav filters">
+                <h3>Sort <span class="poppins">Products</span></h3>
+                <label class="radio-container">Latest
+                    <input type="radio" name="gategory" value="latest" checked="checked">
+                    <span class="checkmark"></span>
+                </label><br class="tablet-hide">
+                <label class="radio-container">Popularity
+                    <input type="radio" name="gategory" value="popularity">
+                    <span class="checkmark"></span>
+                </label><br class="tablet-hide">
+                <label class="radio-container">Price: Low to High
+                    <input type="radio" name="gategory" value="price-low-to-high">
+                    <span class="checkmark"></span>
+                </label><br class="tablet-hide">
+                <label class="radio-container">Price: High to Low
+                    <input type="radio" name="gategory" value="price-high-to-low">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
 
-{% elseif not fn('woocommerce_product_subcategories', [{
-    before: fn('woocommerce_product_loop_start', false),
-    after: fn('woocommerce_product_loop_end', false)
-}]) %}
-    {##
-     # woocommerce_no_products_found hook.
-     #
-     # @hooked wc_no_products_found - 10
-     #}
-    {% do action('woocommerce_no_products_found') %}
 
-{% endif %}
+
+
+        <div class="container-nested product-list">
+
+           
+        <!-- Latest Issue -->
+
+        {% for issue in issues|slice(0,1) %}
+
+
+            <div class="container-nested product latest">
+                <div class="image-column">
+                    <a href="product.html">
+                        <img class="product-image" src="{{Image(issue.cover_image).src}}">
+                    </a>
+                </div>
+                <div class="info-column">
+                    <div class="product-info">
+                        <h4 class="current-volume">Current Volume</h4>
+                        <h3>Volume N<sup>o</sup> {{issue.volume_number}}<br><span class="poppins">{{issue.title}}</span></h3>
+                        <h4 class="price">£9.99 <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
+                        <p>
+                            Inside Volume N<sup>o</sup> 27 we take a look at innovators and all things innovating across music, culture and style. Features an in-depth interview and shoot with Madelaine Petsch, star of Netflix smash Riverdale.
+                        </p>
+                        <a href="product.html">
+                            <h4 class="link">See Inside<img class="chevron" src="img/chevron-right-black.png"></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+            <div class="product subscription">
+                <h2>Our Annual <span class="poppins">Subscribtion</span></h2>
+                <h4>UK £68.99 <span class="worksans">/</span> Eu + ROW £89.99 <span class="worksans">/</span> Asia £107.99</h4>
+                <p>Get our annual subscription now to access all printed only features and receive a free tmrw tote bag and a notebook.<sup> 1</sup></p>
+                <a href="{{site.url}}/product/six-month-subscription/">
+                    <button>Subscribe</button>
+                </a>
+                <p class="small"><sup>1 </sup>This offer is valid as long as stock of tote bags and notebooks last.</p>
+            </div>
+
+
+            {% if posts %}
+
+            {##
+             # Depending on your WooCommerce display settings, the `woocommerce_product_subcategories` function
+             # might reset the $wp_query global. By calling `have_posts()`, we check if there are posts we can
+             # display.
+             #}
+            {% for post in posts if fn('have_posts') %}
+
+                {% include 'woocommerce/teaser-product.twig' %}
+
+
+            {% endfor %}
+
+            {% elseif not fn('woocommerce_product_subcategories', [{
+            before: fn('woocommerce_product_loop_start', false),
+            after: fn('woocommerce_product_loop_end', false)
+            }]) %}
+            {##
+            # woocommerce_no_products_found hook.
+            #
+            # @hooked wc_no_products_found - 10
+            #}
+            {% do action('woocommerce_no_products_found') %}
+
+            {% endif %}
+
+
+        </div>
+    </div>
