@@ -2,46 +2,39 @@
 
 {% block content %}
 
+  <section id="product">
+
+        <div class="container">
+            <div class="container-nested">
+                <div class="image-column">
+                    <img class="product-image" src="{{ post.thumbnail.src }}">
+                </div>
+                <div class="info-column">
+                    <div class="product-info">
 
 
-<section class="grid-container product-container">
-    
-    <div class="product-details-container">
+                        {% if 'subscription' in current_url %}
+                            <h3>Our Annual<br><span class="poppins">Subscription</span></h3>
+                        {% else %}
+                            <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
+                        {% endif %}
+                    
+                        {% 
+                            do action( 'woocommerce_single_product_summary' ) 
+                        %}    
 
-        <div class="product-image-container">
-            {% if post.thumbnail %}
-                <img src="{{ post.thumbnail.src }}">
-            {% endif %}
-        </div>    
-
-        <p class="product-desription-title">Description</p>
-
-        <div class="product-description-container">
-            {%
-                do action( 'product_description' ) 
-            %}
+                    </div>
+                </div>
+            </div>
+            <div class="sub-heading">
+                <h4>Description</h4>
+            </div>
+                <div class="description">
+                {%
+                    do action( 'product_description' ) 
+                %}
+            </div>
         </div>
-
-    </div>  
-
-   
-    <div class="product-purchase-container">
-        <div class="grid-item-title-container">
-        <h1 class="grid-item-title">Volume N<sup>o</sup> {{post.issue_number}}</h1>
-        <h1 class="grid-item-subtitle">{{ post.title }}</h1>
-    </div>  
-
-    {% 
-        do action( 'woocommerce_single_product_summary' ) 
-    %}     
-    </div>  
-
-
-
-</section>
-
-
-
-
+    </section>
 
 {% endblock %}

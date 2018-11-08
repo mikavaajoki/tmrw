@@ -216,6 +216,14 @@ function add_product_desciption() {
  
 }
 
+
+// Single Product
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'custom_single_add_to_cart_text' );
+function custom_single_add_to_cart_text() {
+  return __('Buy Now', 'woocommerce'); // Change this to change the text on the Single Product Add to cart button.
+}
+
+
 // rewrites custom post type name
 global $wp_rewrite;
 $legacy_structure = '/%category%/%postname%';

@@ -27,15 +27,12 @@
 
 .price,
 .product-desription-title {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 800;
-	font-size: 12px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 25px;
-	@media (width > 767px) {
-		margin-bottom: 50px;
-	}
+font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
 }
 
 .price {
@@ -44,7 +41,7 @@ margin-bottom: 20px;
 
 }
 
-.product-container .price::after {
+.product-info .price::after {
 	content:' (Excl. Delivery)';
 }
 
@@ -61,4 +58,9 @@ margin-bottom: 20px;
 		grid-row: 1;
 		grid-column: 10/span 3;
 	}
+}
+
+.in-stock,
+.quantity {
+	display: none;
 }

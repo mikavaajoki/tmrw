@@ -52,6 +52,8 @@ class WooCommerce_Theme {
 
         return $fragments;
     }
+
+    
 }
 
 new WooCommerce_Theme();
