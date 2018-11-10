@@ -188,22 +188,35 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 			<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 		<?php do_action( 'woocommerce_after_cart_table' ); ?>
-</form>
+
+
+				<div class="container-nested row subtotal">
+					<h3 class="heading">
+						Subtotal
+					</h3>
+					<h3 class="price poppins">
+						£<?php echo(WC()->cart->get_subtotal()); ?> 
+					</h3>
+				</div>
+
+
+
+				<div class="container-nested row checkout">
+					<p class="small">
+						Delivery cost presented at checkout, once you have completed your billing details and delivery address.
+					</p>
+					<div class="checkout-button wc-proceed-to-checkout">
+						<a class="wc-forward" href="<?php esc_attr_e(wc_get_checkout_url()); ?>">
+							<button>Checkout</button>
+						</a>
+					</div>
+				</div>
+		</form>
 
 
 
 
 
-<div class="cart-collaterals">
-	<?php
-		/**
-		 * Cart collaterals hook.
-		 *
-		 * @hooked woocommerce_cross_sell_display
-		 * @hooked woocommerce_cart_totals - 10
-		 */
-		do_action( 'woocommerce_cart_collaterals' );
-	?>
-</div>
+
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
