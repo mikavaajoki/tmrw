@@ -340,6 +340,7 @@
 
 #basket-checkout-confirmation .product-list .row.item h3 {
 	grid-column: span 6;
+	align-self: center;
 }
 
 #basket-checkout-confirmation .product-list.recurring-payments .row.item .heading {

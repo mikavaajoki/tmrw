@@ -146,17 +146,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 			<?php do_action( 'woocommerce_cart_contents' ); ?>
 				<div class="container-nested row">
 
@@ -166,10 +155,15 @@ do_action( 'woocommerce_before_cart' ); ?>
 							
 
 
+ <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> 
 
-							<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply code', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply code', 'woocommerce' ); ?></button>
-							<?php do_action( 'woocommerce_cart_coupon' ); ?>
+
+
+ <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply code', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply code', 'woocommerce' ); ?></button>
+<?php do_action( 'woocommerce_cart_coupon' ); ?>
+
 						
+
 
 						</div>
 					<?php } ?>
@@ -195,6 +189,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 		<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
+
+
+
+
 
 <div class="cart-collaterals">
 	<?php
