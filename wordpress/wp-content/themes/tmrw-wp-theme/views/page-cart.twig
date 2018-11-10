@@ -41,3 +41,15 @@
 
 
 {% endblock %}
+
+
+
+{% block scripts %}
+	<script type="text/javascript" src="{{theme.link}}/js/woo-quantity.js"></script>
+	{{ parent() }}
+		<script type="text/javascript">
+			$(document).ready(function() {$('button[name="update_cart"]').removeAttr( 'disabled' );});
+		</script>
+
+
+{% endblock %}

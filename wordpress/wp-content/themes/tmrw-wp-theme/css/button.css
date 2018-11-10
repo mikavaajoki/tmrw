@@ -33,3 +33,9 @@
     background-color: black!important;
     color: white!important;
   }
+
+
+.woocommerce a.remove:hover {
+    color: #fff!important;
+     background: transparent!important; 
+}
