@@ -1,0 +1,633 @@
+/* Allow css grid to still work despite extra div see [https://github.com/woocommerce/woocommerce/issues/12191] */
+
+.woocommerce {
+  display: contents;
+}
+
+
+/* Basket/Checkout/Confirmation */
+
+#basket-checkout-confirmation {
+	margin: 145px 0 40px 0;
+}
+
+#basket-checkout-confirmation .breadcrumb {
+	grid-column: 3 / span 8;
+}
+
+#basket-checkout-confirmation .breadcrumb h4 {
+	height: 15px;
+	margin-bottom: 50px;
+	line-height: 2em;
+}
+
+#basket-checkout-confirmation .breadcrumb h4 .chevron {
+	width: 10px;
+	height: auto;
+	vertical-align: middle;
+	padding: 0 15px 3px 13px;
+	margin-bottom: 0;
+}
+
+#basket-checkout-confirmation .section-heading h4 {
+	margin-bottom: 15px;
+}
+
+#basket-checkout-confirmation .product-list,
+#basket-checkout-confirmation .billing-details, 
+#basket-checkout-confirmation .delivery-check,
+#basket-checkout-confirmation .delivery-details,
+#basket-checkout-confirmation .recurring-payments,
+#basket-checkout-confirmation .payment-method, 
+#basket-checkout-confirmation .complete-order-button,
+#basket-checkout-confirmation .order-confirmation {
+	grid-column: 3 / span 8;
+	margin-bottom: 60px;
+}
+
+#basket-checkout-confirmation .product-list .row {
+	border-top: 1px solid black;
+	padding: 20px 0;
+}
+
+#basket-checkout-confirmation .product-list .row.item h3 {
+	grid-column: span 6;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#basket-checkout-confirmation .product-list.basket .row.item .quantity {
+	grid-column: span 3;
+}
+
+#basket-checkout-confirmation .product-list.order-summary .row.item .quantity {
+	grid-column: span 2;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity .screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity input {
+    margin: 0;
+	padding: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+	border: 2px solid black;
+	border-radius: 0;
+	text-align: center;
+	color: black;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity .quantity-button {	
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+	font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4em;
+	letter-spacing: 0px;
+	text-transform: lowercase;
+	transition: all .3s;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity .quantity-button:hover {
+	background-color: black;
+	color: white;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity .quantity-button.minus {
+	border-right: none;
+}
+
+#basket-checkout-confirmation .product-list .item .quantity .quantity-button.plus {
+    border-left: none;
+}
+
+#basket-checkout-confirmation .product-list .row.item .quantity .input-text {
+    z-index: 2;
+	width: calc(100% - 100px);
+	min-width: 46px;
+	height: 46px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1em;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+#basket-checkout-confirmation .product-list .row.item .price {
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#basket-checkout-confirmation .product-list.basket .row.item .price {
+	grid-column: span 2;
+}
+
+#basket-checkout-confirmation .product-list.order-summary .row.item .price {
+	grid-column: span 4;
+	justify-content: flex-end;
+	text-align: right;
+}
+
+#basket-checkout-confirmation .product-list .row.item .remove {
+	grid-column: span 1;
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#basket-checkout-confirmation .product-list .row.item .remove img {
+	width: 15px;
+	height: auto;
+}
+
+#basket-checkout-confirmation .product-list .row .coupon-code {
+	grid-column: span 8;
+	display: flex;
+	align-items: center;
+}
+
+#basket-checkout-confirmation .product-list .row .coupon-code input[type="text"] {
+	margin: 0 15px 0 0;
+}
+
+#basket-checkout-confirmation .product-list .row .coupon-code button {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#basket-checkout-confirmation .product-list .row .update-basket-button {
+	grid-column: span 4;
+	text-align: right;
+}
+
+#basket-checkout-confirmation .product-list .row .update-basket-button button {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#basket-checkout-confirmation .product-list .row.subtotal .heading,
+#basket-checkout-confirmation .product-list .row.delivery .heading,
+#basket-checkout-confirmation .product-list .row.total .heading {
+	grid-column: span 8;
+}
+
+#basket-checkout-confirmation .product-list .row.subtotal .price,
+#basket-checkout-confirmation .product-list .row.delivery .price,
+#basket-checkout-confirmation .product-list .row.total .price {
+	grid-column: span 4;
+	text-align: right;
+}
+
+#basket-checkout-confirmation .product-list .row.checkout {
+	border-top: 0;
+	padding: 0;
+}
+
+#basket-checkout-confirmation .product-list .row.checkout p {
+	grid-column: span 6;
+}
+
+#basket-checkout-confirmation .product-list .row.checkout .checkout-button {
+	grid-column: span 6;
+	text-align: right;
+}
+
+#basket-checkout-confirmation .product-list .row.checkout .checkout-button button {
+	margin: 0;
+}
+
+#basket-checkout-confirmation .billing-details .section-heading h4, 
+#basket-checkout-confirmation .delivery-details .section-heading h4 {
+	padding-bottom: 15px; 
+	border-bottom: 1px solid black;
+	margin-bottom: 25px;
+}
+
+#basket-checkout-confirmation .billing-details .form-field,
+#basket-checkout-confirmation .delivery-details .form-field {
+	grid-column: span 6;
+	position: relative;
+}
+
+#basket-checkout-confirmation .billing-details .form-field.street-address,
+#basket-checkout-confirmation .delivery-details .form-field.street-address {
+	grid-column: 1 / span 6;
+}
+
+#basket-checkout-confirmation .form-field label {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1em;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+#basket-checkout-confirmation .form-field input[type=text],
+#basket-checkout-confirmation .form-field input[type=number] {
+	margin-top: 12px;
+	width: calc(100% - 34px);
+	margin-bottom: 25px;
+}
+
+/* Hide original select element */
+#basket-checkout-confirmation .form-field select {
+	display: none;
+}
+
+#basket-checkout-confirmation .form-field .select-selected {
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+/* Style the arrow inside the select element */
+#basket-checkout-confirmation .form-field .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 55px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active) */
+#basket-checkout-confirmation .form-field .select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 48px;
+}
+
+/* Style the selected item */
+#basket-checkout-confirmation .form-field .select-selected {
+	margin-top: 12px;
+	height: 46px;
+	color: black;
+	padding: 0 36px 0 15px;
+	line-height: 48px;
+	border: 2px solid black;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Style items (options) list */
+#basket-checkout-confirmation .form-field .select-items {
+	position: absolute;
+	background-color: white;
+	border: 2px solid black;
+	top: 79px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	height: 206px;
+	overflow: scroll;
+}
+
+/* Style the items (options) */
+#basket-checkout-confirmation .form-field .select-items div {
+	display: flex;
+    align-items: center;
+    min-height: 50px;
+ 	color: black;
+ 	padding: 0 15px;
+ 	border: 1px solid;
+	border-color: transparent transparent black transparent;
+	cursor: pointer;
+}
+
+/* Hide the items when the select box is closed */
+#basket-checkout-confirmation  .form-field .select-hide {
+	display: none;
+}
+
+#basket-checkout-confirmation .form-field .select-items div:hover, .same-as-selected {
+	background-color: rgba(0,0,0,.1);
+}
+
+#basket-checkout-confirmation .delivery-check .checkbox-container .checkmark {
+	border: 2px solid black;
+}
+
+#basket-checkout-confirmation .delivery-check .checkbox-container .checkmark:after {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+}
+
+#basket-checkout-confirmation .recurring-payments .section-heading h4 {
+	margin-bottom: 15px; 
+}
+
+#basket-checkout-confirmation .product-list .row.item h3 {
+	grid-column: span 6;
+}
+
+#basket-checkout-confirmation .product-list.recurring-payments .row.item .heading {
+	grid-column: span 10;
+}
+
+#basket-checkout-confirmation .product-list.recurring-payments .row.item .price {
+	grid-column: span 2;
+	min-height: 0;
+	justify-content: flex-end;
+	text-align: right;
+}
+
+#basket-checkout-confirmation .payment-method .section-heading h4 {
+	padding-bottom: 15px; 
+	border-bottom: 1px solid black;
+	margin-bottom: 0;
+}
+
+#basket-checkout-confirmation .payment-method .container-nested {
+	padding: 20px 0 0 0;
+}
+
+#basket-checkout-confirmation .payment-method .container-nested .radio-container {
+	grid-column: span 12;
+}
+
+#basket-checkout-confirmation .payment-method .container-nested .radio-container img {
+	height: 25px;
+	width: auto;
+	float: right;
+	margin-left: 5px;
+}
+
+#basket-checkout-confirmation .payment-method .form-field.card-number {
+	grid-column: span 6;
+}
+
+/* Style the arrow inside the select element */
+#basket-checkout-confirmation .form-field .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 55px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+#basket-checkout-confirmation .payment-method .form-field.card-number i {
+	display: none;
+	position: relative;
+    background: no-repeat url(../img/credit-card.svg);
+    width: 40px;
+    height: 25px;
+    float: right;
+    margin-right: -23px;
+    margin-top: -53px;
+    z-index: 2;
+}
+
+#basket-checkout-confirmation .payment-method .form-field.expiry-date,
+#basket-checkout-confirmation .payment-method .form-field.card-code {
+	grid-column: span 3;
+}
+
+#basket-checkout-confirmation .payment-method label {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+#basket-checkout-confirmation .payment-method input[type=text] {
+	margin-bottom: 10px;
+}
+
+#basket-checkout-confirmation .complete-order-button button {
+	margin: 0;
+	float: right;
+}
+
+#basket-checkout-confirmation .order-confirmation {
+	text-align: center;
+}
+
+#basket-checkout-confirmation .order-confirmation h1 {
+	grid-column: 3 / span 8;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+#basket-checkout-confirmation .order-confirmation h3 {
+	grid-column: span 12;
+	margin-bottom: 50px;
+}
+
+#basket-checkout-confirmation .order-confirmation p {
+	grid-column: 3 / span 8;
+	margin-bottom: 40px;
+}
+
+@media all and (max-width: 1199px) {
+
+	#basket-checkout-confirmation {
+		margin: 225px 0 40px 0;
+	}
+
+	#basket-checkout-confirmation .breadcrumb {
+		grid-column: 2 / span 10;
+	}
+
+	#basket-checkout-confirmation .product-list,
+	#basket-checkout-confirmation .billing-details, 
+	#basket-checkout-confirmation .delivery-check,
+	#basket-checkout-confirmation .delivery-details,
+	#basket-checkout-confirmation .recurring-payments,
+	#basket-checkout-confirmation .payment-method, 
+	#basket-checkout-confirmation .complete-order-button,
+	#basket-checkout-confirmation .order-confirmation  {
+		grid-column: 2 / span 10;
+	}
+}
+
+@media all and (max-width: 991px) {
+
+	#basket-checkout-confirmation .breadcrumb {
+		grid-column: span 12;
+		text-align: center;
+	}
+
+	#basket-checkout-confirmation .product-list,
+	#basket-checkout-confirmation .billing-details, 
+	#basket-checkout-confirmation .delivery-check,
+	#basket-checkout-confirmation .delivery-details,
+	#basket-checkout-confirmation .recurring-payments,
+	#basket-checkout-confirmation .payment-method, 
+	#basket-checkout-confirmation .complete-order-button,
+	#basket-checkout-confirmation .order-confirmation  {
+		grid-column: span 12;
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	#basket-checkout-confirmation {
+		margin: 278px 0 40px 0;
+	}
+
+	#basket-checkout-confirmation .billing-details .form-field,
+	#basket-checkout-confirmation .delivery-details .form-field  {
+		grid-column: span 12;
+	}
+
+	#basket-checkout-confirmation .billing-details .form-field.street-address,
+	#basket-checkout-confirmation .delivery-details .form-field.street-address {
+		grid-column: span 12;
+	}
+
+	#basket-checkout-confirmation .payment-method .radio-container,
+	#basket-checkout-confirmation .payment-method input[type=text] {
+		margin-bottom: 25px;
+	}
+
+	#basket-checkout-confirmation .payment-method .form-field.card-number {
+		grid-column: span 12;
+	}
+
+	#basket-checkout-confirmation .payment-method .form-field.expiry-date,
+	#basket-checkout-confirmation .payment-method .form-field.card-code {
+		grid-column: span 6;
+	}
+
+	#basket-checkout-confirmation .order-confirmation h1,
+	#basket-checkout-confirmation .order-confirmation p {
+		grid-column: 2 / span 10;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#basket-checkout-confirmation {
+		margin: 95px 0 0 0;
+	}
+
+	#basket-checkout-confirmation .container,
+	#basket-checkout-confirmation .container-nested {
+		grid-column-gap: 0;
+	}
+
+	#basket-checkout-confirmation .product-list .row.item h3 {
+		grid-column: span 12;
+		margin-bottom: 20px;
+	}
+
+	#basket-checkout-confirmation .product-list.basket .row.item .quantity {
+		grid-column: span 6;
+	}
+
+	#basket-checkout-confirmation .product-list.order-summary .row.item .quantity {
+		grid-column: span 2;
+	}
+
+	#basket-checkout-confirmation .product-list.basket .row.item .price {
+		grid-column: span 4;
+	}
+
+	#basket-checkout-confirmation .product-list.order-summary .row.item .price {
+		grid-column: span 10;
+	}
+
+	#basket-checkout-confirmation .product-list .row.item .remove {
+		grid-column: span 2;
+	}
+
+	#basket-checkout-confirmation .product-list .row .coupon-code {
+		grid-column: span 12;
+		display: inline;
+	}
+
+	#basket-checkout-confirmation .product-list .row .coupon-code input[type="text"] {
+		width: calc(100% - 34px);
+		margin-bottom: 20px;
+	}
+
+	#basket-checkout-confirmation .product-list .row .coupon-code button {
+		margin-bottom: 20px;
+	}
+
+	#basket-checkout-confirmation .product-list .row .update-basket-button {
+		grid-column: span 12;
+		text-align: left;
+	}
+
+	#basket-checkout-confirmation .product-list .row .update-basket-button button {
+		width: 100%;
+	}
+
+	#basket-checkout-confirmation .product-list .row.checkout p {
+		grid-column: span 12;
+		margin-bottom: 20px;
+	}
+
+	#basket-checkout-confirmation .product-list .row.checkout .checkout-button {
+		grid-column: span 12;
+		text-align: left;
+	}
+
+	#basket-checkout-confirmation .product-list .row.checkout .checkout-button button {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	#basket-checkout-confirmation .payment-method .form-field.card-number,
+	#basket-checkout-confirmation .payment-method .form-field.expiry-date,
+	#basket-checkout-confirmation .payment-method .form-field.card-code {
+		grid-column: span 12;
+	}
+
+	#basket-checkout-confirmation .payment-method .container-nested .radio-container img {
+		height: 18px;
+		width: auto;
+		margin-left: 3px;
+		margin-top: 4px;
+	}
+
+	#basket-checkout-confirmation .complete-order-button button {
+		width: 100%;
+	}
+
+	#basket-checkout-confirmation .order-confirmation h1,
+	#basket-checkout-confirmation .order-confirmation p {
+		grid-column: span 12;
+	}
+
+	#basket-checkout-confirmation .order-confirmation h1 {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	#basket-checkout-confirmation .order-confirmation h3 {
+		margin-bottom: 30px;
+	}
+
+	#basket-checkout-confirmation .order-confirmation p {
+		margin-bottom: 0px;
+	}
+}
+

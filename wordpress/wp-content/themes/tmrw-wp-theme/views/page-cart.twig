@@ -5,15 +5,37 @@
 
 
 
-<section class="grid-container cart-container">
+
+<section id="basket-checkout-confirmation">
+	
+	<div class="container">
+
+		<div class="breadcrumb">
+			<h4>
+				<a href="shop.html">Shop</a>
+				<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"/>
+				<a href="basket.html">Basket</a>
+			</h4>
+		</div>
+
+
+
+			
+
+
 
 
     {% filter shortcodes %}
         [woocommerce_cart]
     {% endfilter %}
 
-</section>
 
+
+
+		
+		</div>
+	
+	</section>
 
 
 
