@@ -4,6 +4,11 @@
 	display: none;
 }
 
+
+.payment_box {
+	grid-column: span 12;
+}
+
 .wc-forward:hover {
 	color: white;
 }
@@ -94,26 +99,55 @@ button:hover {
 	color: white;
 }
 
+,
 input[type=text],
 input[type=email],
 input[type=tel]
 {
-	font-family: Work Sans,sans-serif;
-  font-size: 16px;
-	background: transparent;
-	outline: none;
-	border: 2px solid black;
-	border-radius: 0;
-	height: 46px;
-	padding: 0 15px;
+	font-family: Work Sans,sans-serif!important;
+  font-size: 16px!important;
+	background: transparent!important;
+	outline: none!important;
+	border: 2px solid black!important;
+	border-radius: 0!important;
+	height: 46px!important;
+	padding: 0 15px!important;
 }
 
+.wc-stripe-elements-field {
+		font-family: Work Sans,sans-serif!important;
+  font-size: 16px!important;
+	background: transparent!important;
+	outline: none!important;
+	border: 2px solid black!important;
+	border-radius: 0!important;
+	padding: 15px!important;
+}
+
+.wc-stripe-elements-field::placeholder,
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 input[type=tel]::placeholder 
 {
 	color: black;
 	opacity: .25;
+}
+
+#stripe-card-element {
+	grid-column: span 6;
+
+}
+
+/* Target the Expiry Date */
+#stripe-exp-element {
+	grid-column: span 3;
+
+}
+
+/* Target the CVC Code */
+#stripe-cvc-element {
+	grid-column: span 3;
+
 }
 
 
