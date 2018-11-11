@@ -287,8 +287,25 @@ function reorder_woo_fields($fields) {
     'clear' => true
     );
 
-$checkout_fields = array_merge( $fields, $fields2 );
-return $checkout_fields;
+    $fields2['shipping']['shipping_address_2'] = array(
+    'label' => __('APARTMENT / SUITE / ETC. ', 'woocommerce'),
+    'required' => false,
+    'priority' => 40,
+    'class' => array('form-field'),
+    'clear' => true
+    );
+
+
+    $fields2['shipping']['shipping_country'] = array(
+    'label' => __('COUNTRY', 'woocommerce'),
+    'required' => false,
+    'priority' => 80,
+    'class' => array('form-field custom-select'),
+    'clear' => true
+    );
+
+    $checkout_fields = array_merge( $fields, $fields2 );
+    return $checkout_fields;
 }
 
 
