@@ -243,7 +243,9 @@
 }
 
 #basket-checkout-confirmation .form-field input[type=text],
-#basket-checkout-confirmation .form-field input[type=number] {
+#basket-checkout-confirmation .form-field input[type=number],
+#basket-checkout-confirmation .form-field input[type=email],
+#basket-checkout-confirmation .form-field input[type=tel] {
 	margin-top: 12px;
 	width: calc(100% - 34px);
 	margin-bottom: 25px;

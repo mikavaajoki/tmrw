@@ -223,6 +223,60 @@ function custom_single_add_to_cart_text() {
   return __('Buy Now', 'woocommerce'); // Change this to change the text on the Single Product Add to cart button.
 }
 
+// Add class to checkout fields
+add_filter('woocommerce_checkout_fields', 'addBootstrapToCheckoutFields' );
+function addBootstrapToCheckoutFields($fields) {
+    foreach ($fields as &$fieldset) {
+        foreach ($fieldset as &$field) {
+            // if you want to add the form-group class around the label and the input
+            $field['class'][] = 'form-field'; 
+
+        }
+    }
+    return $fields;
+}
+
+// Reorder Checkout Fields
+add_filter('woocommerce_checkout_fields','reorder_woo_fields');
+
+function reorder_woo_fields($fields) {
+$fields2['billing']['billing_first_name'] = $fields['billing']['billing_first_name'];
+$fields2['billing']['billing_last_name'] = $fields['billing']['billing_last_name'];
+$fields2['billing']['billing_company'] = $fields['billing']['billing_company'];
+$fields2['billing']['billing_address_1'] = $fields['billing']['billing_address_1'];
+$fields2['billing']['billing_address_2'] = $fields['billing']['billing_address_2'];
+$fields2['billing']['billing_city'] = $fields['billing']['billing_city'];
+$fields2['billing']['billing_state'] = $fields['billing']['billing_state'];
+$fields2['billing']['billing_postcode'] = $fields['billing']['billing_postcode'];
+$fields2['billing']['billing_country'] = $fields['billing']['billing_country'];
+$fields2['billing']['billing_email'] = $fields['billing']['billing_email'];
+$fields2['billing']['billing_phone'] = $fields['billing']['billing_phone'];
+
+// Adding custom classes
+$fields2['billing']['billing_address_1'] = array(
+'label' => __('STREET ADDRESS', 'woocommerce'),
+'required' => false,
+'class' => array('form-field street-address'),
+'clear' => true
+);
+
+$fields2['billing']['billing_address_2'] = array(
+'label' => __('APARTMENT / SUITE / ETC. ', 'woocommerce'),
+'required' => false,
+'class' => array('form-field'),
+'clear' => true
+);
+
+$fields2['billing']['billing_country'] = array(
+'label' => __('COUNTRY', 'woocommerce'),
+'required' => false,
+'class' => array('form-field custom-select'),
+'clear' => true
+);
+
+return $fields2;
+}
+
 
 // rewrites custom post type name
 global $wp_rewrite;
