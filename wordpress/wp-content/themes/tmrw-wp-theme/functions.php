@@ -269,6 +269,7 @@ $fields2['billing']['billing_address_2'] = array(
 
 $fields2['billing']['billing_country'] = array(
 'label' => __('COUNTRY', 'woocommerce'),
+'type' => 'country',
 'required' => false,
 'class' => array('form-field custom-select'),
 'clear' => true
