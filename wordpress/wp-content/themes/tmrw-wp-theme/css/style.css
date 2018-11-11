@@ -1,5 +1,5 @@
 /* WooCommerce */
-
+.woocommerce-error,
 .woocommerce-message {
 	display: none;
 }
