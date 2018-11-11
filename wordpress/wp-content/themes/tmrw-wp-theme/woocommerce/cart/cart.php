@@ -207,7 +207,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					</p>
 					<div class="checkout-button wc-proceed-to-checkout">
 						<a class="wc-forward" href="<?php esc_attr_e(wc_get_checkout_url()); ?>">
-							<button>Checkout</button>
+							<button formaction="<?php esc_attr_e(wc_get_checkout_url()); ?>">Checkout</button>
 						</a>
 					</div>
 				</div>

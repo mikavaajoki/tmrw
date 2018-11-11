@@ -1,3 +1,13 @@
+/* WooCommerce */
+
+.woocommerce-message {
+	display: none;
+}
+
+.wc-forward:hover {
+	color: white;
+}
+
 /* General */
 
 html, body {
