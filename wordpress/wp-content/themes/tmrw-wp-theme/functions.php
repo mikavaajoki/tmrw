@@ -238,44 +238,57 @@ function addBootstrapToCheckoutFields($fields) {
 
 // Reorder Checkout Fields
 add_filter('woocommerce_checkout_fields','reorder_woo_fields');
-
+ 
 function reorder_woo_fields($fields) {
-$fields['billing']['billing_first_name']['priority'] = 5;
-$fields['billing']['billing_last_name']['priority'] = 10;
-$fields['billing']['billing_company']['priority'] = 20;
-$fields['billing']['billing_address_1']['priority'] = 30;
-$fields['billing']['billing_address_2']['priority'] = 40;
-$fields['billing']['billing_city']['priority'] = 50;
-$fields['billing']['billing_state']['priority'] = 60;
-$fields['billing']['billing_postcode']['priority'] = 70;
-$fields['billing']['billing_country']['priority'] = 80;
-$fields['billing']['billing_email']['priority'] = 90;
-$fields['billing']['billing_phone']['priority'] = 100;
+    $fields2['billing']['billing_first_name'] = $fields['billing']['billing_first_name'];
+    $fields2['billing']['billing_last_name'] = $fields['billing']['billing_last_name'];
+    $fields2['billing']['billing_company'] = $fields['billing']['billing_company'];
+    $fields2['billing']['billing_address_1'] = $fields['billing']['billing_address_1'];
+    $fields2['billing']['billing_address_2'] = $fields['billing']['billing_address_2'];
+    $fields2['billing']['billing_city'] = $fields['billing']['billing_city'];
+    $fields2['billing']['billing_state'] = $fields['billing']['billing_state'];
+    $fields2['billing']['billing_postcode'] = $fields['billing']['billing_postcode'];
+    $fields2['billing']['billing_country'] = $fields['billing']['billing_country'];
+    $fields2['billing']['billing_email'] = $fields['billing']['billing_email'];
+    $fields2['billing']['billing_phone'] = $fields['billing']['billing_phone'];
 
-// Adding custom classes
-$fields['billing']['billing_address_1'] = array(
-'label' => __('STREET ADDRESS', 'woocommerce'),
-'required' => false,
-'class' => array('form-field street-address'),
-'clear' => true
-);
+    $fields2['shipping']['shipping_first_name'] = $fields['shipping']['shipping_first_name'];
+    $fields2['shipping']['shipping_last_name'] = $fields['shipping']['shipping_last_name'];
+    $fields2['shipping']['shipping_country'] = $fields['shipping']['shipping_country'];
+    $fields2['shipping']['shipping_address_1'] = $fields['shipping']['shipping_address_1'];
+    $fields2['shipping']['shipping_address_2'] = $fields['shipping']['shipping_address_2'];
+    $fields2['shipping']['shipping_city'] = $fields['shipping']['shipping_city'];
+    $fields2['shipping']['shipping_postcode'] = $fields['shipping']['shipping_postcode'];
+    $fields2['shipping']['shipping_state'] = $fields['shipping']['shipping_state'];
 
-$fields['billing']['billing_address_2'] = array(
-'label' => __('APARTMENT / SUITE / ETC. ', 'woocommerce'),
-'required' => false,
-'class' => array('form-field'),
-'clear' => true
-);
+ 
+    // Adding custom classes
+    $fields2['billing']['billing_address_1'] = array(
+    'label' => __('STREET ADDRESS', 'woocommerce'),
+    'required' => false,
+    'priority' => 30,
+    'class' => array('form-field street-address'),
+    'clear' => true
+    );
 
-$fields['billing']['billing_country'] = array(
-'label' => __('COUNTRY', 'woocommerce'),
-'type' => 'country',
-'required' => false,
-'class' => array('form-field custom-select'),
-'clear' => true
-);
+    $fields2['billing']['billing_address_2'] = array(
+    'label' => __('APARTMENT / SUITE / ETC. ', 'woocommerce'),
+    'required' => false,
+    'priority' => 40,
+    'class' => array('form-field'),
+    'clear' => true
+    );
 
-return $fields;
+    $fields2['billing']['billing_country'] = array(
+    'label' => __('COUNTRY', 'woocommerce'),
+    'required' => false,
+    'priority' => 80,
+    'class' => array('form-field custom-select'),
+    'clear' => true
+    );
+
+$checkout_fields = array_merge( $fields, $fields2 );
+return $checkout_fields;
 }
 
 
