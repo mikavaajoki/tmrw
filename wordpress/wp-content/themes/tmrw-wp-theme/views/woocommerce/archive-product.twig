@@ -40,7 +40,7 @@
 
             <div class="container-nested product latest">
                 <div class="image-column">
-                    <a href="product.html">
+                    <a href="{{issue.link}}">
                         <img class="product-image" src="{{Image(issue.cover_image).src}}">
                     </a>
                 </div>
@@ -52,7 +52,7 @@
                         <p>
                            {{issue.description}}
                         </p>
-                        <a href="product.html">
+                        <a href="{{issue.link}}">
                             <h4 class="link">See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
                         </a>
                     </div>
@@ -111,6 +111,7 @@
 
 
 {% block btfad %}
+    {% include 'partials/store-locator-front.twig' %}
     {% include 'partials/instagram-module.twig' %}
 {% endblock %}  
 

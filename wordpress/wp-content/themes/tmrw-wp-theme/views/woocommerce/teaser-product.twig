@@ -1,5 +1,5 @@
 <div class="product">
-    <a href="product.html">
+    <a href="{{post.link}}">
         <img class="product-image" src="{{ post.thumbnail.src }}">
     </a>
     <h4 class="price">{% do action('woocommerce_after_shop_loop_item_title') %} <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
