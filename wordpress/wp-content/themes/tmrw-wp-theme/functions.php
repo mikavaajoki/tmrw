@@ -279,6 +279,8 @@ function reorder_woo_fields($fields) {
     'clear' => true
     );
 
+    
+
     $fields2['billing']['billing_country'] = array(
     'label' => __('COUNTRY', 'woocommerce'),
     'required' => false,

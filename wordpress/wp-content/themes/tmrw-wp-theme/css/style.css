@@ -1,9 +1,22 @@
 /* WooCommerce */
 .woocommerce-error,
 .woocommerce-message {
-	display: none;
+	display: block;
+	border-top: 2px solid black!important;
+	color: black!important;
+	background-color: transparent!important;
+	font-family: Poppins,sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 1em;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
 }
 
+.woocommerce-NoticeGroup {
+	background-color: white;
+	grid-column: 3/span 8;
+}
 
 .payment_box {
 	grid-column: span 12;

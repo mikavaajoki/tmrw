@@ -19,69 +19,97 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+$order_items = $order->get_items( apply_filters( 'woocommerce_purchase_order_item_types', 'line_item' ) );
+
 ?>
 
-<div class="woocommerce-order">
 
-	<?php if ( $order ) : ?>
 
-		<?php if ( $order->has_status( 'failed' ) ) : ?>
+<div class="container-nested order-confirmation">
+	<h1>
+		Thanks for <span class="poppins">Your Order</span>
+	</h1>
+	
+	<h3>
+		Order N<sup>o</sup> <?php echo $order->get_order_number(); ?>
+	</h3>
 
-			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
-
-			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed-actions">
-				<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php _e( 'Pay', 'woocommerce' ) ?></a>
-				<?php if ( is_user_logged_in() ) : ?>
-					<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php _e( 'My account', 'woocommerce' ); ?></a>
-				<?php endif; ?>
-			</p>
-
-		<?php else : ?>
-
-			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
-
-			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
-
-				<li class="woocommerce-order-overview__order order">
-					<?php _e( 'Order number:', 'woocommerce' ); ?>
-					<strong><?php echo $order->get_order_number(); ?></strong>
-				</li>
-
-				<li class="woocommerce-order-overview__date date">
-					<?php _e( 'Date:', 'woocommerce' ); ?>
-					<strong><?php echo wc_format_datetime( $order->get_date_created() ); ?></strong>
-				</li>
-
-				<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
-					<li class="woocommerce-order-overview__email email">
-						<?php _e( 'Email:', 'woocommerce' ); ?>
-						<strong><?php echo $order->get_billing_email(); ?></strong>
-					</li>
-				<?php endif; ?>
-
-				<li class="woocommerce-order-overview__total total">
-					<?php _e( 'Total:', 'woocommerce' ); ?>
-					<strong><?php echo $order->get_formatted_order_total(); ?></strong>
-				</li>
-
-				<?php if ( $order->get_payment_method_title() ) : ?>
-					<li class="woocommerce-order-overview__payment-method method">
-						<?php _e( 'Payment method:', 'woocommerce' ); ?>
-						<strong><?php echo wp_kses_post( $order->get_payment_method_title() ); ?></strong>
-					</li>
-				<?php endif; ?>
-
-			</ul>
-
-		<?php endif; ?>
-
-		<?php do_action( 'woocommerce_thankyou_' . $order->get_payment_method(), $order->get_id() ); ?>
-		<?php do_action( 'woocommerce_thankyou', $order->get_id() ); ?>
-
-	<?php else : ?>
-
-		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
-
+<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
+	<p>
+		Your order has been succesfully received. You will receive an email confirmation shortly at <?php echo $order->get_billing_email(); ?>.
+	</p>
+	
 	<?php endif; ?>
+</div>
+
+
+<div class="product-list order-summary">
+	<div class="section-heading">
+		<h4>Order Summary</h4>
+	</div>
+
+
+	
+
+		<?php
+
+
+
+		foreach ( $order_items as $item_id => $item ) {
+
+								$product = $item->get_product();
+
+
+			 {
+					?>
+					<div class="container-nested row item">
+
+						<h3>
+							<span class="poppins">	<?php echo ($product->get_name()) ?></span>
+						</h3>
+
+						<div class="quantity">
+							<h4>	<?php echo ($item->get_quantity()) ?></h4>
+						</div>
+							
+						<div class="price">
+							<h4>£<?php echo ($product->get_price()) ?></h4>
+						</div>
+
+					</div>
+
+					<?php
+				}
+			}
+		?>
+
+
+
+		<div class="container-nested row subtotal">
+			<h4 class="heading">Subtotal</h4>
+			<h4 class="price"><?php echo $order->get_subtotal(); ?></h4>
+		</div>
+
+
+		<div class="container-nested row delivery">
+			<h4 class="heading">
+				Delivery
+			</h4>
+			<h4 class="price">
+
+				<?php echo $order->get_total_shipping(); ?>
+
+
+			</h4>
+		</div>
+
+		<div class="container-nested row total">
+			<h3 class="heading">
+				Total
+			</h3>
+			<h3 class="price poppins">
+				<?php echo $order->get_formatted_order_total(); ?>
+			</h3>
+		</div>
 
 </div>
