@@ -112,7 +112,7 @@ button:hover {
 	color: white;
 }
 
-,
+
 input[type=text],
 input[type=email],
 input[type=tel]
@@ -121,7 +121,7 @@ input[type=tel]
   font-size: 16px!important;
 	background: transparent!important;
 	outline: none!important;
-	border: 2px solid black!important;
+	border: 2px solid black;
 	border-radius: 0!important;
 	height: 46px!important;
 	padding: 0 15px!important;

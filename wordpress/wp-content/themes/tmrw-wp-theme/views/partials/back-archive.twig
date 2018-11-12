@@ -1,10 +1,12 @@
 <section id="back-archive">
 	<div class="container">
 		<div class="heading">
-			<h2>Back <span class="poppins">Archive</span></h2>
+			<h2>Back <span class="poppins">Catalogue</span></h2>
 		</div>
 		<div class="call-to-action">
-				<button>Shop All Volumes</button>
+				<a href="{{ site.url }}/shop">
+				<button formaction="{{ site.url }}/shop">Shop All Volumes</button>
+				</a>
 		</div>
 		<div class="carousel">
 			<div id="gradient-container">
@@ -16,7 +18,7 @@
 				<div class="slide">
 					<img class="cover-image" src="{{Image(issue.cover_image).src}}">
 					<h3>Volume N<sup>o</sup> {{issue.volume_number}} <br><span class="poppins">{{issue.title}}</span></h3>
-					<a href="#"><h4>See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-white.png"></h4></a>
+					<a href="{{ site.url }}/shop"><h4>See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-white.png"></h4></a>
 				</div>
 				
 			{% endfor %}
