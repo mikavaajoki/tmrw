@@ -51,12 +51,9 @@
 						<h4>Words by {{writer.display_name}} </h4>
 				{% for credit in post.get_field('article_details_credits') %}
 						<h4> {{credit.title}} by {{credit.name}}</h4>
-
-					
-
 					{% endfor %}
 				</div>
-			<div class="social-media">
+	{# 		<div class="social-media">
 				<a class="nav-link" href="#">
 					<i class="icon-facebook"></i>
 				</a>
@@ -66,7 +63,7 @@
 				<a class="nav-link" href="#">
 					<i class="icon-pinterest"></i>
 				</a>
-			</div>
+			</div> #}
 		</div>
 	</section>
 

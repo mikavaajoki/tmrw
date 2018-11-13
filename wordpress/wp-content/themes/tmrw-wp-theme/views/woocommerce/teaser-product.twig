@@ -2,8 +2,19 @@
     <a href="{{post.link}}">
         <img class="product-image" src="{{ post.thumbnail.src }}">
     </a>
+
+
+{% if post.custom._stock_status == 'instock' %}
+    
     <h4 class="price">{% do action('woocommerce_after_shop_loop_item_title') %} <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
-    <h3>Volume N<sup>o</sup> {{post.issue_number}}<br><span class="poppins">{{post.title}}</span></h3>
+{% else %}
+
+  
+    <h4 class="price">Sold Out</h4>
+
+{% endif %}
+
+
     <a href="{{post.link}}">
         <h4 class="link">See Inside<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
     </a>
