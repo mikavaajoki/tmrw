@@ -1,0 +1,132 @@
+/* Search */
+
+#search-modal.modal-window {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .3s;
+	width: 100%;
+	background-color: rgba(255,255,255,0.98);
+}
+
+#search-modal.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#search-modal.modal-window button#modal-close {
+	background-color: transparent;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	z-index: 1;
+}
+
+#search-modal.modal-window button#modal-close:hover {
+	background-color: transparent;
+}
+
+#search-modal.modal-window button#modal-close .icon-bar {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+	margin: 0;
+}
+
+#search-modal.modal-window button#modal-close .top-bar {
+    transform: rotate(45deg);
+
+}
+
+#search-modal.modal-window button#modal-close .bottom-bar {
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+#search-modal.modal-window .modal-container {
+    width: 480px;
+    max-width: calc(100% - 60px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    color: black;
+}
+
+#search-modal.modal-window .modal-container .search-container {
+	width: 100%;
+}
+
+.search-container {
+	float: right;
+}
+
+.search-container input[type=text] {
+	padding: 0 0 0 5px;
+	border: none;
+	border-bottom: 1px solid black;
+	width: calc(100% - 53px);
+	height: 49px;
+	font-family: 'Clearface Serial', serif;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	font-size: 36px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.search-container button {
+ 	float: right;
+	padding: 0 5px;
+	margin-top: 0;
+	border: none;
+	cursor: pointer;
+	height: 50px;
+	border-bottom: 1px solid black;
+}
+
+.search-container button img {
+	width: 38px;
+	height: auto;
+}
+
+.search-container button:hover {
+  background: transparent;
+}
+
+#search-modal.modal-window .modal-container input[type=text]::placeholder {
+	opacity: 1;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	letter-spacing: 0;
+}
+
+@media all and (max-width: 575px) {
+
+	.search-container input[type=text] {
+		width: calc(100% - 39px);
+		height: 39px;
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	.search-container button {
+		height: 40px;
+	}
+
+	.search-container button img {
+		width: 24px;
+	}
+}
+

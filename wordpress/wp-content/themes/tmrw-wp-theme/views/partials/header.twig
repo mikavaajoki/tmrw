@@ -6,39 +6,55 @@
 	{% set headerLogoColour = 'black' %}
 {% endif %}		
 
-<header id="header" class="{{headerClass}}">
-	<div class="container">
-		<div class="container-nested header-navbar-top">
-			<div class="header-nav">
-				<h4><a class="nav-link" href="#">English</a></h4>
-				<h4><a class="nav-link" href="#">Search</a></h4>
-				<h4>{% include 'woocommerce/cart/fragment-link.twig' %}</h4>
-			</div>
-			<div class="header-logo">
-				<a href="/"><img src="{{theme.link}}/img/tmrw-logo-{{headerLogoColour}}.svg"></a>
-			</div>
-			<div class="social-media">
-				<a class="nav-link" href="{{options.social_.facebook}}">
-					<i class="icon-facebook"></i>
-				</a>
-				<a class="nav-link" href="{{options.social_.twitter}}">
-					<i class="icon-twitter"></i>
-				</a>
+	<header id="header" class="{{headerClass}}">
+		<div class="container">
+			<div class="container-nested header-navbar-top">
+				<div class="header-nav">
+					<!--<h4><a class="nav-link" href="#">English</a></h4>-->
+					<h4><a class="nav-link" href="#search-modal">Search</a></h4>
+					<h4>{% include 'woocommerce/cart/fragment-link.twig' %}</h4>
+				</div>
+				<div class="header-logo">
+					<a href="/"><img src="{{theme.link}}/img/tmrw-logo-{{headerLogoColour}}.svg"></a>
+				</div>
+				<div class="social-media">
+					<a class="nav-link" href="{{options.social_.facebook}}">
+						<i class="icon-facebook"></i>
+					</a>
+					<a class="nav-link" href="{{options.social_.twitter}}">
+						<i class="icon-twitter"></i>
+						</a>
 				<a class="nav-link" href="{{options.social_.instagram}}">
-					<i class="icon-instagram"></i>
-				</a>
+						<i class="icon-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="header-navbar-bottom">
+				<a class="nav-link active" href="/">Home</a> <span class="mobile-hide">/</span> <br class="mobile-display">
+				<a class="nav-link" href="/features">Features</a> <span class="mobile-hide">/</span> <br class="mobile-display">
+				<a class="nav-link" href="/magazine">Magazine</a> <span class="mobile-hide">/</span> <br class="mobile-display">
+				<a class="nav-link" href="/shop">Shop</a>
+			</div>
+			<button id="nav-toggle" class="mobile-display collapsed" onclick="navToggle()">
+				<span class="icon-bar top-bar"></span>
+				<span class="icon-bar middle-bar"></span>
+				<span class="icon-bar bottom-bar"></span>
+			</button>
+		</div>
+		<div id="search-modal" class="modal-window">
+			<a href="#">
+				<button id="modal-close" class="">
+					<span class="icon-bar top-bar"></span>
+					<span class="icon-bar bottom-bar"></span>
+				</button>
+			</a>
+			<div class="modal-container">
+				<div class="search-container">
+					<form action="">
+						<input type="text" name="search" placeholder="Search">
+						<button type="submit"><img src="{{theme.link}}/img/search.png"></button>
+					</form>
+				</div>
 			</div>
 		</div>
-		<div class="header-navbar-bottom">
-			<a class="nav-link active" href="/">Home</a> <span class="mobile-hide">/</span> <br class="mobile-display">
-			<a class="nav-link" href="/features">Features</a> <span class="mobile-hide">/</span> <br class="mobile-display">
-			<a class="nav-link" href="/magazine">Magazine</a> <span class="mobile-hide">/</span> <br class="mobile-display">
-			<a class="nav-link" href="/shop">Shop</a>
-		</div>
-		<button id="nav-toggle" class="mobile-display collapsed" onclick="navToggle()">
-			<span class="icon-bar top-bar"></span>
-			<span class="icon-bar middle-bar"></span>
-			<span class="icon-bar bottom-bar"></span>
-		</button>
-	</div>
-</header>
+	</header>

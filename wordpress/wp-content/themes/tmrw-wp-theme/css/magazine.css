@@ -309,6 +309,14 @@
 
 @media all and (max-width: 575px) {
 
+	#magazine section {
+		margin: 60px 0;
+	}
+
+	#magazine hr {
+		margin-top: 60px
+	}
+
 	#magazine #contact .left-column,
 	#magazine #contact .right-column,
 	#magazine #stockists .store_locator_plus .slp_results_container .results_wrapper,
@@ -336,6 +344,10 @@
 		font-size: 24px !important;
 		text-align: center;
 		margin-bottom: 60px;
+	}
+
+	#magazine footer .footer-navbar {
+		padding-top: 60px;
 	}
 }
 

@@ -1,8 +1,8 @@
 {% if options.video_module %}
 	
 	<section id="video-module">
-		<video id="video-loop" autoplay muted loop poster="{{options.video_poster.url}}">
-			<source src="{{options.video}}#t=2,8" type="video/mp4">
+		<video id="video-loop" autoplay muted loop poster="{{options.video_module.video_poster.url}}">
+			<source src="{{options.video_module.video}}" type="video/mp4">
 		</video>
 		<div class="container">
 			<div class="title">

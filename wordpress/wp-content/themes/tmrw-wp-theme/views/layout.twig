@@ -140,6 +140,16 @@
 			navToggle.classList.toggle("collapsed");
 		}
 	</script>
+
+	{# Active Header #}
+	<script>
+$(document).ready(function() {
+	if(location.pathname != "/") {
+		$('.header-navbar-bottom a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+		$('.header-navbar-bottom a:eq(0)').removeClass('active');
+	} else $('.header-navbar-bottom a:eq(0)').addClass('active');
+});
+	</script>
 		
 {{wp_footer}}
 {% endblock %}	

@@ -27,7 +27,7 @@
 		<!-- Article Body-->
 
 
-					{% for block in post.get_field('blocks')|slice(0,1) %}
+					{% for block in post.get_field('blocks') %}
 						{% if block.acf_fc_layout == 'paragraph' %}
 							{{block.paragraph}}
 						{% elseif block.acf_fc_layout == 'heading' %}

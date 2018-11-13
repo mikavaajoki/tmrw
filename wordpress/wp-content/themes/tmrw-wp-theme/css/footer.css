@@ -2,7 +2,7 @@
 
 footer {
 	background-color: black;
-	padding: 100px 0 !important;
+	padding: 100px 0;
 	color: white;
 }
 
@@ -172,6 +172,10 @@ footer .credits .copyright {
 	footer .credits .copyright {
 		grid-column: span 12;
 		text-align: left;
+	}
+
+	footer .mailing-list .checkbox-container {
+		line-height: 1.2em;
 	}
 }
 
