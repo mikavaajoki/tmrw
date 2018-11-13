@@ -4,13 +4,13 @@
   display: contents;
 }
 
-
 /* Basket/Checkout/Confirmation */
 
 #basket-checkout-confirmation .form-field label abbr[title] {
     text-decoration: none;
     color: red;
 }
+
 
 #basket-checkout-confirmation {
 	margin: 145px 0 40px 0;
@@ -121,7 +121,7 @@
     border-left: none;
 }
 
-#basket-checkout-confirmation .product-list .row.item .quantity .input-text {
+#basket-checkout-confirmation .product-list .row.item .quantity .quantity-counter {
     z-index: 2;
 	width: calc(100% - 100px);
 	min-width: 46px;
@@ -190,16 +190,24 @@
 }
 
 #basket-checkout-confirmation .product-list .row.subtotal .heading,
-#basket-checkout-confirmation .product-list .row.delivery .heading,
 #basket-checkout-confirmation .product-list .row.total .heading {
 	grid-column: span 8;
 }
 
 #basket-checkout-confirmation .product-list .row.subtotal .price,
-#basket-checkout-confirmation .product-list .row.delivery .price,
 #basket-checkout-confirmation .product-list .row.total .price {
 	grid-column: span 4;
 	text-align: right;
+}
+
+#basket-checkout-confirmation .product-list .row.delivery .heading {
+	grid-column: span 12;
+}
+
+#basket-checkout-confirmation .product-list .row.delivery label {
+	grid-column: span 12;
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 
 #basket-checkout-confirmation .product-list .row.checkout {
@@ -246,6 +254,12 @@
 	letter-spacing: 1.8px;
 	text-transform: uppercase;
 }
+
+#basket-checkout-confirmation .form-field label abbr[title] {
+    text-decoration: none;
+    color: red;
+}
+
 
 #basket-checkout-confirmation .form-field input[type=text],
 #basket-checkout-confirmation .form-field input[type=number],
@@ -347,7 +361,6 @@
 
 #basket-checkout-confirmation .product-list .row.item h3 {
 	grid-column: span 6;
-	align-self: center;
 }
 
 #basket-checkout-confirmation .product-list.recurring-payments .row.item .heading {

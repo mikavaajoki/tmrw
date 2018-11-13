@@ -69,11 +69,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<h4 class="heading">
 				Delivery
 			</h4>
-			<h4 class="price">
+	
+			<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
-			<?php echo(WC()->cart->get_cart_shipping_total()); ?> 
+				<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
 
-			</h4>
+				<?php wc_cart_totals_shipping_html(); ?>
+
+				<?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
+
+			<?php endif; ?>
+
 		</div>
 
 		<div class="container-nested row total">

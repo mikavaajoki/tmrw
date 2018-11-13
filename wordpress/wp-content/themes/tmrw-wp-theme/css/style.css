@@ -30,6 +30,11 @@
 	color: white;
 }
 
+.cart-empty,
+.return-to-shop {
+	 grid-column: 3/span 8!important;
+}
+
 /* General */
 
 html, body {
