@@ -1,17 +1,19 @@
+{{dump(issue)}}
+
 <section id="current-volume">
 	<div class="container">
 		<div class="cover-image">
 			<img src="{{Image(issue.cover_image).src}}">
 		</div>
 		<div class="heading">
-			<h1>Volume N<sup>o</sup> {{issue.volume_number}}<br><span class="poppins">{{issue.title}}</span></h1>
+			<h1>Volume N<sup>o</sup> {{issue.issue_number}}<br><span class="poppins">{{issue.title}}</span></h1>
 		</div>
 		<div class="sub-heading">
 			<h4>Current Volume</h4>
 		</div>
 		<div class="description">
 			<p>
-				{{issue.description}}
+				{{issue.post_excerpt}}
 			</p>
 		</div>
 		<div class="call-to-action">
