@@ -47,11 +47,15 @@
 
 			
 		<!-- Article Credits -->
+					<div class="credits">
+						<h4>Words by {{writer.display_name}} </h4>
+				{% for credit in post.get_field('article_details_credits') %}
+						<h4> {{credit.title}} by {{credit.name}}</h4>
 
+					
 
-			<div class="credits">
-				<h4>Words by Catarina Ramalho <span class="worksans">/</span> Photography by Setor Tsikudo</h4>
-			</div>
+					{% endfor %}
+				</div>
 			<div class="social-media">
 				<a class="nav-link" href="#">
 					<i class="icon-facebook"></i>
@@ -65,5 +69,24 @@
 			</div>
 		</div>
 	</section>
+
+{% endblock %}
+
+
+
+{% block scripts %}
+	{{ parent() }}
+
+
+	<!-- Recommended Feature Scroll -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			if (window.location.hash == "#feautured-article-anchor") {
+				$('html, body').animate({
+					scrollTop: $("#feautured-article-anchor").offset().top -60
+				}, 1000);
+			}
+		});
+	</script>
 
 {% endblock %}

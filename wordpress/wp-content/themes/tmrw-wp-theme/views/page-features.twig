@@ -36,10 +36,10 @@
 
 			<div class="container-nested features-list">
 				
-				{% for post in posts|slice(0,12) %}
+				{% for post in posts|slice(0,60) %}
 
 				<div class="feature {{post.category}}" style="display: none;">
-					<a href="f{{post.link}}">
+					<a href="{{post.link}}">
 						<div class="featured-image" style="background-image: url({{post.thumbnail}});"></div>
 					</a>
 					<h4 class="date-category">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
