@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<h4 class="heading">
 				Delivery
 			</h4>
-	
+
 			<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
 				<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
@@ -86,9 +86,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<h3 class="heading">
 				Total
 			</h3>
+		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 			<h3 class="price poppins">
 				<?php wc_cart_totals_order_total_html(); ?>
 			</h3>
+				<?php do_action( 'woocommerce_review_order_after_order_total' ); ?>
 		</div>
 
 </div>
