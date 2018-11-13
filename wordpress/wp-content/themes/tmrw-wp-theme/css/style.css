@@ -13,6 +13,10 @@
 	text-transform: uppercase;
 }
 
+.woocommerce-message {
+	    grid-column: 3/span 8!important;
+}
+
 .woocommerce-NoticeGroup {
 	background-color: white;
 	grid-column: 3/span 8;
