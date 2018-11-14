@@ -285,6 +285,7 @@ function reorder_woo_fields($fields) {
     'label' => __('COUNTRY', 'woocommerce'),
     'required' => false,
     'priority' => 80,
+    'type' => 'country',
     'class' => array('form-field custom-select'),
     'clear' => true
     );

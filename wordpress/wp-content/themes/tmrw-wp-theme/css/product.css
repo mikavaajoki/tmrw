@@ -8,6 +8,10 @@
 	display: none;
 }
 
+#product .price {
+	margin-bottom: 25px;
+}
+
 #product .container-nested {
 	grid-column: span 12;
 	grid-column-gap: 60px;

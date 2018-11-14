@@ -18,11 +18,18 @@
                         {% else %}
                             <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
                         {% endif %}
-
+                        
+                        {% if post.custom._stock_status == 'instock' %}
                     
                         {% 
                             do action( 'woocommerce_single_product_summary' ) 
                         %}    
+
+                        {% else %}
+
+                         <p class="price"> Sold Out </p> 
+                         
+                         {% endif %} 
 
                     </div>
                 </div>
