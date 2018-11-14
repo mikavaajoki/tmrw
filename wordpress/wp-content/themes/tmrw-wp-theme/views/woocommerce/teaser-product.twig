@@ -7,13 +7,13 @@
 {% if post.custom._stock_status == 'instock' %}
     
     <h4 class="price">{% do action('woocommerce_after_shop_loop_item_title') %} <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
-     <h3>Volume N<sup>o</sup> {{post.issue_number}}<br><span class="poppins">{{post.title}}</span></h3>
+     <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
 
 {% else %}
 
   
     <h4 class="price">Sold Out</h4>
-    <h3>Volume N<sup>o</sup> {{post.issue_number}}<br><span class="poppins">{{post.title}}</span></h3>
+    <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
 
 
 {% endif %}

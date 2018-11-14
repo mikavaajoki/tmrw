@@ -18,6 +18,7 @@
                         {% else %}
                             <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
                         {% endif %}
+
                     
                         {% 
                             do action( 'woocommerce_single_product_summary' ) 
@@ -37,4 +38,9 @@
         </div>
     </section>
 
+{% endblock %}
+
+{% block scripts %}
+  <script type="text/javascript" src="{{theme.link}}/js/quantity.js"></script>
+  {{ parent() }}
 {% endblock %}

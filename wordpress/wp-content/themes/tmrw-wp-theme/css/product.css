@@ -4,6 +4,10 @@
 	margin: 200px 0 100px 0;
 }
 
+#product .stock {
+	display: none;
+}
+
 #product .container-nested {
 	grid-column: span 12;
 	grid-column-gap: 60px;
@@ -46,6 +50,163 @@
 
 #product.subsrciption .info-column h4.price {
 	line-height: 1.2em;
+}
+
+#product .info-column .quantity {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+#product .info-column .quantity .screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+#product .info-column .quantity input {
+    margin: 0;
+	padding: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+	border: 2px solid black;
+	border-radius: 0;
+	text-align: center;
+	color: black;
+}
+
+#product .info-column .quantity .quantity-button {	
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+	font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4em;
+	letter-spacing: 0px;
+	text-transform: lowercase;
+	transition: all .3s;
+}
+
+#product .info-column .quantity .quantity-button:hover {
+	background-color: black;
+	color: white;
+}
+
+#product .info-column .quantity .quantity-button.minus {
+	border-right: none;
+}
+
+#product .info-column .quantity .quantity-button.plus {
+    border-left: none;
+}
+
+#product .info-column .quantity .quantity-counter {
+    z-index: 2;
+	width: 50px;
+	height: 46px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1em;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+#product .info-column .form-field.custom-select {
+	position: relative;
+	max-width: 280px;
+}
+
+#product .info-column .form-field.custom-select label {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1em;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+/* Hide original select element */
+#product .info-column .form-field select {
+	display: none;
+}
+
+#product .info-column .form-field .select-selected {
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+/* Style the arrow inside the select element */
+#product .info-column .form-field .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 55px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active) */
+#product .info-column .form-field .select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 48px;
+}
+
+/* Style the selected item */
+#product .info-column .form-field .select-selected {
+	margin-top: 12px;
+	height: 46px;
+	color: black;
+	padding: 0 36px 0 15px;
+	line-height: 48px;
+	border: 2px solid black;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Style items (options) list */
+#product .info-column .form-field .select-items {
+	position: absolute;
+	background-color: white;
+	border: 2px solid black;
+	top: 79px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	height: 154px;
+	overflow: scroll;
+}
+
+/* Style the items (options) */
+#product .info-column .form-field .select-items div {
+	display: flex;
+    align-items: center;
+    min-height: 50px;
+ 	color: black;
+ 	padding: 0 15px;
+ 	border: 1px solid;
+	border-color: transparent transparent black transparent;
+	cursor: pointer;
+}
+
+/* Hide the items when the select box is closed */
+#product .info-column .form-field .select-hide {
+	display: none;
+}
+
+#product .info-column .form-field .select-items div:hover, .same-as-selected {
+	background-color: rgba(0,0,0,.1);
 }
 
 #product .info-column button {
