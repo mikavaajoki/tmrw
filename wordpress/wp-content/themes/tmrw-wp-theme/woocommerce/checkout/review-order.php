@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 
-<div class="product-list order-summary">
+<div class="product-list order-summary woocommerce-checkout-review-order-table">
 	<div class="section-heading">
 		<h4>Order Summary</h4>
 	</div>

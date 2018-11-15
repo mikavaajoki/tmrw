@@ -1,8 +1,60 @@
 /* Allow css grid to still work despite extra div see [https://github.com/woocommerce/woocommerce/issues/12191] */
 
+
+
+
+
+
+
+
 .woocommerce {
   display: contents;
 }
+
+
+
+.select2-selection {
+	margin-top: 12px!important;
+	margin-bottom: 25px!important;
+	border: 2px solid #000!important;
+	border-radius: 0!important;
+	height: 46px!important;
+	padding: 0 15px!important;
+	box-sizing: unset!important;
+	color: black!important;
+	padding: 0 36px 0 15px!important;
+	line-height: 48px!important;
+	white-space: nowrap!important;
+	overflow: hidden!important;
+	text-overflow: ellipsis!important;
+}
+
+.select2-selection__rendered {
+    color: black!important;
+    line-height: 28px!important;
+    padding: 10px 0px!important;
+}
+
+.select2-selection__arrow {
+	top: 10px!important;
+	right: 10px!important;
+	color: black;	
+}
+
+.select2-selection__arrow b {
+	border-color: #000 transparent transparent transparent!important;
+}
+.select2-search__field,
+.select2-dropdown {
+	border: 2px solid black!important;
+	border-radius: 0!important;
+}
+
+.select2-selection__rendered {
+	
+}
+
+
 
 /* Basket/Checkout/Confirmation */
 
@@ -264,16 +316,17 @@
 #basket-checkout-confirmation .form-field input[type=text],
 #basket-checkout-confirmation .form-field input[type=number],
 #basket-checkout-confirmation .form-field input[type=email],
-#basket-checkout-confirmation .form-field input[type=tel] {
+#basket-checkout-confirmation .form-field input[type=tel],
+#basket-checkout-confirmation .form-field .country_to_state {
 	margin-top: 12px;
 	width: calc(100% - 34px);
 	margin-bottom: 25px;
 }
 
 /* Hide original select element */
-#basket-checkout-confirmation .form-field select {
+/*#basket-checkout-confirmation .form-field select {
 	display: none;
-}
+}*/
 
 #basket-checkout-confirmation .form-field .woocommerce-input-wrapper {
   background-color: white;
@@ -281,7 +334,7 @@
 }
 
 /* Style the arrow inside the select element */
-#basket-checkout-confirmation .form-field .woocommerce-input-wrapper:after {
+/*#basket-checkout-confirmation .form-field .woocommerce-input-wrapper:after {
   position: absolute;
   content: "";
   top: 55px;
@@ -291,7 +344,7 @@
   border: 6px solid transparent;
   border-color: black transparent transparent transparent;
 }
-
+*/
 /* Point the arrow upwards when the select box is open (active) */
 #basket-checkout-confirmation .form-field .select-selected.select-arrow-active:after {
   border-color: transparent transparent black transparent;

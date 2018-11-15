@@ -246,7 +246,6 @@ function reorder_woo_fields($fields) {
     $fields2['billing']['billing_address_1'] = $fields['billing']['billing_address_1'];
     $fields2['billing']['billing_address_2'] = $fields['billing']['billing_address_2'];
     $fields2['billing']['billing_city'] = $fields['billing']['billing_city'];
-    $fields2['billing']['billing_state'] = $fields['billing']['billing_state'];
     $fields2['billing']['billing_postcode'] = $fields['billing']['billing_postcode'];
     $fields2['billing']['billing_country'] = $fields['billing']['billing_country'];
     $fields2['billing']['billing_email'] = $fields['billing']['billing_email'];
@@ -267,7 +266,7 @@ function reorder_woo_fields($fields) {
     'label' => __('STREET ADDRESS', 'woocommerce'),
     'required' => false,
     'priority' => 30,
-    'class' => array('form-field street-address'),
+    'class' => array('form-field'),
     'clear' => true
     );
 
@@ -279,9 +278,15 @@ function reorder_woo_fields($fields) {
     'clear' => true
     );
 
+
+    $countries_obj   = new WC_Countries();
+    $countries   = $countries_obj->get_allowed_countries();
+
     
 
     $fields2['billing']['billing_country'] = array(
+    'type' => 'select',
+    'options'    => $countries,
     'label' => __('COUNTRY', 'woocommerce'),
     'required' => false,
     'priority' => 80,
@@ -369,5 +374,3 @@ global $wp_rewrite;
 $legacy_structure = '/%category%/%postname%';
 $wp_rewrite->add_rewrite_tag("%legacy%", '([^/]+)', "legacy=");
 $wp_rewrite->add_permastruct('legacy', $legacy_structure, false);
-
-?>
