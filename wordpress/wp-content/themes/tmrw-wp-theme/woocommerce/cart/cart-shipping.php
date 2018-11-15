@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php elseif ( 1 === count( $available_methods ) ) :  ?>
 			<?php
 				$method = current( $available_methods );
-				printf( '%3$s <input type="hidden" name="shipping_method[%1$d]" data-index="%1$d" id="shipping_method_%1$d" value="%2$s" class="shipping_method" />', $index, esc_attr( $method->id ), wc_cart_totals_shipping_method_label( $method ) );
+				printf( '<h4 class="flat">%3$s</h4>', $index, esc_attr( $method->id ), wc_cart_totals_shipping_method_label( $method ) );
 				do_action( 'woocommerce_after_shipping_rate', $method, $index );
 			?>
 

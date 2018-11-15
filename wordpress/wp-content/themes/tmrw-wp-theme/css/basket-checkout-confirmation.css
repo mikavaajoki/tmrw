@@ -252,6 +252,13 @@
 	text-align: right;
 }
 
+#basket-checkout-confirmation .product-list .row.delivery .flat {
+
+grid-column: span 12;
+text-align: right;
+
+}
+
 #basket-checkout-confirmation .product-list .row.delivery .heading {
 	grid-column: span 12;
 }
