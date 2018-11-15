@@ -258,8 +258,6 @@ function reorder_woo_fields($fields) {
     $fields2['shipping']['shipping_address_2'] = $fields['shipping']['shipping_address_2'];
     $fields2['shipping']['shipping_city'] = $fields['shipping']['shipping_city'];
     $fields2['shipping']['shipping_postcode'] = $fields['shipping']['shipping_postcode'];
-    $fields2['shipping']['shipping_state'] = $fields['shipping']['shipping_state'];
-
  
     // Adding custom classes
     $fields2['billing']['billing_address_1'] = array(
@@ -304,13 +302,18 @@ function reorder_woo_fields($fields) {
     );
 
 
+    
     $fields2['shipping']['shipping_country'] = array(
+    'type' => 'select',
+    'options'    => $countries,
     'label' => __('COUNTRY', 'woocommerce'),
     'required' => false,
     'priority' => 80,
+    'type' => 'country',
     'class' => array('form-field custom-select'),
     'clear' => true
     );
+
 
     $checkout_fields = array_merge( $fields, $fields2 );
     return $checkout_fields;

@@ -71,7 +71,7 @@
     width: 1px;
 }
 
-#product .info-column .quantity input {
+#product .quantity input {
     margin: 0;
 	padding: 0;
     position: relative;
@@ -84,7 +84,7 @@
 	color: black;
 }
 
-#product .info-column .quantity .quantity-button {	
+#product .quantity .quantity-button {	
     z-index: 3;
     cursor: pointer;
     width: 50px;
@@ -98,20 +98,20 @@
 	transition: all .3s;
 }
 
-#product .info-column .quantity .quantity-button:hover {
+#product  .quantity .quantity-button:hover {
 	background-color: black;
 	color: white;
 }
 
-#product .info-column .quantity .quantity-button.minus {
+#product  .quantity .quantity-button.minus {
 	border-right: none;
 }
 
-#product .info-column .quantity .quantity-button.plus {
+#product  .quantity .quantity-button.plus {
     border-left: none;
 }
 
-#product .info-column .quantity .quantity-counter {
+#product  .quantity .quantity-counter {
     z-index: 2;
 	width: 50px;
 	height: 46px;
