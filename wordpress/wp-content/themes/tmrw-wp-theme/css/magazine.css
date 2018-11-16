@@ -356,3 +356,20 @@
 	display: block !important;
 	flex: inherit !important;
 }
+
+.slp_results_container .results_wrapper {
+    margin: inherit;
+    padding: inherit;
+    border: solid 1px lightgrey;
+    border-radius: .5em;
+}
+
+
+.slp_results_container .results_wrapper:hover {
+	background-color: inherit !important;
+}
+
+
+.slp_results_container .results_wrapper .location_distance {
+    float: unset !important;
+}

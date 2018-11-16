@@ -372,6 +372,30 @@ function marce_add_stripe_elements_styles($array) {
   return $array;
 }
 
+add_action('wp_footer', 'billing_country_update_checkout', 50);
+function billing_country_update_checkout() {
+    if ( ! is_checkout() ) return;
+    ?>
+    <script type="text/javascript">
+        jQuery(function($){
+            $('select#billing_country, select#shipping_country').on( 'change', function (){
+                var t = { updateTimer: !1,  dirtyInput: !1,
+                    reset_update_checkout_timer: function() {
+                        clearTimeout(t.updateTimer)
+                    },
+                    trigger_update_checkout: function() {
+                        t.reset_update_checkout_timer(), t.dirtyInput = !1,
+                        $(document.body).trigger("update_checkout")
+                    }
+                };
+                $(document.body).trigger('update_checkout');
+                console.log('Event: update_checkout');
+            });
+        });
+    </script>
+    <?php
+}
+
 // rewrites custom post type name
 global $wp_rewrite;
 $legacy_structure = '/%category%/%postname%';
