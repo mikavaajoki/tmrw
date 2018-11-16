@@ -11,8 +11,8 @@
 			<div class="container-nested header-navbar-top">
 				<div class="header-nav">
 					<!--<h4><a class="nav-link" href="#">English</a></h4>-->
-{# 					<h4><a class="nav-link" href="#search-modal">Search</a></h4>
- #}					<h4>{% include 'woocommerce/cart/fragment-link.twig' %}</h4>
+					<h4><a class="nav-link" href="#search-modal">Search</a></h4>
+ 					<h4>{% include 'woocommerce/cart/fragment-link.twig' %}</h4>
 				</div>
 				<div class="header-logo">
 					<a href="/"><img src="{{theme.link}}/img/tmrw-logo-{{headerLogoColour}}.svg"></a>
@@ -41,7 +41,7 @@
 				<span class="icon-bar bottom-bar"></span>
 			</button>
 		</div>
-{# 		<div id="search-modal" class="modal-window">
+		<div id="search-modal" class="modal-window">
 			<a href="#">
 				<button id="modal-close" class="">
 					<span class="icon-bar top-bar"></span>
@@ -50,11 +50,11 @@
 			</a>
 			<div class="modal-container">
 				<div class="search-container">
-					<form action="">
-						<input type="text" name="search" placeholder="Search">
+					<form  method="get" id="searchform" action="{{site.url}}">
+						<input for="s" type="text" name="s" placeholder="Search">
 						<button type="submit"><img src="{{theme.link}}/img/search.png"></button>
 					</form>
 				</div>
 			</div>
-		</div> #}
+		</div> 
 	</header>

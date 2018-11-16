@@ -1,41 +1,21 @@
 {% extends "layout.twig" %}
 
 
-{% block content %}	
 
-
-	<section id="features">
+{% block content %}
+	<section id="features" class="search-results">
+		
 		<div class="container">
-			<div class="side-nav-column">
-				<div class="side-nav filters">
-					<h3>Select <span class="poppins">Category</span></h3>
-					
-
-					<label class="radio-container">All
-						<input type="radio" name="gategory" value="all" checked="checked">
-						<span class="checkmark"></span>
-					</label><br class="tablet-hide">
-
-
-
-				{% for category in categories %}
-
-
-					<label class="radio-container">{{category.name}}
-						<input type="radio" name="gategory" value="{{category.name}}">
-						<span class="checkmark"></span>
-					</label><br class="tablet-hide">
-					
-				{% endfor %}
-
-
+			<div class="heading-container">
+				<div class="side-nav">
+					<h4>Search Results For</h4>
+					<h3>{{search_query}}</h3>
 				</div>
 			</div>
 
 
-
 			<div class="container-nested features-list">
-				
+
 				{% for post in posts|slice(0,60) %}
 
 				<div class="feature {{post.category}}" style="display: none;">
@@ -51,21 +31,56 @@
 				</div>
 
 			{% endfor %}
-				
 
-				<div class="call-to-action load-more">
+							<div class="call-to-action load-more">
 					<button id="load-more-button" >Load More</button>
 				</div>
 			</div>
+		
+
+
+
 		</div>
-	</section>	
+
+
+
+		</div>
+	</section>
+
 
 {% endblock %}
 
 
-
 {% block scripts %}
 {{ parent() }}
+
+	<!-- Hide Header on Scroll -->
+	<script type="text/javascript">
+		function onResize() {
+			if (document.documentElement.clientWidth > 575) {
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+					var currentScrollPos = window.pageYOffset;
+					var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+					if (prevScrollpos > currentScrollPos) {
+						document.getElementById("header").style.top = "0";
+					} else {
+						if (viewportWidth > 1199) {
+							document.getElementById("header").style.top = "-47px";
+						} else {
+							document.getElementById("header").style.top = "-128px";
+						} 
+					}
+					prevScrollpos = currentScrollPos;
+				}
+			}
+			else {
+				document.getElementById("header").style.top = "-370px";
+			}
+		}
+		window.addEventListener("resize", onResize, true);
+		onResize();
+	</script>
 
 	<!-- Mobile Nav Toggle -->
 	<script type="text/javascript">
@@ -107,6 +122,4 @@
 
 
 {% endblock %}
-
-
 
