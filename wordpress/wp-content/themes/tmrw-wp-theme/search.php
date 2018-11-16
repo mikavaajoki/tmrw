@@ -10,8 +10,7 @@
  */
   $context = Timber::get_context();
 
-  $args = array('post_type' => array('post','legacy'), 'posts_per_page' => 100);   
   $context['search_query'] = get_search_query();
-  $context['posts'] = new Timber\PostQuery($args);
+  $context['posts'] = new Timber\PostQuery();
   $context['pagination'] = Timber::get_pagination();
 	Timber::render( array('page-search.twig','search.twig'), $context );
