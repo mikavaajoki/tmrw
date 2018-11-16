@@ -1,0 +1,65 @@
+/**
+ * Premier Admin CSS
+ * Compiled with SCSS file watcher rules in phpStorm into admin.css and then admin.min.css
+ **/
+.slp_premier_admin_css {
+  font-size: 1em; }
+
+#center_map,
+#boundaries_map {
+  /* Fix IE11 Rules from Bad WP Themes */
+  /* Fix IE10 Rules */
+  /* Hide the default Google bubble shadow */ }
+  #center_map img,
+  #boundaries_map img {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    max-width: none;
+    opacity: 1.0;
+    visibility: visible; }
+  #center_map div,
+  #boundaries_map div {
+    overflow: visible; }
+  #center_map .gm-style-cc > div,
+  #boundaries_map .gm-style-cc > div {
+    word-wrap: normal; }
+  #center_map img[src='http://maps.gstatic.com/mapfiles/iws3.png'],
+  #boundaries_map img[src='http://maps.gstatic.com/mapfiles/iws3.png'] {
+    display: none; }
+
+#boundaries_map {
+  width: 100%;
+  height: 25em;
+  margin: 0;
+  padding: 0; }
+
+#center_map {
+  display: block;
+  width: 100%;
+  height: 25em;
+  margin: 0;
+  padding: 0; }
+
+td.slp_manage_locations_cell.woo-products {
+  text-align: right; }
+
+span.ui-accordion-header-icon {
+  padding-right: 0.25em;
+  font-size: 1em;
+  color: #AAA; }
+
+.scheduled_time {
+  display: block;
+  padding: 1em;
+  font-size: 0.9em;
+  font-weight: bold; }
+
+.subtab_schedule h3.run_time {
+  padding-left: 1em; }
+.subtab_schedule .event {
+  padding-left: 1.75em; }
+  .subtab_schedule .event span {
+    padding-right: 2em; }
+
+/*# sourceMappingURL=admin.css.map */

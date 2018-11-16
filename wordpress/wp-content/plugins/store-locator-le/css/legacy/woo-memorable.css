@@ -1,0 +1,160 @@
+/** file: woo-memorable.css
+ ** label: Woo Memorable
+ ** description: A basic SLP Theme that is used on a live site running the Memorable WordPress theme by WooThemes. Supports Enhanced Results featured listings. Supports Premier Bubble Footnotes.
+ ** add-ons: slp-pro,slp-enhanced-map,slp-enhanced-results,slp-enhanced-search,slp-tagalong,slp-premier
+ ** Pro Pack Locator Layout: <div id="sl_div">[slp_search][slp_map][slp_results]</div>
+ ** Enhanced Map Bubble Layout: <div id="sl_info_bubble" class="[slp_location featured]"><span id="slp_bubble_name"><strong>[slp_location name  suffix  br]</strong></span><span id="slp_bubble_address">[slp_location address       suffix  br]</span><span id="slp_bubble_address2">[slp_location address2      suffix  br]</span><span id="slp_bubble_city">[slp_location city          suffix  comma]</span><span id="slp_bubble_state">[slp_location state suffix    space]</span><span id="slp_bubble_zip">[slp_location zip suffix  br]</span><span id="slp_bubble_country"><span id="slp_bubble_country">[slp_location country       suffix  br]</span></span><span id="slp_bubble_directions">[html br ifset directions][slp_option label_directions wrap directions]</span><span id="slp_bubble_website">[html br ifset url][slp_location url           wrap    website][slp_option label_website ifset url][html closing_anchor ifset url][html br ifset url]</span><span id="slp_bubble_email">[slp_location email         wrap    mailto ][slp_option label_email ifset email][html closing_anchor ifset email][html br ifset email]</span><span id="slp_bubble_phone">[html br ifset phone]<span class="location_detail_label">[slp_option   label_phone   ifset   phone]</span>[slp_location phone         suffix    br]</span><span id="slp_bubble_fax"><span class="location_detail_label">[slp_option   label_fax     ifset   fax  ]</span>[slp_location fax           suffix    br]<span><span id="slp_bubble_description"><span id="slp_bubble_description">[html br ifset description][slp_location description raw]</span>[html br ifset description]</span><span id="slp_bubble_hours">[html br ifset hours]<span class="location_detail_label">[slp_option   label_hours   ifset   hours]</span><span class="location_detail_hours">[slp_location hours         suffix    br]</span></span><span id="slp_bubble_img">[html br ifset img][slp_location image         wrap    img]</span><span id="slp_tags">[slp_location tags]</span><span class="bubble_footnote">[slp_option bubble_footnote]</span></div>
+ ** Enhanced Results Results Layout: <div id="slp_results_[slp_location id]" class="results_entry  [slp_location featured]"><div class="results_row_left_column"   id="slp_left_cell_[slp_location id]"   ><span class="location_name">[slp_location name]</span><span class="location_distance">[slp_location distance_1] [slp_location distance_unit]</span></div><div class="results_row_center_column" id="slp_center_cell_[slp_location id]" ><span class="slp_result_address slp_result_street">[slp_location address]</span><span class="slp_result_address slp_result_street2">[slp_location address2]</span><span class="slp_result_address slp_result_citystatezip">[slp_location city_state_zip]</span><span class="slp_result_address slp_result_country">[slp_location country]</span><span class="slp_result_address slp_result_phone">[slp_location phone]</span><span class="slp_result_address slp_result_fax">[slp_location fax]</span></div><div class="results_row_right_column"  id="slp_right_cell_[slp_location id]"  ><span class="slp_result_contact slp_result_website">[slp_location web_link]</span><span class="slp_result_contact slp_result_email">[slp_location email_link]</span><span class="slp_result_contact slp_result_directions"><a href="http://[slp_location map_domain]/maps?saddr=[slp_location search_address]&daddr=[slp_location location_address]" target="_blank" class="storelocatorlink">[slp_location directions_text]</a></span><span class="slp_result_contact slp_result_hours">[slp_location hours]</span>[slp_location iconarray wrap="fullspan"]</div></div>
+ ** Enhanced Search Search Layout: <div id="address_search">[slp_search_element input_with_label="name"][slp_search_element input_with_label="address"][slp_search_element dropdown_with_label="city"][slp_search_element dropdown_with_label="state"][slp_search_element dropdown_with_label="country"][slp_search_element selector_with_label="tag"][slp_search_element dropdown_with_label="category"]<div class="search_item">[slp_search_element dropdown_with_label="radius"][slp_search_element button="submit"]</div></div>
+ ** Results Header:
+ **/
+div#map img {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  max-width: none;
+  opacity: 1.0; }
+
+/* Fix IE11 Rules from Bad WP Themes */
+div#map div {
+  overflow: visible; }
+
+/* Fix IE10 Rules */
+div#map .gm-style-cc > div {
+  word-wrap: normal; }
+
+/* Hide the default Google bubble shadow */
+div#map img[src='http://maps.gstatic.com/mapfiles/iws3.png'] {
+  display: none; }
+
+#map_box_image {
+  display: block; }
+
+div.gm-style-iw div#sl_info_bubble {
+  min-width: 12em; }
+
+#map_box_map {
+  display: none; }
+
+div#slp_tagline {
+  background-color: #AABBDD;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  margin-bottom: 3px;
+  padding-right: 3px;
+  text-align: right;
+  width: 100%; }
+
+#sl_info_bubble .location_detail_hours {
+  white-space: pre-wrap; }
+
+.slp_result_contact.slp_result_hours {
+  white-space: pre-wrap; }
+
+#search_by_tag span {
+  margin-right: 0.4em; }
+
+#search_by_tag span input[type="radio"] {
+  margin: 0 0.2em 0 1em;
+  width: 1em;
+  vertical-align: sub; }
+
+#tagalong_category_selector .category_selector.parent {
+  display: block;
+  float: left; }
+#tagalong_category_selector .category_selector.child {
+  display: none;
+  float: left;
+  margin-left: 0.2em; }
+
+#tagalong_cascade_dropdowns {
+  display: inline-block;
+  position: relative;
+  vertical-align: top; }
+
+#searchForm div.tagalong_category_selector {
+  display: inline;
+  white-space: nowrap;
+  padding-right: 1%; }
+  #searchForm div.tagalong_category_selector:first-child {
+    margin-left: 0; }
+    #searchForm div.tagalong_category_selector:first-child LABEL {
+      display: inline-block;
+      min-width: 21%; }
+    #searchForm div.tagalong_category_selector:first-child SELECT {
+      display: inline; }
+  #searchForm div.tagalong_category_selector span.ui-selectmenu-button {
+    width: 100% !important; }
+
+#tagalong_legend {
+  border: none;
+  padding: 0.75em;
+  text-align: inherit; }
+  #tagalong_legend .legend_text {
+    display: inline-block;
+    margin-left: 0.25em;
+    margin-right: 1em;
+    max-width: none;
+    padding-top: 0;
+    text-align: left;
+    vertical-align: middle; }
+  #tagalong_legend .tagalong_legend_icon {
+    display: inline-block;
+    margin-bottom: 0.75em;
+    min-width: 11.875em; }
+
+.results_line.location_iconarray > a {
+  display: inline-block;
+  height: auto;
+  width: auto; }
+
+/*---------------------
+ * Search
+ *---------------------*/
+#searchForm LABEL {
+  padding-right: 3px; }
+#searchForm DIV {
+  display: inline-block; }
+#searchForm INPUT[type="submit"] {
+  padding: 0.518em 1.387em; }
+
+/*---------------------
+ * Map
+ *---------------------*/
+div#slp_tagline {
+  text-align: right;
+  margin-bottom: 18px; }
+
+/*---------------------
+ * Results
+ *---------------------*/
+div.results_entry {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 12px 18px 12px;
+  width: 98%; }
+  div.results_entry:hover {
+    background-color: #F2F2F2; }
+  div.results_entry.featured {
+    background-color: #EFF0DE; }
+    div.results_entry.featured:hover {
+      background-color: #E7F8D6; }
+
+#map_sidebar .results_wrapper {
+  margin-bottom: 24px;
+  position: relative; }
+  #map_sidebar .results_wrapper:hover {
+    background-color: #F4F4F4; }
+  #map_sidebar .results_wrapper .results_row_right_column {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0; }
+  #map_sidebar .results_wrapper span {
+    display: block; }
+    #map_sidebar .results_wrapper span.location_name {
+      font-weight: bold; }
+
+/*# sourceMappingURL=woo-memorable.css.map */

@@ -66,8 +66,33 @@
 		</div>
 	</section>
 
+		<section id="stockists">
+		<div class="container">
+
+			<h3>Find Your <span class="poppins">Closest Store</span></h3>
+
+			{% filter shortcodes %}
+				[SLPLUS hide_map="true"]     	
+			{% endfilter %}
+	
+
+
+			<p class="stockist-enquiry small">
+				If you are interested in becoming a stockist or want to recommend a stockist, please email <a href="mailto:">info@tmrwmagazine.com</a>.
+			</p>
+		</div>
+	</section>
+
 {% endblock %}
 
 
 {% block subscription %}
 {% endblock%}
+
+
+{% block scripts %}
+	{{ parent() }}
+		<script type="text/javascript">
+			$(document).ready(function() {$('.slp_results_container').addClass( 'container-nested' );});
+		</script>
+{% endblock %}

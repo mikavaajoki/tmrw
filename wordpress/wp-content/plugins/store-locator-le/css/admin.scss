@@ -1,0 +1,1698 @@
+// SLP Admin SCSS
+// requires git@bitbucket.org:MySLP/mu-plugins.git is cloned in ../../../offline-mu-plugins to compile
+// macOS #sudo gem install sass
+//
+$subtab_height: 3em;
+$subtab_top_pad: 1.5em;
+$space_for_location_details: 0.4em;
+
+$z_on_top: 990;
+
+@import "../assets/sass/colors/default";
+@import "../assets/sass/base/variables";
+
+// Material Icons
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/MaterialIcons-Regular.eot"); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url("fonts/MaterialIcons-Regular.woff2") format('woff2'),
+    url("fonts/MaterialIcons-Regular.woff") format('woff'),
+    url("fonts/MaterialIcons-Regular.ttf") format('truetype');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+// Foundation from npm foundation-sites install in main phpStorm project
+@import 'foundation';
+@include foundation-card;
+
+//
+// MySLP Mimic
+
+// The order of files include is important. Dont change it.
+
+// All general settings and utils
+@import "../assets/sass/base/variables";
+@import "../assets/sass/base/admin_functions";
+@import "../assets/sass/layout/general";
+@import "../assets/sass/layout/positioning";
+@import "../assets/sass/layout/header";
+@import "../assets/sass/layout/main";
+@import "../assets/sass/layout/admin_tabs/locations_manage";
+
+// Any other module that can be reused multiple times.
+@import "../assets/sass/components/navbar";
+@import "../assets/sass/components/sub-navbar";
+@import "../assets/sass/components/settings";
+@import "../assets/sass/components/input";
+@import "../assets/sass/components/alert";
+@import '../assets/sass/components/modal';
+
+@import '../assets/sass/slp/vars_for_admin';
+
+// Vuetify
+@import "../assets/sass/vuetify/wp_tweaks";
+@import "../assets/sass/vuetify/loaders";
+
+.user-area {
+    margin-top: 1.5em;
+    a {
+        text-decoration: none;
+    }
+}
+
+// Overrides
+//
+#wpcontent {
+    width: auto;
+    left: 0;
+    right: 0;
+    #screen-meta {
+        z-index: $z_on_top;
+    }
+    #screen-meta-links {
+        .screen-meta-toggle {
+            z-index: $z_on_top;
+        }
+    }
+
+}
+
+@import '../assets/sass/colors/palette/coolors_one';
+
+.input-group {
+    display: flex;
+    padding-left: 1em;
+
+    &.wpcsl-subheader {
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    .saving {
+        opacity: 0.8;
+        background-image: url(../images/loading.gif);
+        background-repeat: no-repeat;
+        background-position: right center;
+        visibility: visible;
+    }
+
+    .label {
+        .icon {
+            display: block;
+        }
+    }
+
+    .input-description {
+        display: none;
+    }
+    
+    .input-field {
+        width: 100%;
+
+        [type="file"] {
+            cursor: inherit;
+            display: block;
+            filter: alpha(opacity=0);
+            min-width: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom:0;
+        }
+    }
+
+    &.wpcsl-file {
+        font-size: 1.25em;
+
+        .input-field {
+            color: $gray_dark;
+            background-color: $white_yellow_tint;
+            border: $border_menu_bottom_divider;
+            border-radius: 4px;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            vertical-align: top;
+            box-shadow: 0 1px 2px rgba(black, 0.2), 0 5px 10px -5px rgba(black, 0.2);;
+
+            font-size: 1em;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;
+
+            height: 4em;
+            line-height: 4em;
+
+            width: 20em;
+            text-align: center;
+
+            cursor: pointer;
+        }
+    }
+
+    .input-label {
+        max-width: 15em;
+        width: 100%;
+
+        label {
+            font-size: 15px;
+        }
+    }
+
+    .wp-media-buttons {
+        margin-top: 0.25em;
+        
+        .button {
+            margin-right: 5px;
+            margin-bottom: 4px;
+            padding: 0.5em;
+            height: 3em;
+            color: #82878c;
+
+            &:hover {
+                background: #fafafa;
+                border-color: #999;
+                color: #23282d;
+            }
+
+            span {
+                margin-right: 0.25em;
+            }
+        }
+    }
+
+    textarea {
+        min-height: 100px;
+        resize: both;
+        max-width:100%;
+
+    }
+}
+
+.notice {
+    z-index: 85;
+}
+
+.dashboard-wrapper {
+    height: auto;
+}
+
+.dashboard-main {
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.dashboard-content {
+
+    .slplus_settings_form {
+        position: absolute;
+        height: auto;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // Main Tabs
+    .panel-navbar {
+        .navbar {
+            margin: 0;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    // Subtabs
+    //
+    .subtab_navbar_wrapper {
+        position:relative;
+        z-index: 49;
+    }
+
+
+    // Subtabs and Content
+    .dashboard-content-inner {
+        position: absolute;
+        height: auto;
+        top: $subtab_height + $subtab_top_pad;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-top:0;
+
+        .sub_navigation {
+            li {
+                .button-primary {
+                    position: absolute;
+                    top: 0.25em;
+                    right: 0.25em;
+                }
+
+                a {
+                    padding: 0 0.25em 0;
+                    color: $color-baseline;
+                }
+            }
+        }
+
+        .highlight-related {
+            background-color: $gray_very_very_light;
+        }
+
+        #doaction_search {
+            font-family: sans-serif, FontAwesome;
+        }
+
+        .location_map {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 1em;
+        }
+
+        .settings-content {
+            position: absolute;
+            height: auto;
+            bottom: 0;
+            top: $subtab_height + 0.5em;
+            left: 0;
+            right: 0;
+            margin-bottom: 0;
+            overflow:auto;
+        }
+    }
+
+    // Add/Edit Form
+    //.
+    #wpcsl-option-add {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 1em;
+        z-index: 9999;
+
+        #slp_form_buttons {
+            display: flex;
+            input {
+                flex: 0 1;
+                margin: 0 1em;
+            }
+        }
+    }
+
+    // Manage Locations Content
+    //
+    .page_slp_manage_locations {
+        @import '../assets/sass/components/_location-cards';
+
+        .hidden {
+            display: none;
+        }
+        .unhidden {
+            display: flex;
+        }
+
+        // List of Locations
+        //
+        #manage_locations_table {
+            .store_name {
+                cursor: pointer;
+                color: $color_link;
+            }
+        }
+
+        .location-card {
+            position: fixed;
+            width: 80%;
+            top: 0;
+            right: 0;
+            z-index: 9999;
+
+            .primary {
+                h3 {
+                    display: block;
+                }
+                a {
+                    text-decoration: none;
+                }
+
+                div.action_buttons {
+                    display: none;
+                }
+            }
+
+            .card-header {
+                flex-direction: column;
+            }
+
+            .card-body {
+                .col {
+                    margin-bottom: 2em;
+                }
+            }
+
+            span {
+                &.one-liner {
+                    display: block;
+
+                    &.sl_initial_distance {
+                        margin-bottom: $space_for_location_details;
+                    }
+                    &.sl_hours {
+                        margin: $space_for_location_details 0;
+                        white-space: pre-wrap;
+                    }
+                }
+            }
+
+            .location_map {
+                height: 200px;
+                width: 200px;
+            }
+
+        }
+
+        .ui-dialog {
+            background-color: white;
+            padding: 1em;
+            margin: 0.5em;
+            border: solid 1px lightgrey;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: none;
+
+            .ui-dialog-titlebar {
+                margin-bottom: 0.25em;
+            }
+        }
+    }
+
+    .settings-content {
+        padding: 0 0.75em;
+
+        .settings-group {
+            .inside {
+                margin: 0;
+            }
+
+            h4 {
+                font-size: 1em;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
+    }
+}
+
+// -- RIGHT SIDEBAR
+//
+.dashboard-aside-secondary {
+    background-color: $color-background;
+    color: $color-baseline-dark;
+
+    .aside-heading {
+        margin: 0;
+        height: 3em;
+        padding: 1.43em 2em 0;
+        font-size: 1em;
+    }
+
+    .description-heading {
+        color: $color-baseline;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        border-bottom: solid 1px $color-baseline-light;
+    }
+
+    .settings-description {
+
+
+        p.selections {
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: row wrap;
+
+            .label {
+                flex: 1 1 1em;
+            }
+            .function {
+                flex: 3 1;
+            }
+        }
+
+        // Manage Locations Sidebar
+        .location_detail {
+            display: block;
+            font-size: 1em;
+
+            img {
+                max-width: 250px;
+            }
+        }
+
+        // Manage Locations Sidebar
+        .action_buttons {
+            margin-top: 1em;
+
+            .dashicons-trash {
+                display: none;
+            }
+        }
+
+        // Experience Sidebar
+        //
+        .add_on_info {
+            display:block;
+            padding: 0.5em 0;
+        }
+        .product_link {
+            display: block;
+        }
+
+        .view_docs {
+            display: block;
+            margin-top: 1em;
+        }
+
+    }
+}
+
+.new_paragraph {
+    display:block;
+    margin: 1em 0;
+}
+
+.slp-notification {
+    position: relative;
+    width: 96%;
+
+    &.alert-center {
+        top: inherit;
+        z-index: 999;
+
+        .button {
+            box-shadow: none;
+        }
+
+        A {
+            color: lightgrey;
+        }
+    }
+
+    ul {
+        margin: 0;
+        list-style: none;
+    }
+}
+
+// Legacy
+
+// MySLP Related
+//
+.dashboard-content {
+
+    // All Settings Pages allows left/right-side content
+    .group.subtab {
+        .left_side {
+            display: table-cell;
+            margin-right: 1.5em;
+            vertical-align: top;
+            min-width: 15em;
+
+            .content_pad {
+                padding: 1.5em;
+
+                &.how_to_use {
+                    max-width: 650px;
+                    background-color: white;
+                }
+            }
+        }
+
+        .right_side {
+            display: table-cell;
+            vertical-align: top;
+            min-width: 15em;
+            padding-left: 1.5em;
+
+            .content_pad {
+                padding: 0 1em;
+            }
+
+            .news_feed_list {
+                margin-top: -2.5em;
+            }
+
+            .news_feed_item {
+                border-bottom: $border_menu_bottom_divider;
+                color: $gray;
+                padding: 1em 0;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1.1em;
+                }
+
+                .news_datetime {
+                    display: block;
+                    margin-top: -0.25em;
+                }
+            }
+        }
+
+        @media (max-width: 782px) {
+            .left_side {
+                display: block;
+                max-width: 100%;
+            }
+
+            .right_side {
+                display: block;
+                max-width: 100%;
+                padding-left: 0;
+                margin-top: 2em;
+            }
+        }
+    }
+
+    // Info / Plugin Environment
+    p.envinfo {
+        margin: 0;
+        padding: 0;
+    }
+
+    // Info / How To Use || Plugin Environment
+    .ratebox {
+        font-size: 1.25em;
+        margin: 0 0 3em 0;
+        padding: 0;
+        text-shadow: none;
+        width: auto;
+    }
+
+    // Info / How To Use
+    .slp_info {
+        &.link_list {
+            ul {
+                list-style: none;
+                margin-left: 3.0em;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+button, input {
+    line-height: normal;
+}
+
+button,
+input,
+textarea {
+    border: 1px solid $gray;
+    border-radius: 3px;
+    font-family: inherit;
+}
+
+/*--------------------------
+ * WordPress Overrides
+ *--------------------------*/
+#wpbody-content {
+    #error {
+        z-index: 9999;
+        position: absolute;
+        background-color: white;
+        border: solid 1px red;
+        padding: 1em;
+    }
+}
+
+#wpfooter {
+    position: relative;
+}
+
+/*--------------------------
+ * SLP Custom Admin Panel
+ *--------------------------*/
+#wpcsl_container {
+
+    // Main Tab Area
+    .subtab_navbar_wrapper {
+        display: block;
+        position: relative;
+    }
+
+    // Subtab and Content Area
+    .dashboard-content-inner {
+        border-bottom: 1px solid #CCCCCC;
+        min-width: 10%;
+        padding-bottom: 0;
+    }
+
+    // The body of each panel of SLP
+    .postbox {
+        box-shadow: none;
+
+        &.full-width {
+            max-width: 100%;
+        }
+
+        .handlediv {
+            display: none;
+        }
+
+        h3.hndle {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px;
+        }
+    }
+
+    select {
+        // Equalize spacings
+        min-width: 200px;
+    }
+
+    .slp_settings_icon {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .section_column_intro {
+        margin-bottom: 1em;
+    }
+
+    // Set inner padding for the main menu heading and the submenu items.
+    $navigation_wrapper_padding: 15px;
+
+    #wpcsl-nav {
+
+        // Different button styling to match the updated view.
+        .navsave {
+            .button-primary {
+                border: none;
+                background: $color-green;
+                color: white;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+                text-shadow: none;
+
+                &:hover {
+                    background-color: $gray_mid_dark;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    // Content
+    //
+    #content {
+
+        // Groups
+        //
+        .group {
+            margin-top: 0;
+
+            h1 {
+                border-bottom: 1px solid #E0E0E0;
+                color: #464646;
+                display: none;
+                font-size: 23px;
+                font-weight: normal;
+                margin: 0 0 20px;
+                padding: 20px 0;
+            }
+
+            // SLP Settings
+            //
+            @import "../assets/sass/layout/settings/vision_list";
+        }
+
+        // Sections
+        //
+        .section {
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .dashicons-editor-help {
+        opacity: 0;
+        transition: 0.2s;
+        margin-left: 2px;
+        color: #eee;
+
+        &:hover {
+            color: #0073aa;
+        }
+    }
+
+    .postbox:hover .dashicons-editor-help {
+        opacity: 1;
+        transition: 0s;
+    }
+
+    a.hyper_button {
+        color: $gray_dark;
+        background-color: $white_yellow_tint;
+        border: $border_menu_bottom_divider;
+        border-radius: 4px;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        vertical-align: top;
+        box-shadow: none;
+
+        font-size: 1em;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+
+        height: 4em;
+        line-height: 4em;
+
+        width: 20em;
+        text-align: center;
+
+        .icon-label {
+            font-size: 1.5em;
+            font-weight: 400;
+            width: 100%;
+            padding-top: 0.5em;
+
+            &:before {
+                padding-right: 0.25em;
+            }
+        }
+    }
+}
+
+/**
+ * Navigation Elements
+ */
+
+// Submenu Navigation Interface
+#wpcsl-nav {
+    a {
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+
+/**
+ * .section_column div - all admin panel "box contents" go in here
+ */
+.section_column {
+    background-color: #F0F0E0;
+    border: solid 1px #D0D0D0;
+    margin: 0 0 0.25em 0;
+    padding: 0 0 0.25em 0;
+    min-width: 520px;
+    overflow: auto;
+
+    p.slp_admin_info {
+        clear: both;
+        padding-left: 0.5em;
+        margin: 0;
+        font-size: 14px;
+        color: #222;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+// Any Group Named "markers" on the settings interface. (Experience/Map/Markers)
+//
+#wpcsl_settings_group-markers {
+    label {
+        min-width: 0;
+    }
+
+    .notice {
+        margin: 0;
+    }
+
+
+    .form_entry {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+
+        &:last-of-type {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// New input fields markup.
+.postbox .inside {
+    padding: 1em;
+
+    &, * {
+        box-sizing: border-box;
+    }
+
+    .input-field {
+        width: 100%;
+        margin-bottom: 10px;
+
+        // Use the table layout without the table HTML tags.
+        .label,
+        .input {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .label {
+            color: black; // Some (really bad) plugins are setting  label colors to white. WTF.
+            padding-right: 20px;
+            text-align: right;
+            padding-top: 6px;
+            width: 180px;
+        }
+
+        .input {
+            width: auto;
+            position: relative;
+
+            h3 {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 5px
+            }
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+        }
+
+        input[type=checkbox] {
+            box-shadow: none;
+            // height: 1.1em;       // This makes the checkboxes different sizes for some reason. WTF.
+            text-align: left;
+            width: auto;
+            -webkit-box-shadow: none;
+            margin-top: 5px;
+
+            @media screen and (max-width: 782px) {
+                box-sizing: content-box;
+
+                &:before {
+                    margin: -4px -7px;
+                }
+            }
+        }
+    }
+}
+
+/*
+ * UX : View : Theme Settings
+ */
+.theme_details {
+    display: none;
+    width: 43em;
+
+    .style_sample {
+        display: block;
+        margin: 0 auto;
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .add_on_info {
+        font-size: 1.1em;
+        line-height: 2em;
+        padding-top: 1em;
+        display: block;
+    }
+
+    .product_link {
+        display: block;
+        white-space: normal;
+    }
+
+    .theme_option_value {
+        height: 4em;
+        overflow: auto;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .slp_admin_info {
+        padding-left: 0;
+    }
+
+    ul {
+        list-style: disc;
+        margin-left: 3em;
+    }
+
+    pre {
+        background-color: #F0F0F0;
+        border: 1px solid #CCCCCC;
+        display: block;
+        margin: 0 0 0 3em;
+        padding: 0.5em;
+        white-space: pre-wrap;
+        width: 80%;
+        resize: both;
+    }
+
+    .product {
+        &.inactive {
+            list-style: circle outside none;
+            a {
+                text-decoration: underline;
+            }
+        }
+        &.active {
+            list-style: disc outside none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+span.label {
+    color: $color-baseline-light;
+    display: inline-block;
+    padding: 4px;
+    text-align: right;
+    width: 180px;
+    margin-right: 6px;
+}
+
+.section_description {
+    color: $gray_dark;
+    font-size: 1em;
+    padding: 1em 0;
+
+    // For better desktop and mobile view.
+    display: table;
+
+    h3 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 0 0 0.25em 0;
+        color: #222;
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #444;
+    }
+
+    @media (max-width: 782px) {
+        display: block;
+
+        .left_side {
+            display: block;
+            max-width: 100%;
+        }
+
+        .right_side {
+            display: block;
+            max-width: 100%;
+            margin-top: 30px;
+
+            .content_pad {
+                padding: 2em;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.sprite_48 {
+    background: transparent url("images/icons48.png") no-repeat scroll;
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+
+    &.documentation {
+        background-position: -195px 0;
+    }
+
+    &.forums {
+        background-position: -242px 0;
+    }
+
+    &.rss {
+        background-position: -49px 0;
+    }
+
+    &.twitter {
+        background-position: -98px 0;
+    }
+
+    &.youtube {
+        background-position: -147px 0;
+    }
+}
+
+/**
+ * Line Entries
+ */
+.form_entry {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .small {
+        width: 3em;
+        vertical-align: top;
+    }
+
+    input {
+        display: inline-block;
+    }
+
+    label {
+        display: inline-block;
+        overflow: hidden;
+        text-align: right;
+        vertical-align: top;
+        white-space: nowrap;
+        margin-right: 0.6em;
+        margin-top: 5px;
+
+        &.disabled {
+            color: #CCC;
+        }
+
+    }
+
+    textarea {
+        display: inline-block;
+        min-height: 3em;
+        margin-left: 3px;
+        min-width: 20em;
+    }
+
+}
+
+/**
+ * DashIcons
+ */
+.dashicons {
+    &.slp-no-box-shadow {
+        box-shadow: none;
+    }
+}
+
+/* Action Icons */
+
+#action_buttons {
+    display: inline;
+    margin: 12px 0 0 0;
+    padding: 0;
+    position: relative;
+    line-height: normal;
+}
+
+/**
+ * Line Entries : Help
+ */
+.input_note {
+    clear: both;
+    text-align: left;
+    display: block;
+    color: #888;
+}
+
+.wpcsl_helptext {
+    font-size: 1em;
+    font-weight: normal;
+    white-space: pre-wrap;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.2s;
+
+    &.is-visible {
+        max-height: 500px;
+        opacity: 1;
+        transition: 0.2s;
+    }
+}
+
+/* More Info Box */
+p.message {
+    clear: both;
+    color: #999999;
+    font-size: 11px;
+    margin: -18px 0 9px;
+    padding: 0 0 0 9px;
+    text-align: left;
+}
+
+/*
+ * .tablenav : Action / Filter Bar
+ */
+.tablenav {
+    height: auto;
+    margin: 0;
+
+    &.top {
+        //position: fixed;
+        z-index: 999;
+        padding: 0.25em;
+        margin: 0 0 0.25em 0;
+    }
+
+    INPUT[type="text"] {
+        padding: 2px;
+        height: 2em;
+        margin-right: 6px;
+    }
+
+    .alignleft.actions {
+        display: inline-block;
+    }
+
+    .button.action {
+        width: auto;
+        &:hover {
+            background-color: $green_mid;
+        }
+
+        &.right_half {
+            border-radius: 0 3px 3px 0;
+            text-align: left;
+            padding-left: 0.25em;
+            border-left: none;
+        }
+        &.left_half {
+            border-radius: 3px 0 0 3px;
+            text-align: right;
+            padding-right: 0.5em;
+            border-right: dotted 1px $gray_mid_light;
+        }
+    }
+
+    #column_hider {
+        &.drop_activated {
+            color: $green_dark;
+        }
+    }
+}
+
+/*
+ * Bulk and Filter Actions
+ */
+.bulk_extras, .filter_extras {
+    background-color: #FAFAD2;
+    border: 1px solid gray;
+    padding: 6px;
+    display: none;
+}
+
+.bulkextras,
+.filterextras {
+    border: solid 1px silver;
+    display: inline-block;
+    min-width: 180px;
+}
+
+.bulkextras:last-child,
+.filterextras:last-child {
+    border: none;
+}
+
+.subtab-wrap {
+    padding: 0;
+    margin: 0;
+    border-bottom: solid 1px $gray;
+}
+
+a.page-button {
+    margin: 0 2px;
+}
+
+a.page-button.thispage {
+    font-weight: bold;
+    background-color: #FAFAD2;
+    border-color: #B8860B;
+    color: #B8860B;
+}
+
+#search {
+    margin-top: 18px;
+}
+
+#list_options select {
+    padding: 0;
+    margin: 0;
+}
+
+/***************************
+ * Locations: Add Form / Edit
+ */
+.locations_div_add {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+#slp_manual_update_table_right_cell {
+    min-width: 300px;
+}
+
+/* Address Search */
+div#sl_div div#address_search input[type="submit"] {
+    margin: 3px;
+    padding: 3px;
+}
+
+.menu-toggle, button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+.menu-toggle,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+article.post-password-required input[type="submit"],
+li.bypostauthor cite span {
+    background: #E6E6E6 repeat-x;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    color: #7C7C7C;
+    font-size: 0.785714rem;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 0.428571rem 0.714286rem;
+}
+
+div#sl_div div#address_search {
+    text-align: left;
+}
+
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+// Locations / Manage
+.manage_locations_table_outside {
+    clear: both;
+    overflow: visible;
+    position: relative;
+    margin: 0 0.25em;
+}
+
+#manage_locations_table_wrapper {
+    clear: both;
+    position: relative;
+    height: auto;
+    display: block;
+}
+
+#top_of_checkbox_column {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#manage_locations_table {
+
+    // Column Headers
+    //
+    th {
+        font-size: 1em;
+        vertical-align: top;
+        white-space: nowrap;
+
+        a {
+            box-shadow: none;
+        }
+
+        &.address a {
+            display: inline-block;
+            padding: 7px 0;
+        }
+
+        &.slp_checkbox {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .infoid {
+        color: gray;
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.75em;
+        text-align: right;
+        width: 100%;
+
+        &.floater {
+            width: auto;
+            float: right;
+        }
+    }
+
+    .location_image {
+        max-width: 100px;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
+    .manage-column .slp_hidden {
+        font-size: 1em;
+        color: grey;
+    }
+
+    // Location Marked Private
+    //
+    .private td {
+        color: $inactive_text;
+
+        a {
+            color: $inactive_text;
+        }
+    }
+
+    // Manage Locations Row
+    //
+    .slp_managelocations_row {
+
+        // Standard Row Hover
+        &:hover {
+            background-color: $highlighted_selector;
+        }
+
+        // Invalid/non-geocoded rows
+        &.invalid {
+            background-color: $invalid;
+            &:hover {
+                background-color: $invalid_hover;
+            }
+        }
+
+        // featured locations
+        &.featured {
+            background-color: $featured_location;
+            &:hover {
+                background-color: $featured_location_hover;
+            }
+
+            td.slp_manage_locations_cell {
+                &.name {
+                    font-size: 1.25em;
+                }
+                &.featured {
+                    background: 12% 70%/16px auto no-repeat;
+                }
+            }
+        }
+
+        // alternate rows invalid and featured coloring
+        &.alternate {
+            &.invalid {
+                background-color: $invalid_alternate;
+
+                &:hover {
+                    background-color: $invalid_hover;
+                }
+            }
+            &.featured {
+                background-color: $featured_location_alternate;
+
+                &:hover {
+                    background-color: $featured_location_hover;
+                }
+            }
+        }
+
+        &.collapsed {
+            display: none;
+        }
+
+        .store_latlong {
+            display: block;
+            font-size: 0.75em;
+            font-style: italic;
+        }
+
+        .slp_manage_locations_cell {
+            display: table-cell;
+            word-wrap: break-word;
+            word-break: keep-all;
+            max-width: 20em;
+
+            &.hidden {
+                display: none;
+            }
+
+            &.distance {
+                text-align: right;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+#location_unhider {
+    a {
+        box-shadow: none;
+    }
+
+    .unhider {
+        margin-left: 1.5em;
+    }
+}
+
+.slp_icon_row {
+    margin: 0;
+    overflow: auto;
+    min-height: 4em;
+    width: 100%;
+    resize: both;
+    padding: 23px; // Better alignment
+}
+
+.slp_icon_selector_box {
+    border: solid 1px transparent;
+    float: left;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.slp_icon_selector_box:hover {
+    border: solid 1px #AAA;
+    background-color: $highlighted_selector;
+    transition: 0s;
+}
+
+img.slp_icon_selector {
+    cursor: pointer;
+    padding: 2px;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+/***************************
+ * Settings: General
+ **/
+
+.highlight {
+    background-color: $notice_background;
+    border: $notice_border;
+    color: #000000;
+    left: auto;
+    min-width: 180px;
+    padding: 7px;
+    position: absolute;
+    right: 6px;
+    text-align: center;
+    top: 6px;
+    vertical-align: middle;
+    z-index: 9999;
+}
+
+div.section_column_content {
+    padding: 0 6px;
+}
+
+div.section_column h2 {
+    background: none repeat scroll 0 0 #E0E0D0;
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 16px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    padding: 0 6px;
+}
+
+.inside.section h2,
+.section_description h2,
+.inside.section h3,
+.section_description h3 {
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+
+    &.hndle {
+        display: inline-block;
+        line-height: 1em;
+        margin: 0;
+        padding: 0.5em;
+        width: 90%;
+    }
+}
+
+.inside.section h2,
+.section_description h2 {
+    color: #222;
+    font-size: 14px;
+}
+
+.inside.section h3,
+.section_description h3 {
+    color: #333;
+    font-size: 13px;
+}
+
+.alignright {
+    text-align: right;
+}
+
+.rowon {
+    background: #F4F4F4;
+}
+
+.rowoff {
+    background: #FFFFFF;
+}
+
+/*** Generic Formatting ***/
+
+.helpicon {
+    padding-left: 5px;
+    position: relative;
+    vertical-align: top;
+}
+
+.form-table .input_label,
+.form-table .input_label-disabled {
+    color: #222;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 3em;
+    padding: 0;
+    text-align: right;
+    vertical-align: top;
+}
+
+.form-table .input_label-disabled {
+    color: #CCCCCC;
+}
+
+.csa_info_msg {
+    clear: both;
+    border: none;
+    margin: 0;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.quick_save {
+    label {
+        color: $color-compliment_b;
+    }
+}
+
+// Extra styling for WP's mobile settings.
+@media screen and (max-width: 782px) {
+    input {
+        padding: 5px 8px;
+    }
+
+    .postbox .inside .input-field {
+        input[type=checkbox], input[type=radio] {
+            width: 25px;
+
+            &:before {
+                margin: -1px -3px;
+            }
+        }
+    }
+}
+
+
+

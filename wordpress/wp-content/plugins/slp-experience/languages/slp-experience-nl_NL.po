@@ -1,0 +1,1275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus Experience v4.4.04\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Jan 18 2016 10:01:45 GMT-0500 (EST)\n"
+"PO-Revision-Date: 2016-02-21 08:18:58+0000\n"
+"Last-Translator: DeBAAT <De_BAAT@de-baat.nl>\n"
+"Language-Team: De B.A.A.T. <slp-experience@de-baat.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: slp-experience.php:0
+#: slp-experience.php:52
+#@ slp-experience
+msgid "Store Locator Plus Experience"
+msgstr "Store Locator Plus Experience"
+
+#. translators: plugin header field 'AuthorURI'
+#: slp-experience.php:0
+#@ slp-experience
+msgid "https://wordpress.storelocatorplus.com"
+msgstr "https://wordpress.storelocatorplus.com"
+
+#. translators: plugin header field 'Description'
+#: slp-experience.php:0
+#@ slp-experience
+msgid "Extends the Store Locator Plus plugin with features that allow site authors and developers to create a customized robust user experience."
+msgstr "Breidt de Store Locator Plus plug-in uit met features die het mogelijk maken voor web site beheerders en ontwikkelaars om een persoonlijke en robuste gebruikerservaring neer te zetten."
+
+#. translators: plugin header field 'Author'
+#: slp-experience.php:0
+#@ slp-experience
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+#: slp-experience.php:65
+#, php-format
+#@ slp-experience
+msgid "%s requires WordPress %s to function properly. "
+msgstr "%s heeft WordPress %s nodig om goed te functioneren. "
+
+#: slp-experience.php:69
+#@ slp-experience
+msgid "This plugin has been deactivated."
+msgstr "Deze plug-in is gedeactiveerd."
+
+#: slp-experience.php:70
+#@ slp-experience
+msgid "Please upgrade WordPress."
+msgstr "Upgrade WordPress aub."
+
+#: slp-experience.php:95
+#, php-format
+#@ slp-experience
+msgid "%s deactivated the conflicting SLP Widget Pack add-on. "
+msgstr "%s deactiveerde de conflicterende SLP Widget Pack add-on. "
+
+#: include/class.activation.php:58
+#@ slp-experience
+msgid "Featured"
+msgstr "Uitgelicht"
+
+#: include/class.activation.php:64
+#@ slp-experience
+msgid "If checked the location will be marked as featured. "
+msgstr "Als aangevinkt wordt de locatie aangemerkt als uitgelicht. "
+
+#: include/class.activation.php:65
+#@ slp-experience
+msgid "Featured locations may display differently depending on the plugin style selected. "
+msgstr "Uitgelichte locaties kunnen anders weergegeven worden afhankelijk van de plug-in style die gekozen is. "
+
+#: include/class.activation.php:71
+#@ slp-experience
+msgid "Rank"
+msgstr "Rang"
+
+#: include/class.activation.php:76
+#@ slp-experience
+msgid "Determine the sort order for this location, lower numbers are displayed first. "
+msgstr "Bepaal de sorteer volgorde voor deze locatie, lagere nummers worden eerst getoond. "
+
+#: include/class.activation.php:77
+#@ slp-experience
+msgid "Sort order is determined by the order by settings."
+msgstr "Sorteer volgorde is bepaald door de sorteervolgorde instellingen."
+
+#: include/class.activation.php:83
+#@ slp-experience
+msgid "Map Marker"
+msgstr "Kaart Marker"
+
+#: include/class.activation.php:88
+#@ slp-experience
+msgid "This image will be the map marker at all times regardless of assigned category or other map marker settings."
+msgstr "Dit plaatje zal altijd gebruikt worden als map marker ongeacht toegekende categorie of andere map marker instellingen."
+
+#: include/class.activation.php:233
+#, php-format
+#@ slp-experience
+msgid "As part of the %s upgrade, %s per-location map markers were updated."
+msgstr "Als onderdeel van de %s upgrade, zijn %s per-locatie map markers bijgewerkt."
+
+#: include/class.admin.experience.php:56
+#@ slp-experience
+msgid "Page Layout"
+msgstr "Pagina Layout"
+
+#: include/class.admin.experience.php:58
+#@ slp-experience
+msgid "Locator Layout"
+msgstr "Locator Layout"
+
+#: include/class.admin.experience.php:59
+#@ slp-experience
+msgid "Enter your custom page layout for the Store Locator Plus page. Set it to blank to reset to the default layout."
+msgstr "Geef je persoonlijke pagina layout voor de Store Locator Plus pagina. Maak leeg om te resetten naar de standaard layout."
+
+#: include/class.admin.experience.php:68
+#@ slp-experience
+msgid "CSS Manipulation"
+msgstr "CSS Manipulatie"
+
+#: include/class.admin.experience.php:71
+#@ slp-experience
+msgid "Custom CSS"
+msgstr "Aangepast CSS"
+
+#: include/class.admin.experience.php:72
+#@ slp-experience
+msgid "Enter your custom CSS, preferably for SLPLUS styling only but it can be used for any page element as this will go in your page header."
+msgstr "Geef je persoonlijke CSS, bij voorkeur voor SLPLUS styles maar het kan gebruikt worden voor ieder element op de pagina omdat deze code in je pagina header komt."
+
+#: include/class.admin.experience.php:81
+#: include/class.admin.experience.php:207
+#@ slp-experience
+msgid "Appearance"
+msgstr "Uiterlijk"
+
+#: include/class.admin.experience.php:84
+#@ slp-experience
+msgid "Hide The Map"
+msgstr "Verberg De Kaart"
+
+#: include/class.admin.experience.php:85
+#@ slp-experience
+msgid "Do not show the map on the user interface."
+msgstr "Toon de kaart niet op de gebruikers interface."
+
+#: include/class.admin.experience.php:90
+#@ slp-experience
+msgid "Add Map Toggle On UI"
+msgstr "Voeg Kaart Schakelaar Toe Aan UI"
+
+#: include/class.admin.experience.php:91
+#@ slp-experience
+msgid "Add a map on/off toggle to the user interface."
+msgstr "Voeg een kaart aan/uit schakelaar toe aan de gebruikersinterface."
+
+#: include/class.admin.experience.php:96
+#@ slp-experience
+msgid "Show Map Scale"
+msgstr "Toon Map Schaal"
+
+#: include/class.admin.experience.php:97
+#@ slp-experience
+msgid "Show the scale on the map."
+msgstr "Toon de schaal op de map."
+
+#: include/class.admin.experience.php:102
+#@ slp-experience
+msgid "Show Map Type Selector"
+msgstr "Toon Map Type Selector"
+
+#: include/class.admin.experience.php:103
+#@ slp-experience
+msgid "Show the map type selector on the map."
+msgstr "Toon de map type selector op de map."
+
+#: include/class.admin.experience.php:108
+#@ slp-experience
+msgid "Hide Info Bubble"
+msgstr "Verberg Info Ballon"
+
+#: include/class.admin.experience.php:109
+#@ slp-experience
+msgid "Disable the on-map info bubble."
+msgstr "Schakel de info ballon op de kaart uit."
+
+#: include/class.admin.experience.php:114
+#@ slp-experience
+msgid "Toggle Label"
+msgstr "Schakel Label"
+
+#: include/class.admin.experience.php:115
+#@ slp-experience
+msgid "The text that appears before the display map on/off toggle."
+msgstr "De tekst die getoond wordt voor het tonen van de kaart aan/uit schakelaar."
+
+#: include/class.admin.experience.php:120
+#@ slp-experience
+msgid "Map Layout"
+msgstr "Kaart Layout"
+
+#: include/class.admin.experience.php:121
+#@ slp-experience
+msgid "Enter your custom map area layout. "
+msgstr "Kies je persoonlijke map area layout. "
+
+#: include/class.admin.experience.php:124
+#: include/class.admin.experience.php:135
+#@ slp-experience
+msgid "Uses HTML and shortcodes."
+msgstr "Gebruikt HTML en shortcodes."
+
+#: include/class.admin.experience.php:126
+#: include/class.admin.experience.php:137
+#: include/class.admin.experience.php:260
+#: include/class.admin.experience.php:548
+#@ slp-experience
+msgid "Set it to blank to reset to the default layout. "
+msgstr "Maak het veld leeg om te resetten naar de standaard layout. "
+
+#: include/class.admin.experience.php:131
+#@ slp-experience
+msgid "Bubble Layout"
+msgstr "Ballon Layout"
+
+#: include/class.admin.experience.php:132
+#@ slp-experience
+msgid "Enter your custom info bubble layout. "
+msgstr "Geef uw persoonlijke info ballon layout. "
+
+#: include/class.admin.experience.php:142
+#@ slp-experience
+msgid "Map Style"
+msgstr "Kaart Stijl"
+
+#: include/class.admin.experience.php:143
+#@ slp-experience
+msgid "Enter the JSON-style map style rules. "
+msgstr "Geef de JSON-style kaart stijl regels. "
+
+#: include/class.admin.experience.php:144
+#@ slp-experience
+msgid "See places like <a href=\"https://snazzymaps.com/\">Snazzy Maps</a>."
+msgstr "Zie plaatsen zoals <a href=\"https://snazzymaps.com/\">Snazzy Maps</a>."
+
+#: include/class.admin.experience.php:153
+#: include/class.admin.experience.php:270
+#@ slp-experience
+msgid "Functionality"
+msgstr "Functionaliteit"
+
+#: include/class.admin.experience.php:156
+#@ slp-experience
+msgid "Use Scrollwheel To Zoom"
+msgstr "Gebruik Scrollwiel Om Te Zoomen"
+
+#: include/class.admin.experience.php:157
+#@ slp-experience
+msgid "When checked, using the scrollwheel will zoom the map."
+msgstr "Als aangevinkt kun je het scroll wiel gebruiken om in en uit te zoomen."
+
+#: include/class.admin.experience.php:166
+#: include/class.admin.experience.php:373
+#@ slp-experience
+msgid "At Startup"
+msgstr "Bij Opstarten"
+
+#: include/class.admin.experience.php:169
+#@ slp-experience
+msgid "Hide Home Marker"
+msgstr "Verberg Home Marker"
+
+#: include/class.admin.experience.php:170
+#@ slp-experience
+msgid "Do not include the home map marker for the initial map loading with show locations at startup enabled."
+msgstr "Gebruik de home map marker niet voor de initiële map als toon locaties bij opstarten is aangezet."
+
+#: include/class.admin.experience.php:175
+#@ slp-experience
+msgid "Do Not Auto-zoom"
+msgstr "Doe Niet Automatisch Zoomen"
+
+#: include/class.admin.experience.php:176
+#@ slp-experience
+msgid "Use only the \"zoom level\" setting when rendering the initial map for show locations at startup. "
+msgstr "Gebruik alleen de \"zoom level\" instelling bij het genereren van de initiële map voor toon locaties bij opstarten. "
+
+#: include/class.admin.experience.php:177
+#@ slp-experience
+msgid "Do not automatically zoom the map to show all initial locations."
+msgstr "Zoom de map niet automatisch om alle initiële locaties te tonen."
+
+#: include/class.admin.experience.php:182
+#@ slp-experience
+msgid "Map Display"
+msgstr "Kaart Weergave"
+
+#: include/class.admin.experience.php:183
+#@ slp-experience
+msgid "Set what to display when the page loads. "
+msgstr "Stel in wat weer te geven als de pagina laadt. "
+
+#: include/class.admin.experience.php:184
+#@ slp-experience
+msgid "Show Map - Display a map. "
+msgstr "Toon Kaart - Toon een kaart. "
+
+#: include/class.admin.experience.php:185
+#@ slp-experience
+msgid "Hide Until Search - Display nothing until an address is searched. "
+msgstr "Verberg Tot Zoeken - Toon niets totdat gezocht is op een adres. "
+
+#: include/class.admin.experience.php:186
+#@ slp-experience
+msgid "Image Until Search - Display the image set by Starting Image."
+msgstr "Plaatje Tot Zoek - Toon het plaatje zoals geconfigureerd bij Start Plaatje."
+
+#: include/class.admin.experience.php:188
+#@ slp-experience
+msgid "Show Map"
+msgstr "Toon Kaart"
+
+#: include/class.admin.experience.php:189
+#@ slp-experience
+msgid "Hide Until Search"
+msgstr "Verberg Tot Zoek"
+
+#: include/class.admin.experience.php:190
+#@ slp-experience
+msgid "Image Until Search"
+msgstr "Plaatje Tot Zoek"
+
+#: include/class.admin.experience.php:196
+#@ slp-experience
+msgid "Starting Image"
+msgstr "Start Afbeelding"
+
+#: include/class.admin.experience.php:197
+#@ slp-experience
+msgid "If set, this image will be displayed until a search is performed.  Enter the full URL for the image."
+msgstr "Als deze afbeelding gedefinieerd is, zal deze worden weer gegeven tot dat er een zoekopdracht is uitgevoerd. Geef de volledige URL voor de afbeelding. "
+
+#: include/class.admin.experience.php:210
+#@ slp-experience
+msgid "Use Dial Link For Phone"
+msgstr "Gebruik Bel Link Voor Telefoon"
+
+#: include/class.admin.experience.php:211
+#@ slp-experience
+msgid "When checked, wraps the phone number in the results in a tel: href tag."
+msgstr "Als aangevinkt, pakt het telefoonnummer in de resultaten in in een tel: href tag."
+
+#: include/class.admin.experience.php:216
+#@ slp-experience
+msgid "Hide Distance"
+msgstr "Verberg Afstand"
+
+#: include/class.admin.experience.php:217
+#@ slp-experience
+msgid "Do not show the distance to the location in the results table."
+msgstr "Toon de afstand tot de locatie niet in de resultaten tabel."
+
+#: include/class.admin.experience.php:222
+#@ slp-experience
+msgid "Show Country"
+msgstr "Toon Land"
+
+#: include/class.admin.experience.php:223
+#@ slp-experience
+msgid "Display the country in the results table address."
+msgstr "Toon het land bij het adres in de resultaten tabel."
+
+#: include/class.admin.experience.php:228
+#@ slp-experience
+msgid "Show Hours"
+msgstr "Toon Uren"
+
+#: include/class.admin.experience.php:229
+#@ slp-experience
+msgid "Display the hours in the results table under the Directions link."
+msgstr "Toon de uren in de resultaten tabel onder de Routebeschrijving link."
+
+#: include/class.admin.experience.php:234
+#@ slp-experience
+msgid "Email Format"
+msgstr "Email Formaat"
+
+#: include/class.admin.experience.php:235
+#@ slp-experience
+msgid "How email will be displayed and function in the results list."
+msgstr "Hoe email wordt getoond en functioneert in de resultaat lijst."
+
+#: include/class.admin.experience.php:238
+#@ slp-experience
+msgid "Email Label with Email Link"
+msgstr "Email Label met Email Link"
+
+#: include/class.admin.experience.php:242
+#@ slp-experience
+msgid "Email Address with Email Link"
+msgstr "Email Adres met Email Link"
+
+#: include/class.admin.experience.php:246
+#@ slp-experience
+msgid "Popup Form Linked To Email"
+msgstr "Popup Formulier Linked Aan Email"
+
+#: include/class.admin.experience.php:254
+#@ slp-experience
+msgid "Results Layout"
+msgstr "Resultaten Layout"
+
+#: include/class.admin.experience.php:255
+#@ slp-experience
+msgid "Enter your custom results area layout for the location results. "
+msgstr "Geef je persoonlijke resultaten gebied layout voor de locatie resultaten. "
+
+#: include/class.admin.experience.php:258
+#@ slp-experience
+msgid "Uses HTML plus shortcodes."
+msgstr "Gebruikt HTML plus shortcodes."
+
+#: include/class.admin.experience.php:261
+#@ slp-experience
+msgid "Overrides all other results settings."
+msgstr "Overruled alle andere resultaten instellingen."
+
+#: include/class.admin.experience.php:273
+#@ slp-experience
+msgid "Order Results By"
+msgstr "Sorteer Resultaten Op"
+
+#: include/class.admin.experience.php:274
+#@ slp-experience
+msgid "Select a sort order for the results.  Default is Closest..Furthest."
+msgstr "Selecteer een sorteer volgorde voor de resultaten. Default is Dichtstbijzijnd..Verstweg"
+
+#: include/class.admin.experience.php:277
+#@ slp-experience
+msgid "Featured, Rank, Closest"
+msgstr "Uitgelicht, Rang, Dichtstbijzijnd"
+
+#: include/class.admin.experience.php:281
+#@ slp-experience
+msgid "Featured, Rank, A..Z"
+msgstr "Uitgelicht, Rang, A..Z"
+
+#: include/class.admin.experience.php:285
+#@ slp-experience
+msgid "Featured Then Closest"
+msgstr "Uitgelicht dan Dichtstbijzijnd"
+
+#: include/class.admin.experience.php:289
+#@ slp-experience
+msgid "Featured Then A..Z"
+msgstr "Uitgelicht dan A..Z"
+
+#: include/class.admin.experience.php:293
+#@ slp-experience
+msgid "Rank Then Closest"
+msgstr "Rang dan Dichtstbijzijnd"
+
+#: include/class.admin.experience.php:297
+#@ slp-experience
+msgid "Rank Then A..Z"
+msgstr "Rang dan A..Z"
+
+#: include/class.admin.experience.php:301
+#@ slp-experience
+msgid "Closest..Furthest"
+msgstr "Dichtstbijzijnd..Verstweg"
+
+#: include/class.admin.experience.php:305
+#@ slp-experience
+msgid "Name A..Z"
+msgstr "Naam A..Z"
+
+#: include/class.admin.experience.php:309
+#@ slp-experience
+msgid "Random"
+msgstr "Willekeurig"
+
+#: include/class.admin.experience.php:317
+#@ slp-experience
+msgid "Featured Locations"
+msgstr "Uitgelichte Locaties"
+
+#: include/class.admin.experience.php:318
+#@ slp-experience
+msgid "When to show feature locations.  "
+msgstr "Als uitgelichte locaties getoond moeten worden. "
+
+#: include/class.admin.experience.php:320
+#@ slp-experience
+msgid "Show If In Radius - Only when the locations are in radius. "
+msgstr "Toon Als Binnen Bereik - Alleen als de locaties binnen bereik zijn. "
+
+#: include/class.admin.experience.php:322
+#@ slp-experience
+msgid "Always Show - Featured locations always appear in results regardless of distance."
+msgstr "Toon Altijd - Uitgelichte locaties worden altijd in de resultaten lijst getoond ongeacht de afstand."
+
+#: include/class.admin.experience.php:324
+#@ slp-experience
+msgid "Show If In Radius"
+msgstr "Toon Als In Radius"
+
+#: include/class.admin.experience.php:325
+#@ slp-experience
+msgid "Always Show"
+msgstr "Toon Altijd"
+
+#: include/class.admin.experience.php:336
+#@ slp-experience
+msgid "labels"
+msgstr "labels"
+
+#: include/class.admin.experience.php:340
+#@ slp-experience
+msgid "No results found message that appears under the map."
+msgstr "Geen resultaten gevonden bericht wat onder de kaart getoond wordt."
+
+#: include/class.admin.experience.php:345
+#@ slp-experience
+msgid "Popup Email Title"
+msgstr "Popup Email Titel"
+
+#: include/class.admin.experience.php:346
+#@ slp-experience
+msgid "The title on the popup email dialogue form."
+msgstr "De titel op het popup email dialoog formulier."
+
+#: include/class.admin.experience.php:351
+#@ slp-experience
+msgid "Popup From Placeholder"
+msgstr "Popup Van Placeholder"
+
+#: include/class.admin.experience.php:352
+#@ slp-experience
+msgid "The placeholder for the from field on the popup email dialogue form."
+msgstr "De placeholder voor het van veld op het popup email dialoog formulier."
+
+#: include/class.admin.experience.php:357
+#@ slp-experience
+msgid "Popup Subject Placeholder"
+msgstr "Popup Onderwerp Placeholder"
+
+#: include/class.admin.experience.php:358
+#@ slp-experience
+msgid "The placeholder for the subject field on the popup email dialogue form."
+msgstr "De placeholder voor het onderwerp veld op het popup email dialoog formulier."
+
+#: include/class.admin.experience.php:363
+#@ slp-experience
+msgid "Popup Message Placeholder"
+msgstr "Popup Bericht Placeholder"
+
+#: include/class.admin.experience.php:364
+#@ slp-experience
+msgid "The placeholder for the message box on the popup email dialogue form."
+msgstr "De placeholder voor het bericht veld op het popup email dialoog formulier."
+
+#: include/class.admin.experience.php:376
+#@ slp-experience
+msgid "Disable Initial Directory"
+msgstr "Schakel Initieel Directory Uit"
+
+#: include/class.admin.experience.php:377
+#@ slp-experience
+msgid "Do not display the listings under the map when show locations at startup is checked."
+msgstr "Toon de lijsten niet onder de map als toon locaties bij opstarten is aangevinkt."
+
+#: include/class.admin.experience.php:387
+#@ slp-experience
+msgid "Consider setting Radius Behavior to \"Use only when address is entered\" when using discrete settings here."
+msgstr "Overweeg Straal Gedrag te zetten op \"Gebruik alleen als adres is ingevoerd\" als je hier discrete instellingen gebruikt."
+
+#: include/class.admin.experience.php:391
+#@ slp-experience
+msgid "Hidden"
+msgstr "Verborgen"
+
+#: include/class.admin.experience.php:395
+#@ slp-experience
+msgid "Dropdown, Address Input"
+msgstr "Drop down, Adres Invoer"
+
+#: include/class.admin.experience.php:399
+#@ slp-experience
+msgid "Dropdown, Discrete Filter"
+msgstr "Drop down, Discreet Filter"
+
+#: include/class.admin.experience.php:403
+#@ slp-experience
+msgid "Dropdown, Discrete + Address Input"
+msgstr "Drop down, Discreet + Adres Invoer"
+
+#: include/class.admin.experience.php:408
+#@ slp-experience
+msgid "Search Features"
+msgstr "Zoek Eigenschappen"
+
+#: include/class.admin.experience.php:411
+#@ slp-experience
+msgid "Hide Radius Selections"
+msgstr "Verberg Straal Selecties"
+
+#: include/class.admin.experience.php:412
+#@ slp-experience
+msgid "Hide the radius selection drop down."
+msgstr "Verberg de straal selectie dropdown."
+
+#: include/class.admin.experience.php:417
+#@ slp-experience
+msgid "Hide Search Form"
+msgstr "Verberg Zoekformulier"
+
+#: include/class.admin.experience.php:418
+#@ slp-experience
+msgid "Hide the user input on the search page, regardless of the SLP theme used."
+msgstr "Verberg de gebruikers invoer op de zoek pagina, ongeacht het gebruikte SLP thema."
+
+#: include/class.admin.experience.php:423
+#@ slp-experience
+msgid "Hide Address Entry"
+msgstr "Verberg Adres Optie"
+
+#: include/class.admin.experience.php:424
+#@ slp-experience
+msgid "Hide the address input box on the locator search form."
+msgstr "Verberg de adres invoer box op het locator zoekformulier."
+
+#: include/class.admin.experience.php:429
+#@ slp-experience
+msgid "Show Search By Name"
+msgstr "Toon Zoek Op Naam"
+
+#: include/class.admin.experience.php:430
+#@ slp-experience
+msgid "Shows the name search entry box to the user."
+msgstr "Toont de naam zoek box invoer aan de gebruiker."
+
+#: include/class.admin.experience.php:435
+#@ slp-experience
+msgid "Append This To Searches"
+msgstr "Voeg Dit Toe Aan Zoekopdrachten"
+
+#: include/class.admin.experience.php:436
+#@ slp-experience
+msgid "Anything you enter in this box will automatically be appended to the address a user types into the locator search form address box on your site. "
+msgstr "Alles wat je in deze box invoert wordt automatisch toegevoegd aan het adres wat de gebruiker typt in het adres veld van het locatie zoek formulier op je site. "
+
+#: include/class.admin.experience.php:441
+#@ slp-experience
+msgid "Address Autocomplete"
+msgstr "Adres Autoaanvullen"
+
+#: include/class.admin.experience.php:442
+#@ slp-experience
+msgid "When 2 or more characters are typed in the address input, show input suggestions based on location data. "
+msgstr "Als 2 of meer karakters getyped worden in de adres invoer, toon invoer suggesties gebaseerd op locatie gegevens. "
+
+#: include/class.admin.experience.php:444
+#@ slp-experience
+msgid "None (default) - do not suggest address input. "
+msgstr "Geen (default) - suggereer geen adres invoer. "
+
+#: include/class.admin.experience.php:446
+#@ slp-experience
+msgid "Zipcode - suggest matching zip codes. "
+msgstr "Postcode - suggereer matching postcodes. "
+
+#: include/class.admin.experience.php:449
+#@ slp-experience
+msgid "None"
+msgstr "Geen"
+
+#: include/class.admin.experience.php:453
+#@ slp-experience
+msgid "Zipcode"
+msgstr "Postcode"
+
+#: include/class.admin.experience.php:461
+#@ slp-experience
+msgid "Radius Behavior"
+msgstr "Radius Gedrag"
+
+#: include/class.admin.experience.php:462
+#@ slp-experience
+msgid "Show the city selector on the search form."
+msgstr "Toon de stad selector op het zoekformulier."
+
+#: include/class.admin.experience.php:463
+#@ slp-experience
+msgid "If you want the option to search by address OR by city on the same form, select: Use radius only with address. If you choose not to use radius, you consider also hiding the radius selector."
+msgstr "Als je de optie zoeken op adres OF op plaats op hetzelfde formulier wilt, selecteer: Gebruik radius alleen met adres. Als je geen radius wilt gebruiken, overweeg dan om ook de radius selector te verbergen."
+
+#: include/class.admin.experience.php:467
+#@ slp-experience
+msgid "Do not use"
+msgstr "Gebruik niet"
+
+#: include/class.admin.experience.php:471
+#@ slp-experience
+msgid "Use only when address is entered"
+msgstr "Gebruik alleen als adres is ingevoerd"
+
+#: include/class.admin.experience.php:475
+#@ slp-experience
+msgid "Always use"
+msgstr "Gebruik altijd"
+
+#: include/class.admin.experience.php:484
+#: include/class.admin.experience.php:493
+#: include/class.admin.experience.php:502
+#, php-format
+#@ slp-experience
+msgid "%s Selector"
+msgstr "%s Selector"
+
+#: include/class.admin.experience.php:485
+#@ slp-experience
+msgid "How to display the city selector on the search form. "
+msgstr "Hoe de stad selector te tonen op het zoekformulier. "
+
+#: include/class.admin.experience.php:494
+#@ slp-experience
+msgid "How to display the state selector on the search form. "
+msgstr "Hoe de provincie selector te tonen op het zoekformulier. "
+
+#: include/class.admin.experience.php:503
+#@ slp-experience
+msgid "How to display the country selector on the search form. "
+msgstr "Hoe de land selector te tonen op het zoekformulier. "
+
+#: include/class.admin.experience.php:511
+#@ slp-experience
+msgid "Selector Behavior"
+msgstr "Selector Gedrag"
+
+#: include/class.admin.experience.php:512
+#@ slp-experience
+msgid "Should the address input be disabled when city, state, or country selectors are used? "
+msgstr "Moet de adres invoer uitgeschakeld zijn bij gebruik van plaats, provincie of land selectors? "
+
+#: include/class.admin.experience.php:513
+#@ slp-experience
+msgid "Allow means address and city/state/zip selectors are both left active at all times. "
+msgstr "Toestaan betekent adres en plaats/provincie/postcode selectors zijn beiden altijd actief. "
+
+#: include/class.admin.experience.php:514
+#@ slp-experience
+msgid "disable means users can interact with either the city/state/zip OR the address but not both at the same time. "
+msgstr "uitgeschakeld betekent gebruikers kunnen OF de plaats/provincie/postcode OF adres gebruiken maar niet beiden tegelijkertijd. "
+
+#: include/class.admin.experience.php:517
+#@ slp-experience
+msgid "Allow Selector and Address Input"
+msgstr "Toestaan Selector en Adres Invoer"
+
+#: include/class.admin.experience.php:521
+#@ slp-experience
+msgid "Disable Address When Using Selector"
+msgstr "Uitgeschakeld Adres Bij Gebruik Selector"
+
+#: include/class.admin.experience.php:529
+#@ slp-experience
+msgid "Search Address Nearest"
+msgstr "Dichtstbijzijnde Zoekadres"
+
+#: include/class.admin.experience.php:530
+#@ slp-experience
+msgid "Worldwide is the default search, letting Google make the best guess which addres the user wants. "
+msgstr "Wereldwijd is de standaard zoekinstelling waarbij Google probeert te bepalen welk adres de gebruiker bedoelt. "
+
+#: include/class.admin.experience.php:531
+#@ slp-experience
+msgid "Current Map will find the best matching address nearest the current area shown on the map."
+msgstr "Huidige Kaart zal het best matchende adres vinden wat zich het dichtst bevindt bij het gebied wat momenteel op de kaart getoond wordt."
+
+#: include/class.admin.experience.php:534
+#@ slp-experience
+msgid "Worldwide"
+msgstr "Wereldwijd"
+
+#: include/class.admin.experience.php:538
+#@ slp-experience
+msgid "Current Map"
+msgstr "Huidige Kaart"
+
+#: include/class.admin.experience.php:546
+#@ slp-experience
+msgid "Search Layout"
+msgstr "Zoek Layout"
+
+#: include/class.admin.experience.php:547
+#@ slp-experience
+msgid "Enter your custom search form layout. "
+msgstr "Geef je persoonlijke informatie ballon layout. "
+
+#: include/class.admin.experience.php:549
+#@ slp-experience
+msgid "Overrides all other search form settings. "
+msgstr "Overrules alle andere zoekformulier instellingen. "
+
+#: include/class.admin.experience.php:550
+#, php-format
+#@ slp-experience
+msgid "Uses %s and HTML."
+msgstr "Gebruikt %s en HTML."
+
+#: include/class.admin.experience.php:550
+#@ slp-experience
+msgid "layout shortcodes"
+msgstr "layout shortcodes"
+
+#: include/class.admin.experience.php:559
+#@ slp-experience
+msgid "Search Labels"
+msgstr "Zoek Labels"
+
+#: include/class.admin.experience.php:562
+#@ slp-experience
+msgid "Search Box Title"
+msgstr "Zoek Box Titel"
+
+#: include/class.admin.experience.php:563
+#@ slp-experience
+msgid "The label that goes in the search form box header, for plugin themes that support it."
+msgstr "Het label dat getoond wordt in de zoekformulier box header, voor plugin thema's die dat ondersteunen."
+
+#: include/class.admin.experience.php:564
+#@ slp-experience
+msgid "Put this in a search form using the [slp_option nojs=\"search_box_title\"] shortcode."
+msgstr "Gebruik dit in een zoekformulier met behulp van de [slp_option nojs=\"search_box_title\"] shortcode."
+
+#: include/class.admin.experience.php:569
+#: include/class.admin.experience.php:581
+#: include/class.admin.experience.php:593
+#, php-format
+#@ slp-experience
+msgid "%s Selector Label "
+msgstr "%s Selector Label "
+
+#: include/class.admin.experience.php:570
+#@ slp-experience
+msgid "The label that precedes the city selector."
+msgstr "Het label dat voorafgaat aan de stad invoer box."
+
+#: include/class.admin.experience.php:575
+#: include/class.admin.experience.php:587
+#: include/class.admin.experience.php:599
+#, php-format
+#@ slp-experience
+msgid "%s Selector First Entry "
+msgstr "%s Selector Eerste Keus "
+
+#: include/class.admin.experience.php:576
+#@ slp-experience
+msgid "The first entry on the search by city selector."
+msgstr "De eerste keuze van de zoek op stad selector."
+
+#: include/class.admin.experience.php:582
+#@ slp-experience
+msgid "The label that precedes the state selector."
+msgstr "Het label dat voorafgaat aan de provincie selector."
+
+#: include/class.admin.experience.php:588
+#@ slp-experience
+msgid "The first entry on the search by state selector."
+msgstr "De eerste keuze van de zoek op provincie selector."
+
+#: include/class.admin.experience.php:594
+#@ slp-experience
+msgid "The label that precedes the country selector."
+msgstr "Het label dat voorafgaat aan de provincie invoer box."
+
+#: include/class.admin.experience.php:600
+#@ slp-experience
+msgid "The first entry on the search by country selector."
+msgstr "De eerste keuze van de zoek op land selector."
+
+#: include/class.admin.experience.php:605
+#@ slp-experience
+msgid "Address Placeholder"
+msgstr "Adres Placeholder"
+
+#: include/class.admin.experience.php:606
+#@ slp-experience
+msgid "Instructions to place in the address input."
+msgstr "Instructies om in de adres invoer te plaatsen."
+
+#: include/class.admin.experience.php:611
+#@ slp-experience
+msgid "Name Placeholder"
+msgstr "Naam Placeholder"
+
+#: include/class.admin.experience.php:612
+#@ slp-experience
+msgid "Instructions to place in the name input."
+msgstr "Instructies om in de naam invoer te plaatsen."
+
+#: include/class.admin.experience.php:617
+#@ slp-experience
+msgid "Find Button"
+msgstr "Zoek Knop"
+
+#: include/class.admin.experience.php:618
+#@ slp-experience
+msgid "The label on the find button, if text mode is selected."
+msgstr "Het label op de zoek knop, als de tekst mode geselecteerd is."
+
+#: include/class.admin.experience.php:623
+#: include/class.slp-experience.php:149
+#@ slp-experience
+msgid "Name"
+msgstr "Naam"
+
+#: include/class.admin.experience.php:624
+#@ slp-experience
+msgid "The label that precedes the name input box."
+msgstr "Het label dat voorafgaat aan de naam invoer box."
+
+#: include/class.admin.general.php:28
+#@ slp-experience
+msgid "Program Interface"
+msgstr "Programma Interface"
+
+#: include/class.admin.general.php:30
+#@ slp-experience
+msgid "Allow Address In URL"
+msgstr "Sta Adres In URL Toe"
+
+#: include/class.admin.general.php:31
+#@ slp-experience
+msgid "If checked an address can be pre-loaded via a URL string ?address=my+town. "
+msgstr "Als aangevinkt kan een adres worden voorgeladen via een URL string met ?address=mijn+stad. "
+
+#: include/class.admin.general.php:32
+#@ slp-experience
+msgid "This will disable the location sensor whenever the address is used in the URL."
+msgstr "Dit zal de locatie sensor uitschakelen zodra het adres is gebruikt in de URL."
+
+#: include/class.admin.php:279
+#, php-format
+#@ slp-experience
+msgid "The %s add-on deactivated the conflicting %s add-on. "
+msgstr "De %s add-on deactiveerde de conflicterende %s add-on. "
+
+#: include/class.admin.php:351
+#@ slp-experience
+msgid "Feature Location"
+msgstr "Uitgelichte Locatie"
+
+#: include/class.admin.php:355
+#@ slp-experience
+msgid "Stop Featuring Location"
+msgstr "Stop Uitlichten Locatie"
+
+#: include/class.slp-experience.php:100
+#@ slp-experience
+msgid "Experience"
+msgstr "Experience"
+
+#: include/class.slp-experience.php:143
+#@ slp-experience
+msgid "All Cities..."
+msgstr "Alle Steden..."
+
+#: include/class.slp-experience.php:144
+#@ slp-experience
+msgid "All Countries..."
+msgstr "Alle Landen..."
+
+#: include/class.slp-experience.php:145
+#@ slp-experience
+msgid "All States..."
+msgstr "Alle Provincies..."
+
+#: include/class.slp-experience.php:146
+#@ slp-experience
+msgid "City"
+msgstr "Plaats"
+
+#: include/class.slp-experience.php:147
+#@ slp-experience
+msgid "Country"
+msgstr "Land"
+
+#: include/class.slp-experience.php:148
+#@ slp-experience
+msgid "Find Locations"
+msgstr "Zoek Locaties"
+
+#: include/class.slp-experience.php:150
+#: include/class.userinterface.php:495
+#@ slp-experience
+msgid "Map"
+msgstr "Kaart"
+
+#: include/class.slp-experience.php:151
+#@ slp-experience
+msgid "State"
+msgstr "Provincie"
+
+#: include/class.slp-experience.php:152
+#: include/widgets/incomplete/class.search_and_results.php:74
+#@ slp-experience
+msgid "No locations found."
+msgstr "Geen locaties gevonden."
+
+#: include/class.slp-experience.php:153
+#@ slp-experience
+msgid "Send An Email"
+msgstr "Stuur Een Email"
+
+#: include/class.slp-experience.php:154
+#@ slp-experience
+msgid "Your email address."
+msgstr "Je emailadres."
+
+#: include/class.slp-experience.php:155
+#@ slp-experience
+msgid "Email subject line."
+msgstr "Email onderwerpregel."
+
+#: include/class.slp-experience.php:156
+#@ slp-experience
+msgid "What do you want to say?"
+msgstr "Wat wil je zeggen?"
+
+#: include/class.slp-experience.php:157
+#@ slp-experience
+msgid "Find Our Locations"
+msgstr "Vind Onze Locaties"
+
+#: include/class.widget.settings.legacy.php.php:50
+#@ slp-experience
+msgid "Find nearby locations"
+msgstr "Zoek locaties in de buurt"
+
+#: include/class.widget.settings.legacy.php.php:51
+#@ slp-experience
+msgid "Within"
+msgstr "Binnen"
+
+#: include/class.widget.settings.legacy.php.php:52
+#@ slp-experience
+msgid "Zip Code"
+msgstr "Postcode"
+
+#: include/class.widget.settings.legacy.php.php:53
+#: include/widgets/base_class.wp_widget_slp.php:198
+#@ slp-experience
+msgid "Go!"
+msgstr "Ga!"
+
+#: include/widgets/base_class.wp_widget_slp.php:79
+#@ slp-experience
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: include/widgets/base_class.wp_widget_slp.php:91
+#@ slp-experience
+msgctxt "separator after a field label"
+msgid ":"
+msgstr ":"
+
+#: include/widgets/base_class.wp_widget_slp.php:191
+#@ slp-experience
+msgid "Title"
+msgstr "Titel"
+
+#: include/widgets/base_class.wp_widget_slp.php:197
+#@ slp-experience
+msgid "Button Label"
+msgstr "Button Label"
+
+#: include/widgets/base_class.wp_widget_slp.php:203
+#@ slp-experience
+msgid "Map Page URL"
+msgstr "Map Pagina URL"
+
+#: include/widgets/class.cities.php:21
+#@ slp-experience
+msgid "List the cities for your locations and link to the map or listing page."
+msgstr "Geef een lijst van steden voor je locaties en link deze aan de map of overzichtspagina."
+
+#: include/widgets/class.cities.php:22
+#@ slp-experience
+msgid "SLP Cities"
+msgstr "SLP Steden"
+
+#: include/widgets/class.cities.php:23
+#@ slp-experience
+msgid "We Are In These Cities"
+msgstr "We Zijn In Deze Steden"
+
+#: include/widgets/class.cities.php:33
+#@ slp-experience
+msgid "All Cities Text"
+msgstr "Alle Steden Tekst"
+
+#: include/widgets/class.cities.php:34
+#@ slp-experience
+msgid "All Cities"
+msgstr "Alle Steden"
+
+#: include/widgets/class.search.php:17
+#@ slp-experience
+msgid "Send the user to the map when doing a search."
+msgstr "Stuur de gebruiker bij zoeken naar de kaart."
+
+#: include/widgets/class.search.php:18
+#@ slp-experience
+msgid "SLP Search Form"
+msgstr "SLP Zoekformulier"
+
+#: include/widgets/class.search.php:19
+#@ slp-experience
+msgid "Find Us"
+msgstr "Vind Ons"
+
+#: include/widgets/class.search.php:30
+#@ slp-experience
+msgid "Search Label"
+msgstr "Zoek Label"
+
+#: include/widgets/class.search.php:31
+#@ slp-experience
+msgid "Address"
+msgstr "Adres"
+
+#: include/widgets/class.search.php:37
+#@ slp-experience
+msgid "Use Placeholder"
+msgstr "Gebruik Placeholder"
+
+#: include/widgets/class.search.php:44
+#@ slp-experience
+msgid "Radius"
+msgstr "Radius"
+
+#: include/widgets/class.states.php:22
+#@ slp-experience
+msgid "List the states for your locations and link to the map or listing page."
+msgstr "Lijst van provincies voor je locaties en link naar de kaart of lijst pagina."
+
+#: include/widgets/class.states.php:23
+#@ slp-experience
+msgid "SLP States"
+msgstr "SLP Provincies"
+
+#: include/widgets/class.states.php:24
+#@ slp-experience
+msgid "We Are In These States"
+msgstr "We Zijn In Deze Provincies"
+
+#: include/widgets/incomplete/class.search_and_results.php:23
+#@ slp-experience
+msgid "Immediate Search:"
+msgstr "Zoek Onmiddelijk:"
+
+#: include/widgets/incomplete/class.search_and_results.php:31
+#@ slp-experience
+msgid "Immediate Address:"
+msgstr "Adres Onmiddelijk:"
+
+#: include/widgets/incomplete/class.search_and_results.php:38
+#@ slp-experience
+msgid "Maximum Results to display:"
+msgstr "Maximum Aantal Resultaten te tonen:"
+
+#: include/widgets/incomplete/class.search_and_results.php:45
+#@ slp-experience
+msgid "Search Label:"
+msgstr "Zoek Label:"
+
+#: include/widgets/incomplete/class.search_and_results.php:46
+#@ slp-experience
+msgid "Address:"
+msgstr "Adres:"
+
+#: include/widgets/incomplete/class.search_and_results.php:52
+#@ slp-experience
+msgid "Search Label As Placeholder:"
+msgstr "Zoek Label Als Placeholder:"
+
+#: include/widgets/incomplete/class.search_and_results.php:59
+#@ slp-experience
+msgid "Radius Label:"
+msgstr "Straal Label:"
+
+#: include/widgets/incomplete/class.search_and_results.php:60
+#@ slp-experience
+msgid "Within:"
+msgstr "Binnen:"
+
+#: include/widgets/incomplete/class.search_and_results.php:66
+#@ slp-experience
+msgid "Default Radius:"
+msgstr "Standaard Straal:"
+
+#: include/widgets/incomplete/class.search_and_results.php:73
+#@ slp-experience
+msgid "Nothing Found Text:"
+msgstr "Niets Gevonden Tekst:"
+
+#: include/widgets/incomplete/class.search_and_results.php:80
+#@ slp-experience
+msgid "Use Simple Output:"
+msgstr "Gebruik Eenvoudige Output:"
+
+#: include/widgets/incomplete/class.search_and_results.php:90
+#@ slp-experience
+msgid "The Store Locator Plus search form, with results appearing below the form."
+msgstr "Het Store Locator Plus formulier, met resultaten die onder het formulier verschijnen."
+
+#: include/widgets/incomplete/class.search_and_results.php:91
+#@ slp-experience
+msgid "SLP Search and Results"
+msgstr "SLP Zoeken en Resultaten"
+
+#: include/widgets/incomplete/class.search_and_results.php:92
+#@ slp-experience
+msgid "Find Nearby Locations"
+msgstr "Vind Locaties Vlakbij"
+
+#: include/widgets/incomplete/class.search_and_results.ui.php:65
+#@ slp-experience
+msgid "Nothing Found!"
+msgstr "Niets Gevonden!"
+
+#: include/class.admin.experience.php:339
+#@ slp-experience
+msgid "No Results Message"
+msgstr "Niets Gevonden Bericht"
+
+#: include/class.ajax.php:520
+#@ slp-experience
+msgid "email sent to "
+msgstr "email gestuurd naar "
+
+#: include/widgets/class.cities.php:40
+#@ slp-experience
+msgid "Hide Cities At Start"
+msgstr "Verberg Steden Bij Opstarten"
+
+#. translators: plugin header field 'PluginURI'
+#: slp-experience.php:0
+#@ slp-experience
+msgid "https://wordpress.storelocatorplus.com/"
+msgstr "https://wordpress.storelocatorplus.com/"
+
+#. translators: plugin header field 'Version'
+#: slp-experience.php:0
+#@ slp-experience
+msgid "4.4.04"
+msgstr "4.4.04"
+

@@ -1,0 +1,1194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus Experience\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 16:35+0000\n"
+"PO-Revision-Date: 2016-08-29 16:35+0000\n"
+"Last-Translator: Asmus Wanke <rolfing@wanke.net>\n"
+"Language-Team: German\n"
+"Language: de-DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: de_DE\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the plugin
+#: slp-experience.php:52
+msgid "Store Locator Plus - Experience"
+msgstr "Store Locator Plus - Experience"
+
+#: slp-experience.php:64
+#, php-format
+msgid "%s requires Store Locator Plus to function properly. "
+msgstr "%s erfodert, dass Store Locator Plus ordungsgemäß funktioniert."
+
+#: slp-experience.php:67 slp-experience.php:91
+msgid "This plugin has been deactivated."
+msgstr "Dieses Plugin wurde deaktiviert"
+
+#: slp-experience.php:68
+msgid "Please install Store Locator Plus."
+msgstr "Bitte Store Locator Plus installieren."
+
+#: slp-experience.php:87
+#, php-format
+msgid "%s requires WordPress %s to function properly. "
+msgstr "%s erfordert das Wordpress %s fehlerfrei funktioniert."
+
+#: slp-experience.php:92
+msgid "Please upgrade WordPress."
+msgstr "Bitte aktualisieren Sie WordPress"
+
+#: slp-experience.php:117
+#, php-format
+msgid "%s deactivated the conflicting SLP Widget Pack add-on. "
+msgstr "%s deaktiviert das SLP Widget Pack add-on, das Konflikte produziert."
+
+#: include/class.userinterface.php:521 include/class.slp-experience.php:149
+msgid "Map"
+msgstr "Karte"
+
+#: include/class.slp-experience.php:99
+msgid "Experience"
+msgstr "Erfahrung"
+
+#: include/class.slp-experience.php:142
+msgid "All Cities..."
+msgstr "Alle Städte"
+
+#: include/class.slp-experience.php:143
+msgid "All Countries..."
+msgstr "Alle Länder..."
+
+#: include/class.slp-experience.php:144
+msgid "All States..."
+msgstr "Alle Staaten..."
+
+#: include/class.slp-experience.php:145
+msgid "City"
+msgstr "Stadt"
+
+#: include/class.slp-experience.php:146
+msgid "Country"
+msgstr "Land"
+
+#: include/class.slp-experience.php:147
+msgid "Find Locations"
+msgstr ""
+"Finde\n"
+" Standorte"
+
+#: include/class.slp-experience.php:148 include/class.admin.experience.php:714
+msgid "Name"
+msgstr "Name"
+
+#: include/class.slp-experience.php:150
+msgid "State"
+msgstr "Bundesstaat"
+
+#: include/class.slp-experience.php:151 
+#: include/widgets/incomplete/class.search_and_results.php:74
+msgid "No locations found."
+msgstr "Kein Standort gefunden"
+
+#: include/class.slp-experience.php:152
+msgid "Send An Email"
+msgstr "Sende eine E-Mail"
+
+#: include/class.slp-experience.php:153
+msgid "Your email address."
+msgstr "Ihre Emailadresse"
+
+#: include/class.slp-experience.php:154
+msgid "Email subject line."
+msgstr "E-Mail-Betreffzeile"
+
+#: include/class.slp-experience.php:155
+msgid "What do you want to say?"
+msgstr "Was wollen Sie mitteilen?"
+
+#: include/class.slp-experience.php:156
+msgid "Find Our Locations"
+msgstr "Finden Sie unsere Standorte"
+
+#: include/class.widget.settings.legacy.php.php:50
+msgid "Find nearby locations"
+msgstr "Finde nahegelegene Standorte"
+
+#: include/class.widget.settings.legacy.php.php:51
+msgid "Within"
+msgstr "Innerhalb"
+
+#: include/class.widget.settings.legacy.php.php:52
+msgid "Zip Code"
+msgstr "Postleitzahl"
+
+#: include/class.widget.settings.legacy.php.php:53 
+#: include/widgets/base_class.wp_widget_slp.php:198
+msgid "Go!"
+msgstr "Gehen!"
+
+#: include/class.admin.php:148
+#, php-format
+msgid "The %s add-on deactivated the conflicting %s add-on. "
+msgstr ""
+"Dieses %s Add-On deaktivierte folgendes %s , das einen Konflikt produzierte."
+
+#: include/class.admin.php:221
+msgid "Feature Location"
+msgstr "\"feature\" Standort"
+
+#: include/class.admin.php:225
+msgid "Stop Featuring Location"
+msgstr "Stoppe Hinweise auf Standorte"
+
+#: include/class.admin.experience.php:117
+msgid "Page Layout"
+msgstr "Seitenlayout"
+
+#: include/class.admin.experience.php:121
+msgid "Locator Layout"
+msgstr "Locator Layout"
+
+#: include/class.admin.experience.php:122
+msgid ""
+"Enter your custom page layout for the Store Locator Plus page. Set it to "
+"blank to reset to the default layout."
+msgstr ""
+"Geben Sie Ihre eigenen Seitenlayout für den Store Locator Plus-Seite. Setzen "
+"Sie ihn auf leer, um das auf das Standard-Layout zurückzusetzen ."
+
+#: include/class.admin.experience.php:131
+msgid "CSS Manipulation"
+msgstr "CSS Manipulation"
+
+#: include/class.admin.experience.php:135
+msgid "Custom CSS"
+msgstr "Angepasste CSS"
+
+#: include/class.admin.experience.php:136
+msgid ""
+"Enter your custom CSS, preferably for SLPLUS styling only but it can be used "
+"for any page element as this will go in your page header."
+msgstr ""
+"Geben Sie Ihre eigenen CSS-Code ein, möglichst nur für SLPLUS nur Styling, "
+"aber er kann auch für jedes anderes Element genutzt werden, da er im "
+"Seitenkopf steht."
+
+#: include/class.admin.experience.php:145 
+#: include/class.admin.experience.php:274
+msgid "Appearance"
+msgstr "Aussehen"
+
+#: include/class.admin.experience.php:149
+msgid "Hide The Map"
+msgstr "Blenden Sie die Karte aus"
+
+#: include/class.admin.experience.php:150
+msgid "Do not show the map on the user interface."
+msgstr "Sie zeigen die Karte nicht auf der Benutzeroberfläche."
+
+#: include/class.admin.experience.php:155
+msgid "Add Map Toggle On UI"
+msgstr "Fügen Sie Kartenumschalter in UI ein."
+
+#: include/class.admin.experience.php:156
+msgid "Add a map on/off toggle to the user interface."
+msgstr "In Karte ein / aus Umschalten der Benutzerschnittstelle"
+
+#: include/class.admin.experience.php:161
+msgid "Show Map Scale"
+msgstr ""
+"Karten-Skala anzeigen\n"
+
+#: include/class.admin.experience.php:162
+msgid "Show the scale on the map."
+msgstr "Kartenskala auf der Karten anzeigen."
+
+#: include/class.admin.experience.php:167
+msgid "Show Map Type Selector"
+msgstr ""
+"Kartentyp-Auswahl anzeigen\n"
+
+#: include/class.admin.experience.php:168
+msgid "Show the map type selector on the map."
+msgstr "Kartentyp-Auswahl auf der Karte anzeigen."
+
+#: include/class.admin.experience.php:173
+msgid "Hide Info Bubble"
+msgstr "Info-Blase ausblenden"
+
+#: include/class.admin.experience.php:174
+msgid "Disable the on-map info bubble."
+msgstr "Deaktivieren Sie die auf der Karte Info-Blase"
+
+#: include/class.admin.experience.php:179
+msgid "Toggle Label"
+msgstr "\"Umschaltauswahl\"-Bezeichnung"
+
+#: include/class.admin.experience.php:180
+msgid "The text that appears before the display map on/off toggle."
+msgstr ""
+"Der Text, der vor dem \"Anzeige Karte\" An- / Aus-Umschalter erscheint."
+
+#: include/class.admin.experience.php:185
+msgid "Map Layout"
+msgstr "Kartenlayout"
+
+#: include/class.admin.experience.php:186
+msgid "Enter your custom map area layout. "
+msgstr "Geben Sie Ihre individuelle Kartenlayout an."
+
+#: include/class.admin.experience.php:189 
+#: include/class.admin.experience.php:200
+msgid "Uses HTML and shortcodes."
+msgstr "Verwenden Sie HTML und Kurzcodes"
+
+#: include/class.admin.experience.php:191 
+#: include/class.admin.experience.php:202 
+#: include/class.admin.experience.php:328 
+#: include/class.admin.experience.php:599
+msgid "Set it to blank to reset to the default layout. "
+msgstr "Setzen Sie ihn auf leer, um auf das Standard-Layout zurücksetzen."
+
+#: include/class.admin.experience.php:196
+msgid "Bubble Layout"
+msgstr "Bubble-Plan"
+
+#: include/class.admin.experience.php:197
+msgid "Enter your custom info bubble layout. "
+msgstr "Geben Sie Ihre individuelle Info-Blase Layout an."
+
+#: include/class.admin.experience.php:207
+msgid "Map Style"
+msgstr "Karten-Stil"
+
+#: include/class.admin.experience.php:208
+msgid "Enter the JSON-style map style rules. "
+msgstr "Geben Sie die JSON-Style Karte-Style-Regeln an."
+
+#: include/class.admin.experience.php:209
+msgid "See places like <a href=\"https://snazzymaps.com/\">Snazzy Maps</a>."
+msgstr ""
+"Ähnliche Orte wie <a href=\"https://snazzymaps.com/\">Snazzy Maps</a>.\n"
+
+#: include/class.admin.experience.php:218 
+#: include/class.admin.experience.php:338
+msgid "Functionality"
+msgstr "Funktionalität"
+
+#: include/class.admin.experience.php:222
+msgid "Use Scrollwheel To Zoom"
+msgstr "Verwenden Sie das Mausrad zum Zoomen."
+
+#: include/class.admin.experience.php:223
+msgid "When checked, using the scrollwheel will zoom the map."
+msgstr "Wenn angehakt: Das Mausrad  zoomt die Karte."
+
+#: include/class.admin.experience.php:232 
+#: include/class.admin.experience.php:444
+msgid "At Startup"
+msgstr "Beim Start"
+
+#: include/class.admin.experience.php:236
+msgid "Hide Home Marker"
+msgstr "Ausblenden Zuhause-Marker"
+
+#: include/class.admin.experience.php:237
+msgid ""
+"Do not include the home map marker for the initial map loading with show "
+"locations at startup enabled."
+msgstr ""
+"Sie nicht die Heimat Kartenmarkierung für die erste Karte Laden schließen, "
+"wenn Show Standorten beim Start aktiviert ist"
+
+#: include/class.admin.experience.php:242
+msgid "Do Not Auto-zoom"
+msgstr "Nicht Auto-Zoom"
+
+#: include/class.admin.experience.php:243
+msgid ""
+"Use only the \"zoom level\" setting when rendering the initial map for show "
+"locations at startup. "
+msgstr ""
+"Verwenden Sie nur den \"Zoomstufe \" Einstellung, wenn die erste "
+"Kartenanzeige Standorte zeigen soll."
+
+#: include/class.admin.experience.php:244
+msgid "Do not automatically zoom the map to show all initial locations."
+msgstr ""
+"Nicht automatisch die Karte zoomen, um alle anfänglichen Standorte zeigen."
+
+#: include/class.admin.experience.php:249
+msgid "Map Display"
+msgstr "Kartendarstellung"
+
+#: include/class.admin.experience.php:250
+msgid "Set what to display when the page loads. "
+msgstr "Festlegen, was beim Laden der Seite angezeigt werden soll."
+
+#: include/class.admin.experience.php:251
+msgid "Show Map - Display a map. "
+msgstr "Karte anzeigen"
+
+#: include/class.admin.experience.php:252
+msgid "Hide Until Search - Display nothing until an address is searched. "
+msgstr ""
+"Bis zum Suchen ausblenden - Nicht anzeigen bis nach einer Adresse gesucht "
+"wird."
+
+#: include/class.admin.experience.php:253
+msgid "Image Until Search - Display the image set by Starting Image."
+msgstr ""
+"Bild bis Suchen - Das Bild anzeigen, das als Startbild festgelegt wurde.\n"
+
+#: include/class.admin.experience.php:255
+msgid "Show Map"
+msgstr "Karte anzeigen"
+
+#: include/class.admin.experience.php:256
+msgid "Hide Until Search"
+msgstr ""
+"Ausblenden bis zum Suchen\n"
+
+#: include/class.admin.experience.php:257
+msgid "Image Until Search"
+msgstr "Bild bis Suchen"
+
+#: include/class.admin.experience.php:263
+msgid "Starting Image"
+msgstr ""
+"Start-\n"
+"Bild"
+
+#: include/class.admin.experience.php:264
+msgid ""
+"If set, this image will be displayed until a search is performed.  Enter the "
+"full URL for the image."
+msgstr ""
+"Wenn gesetzt, dann wird dieses Bild angezeigt, bis eine Suche durchgeführt "
+"wird. Geben Sie die vollständige URL für das Bild an."
+
+#: include/class.admin.experience.php:278
+msgid "Use Dial Link For Phone"
+msgstr "Verwenden Sie Link-Dial für Telefon"
+
+#: include/class.admin.experience.php:279
+msgid "When checked, wraps the phone number in the results in a tel: href tag."
+msgstr ""
+"Wenn markiert, dann wird die Telefonnummer in den Ergebnissen in ein Tel: "
+"href-Tag eingeschlossen."
+
+#: include/class.admin.experience.php:284
+msgid "Hide Distance"
+msgstr "Entfernung ausblenden"
+
+#: include/class.admin.experience.php:285
+msgid "Do not show the distance to the location in the results table."
+msgstr "Zeigen nicht die Entfernung zum Standort in der Ergebnis-Tabelle an."
+
+#: include/class.admin.experience.php:290
+msgid "Show Country"
+msgstr "zeigen Land"
+
+#: include/class.admin.experience.php:291
+msgid "Display the country in the results table address."
+msgstr "Zeigen Sie das Land in der Ergebnistabelle Adresse."
+
+#: include/class.admin.experience.php:296
+msgid "Show Hours"
+msgstr "Öffnungszeiten anzeigen"
+
+#: include/class.admin.experience.php:297
+msgid "Display the hours in the results table under the Directions link."
+msgstr ""
+"Zeigen Sie die Stunden in der Ergebnistabelle unter dem Link Wegbeschreibung."
+
+#: include/class.admin.experience.php:302
+msgid "Email Format"
+msgstr "E-Mail-Format"
+
+#: include/class.admin.experience.php:303
+msgid "How email will be displayed and function in the results list."
+msgstr "Wie E-Mail in der Ergebnisliste angezeigt wird und funktioniert."
+
+#: include/class.admin.experience.php:306
+msgid "Email Label with Email Link"
+msgstr "E-Mail-Beschriftung mit E-Mail Link"
+
+#: include/class.admin.experience.php:310
+msgid "Email Address with Email Link"
+msgstr "E-Mail-Adresse mit E-Mail Link"
+
+#: include/class.admin.experience.php:314
+msgid "Popup Form Linked To Email"
+msgstr "Popup-Formular verknüpft, um E-Mail an"
+
+#: include/class.admin.experience.php:322
+msgid "Results Layout"
+msgstr "Layout der Ergebnisse"
+
+#: include/class.admin.experience.php:323
+msgid "Enter your custom results area layout for the location results. "
+msgstr ""
+"Legen Sie Ihr individuelles Layout für den Ergebnisbereich der Standorte "
+"fest."
+
+#: include/class.admin.experience.php:326
+msgid "Uses HTML plus shortcodes."
+msgstr "Verwendet HTML und Shortcodes."
+
+#: include/class.admin.experience.php:329
+msgid "Overrides all other results settings."
+msgstr "Überschreibt alle anderen Ergebniseinstellungen."
+
+#: include/class.admin.experience.php:342
+msgid "Order Results By"
+msgstr "Ergebnisse sortieren nach"
+
+#: include/class.admin.experience.php:343
+msgid "Select a sort order for the results.  Default is Closest..Furthest."
+msgstr ""
+"Sortierreihenfolge für die Ergebnisse. Standard ist Nächste..Entfernteste."
+
+#: include/class.admin.experience.php:346
+msgid "Featured, Rank, Closest"
+msgstr "Favorisiert, Rang, Nächster"
+
+#: include/class.admin.experience.php:350
+msgid "Featured, Rank, A..Z"
+msgstr "Favorisiert, Rang, A..Z"
+
+#: include/class.admin.experience.php:354
+msgid "Featured Then Closest"
+msgstr "Favorisiert Dann Nächstgelegener"
+
+#: include/class.admin.experience.php:358
+msgid "Featured Then A..Z"
+msgstr "Favorisiert Dann A..Z"
+
+#: include/class.admin.experience.php:362
+msgid "Rank Then Closest"
+msgstr "Rang Dann Nächster"
+
+#: include/class.admin.experience.php:366
+msgid "Rank Then A..Z"
+msgstr "Dann Rang A..Z"
+
+#: include/class.admin.experience.php:370
+msgid "Closest..Furthest"
+msgstr "Nächster..Weitester"
+
+#: include/class.admin.experience.php:374
+msgid "Name A..Z"
+msgstr "Name, A..Z"
+
+#: include/class.admin.experience.php:378
+msgid "Random"
+msgstr "Zufällig"
+
+#: include/class.admin.experience.php:386
+msgid "Featured Locations"
+msgstr "Favorisierter Standort"
+
+#: include/class.admin.experience.php:387
+msgid "When to show feature locations.  "
+msgstr "Wann Standort-Merkmal angezeigt werden."
+
+#: include/class.admin.experience.php:389
+msgid "Show If In Radius - Only when the locations are in radius. "
+msgstr "Zeigen wenn in Radius-Nur wenn die Standorte in Radius sind"
+
+#: include/class.admin.experience.php:391
+msgid ""
+"Always Show - Featured locations always appear in results regardless of "
+"distance."
+msgstr ""
+"Immer anzeigen - Favorisierte Standorte erscheinen immer in Ergebnissen, "
+"unabhängig von ihrer Entfernung."
+
+#: include/class.admin.experience.php:393
+msgid "Show If In Radius"
+msgstr "Zeigen, wenn im Radius"
+
+#: include/class.admin.experience.php:394
+msgid "Always Show"
+msgstr "Immer anzeigen"
+
+#: include/class.admin.experience.php:405
+msgid "labels"
+msgstr "Beschriftung"
+
+#: include/class.admin.experience.php:409
+msgid "No Results Message"
+msgstr "\"Keine Ergebnisse\"-Meldung"
+
+#: include/class.admin.experience.php:410
+msgid "No results found message that appears under the map. "
+msgstr "\"Nichts gefunden\"-Meldung, die unter der Karte angezeigt wird."
+
+#: include/class.admin.experience.php:411
+msgid "Can include basic HTML."
+msgstr "Kann  einfachen HTML enthalten."
+
+#: include/class.admin.experience.php:416
+msgid "Popup Email Title"
+msgstr "Popup-E-Mail-Titel"
+
+#: include/class.admin.experience.php:417
+msgid "The title on the popup email dialogue form."
+msgstr "Der Titel auf der Popup-Dialog-Emailformular."
+
+#: include/class.admin.experience.php:422
+msgid "Popup From Placeholder"
+msgstr "Platzhalter für \"Von\"-Fenster"
+
+#: include/class.admin.experience.php:423
+msgid "The placeholder for the from field on the popup email dialogue form."
+msgstr "Der Platzhalter für das Feld auf dem Popup-E-Mail Dialogform ."
+
+#: include/class.admin.experience.php:428
+msgid "Popup Subject Placeholder"
+msgstr "Popup Betreff Platzhalter"
+
+#: include/class.admin.experience.php:429
+msgid "The placeholder for the subject field on the popup email dialogue form."
+msgstr "Der Platzhalter für die Betreff-Feld auf dem Popup-E-Mail Dialogform ."
+
+#: include/class.admin.experience.php:434
+msgid "Popup Message Placeholder"
+msgstr "Platzhalter Popup Meldung"
+
+#: include/class.admin.experience.php:435
+msgid "The placeholder for the message box on the popup email dialogue form."
+msgstr ""
+"Der Platzhalter für das Hinweis-Fenster im Formular für den E-Mail Austausch."
+
+#: include/class.admin.experience.php:448
+msgid "Disable Initial Directory"
+msgstr "Deaktivieren Startverzeichnis"
+
+#: include/class.admin.experience.php:449
+msgid ""
+"Do not display the listings under the map when show locations at startup is "
+"checked."
+msgstr ""
+"Nicht die Objekte unter der Karte anzuzeigen, wenn Show Standorten beim "
+"Start überprüft wird."
+
+#: include/class.admin.experience.php:458
+#, php-format
+msgid "View the %s for more info."
+msgstr "Siehe  %s für mehr Informationen."
+
+#: include/class.admin.experience.php:458
+msgid "documentation"
+msgstr "Dokumentation"
+
+#: include/class.admin.experience.php:460
+msgid ""
+"Consider setting Radius Behavior to \"Use only when address is entered\" "
+"when using discrete settings here."
+msgstr ""
+"Betrachten Radius Verhalten auf \"nur verwenden, wenn Adresse eingegeben "
+"wird\", wenn hier diskrete Einstellungen."
+
+#: include/class.admin.experience.php:464
+msgid "Hidden"
+msgstr "verborgen"
+
+#: include/class.admin.experience.php:468
+msgid "Dropdown, Address Input"
+msgstr "Drop-Down-Adresseingabe"
+
+#: include/class.admin.experience.php:472
+msgid "Dropdown, Discrete Filter"
+msgstr "Aufklappmenü, Diskrete Filter"
+
+#: include/class.admin.experience.php:476
+msgid "Dropdown, Discrete + Address Input"
+msgstr "Dropdown, Diskrete + Adresseingabe"
+
+#: include/class.admin.experience.php:481
+msgid "Search Features"
+msgstr "Suchfunktionen"
+
+#: include/class.admin.experience.php:485
+msgid "Hide Radius Selections"
+msgstr "Ausblenden Radius Auswahl"
+
+#: include/class.admin.experience.php:486
+msgid "Hide the radius selection drop down."
+msgstr "Ausblenden der Radius Auswahl Dropdown."
+
+#: include/class.admin.experience.php:491
+msgid "Hide Search Form"
+msgstr "Verbergen Suchformular"
+
+#: include/class.admin.experience.php:492
+msgid ""
+"Hide the user input on the search page, regardless of the SLP theme used."
+msgstr ""
+"Ausblenden der Benutzereingabe auf der Suchseite , unabhängig von der SLP "
+"Thema verwendet."
+
+#: include/class.admin.experience.php:497
+msgid "Hide Address Entry"
+msgstr "Ausblenden Adresseingabe"
+
+#: include/class.admin.experience.php:498
+msgid "Hide the address input box on the locator search form."
+msgstr "Ausblenden der Adresseingabefeld auf der Locator Suchformular ."
+
+#: include/class.admin.experience.php:503
+msgid "Show Search By Name"
+msgstr "Zeigen Suche nach Name"
+
+#: include/class.admin.experience.php:504
+msgid "Shows the name search entry box to the user."
+msgstr "Zeigt den Namen Sucheingabefeld für den Benutzer."
+
+#: include/class.admin.experience.php:509
+msgid "Append This To Searches"
+msgstr "Fügen Sie dies zu Sucht"
+
+#: include/class.admin.experience.php:510
+msgid ""
+"Anything you enter in this box will automatically be appended to the address "
+"a user types into the locator search form address box on your site. "
+msgstr ""
+"Alles, was Sie in diesem Feld eingeben, wird automatisch an die Adresse in "
+"die Aufnahme ein Suchformular Adressfeld auf Ihrer Website ein Benutzer "
+"angehängt werden."
+
+#: include/class.admin.experience.php:515
+msgid "Address Autocomplete"
+msgstr "Autocomplete für Adresse"
+
+#: include/class.admin.experience.php:516
+msgid ""
+"When 2 or more characters are typed in the address input, show input "
+"suggestions based on location data. "
+msgstr ""
+"Wenn 2 oder mehr Zeichen in der Adresseingabe eingegeben werden, Vorschläge "
+"auf Basis der Positionsdaten anzeigen."
+
+#: include/class.admin.experience.php:518
+msgid "None (default) - do not suggest address input. "
+msgstr "Keine (Standardeinstellung) - keine Adresseneingabe vorschlagen."
+
+#: include/class.admin.experience.php:520
+msgid "Zipcode - suggest matching zip codes. "
+msgstr "Postleitzahl - vorschlagen passender Postleitzahlen."
+
+#: include/class.admin.experience.php:523
+msgid "None"
+msgstr "keiner"
+
+#: include/class.admin.experience.php:527
+msgid "Zipcode"
+msgstr "PLZ"
+
+#: include/class.admin.experience.php:535 
+#: include/class.admin.experience.php:544 
+#: include/class.admin.experience.php:553
+#, php-format
+msgid "%s Selector"
+msgstr "%s Auswahl"
+
+#: include/class.admin.experience.php:536
+msgid "How to display the city selector on the search form. "
+msgstr "Wie die Stadt-Auswahl im Suchformular angezeigt wird."
+
+#: include/class.admin.experience.php:545
+msgid "How to display the state selector on the search form. "
+msgstr "Wie die Staat-Auswahl im Suchformular angezeigt wird."
+
+#: include/class.admin.experience.php:554
+msgid "How to display the country selector on the search form. "
+msgstr "Wie die Landauswahl im Suchformular angezeigt wird."
+
+#: include/class.admin.experience.php:562
+msgid "Selector Behavior"
+msgstr "Selektor Verhalten"
+
+#: include/class.admin.experience.php:563
+msgid ""
+"Should the address input be disabled when city, state, or country selectors "
+"are used? "
+msgstr ""
+"Sollte das Adresseingabefeld deaktiviert werden, wenn Stadt, Bundesland oder "
+"Land Auswahl verwendet wird?"
+
+#: include/class.admin.experience.php:564
+msgid ""
+"Allow means address and city/state/zip selectors are both left active at all "
+"times. "
+msgstr "Zulassen bedeutet Stadt / Land / PLZ \"Auswahl\" sind jederzeit aktiv."
+
+#: include/class.admin.experience.php:565
+msgid ""
+"disable means users can interact with either the city/state/zip OR the "
+"address but not both at the same time. "
+msgstr ""
+"Deaktivieren bedeutet, Benutzer können entweder die Auswahl Stadt / PLZ "
+"/Bundesstaat ODER die Adresse nutzen, aber nicht beides gleichzeitig."
+
+#: include/class.admin.experience.php:568
+msgid "Allow Selector and Address Input"
+msgstr "Lassen Sie Auswahlfelder und Adresseingabe zu"
+
+#: include/class.admin.experience.php:572
+msgid "Disable Address When Using Selector"
+msgstr "Deaktivieren Adresse bei der Benutzung von \"Selektor\" (Auswahlfeld)"
+
+#: include/class.admin.experience.php:580
+msgid "Search Address Nearest"
+msgstr "Suche nach nächster Adresse"
+
+#: include/class.admin.experience.php:581
+msgid ""
+"Worldwide is the default search, letting Google make the best guess which "
+"addres the user wants. "
+msgstr ""
+"Weltweit ist die Standard-Suche, die Google die Entscheidung überlässt, "
+"welche Adresse der Nutzer will."
+
+#: include/class.admin.experience.php:582
+msgid ""
+"Current Map will find the best matching address nearest the current area "
+"shown on the map."
+msgstr ""
+"\"Aktuelle Karte\" findet die am besten passende Adresse, die am Nächsten "
+"zum angezeigten Kartenausschnitt passt."
+
+#: include/class.admin.experience.php:585
+msgid "Worldwide"
+msgstr "weltweit"
+
+#: include/class.admin.experience.php:589
+msgid "Current Map"
+msgstr "aktuelle Karte"
+
+#: include/class.admin.experience.php:597
+msgid "Search Layout"
+msgstr "\"Suchen\"-Layout"
+
+#: include/class.admin.experience.php:598
+msgid "Enter your custom search form layout. "
+msgstr "Geben Sie Ihren eigenen Suchformularlayout ein."
+
+#: include/class.admin.experience.php:600
+msgid "Overrides all other search form settings. "
+msgstr "Überschreibt alle anderen Suchformular-Einstellungen."
+
+#: include/class.admin.experience.php:601
+#, php-format
+msgid "Uses %s and HTML."
+msgstr "Verwendet %s und HTML."
+
+#: include/class.admin.experience.php:601
+msgid "layout shortcodes"
+msgstr "Layout Shortcodes"
+
+#: include/class.admin.experience.php:615
+msgid "Do not use - always ignore the radius.<br/>"
+msgstr "Nicht verwenden - immer den Radius ignorieren."
+
+#: include/class.admin.experience.php:616
+msgid "Use only when address is entered - ignore unless user typed an address."
+msgstr ""
+"Nur verwenden, wenn Adresse eingegeben wurde - ignorieren, es sei denn der "
+"Benutzer gibt eine Adresse ein."
+
+#: include/class.admin.experience.php:617
+msgid "Useful when city, state, country discrete selector is in use.<br/>"
+msgstr ""
+"Sinnvoll, wenn unterschiedliche Auswahlfelder für Stadt, Bundesstaat, Land "
+"verwendet werden.<br/>"
+
+#: include/class.admin.experience.php:629
+msgid "Do not use"
+msgstr "Verwende Sie nicht"
+
+#: include/class.admin.experience.php:630
+msgid "Use only when address is entered"
+msgstr "Verwenden Sie nur, wenn Adresse eingegeben wird"
+
+#: include/class.admin.experience.php:638
+msgid "Search Labels"
+msgstr "\"Suchen\"-Beschriftung"
+
+#: include/class.admin.experience.php:642
+msgid "Search Box Title"
+msgstr "\"Suchen\"-Anzeigefenster-Titel"
+
+#: include/class.admin.experience.php:643
+msgid ""
+"The label that goes in the search form box header, for plugin themes that "
+"support it."
+msgstr ""
+"Die Beschriftung für die Überschrift des Suchformulars, falls das Theme dies "
+"unterstützt."
+
+#: include/class.admin.experience.php:644
+msgid ""
+"Put this in a search form using the [slp_option nojs=\"search_box_title\"] "
+"shortcode."
+msgstr ""
+"Geben dies Sie in einem Suchformular ein, indem Sie diesen Shortcode "
+"[slp_option nojs = \"search_box_title\"] nutzen."
+
+#: include/class.admin.experience.php:649 
+#: include/class.admin.experience.php:661 
+#: include/class.admin.experience.php:673
+#, php-format
+msgid "%s Selector Label "
+msgstr "%s Auswahl-Beschriftung"
+
+#: include/class.admin.experience.php:650
+msgid "The label that precedes the city selector."
+msgstr "Die Beschriftung, die vor der Stadtauswahl steht."
+
+#: include/class.admin.experience.php:655 
+#: include/class.admin.experience.php:667 
+#: include/class.admin.experience.php:679
+#, php-format
+msgid "%s Selector First Entry "
+msgstr "%s Auswahl erster Eintrag "
+
+#: include/class.admin.experience.php:656
+msgid "The first entry on the search by city selector."
+msgstr "Der erste Eintrag auf der Suche nach Stadt Selektor."
+
+#: include/class.admin.experience.php:662
+msgid "The label that precedes the state selector."
+msgstr "Die Beschriftung vor der Bundesstaat-Auswahl."
+
+#: include/class.admin.experience.php:668
+msgid "The first entry on the search by state selector."
+msgstr ""
+"Der erste Eintrag bei der Suche nach \"Bundesstaat\"-Auswahl.\n"
+
+#: include/class.admin.experience.php:674
+msgid "The label that precedes the country selector."
+msgstr "Die Beschriftung vor der \"Land\"-Auswahl."
+
+#: include/class.admin.experience.php:680
+msgid "The first entry on the search by country selector."
+msgstr "Der erste Eintrag in der Suche-nach-Land Auswahl."
+
+#: include/class.admin.experience.php:685
+msgid "Address Placeholder"
+msgstr "Adress-Platzhalter"
+
+#: include/class.admin.experience.php:686
+msgid "Instructions to place in the address input."
+msgstr "Anweisungen, die in der Adresseingabe erscheinen."
+
+#: include/class.admin.experience.php:691
+msgid "Name Placeholder"
+msgstr "Name Platzhalter"
+
+#: include/class.admin.experience.php:692
+msgid "Instructions to place in the name input."
+msgstr "Anweisungen in der Namenseingabe platzieren."
+
+#: include/class.admin.experience.php:698
+msgid "Radius First Entry"
+msgstr "Erster Radius Eintrag"
+
+#: include/class.admin.experience.php:699
+msgid "Show this text as the first entry on the radius drop down. "
+msgstr "Zeige diesen Eintrag als Ersten im Radius Drop-Down Feld an."
+
+#: include/class.admin.experience.php:700
+msgid "If not left blank it will default to this being the selected radius. "
+msgstr "Falls nicht leer belassen, wird dies die Standard-Radius-Auswahl"
+
+#: include/class.admin.experience.php:701
+msgid ""
+"The value, when selected, will be set to the default in Radii Options . "
+msgstr ""
+"Dieser Wert wird auf den Standard in Radius Optionen gesetzt, falls "
+"ausgewählt."
+
+#: include/class.admin.experience.php:708
+msgid "Find Button"
+msgstr "Finden-Schaltfläche"
+
+#: include/class.admin.experience.php:709
+msgid "The label on the find button, if text mode is selected."
+msgstr ""
+"Die Beschriftung auf der \"Finden\"-Schaltfläche, wenn Text-Modus gewählt "
+"ist."
+
+#: include/class.admin.experience.php:715
+msgid "The label that precedes the name input box."
+msgstr "Die Beschriftung, die vor dem Namen-Eingabefeld steht."
+
+#: include/class.activation.php:58
+msgid "Featured"
+msgstr "Favorisiert"
+
+#: include/class.activation.php:64
+msgid "If checked the location will be marked as featured. "
+msgstr ""
+"Wenn diese Option aktiviert wird, der Standort als favorisiert markiert."
+
+#: include/class.activation.php:65
+msgid ""
+"Featured locations may display differently depending on the plugin style "
+"selected. "
+msgstr ""
+"Favorisierte Orte können unterschiedlich, je nach gewähltem Plugin Stil, "
+"anzuzeigen werden."
+
+#: include/class.activation.php:71
+msgid "Rank"
+msgstr "Rang"
+
+#: include/class.activation.php:76
+msgid ""
+"Determine the sort order for this location, lower numbers are displayed "
+"first. "
+msgstr ""
+"Sortierreihenfolge für Standorte festlegen, niedrige Zahlen werden zuerst "
+"angezeigt."
+
+#: include/class.activation.php:77
+msgid "Sort order is determined by the order by settings."
+msgstr ""
+"Sortierreihenfolge wird durch die Sortieren-Nach-Einstellung\n"
+" festgelegt ."
+
+#: include/class.activation.php:83
+msgid "Map Marker"
+msgstr "Karten-Markierung"
+
+#: include/class.activation.php:88
+msgid ""
+"This image will be the map marker at all times regardless of assigned "
+"category or other map marker settings."
+msgstr ""
+"Dieses Bild wird zum Kartenmarker, unabhängig von zugeordneten Kategorien "
+"oder anderen Kartenmarkierungs-Einstellungen."
+
+#: include/class.activation.php:245
+#, php-format
+msgid "As part of the %s upgrade, %s per-location map markers were updated."
+msgstr "Als Teil des %s Upgrade, %s wurden Pro-Standort-Marker upgedated."
+
+#: include/class.admin.general.php:28
+msgid "Program Interface"
+msgstr "Programmschnittstelle"
+
+#: include/class.admin.general.php:30
+msgid "Allow Address In URL"
+msgstr ""
+"Erlaube Adresse in \n"
+"URL"
+
+#: include/class.admin.general.php:31
+msgid ""
+"If checked an address can be pre-loaded via a URL string ?address=my+town. "
+msgstr ""
+"Wenn diese Option aktiviert ist, kann eine Adresse kann via einer URL-"
+"Zeichenkette ?address=my+town voreingestllt werden.\n"
+
+#: include/class.admin.general.php:32
+msgid ""
+"This will disable the location sensor whenever the address is used in the "
+"URL."
+msgstr ""
+"Hiermit wird der Positionssensor zu deaktivieren, immer wenn die Adresse in "
+"der URL verwendet wird.\n"
+
+#: include/widgets/class.search.php:17
+msgid "Send the user to the map when doing a search."
+msgstr "Leite den Nutzer zur Karten, während eine Suche durchgeführt wird."
+
+#: include/widgets/class.search.php:18
+msgid "SLP Search Form"
+msgstr "SLP Suchformular"
+
+#: include/widgets/class.search.php:19
+msgid "Find Us"
+msgstr "Finden Sie uns"
+
+#: include/widgets/class.search.php:30
+msgid "Search Label"
+msgstr ""
+"Such-Bezeichnung\n"
+
+#: include/widgets/class.search.php:31
+msgid "Address"
+msgstr "Adresse"
+
+#: include/widgets/class.search.php:37
+msgid "Use Placeholder"
+msgstr "Verwenden Sie Platzhalter"
+
+#: include/widgets/class.search.php:44
+msgid "Radius"
+msgstr "Radius"
+
+#: include/widgets/class.states.php:22
+msgid "List the states for your locations and link to the map or listing page."
+msgstr ""
+"Liste die Staaten für Ihre Standorte auf und verlinkt diese mit der Karte "
+"oder Auflistungsseite."
+
+#: include/widgets/class.states.php:23
+msgid "SLP States"
+msgstr "SLP Staaten"
+
+#: include/widgets/class.states.php:24
+msgid "We Are In These States"
+msgstr "Wir sind in diesen Bundesstaaten"
+
+#: include/widgets/class.cities.php:21
+msgid "List the cities for your locations and link to the map or listing page."
+msgstr ""
+"Listet die Städte für Ihre Standorte auf und verbindet diese mit Karte oder "
+"der Auflistungs-Seite\n"
+"."
+
+#: include/widgets/class.cities.php:22
+msgid "SLP Cities"
+msgstr "SLP  Städte"
+
+#: include/widgets/class.cities.php:23
+msgid "We Are In These Cities"
+msgstr "Wir sind in diesen Städten"
+
+#: include/widgets/class.cities.php:33
+msgid "All Cities Text"
+msgstr "Alle Städte Text"
+
+#: include/widgets/class.cities.php:34
+msgid "All Cities"
+msgstr "Alle Städte"
+
+#: include/widgets/class.cities.php:40
+msgid "Hide Cities At Start"
+msgstr "Verberge Städte beim Start"
+
+#: include/widgets/base_class.wp_widget_slp.php:79
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: include/widgets/base_class.wp_widget_slp.php:91
+msgctxt "separator after a field label"
+msgid ":"
+msgstr ":"
+
+#: include/widgets/base_class.wp_widget_slp.php:191
+msgid "Title"
+msgstr "Titel"
+
+#: include/widgets/base_class.wp_widget_slp.php:197
+msgid "Button Label"
+msgstr "Button-Beschriftung"
+
+#: include/widgets/base_class.wp_widget_slp.php:203
+msgid "Map Page URL"
+msgstr "Kartenseite URL"
+
+#: include/widgets/incomplete/class.search_and_results.php:23
+msgid "Immediate Search:"
+msgstr "sofortige Suche:"
+
+#: include/widgets/incomplete/class.search_and_results.php:31
+msgid "Immediate Address:"
+msgstr "Sofortige Adresse:"
+
+#: include/widgets/incomplete/class.search_and_results.php:38
+msgid "Maximum Results to display:"
+msgstr "Maximale angezeigte Ergebnisse:"
+
+#: include/widgets/incomplete/class.search_and_results.php:45
+msgid "Search Label:"
+msgstr ""
+"Suchen\n"
+"-Beschriftung:"
+
+#: include/widgets/incomplete/class.search_and_results.php:46
+msgid "Address:"
+msgstr "Adresse:"
+
+#: include/widgets/incomplete/class.search_and_results.php:52
+msgid "Search Label As Placeholder:"
+msgstr "Suchen_Beschriftung als Platzhalter:"
+
+#: include/widgets/incomplete/class.search_and_results.php:59
+msgid "Radius Label:"
+msgstr "Radius-Beschriftung:"
+
+#: include/widgets/incomplete/class.search_and_results.php:60
+msgid "Within:"
+msgstr "Innerhalb:"
+
+#: include/widgets/incomplete/class.search_and_results.php:66
+msgid "Default Radius:"
+msgstr "Standardradius :"
+
+#: include/widgets/incomplete/class.search_and_results.php:73
+msgid "Nothing Found Text:"
+msgstr "Nichts gefunden Text:"
+
+#: include/widgets/incomplete/class.search_and_results.php:80
+msgid "Use Simple Output:"
+msgstr "Verwenden Sie einfache Ausgabe:"
+
+#: include/widgets/incomplete/class.search_and_results.php:90
+msgid ""
+"The Store Locator Plus search form, with results appearing below the form."
+msgstr ""
+"Das Store Locator Plus-Suchformular mit Ergebnissen unterhalb des Formulars."
+"\n"
+
+#: include/widgets/incomplete/class.search_and_results.php:91
+msgid "SLP Search and Results"
+msgstr "SLP Suche und Ergebnisse"
+
+#: include/widgets/incomplete/class.search_and_results.php:92
+msgid "Find Nearby Locations"
+msgstr ""
+"Finde nachgelegene Standorte\n"
+
+#: include/widgets/incomplete/class.search_and_results.ui.php:65
+msgid "Nothing Found!"
+msgstr "Nichts gefunden!"
+
+#. Description of the plugin
+msgid ""
+"Extends the Store Locator Plus plugin with features that allow site authors "
+"and developers to create a customized robust user experience."
+msgstr ""
+"Erweitert den Store Locator Plus-Plugin mit Funktionen, die Website Autoren "
+"und Entwicklern die Möglichkeit geben,\n"
+" angepasste und stabile Benutzeroberflächen zu erstellen."
+
+#. URI of the plugin
+msgid "https://wordpress.storelocatorplus.com/product/experience/"
+msgstr "https://wordpress.storelocatorplus.com/product/experience/"
+
+#. Author of the plugin
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+#. URI of the plugin
+msgid "https://wordpress.storelocatorplus.com"
+msgstr "https://wordpress.storelocatorplus.com"
+

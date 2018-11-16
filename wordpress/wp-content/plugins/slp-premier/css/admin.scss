@@ -1,0 +1,92 @@
+/**
+ * Premier Admin CSS
+ * Compiled with SCSS file watcher rules in phpStorm into admin.css and then admin.min.css
+ **/
+.slp_premier_admin_css{  font-size: 1em;  } // help ID minified CSS
+
+@import '../../store-locator-le/assets/sass/colors/default';
+
+#center_map,
+#boundaries_map {
+
+    img {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        max-width: none;
+        opacity: 1.0;
+        visibility: visible;
+    }
+
+    /* Fix IE11 Rules from Bad WP Themes */
+    div {
+        overflow: visible;
+    }
+
+    /* Fix IE10 Rules */
+    .gm-style-cc > div {
+        word-wrap: normal;
+    }
+
+    /* Hide the default Google bubble shadow */
+    img[src='http://maps.gstatic.com/mapfiles/iws3.png'] {
+        display:none;
+    }
+}
+
+// Boundaries Map
+#boundaries_map {
+  width: 100%;
+  height: 25em;
+  margin: 0;
+  padding: 0;
+}
+
+// Center Map
+//
+#center_map {
+  display: block;
+  width: 100%;
+  height: 25em;
+  margin: 0;
+  padding: 0;
+}
+
+td.slp_manage_locations_cell.woo-products {
+  text-align: right;
+}
+
+
+// Accordion icons
+//
+span.ui-accordion-header-icon {
+    padding-right: 0.25em;
+    font-size: 1em;
+    color: $gray_mid_dark;
+}
+
+
+.scheduled_time {
+    display: block;
+    padding: 1em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.subtab_schedule {
+
+    h3 {
+        &.run_time {
+            padding-left: 1em;
+        }
+    }
+
+    .event {
+        padding-left: 1.75em;
+
+        span {
+            padding-right: 2em;
+        }
+    }
+
+}

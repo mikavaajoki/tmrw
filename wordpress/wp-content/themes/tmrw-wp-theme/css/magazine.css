@@ -351,3 +351,8 @@
 	}
 }
 
+
+#magazine .slp_search_form .search_box .search_item {
+	display: block !important;
+	flex: inherit !important;
+}

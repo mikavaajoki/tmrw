@@ -1,0 +1,415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus : Premier v4.3.00-RC-1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Feb 22 2016 14:47:57 GMT-0500 (EST)\n"
+"PO-Revision-Date: Thu Mar 24 2016 08:34:50 GMT-0400 (EDT)\n"
+"Last-Translator: admin <lance@charlestonsw.com>\n"
+"Language-Team: \n"
+"Language: Dutch\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: nl_NL"
+
+#. Name of the plugin
+msgid "Store Locator Plus - Premier"
+msgstr ""
+
+#. Author of the plugin
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+#: ../slp-premier.php:44
+#, php-format
+msgid "%s requires Store Locator Plus to function properly. "
+msgstr ""
+
+#: ../slp-premier.php:47 ../slp-premier.php:71
+msgid "This plugin has been deactivated."
+msgstr ""
+
+#: ../slp-premier.php:48
+msgid "Please install Store Locator Plus."
+msgstr ""
+
+#: ../slp-premier.php:67
+#, php-format
+msgid "%s requires WordPress %s to function properly. "
+msgstr ""
+
+#: ../slp-premier.php:72
+msgid "Please upgrade WordPress."
+msgstr ""
+
+#: ../include/class.admin.experience.php:47
+msgid "At Startup"
+msgstr ""
+
+#: ../include/class.admin.experience.php:52
+msgid "The current position of Center Lat/Long Fallback."
+msgstr ""
+
+#: ../include/class.admin.experience.php:53
+msgid ""
+"This what will be used to display the initial locations when Google "
+"Geocoding is offline."
+msgstr ""
+
+#: ../include/class.admin.experience.php:54
+msgid ""
+"Only locations within the Results / Radius To Search Initially setting will "
+"be shown."
+msgstr ""
+
+#: ../include/class.admin.experience.php:94
+msgid "Hide Street View"
+msgstr ""
+
+#: ../include/class.admin.experience.php:96
+msgid "Hide the street view man on the Google map interface."
+msgstr ""
+
+#: ../include/class.admin.experience.php:107
+msgid "Bubble Footnote"
+msgstr ""
+
+#: ../include/class.admin.experience.php:109
+msgid ""
+"The text entered here will appear in the map info bubble where the "
+"[slp_option bubble_footnote] shortcode appears. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:138
+msgid "Do Not Wrap Results In Div"
+msgstr ""
+
+#: ../include/class.admin.experience.php:140
+msgid "When checked do not wrap the individual location search results in a div."
+msgstr ""
+
+#: ../include/class.admin.experience.php:141
+msgid "Useful for plugin styles that provide their own non-div wrappers such as tr."
+msgstr ""
+
+#: ../include/class.admin.experience.php:184
+msgid "Results Header"
+msgstr ""
+
+#: ../include/class.admin.experience.php:186
+msgid "If set, output the HTML + shortcodes before displaying results. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:187
+msgid ""
+"If you wish to attach the locations to an HTML element other than the "
+"default #map_sidebar div, "
+msgstr ""
+
+#: ../include/class.admin.experience.php:188
+msgid ""
+"add id=\"add_locations_here\" to one of your Results Header elements such as a "
+"<tbody> tag. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:198
+msgid "Category Name Separator"
+msgstr ""
+
+#: ../include/class.admin.experience.php:200
+msgid ""
+"The string to be used to separate Tagalong category names in the map results."
+"  "
+msgstr ""
+
+#: ../include/class.admin.experience.php:201
+msgid "Utilized with Taglong and the [slp_location category_names] shortcode. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:202
+msgid "Can include HTML such as <br>. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:211
+msgid "Labels"
+msgstr ""
+
+#: ../include/class.admin.experience.php:221
+msgid "Results Header 1"
+msgstr ""
+
+#: ../include/class.admin.experience.php:223 ../include/class.admin.experience.
+#: php:235 ../include/class.admin.experience.php:247 ../include/class.admin.
+#: experience.php:259
+msgid "Output a header on the results for plugin styles that support it. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:224
+msgid "Use the settings [slp_option name=\"results_header_1\"] in the results layout. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:233
+msgid "Results Header 2"
+msgstr ""
+
+#: ../include/class.admin.experience.php:236
+msgid "Use the settings [slp_option name=\"results_header_2\"] in the results layout. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:245
+msgid "Results Header 3"
+msgstr ""
+
+#: ../include/class.admin.experience.php:248
+msgid "Use the settings [slp_option name=\"results_header_3\"] in the results layout. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:257
+msgid "Results Header 4"
+msgstr ""
+
+#: ../include/class.admin.experience.php:260
+msgid "Use the settings [slp_option name=\"results_header_4\"] in the results layout. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:313
+msgid "Dropdown Autosubmit"
+msgstr ""
+
+#: ../include/class.admin.experience.php:315
+msgid "If checked, automatically submit searches when a dropdown changes."
+msgstr ""
+
+#: ../include/class.admin.experience.php:325
+msgid "Drop Down Style"
+msgstr ""
+
+#: ../include/class.admin.experience.php:326
+msgid "Which style should be used for search form drop down menus? "
+msgstr ""
+
+#: ../include/class.admin.experience.php:336
+msgid "Smoothness"
+msgstr ""
+
+#: ../include/class.admin.experience.php:340
+msgid "Vader"
+msgstr ""
+
+#: ../include/class.admin.experience.php:356
+msgid "Search Labels"
+msgstr ""
+
+#: ../include/class.admin.experience.php:366
+msgid "Search Box Subtitle"
+msgstr ""
+
+#: ../include/class.admin.experience.php:368
+msgid ""
+"The label that goes in the search form box header, for plugin themes that "
+"support it. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:369
+msgid ""
+"Put this in a search form using the [slp_option name=\"search_box_subtitle\"] "
+"shortcode. "
+msgstr ""
+
+#: ../include/class.admin.experience.php:441
+msgid "Map Center Fallback"
+msgstr ""
+
+#: ../include/class.admin.general.php:38
+msgid "WooCommerce"
+msgstr ""
+
+#: ../include/class.admin.general.php:39
+msgid "These settings impact how Store Locator Plus interacts with Woocommerce. "
+msgstr ""
+
+#: ../include/class.admin.general.php:47
+msgid "Order Email Location Info"
+msgstr ""
+
+#: ../include/class.admin.general.php:48
+msgid "Shows location address, phone, and email on order email to customer."
+msgstr ""
+
+#: ../include/class.tagalong.php:54
+msgid "Single Parents"
+msgstr ""
+
+#: ../include/class.wooglue.php:61
+msgid "Woo Products"
+msgstr ""
+
+#: ../include/class.wooglue.php:66
+msgid "Related WooCommerce products and dynamic pricing."
+msgstr ""
+
+#: ../include/class.wooglue.php:218 ../include/class.wooglue.php:260
+msgid "Standard Pricing"
+msgstr ""
+
+#: ../include/class.wooglue.php:277
+msgid "Location for service: "
+msgstr ""
+
+#: ../include/class.wooglue.php:299
+msgid "default"
+msgstr ""
+
+msgid "https://www.storelocatorplus.com/product/premier-subscription"
+msgstr "https://www.storelocatorplus.com/product/premier-subscription"
+
+msgid "Add Premier Subscription features to the Store Locator Plus plugin."
+msgstr "Voeg Premier Abonnement eigenschappen toe aan de Store Locator Plus plugin."
+
+msgid "http://storelocatorplus.com"
+msgstr "http://storelocatorplus.com"
+
+#: ../include/class.admin.experience.php:71 ../include/class.admin.experience.php:
+#: 175
+msgid "Appearance"
+msgstr "Uiterlijk"
+
+#: ../include/class.admin.experience.php:81
+msgid "Enable Clusters"
+msgstr "Activeer Clusters"
+
+#: ../include/class.admin.experience.php:83
+msgid "When checked employ map clusters when markers are within close proximity."
+msgstr "Als aangezet gebruik kaart clusters als markers dicht op elkaar staan."
+
+#: ../include/class.admin.experience.php:128
+msgid "Functionality"
+msgstr "Functionaliteit"
+
+#: ../include/class.admin.experience.php:152
+msgid "Enable Pagination"
+msgstr "Activeer Paginering"
+
+#: ../include/class.admin.experience.php:154
+msgid ""
+"When checked the pagination label and previous/next page button is shown on "
+"results."
+msgstr ""
+"Als aangezet wordt het paginering label en vorige/volgende pagina button "
+"getoond bij de resultaten."
+
+#: ../include/class.admin.experience.php:164
+msgid "Pagination Label"
+msgstr "Paginering Label"
+
+#: ../include/class.admin.experience.php:166
+msgid ""
+"Enter a label to appear in front of the previous/next page icons in the "
+"results."
+msgstr ""
+"Geef een label wat verschijnt voor de vorige/volgende pagina iconen in de "
+"resultaten."
+
+#: ../include/class.admin.experience.php:278
+msgid "Search Features"
+msgstr "Zoek Eigenschappen"
+
+#: ../include/class.admin.experience.php:288
+msgid "Show Address Guess"
+msgstr "Toon Adres Gok"
+
+#: ../include/class.admin.experience.php:290
+msgid ""
+"If checked, replace the address the user typed into the address box with "
+"what Google thought they meant."
+msgstr ""
+"Als aangezet, vervang het door de gebruiker ingegeven adres door dat wat "
+"Google denkt dat bedoeld is."
+
+#: ../include/class.admin.experience.php:300
+msgid "Country Influences Guess"
+msgstr "Land Beïnvloed Gok"
+
+#: ../include/class.admin.experience.php:302
+msgid ""
+"When checked us the selected Map Domain to influence how Google guesses what "
+"the user meant when entering a search address."
+msgstr ""
+"Als aangezet gebruik dan het geselecteerde Map Domein om te beïnvloeden hoe "
+"Google raadt wat de gebruiker bedoelde bij het invoeren van het zoek adres."
+
+#: ../include/class.admin.experience.php:332 ../include/class.admin.experience.
+#: php:405
+msgid "None"
+msgstr "Geen"
+
+#: ../include/class.admin.experience.php:391
+msgid "Boundaries Influence Guess"
+msgstr "Grenzen Invloed Gok"
+
+#: ../include/class.admin.experience.php:394
+msgid ""
+"Use a search boundary to influence how Google guesses what the user meant "
+"when entering a search address."
+msgstr ""
+"Gebruik een zoek grens om te beïnvloeden hoe Google raadt wat de gebruiker "
+"bedoelde bij het invoeren van het zoek adres."
+
+#: ../include/class.admin.experience.php:395
+msgid "Locations is a rectangle that surrounds all of your locations."
+msgstr "Locaties is een rechthoek die al je locaties omvat."
+
+#: ../include/class.admin.experience.php:396
+msgid ""
+"Defined Boundary is a rectangle that you define with a map that will appear "
+"below."
+msgstr ""
+"Gedefinieerde Grens is een rechthoek die je definieert mbv een kaart die "
+"hieronder verschijnt."
+
+#: ../include/class.admin.experience.php:397
+msgid "The default is none, using standard Google address lookup rules."
+msgstr "Standaard is geen, gebruik standaard Google adres opzoek regels."
+
+#: ../include/class.admin.experience.php:409
+msgid "Locations"
+msgstr "Locaties"
+
+#: ../include/class.admin.experience.php:413
+msgid "Defined Boundary"
+msgstr "Gedefinieerde Grens"
+
+#: ../include/class.admin.experience.php:472
+#, php-format
+msgid "Boundaries are currently set to %s southwest and %s northeast."
+msgstr "Grenzen zijn momenteel gezet op %s zuid-west en %s noord-oost."
+
+#: ../include/class.admin.php:117
+msgid "Bounds Center"
+msgstr "Grens Centrum"
+
+#: ../include/class.ajax.pagination.php:32
+msgid "Previous Page"
+msgstr "Vorige Pagina"
+
+#: ../include/class.ajax.pagination.php:51
+msgid "Next Page"
+msgstr "Volgende Pagina"
+
+#: ../include/class.slp-premier.php:63
+msgid "Premier"
+msgstr "Premier"
+
+#: ../include/class.slp-premier.php:171
+msgid "More Locations: "
+msgstr "Meer Locaties: "

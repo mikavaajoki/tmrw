@@ -1,0 +1,73 @@
+// Loading indicator
+@import '../../store-locator-le/assets/sass/colors/palette/_material_colors.scss';
+
+#slp_loader_div {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    .loader_box {
+        position: absolute;
+        z-index: 1000;
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        display: none;
+
+        .loader {
+            position: relative;
+            margin: 0 auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+
+            border: 5px solid $grey-lighten-4;
+            border-top-color: $blue;
+
+            &.red_light_grey {
+                border-top-color: $red;
+            }
+            &.blue_light_grey {
+                border-top-color: $blue;
+            }
+            &.teal_light_grey {
+                border-top-color: $teal;
+            }
+            &.green_light_grey {
+                border-top-color: $green;
+            }
+            &.yellow_light_grey {
+                border-top-color: $yellow;
+            }
+            &.amber_light_grey {
+                border-top-color: $amber;
+            }
+            &.grey_light_grey {
+                border-top-color: $grey;
+            }
+            &.dark_light_grey {
+                border-top-color: $grey_darken-3;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

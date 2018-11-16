@@ -1,0 +1,1013 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus - Premier\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-11 09:19+0000\n"
+"PO-Revision-Date: 2018-01-11 09:20+0000\n"
+"Last-Translator: Piani <webmaster@piani.se>\n"
+"Language-Team: Swedish\n"
+"Language: sv-SE\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: include/SLP_Premier.php:54
+#: include/module/admin/SLP_Premier_Admin_Locations_Text.php:63
+msgid "Premier"
+msgstr "Premier"
+
+#: include/SLP_Premier.php:184
+msgid "More Locations: "
+msgstr "Fler platser: "
+
+#: include/class.activation.php:52
+msgid "Boundary Unit"
+msgstr "Områdesenhet"
+
+#: include/class.activation.php:58
+msgid "No Territory"
+msgstr "Inget sökområde"
+
+#: include/class.activation.php:58
+msgid "Miles"
+msgstr "Miles"
+
+#: include/class.activation.php:58
+msgid "Kilometers"
+msgstr "Kilometer"
+
+#: include/class.activation.php:59
+msgid ""
+"Should kilometers or miles be used when setting territory bounds when using "
+"distance from location?"
+msgstr ""
+"Ska kilometer eller miles användas när gränser ställs in när du använder "
+"avstånd från plats?"
+
+#: include/class.activation.php:63
+msgid "North Boundary"
+msgstr "Norra gränsen"
+
+#: include/class.activation.php:69
+msgid ""
+"Distance north of the location that is considered part of the covered "
+"territory."
+msgstr "Avstånd norr om platsen som anses vara en del av sökområdet."
+
+#: include/class.activation.php:73
+msgid "South Boundary"
+msgstr "Södra gränsen"
+
+#: include/class.activation.php:79
+msgid ""
+"Distance south of the location that is considered part of the covered "
+"territory."
+msgstr "Avstånd söder om platsen som anses vara en del av sökområdet."
+
+#: include/class.activation.php:83
+msgid "East Boundary"
+msgstr "Östra gränsen"
+
+#: include/class.activation.php:89
+msgid ""
+"Distance east of the location that is considered part of the covered "
+"territory."
+msgstr "Avstånd öster om platsen som anses vara en del av sökområdet."
+
+#: include/class.activation.php:93
+msgid "West Boundary"
+msgstr "Västra gränsen"
+
+#: include/class.activation.php:99
+msgid ""
+"Distance west of the location that is considered part of the covered "
+"territory."
+msgstr "Avstånd väster om platsen som anses vara en del av sökområdet."
+
+#: include/class.activation.php:103
+msgid "Territory Bounds"
+msgstr "Gränser för sökområde"
+
+#: include/base/loader.php:16
+#, php-format
+msgid "%s requires Store Locator Plus to function properly. "
+msgstr "%s kräver Store Locator Plus för att fungera korrekt. "
+
+#: include/base/loader.php:19 include/base/loader.php:41
+msgid "This plugin has been deactivated."
+msgstr "Detta tillägg har inaktiverats."
+
+#: include/base/loader.php:20
+msgid "Please install Store Locator Plus."
+msgstr "Vänligen installera Store Locator Plus."
+
+#: include/base/loader.php:37
+#, php-format
+msgid "%s requires WordPress %s to function properly. "
+msgstr "%s kräver Wordpress %s för att fungera korrekt. "
+
+#: include/base/loader.php:42
+msgid "Please upgrade WordPress."
+msgstr "Vänligen uppgradera Wordpress."
+
+#: include/module/schedule/SLP_Premier_Schedule_Item.php:96
+msgid "never"
+msgstr "aldrig"
+
+#: include/module/schedule/SLP_Premier_Schedule_Manager.php:114
+msgid "Power needs to be version 4.7"
+msgstr "Power behöver uppdateras till version 4.7"
+
+#: include/module/schedule/SLP_Premier_Schedule_Manager.php:120
+msgid "Scheduled geocoding requires the Power add on be active."
+msgstr "Schemalagd geokodning kräver att Power tillägget är aktivt."
+
+#: include/module/options/SLP_Premier_Options.php:55
+#: include/module/options/SLP_Premier_Options.php:122
+msgid "None"
+msgstr "Inga"
+
+#: include/module/options/SLP_Premier_Options.php:55
+msgid "a rectangle that surrounds all of your locations."
+msgstr "en rektangel som går runt alla dina platser."
+
+#: include/module/options/SLP_Premier_Options.php:56
+msgid "Locations"
+msgstr "Platser"
+
+#: include/module/options/SLP_Premier_Options.php:56
+msgid ""
+"Defined Boundary is a rectangle that you define with a map that will appear "
+"below."
+msgstr ""
+"Välj område skapar en rektangel som du definierar med en karta som visas "
+"nedanför."
+
+#: include/module/options/SLP_Premier_Options.php:57
+msgid "Defined Boundary"
+msgstr "Välj område"
+
+#: include/module/options/SLP_Premier_Options.php:57
+msgid "Use standard Google address lookup rules. (default)."
+msgstr "Använd standard Google adresssökning. (Standard)"
+
+#: include/module/options/SLP_Premier_Options.php:98
+msgid "90"
+msgstr "90"
+
+#: include/module/options/SLP_Premier_Options.php:98
+msgid "Larger areas cluster together; zoom in more to break clusters."
+msgstr "Större områden grupperas; Zooma in mer för att se detaljer."
+
+#: include/module/options/SLP_Premier_Options.php:99
+msgid "60 (Default)"
+msgstr "60 (Standard)"
+
+#: include/module/options/SLP_Premier_Options.php:99
+msgid "The default value."
+msgstr "Standardvärde."
+
+#: include/module/options/SLP_Premier_Options.php:100
+msgid "30"
+msgstr "30"
+
+#: include/module/options/SLP_Premier_Options.php:100
+msgid "Smaller areas cluster together; zoom in less to break clusters. "
+msgstr "Mindre områden grupperas; Zooma in närmare för att se detaljer."
+
+#: include/module/options/SLP_Premier_Options.php:122
+msgid "No animation for the marker."
+msgstr "Ingen animering av markören."
+
+#: include/module/options/SLP_Premier_Options.php:123
+msgid "Bounce"
+msgstr "Studsa"
+
+#: include/module/options/SLP_Premier_Options.php:123
+msgid "Continually bounce the marker. "
+msgstr "Markören studsar hela tiden. "
+
+#: include/module/options/SLP_Premier_Options.php:124
+msgid "Drop"
+msgstr "Släpp"
+
+#: include/module/options/SLP_Premier_Options.php:124
+msgid "Drop the marker from the \"sky\" with a single bounce."
+msgstr "Släpp markören från \"himlen\" med en enda studs."
+
+#: include/module/options/SLP_Premier_Options.php:135
+msgid "No Label"
+msgstr "Ingen etikett"
+
+#: include/module/options/SLP_Premier_Options.php:135
+msgid "Do not add a label."
+msgstr "Lägg inte till en etikett."
+
+#: include/module/options/SLP_Premier_Options.php:136
+msgid "Name"
+msgstr "Namn"
+
+#: include/module/options/SLP_Premier_Options.php:136
+msgid "Show the store name. "
+msgstr "Visa butiksnamn. "
+
+#: include/module/options/SLP_Premier_Options.php:147
+msgid "Stationary"
+msgstr "Stationär"
+
+#: include/module/options/SLP_Premier_Options.php:147
+msgid "Do not move."
+msgstr "Flytta inte."
+
+#: include/module/options/SLP_Premier_Options.php:148
+msgid "Center Location"
+msgstr "Centrera plats"
+
+#: include/module/options/SLP_Premier_Options.php:148
+msgid "Center the location on the map. "
+msgstr "Centrera platsen på kartan. "
+
+#: include/module/options/SLP_Premier_Options.php:160
+msgid "Keep As Is"
+msgstr "Behåll som den är"
+
+#: include/module/options/SLP_Premier_Options.php:160
+msgid "Do not change the marker."
+msgstr "Ändra inte markören."
+
+#: include/module/options/SLP_Premier_Options.php:161
+msgid "Use Active Marker Icon"
+msgstr "Använd aktiv kartmarkör"
+
+#: include/module/options/SLP_Premier_Options.php:161
+msgid "Use the active marker icon specified here. "
+msgstr "Använd den aktiva markeringsikonen som anges här. "
+
+#: include/module/options/SLP_Premier_Options.php:223
+msgid "Lightness"
+msgstr "Lätthet"
+
+#: include/module/options/SLP_Premier_Options.php:224
+msgid "Smoothness"
+msgstr "Mjukhet"
+
+#: include/module/options/SLP_Premier_Options.php:225
+msgid "Vader"
+msgstr "Vader"
+
+#: include/module/options/SLP_Premier_Options.php:240
+#: include/module/options/SLP_Premier_Options.php:256
+#: include/module/options/SLP_Premier_Options.php:314
+msgid "Never"
+msgstr "Aldrig"
+
+#: include/module/options/SLP_Premier_Options.php:240
+#: include/module/options/SLP_Premier_Options.php:256
+msgid "Not scheduled."
+msgstr "Inte schemalagd"
+
+#: include/module/options/SLP_Premier_Options.php:241
+#: include/module/options/SLP_Premier_Options.php:257
+msgid "Now"
+msgstr "Nu"
+
+#: include/module/options/SLP_Premier_Options.php:241
+#: include/module/options/SLP_Premier_Options.php:257
+msgid "Run just once."
+msgstr "Kör bara en gång."
+
+#: include/module/options/SLP_Premier_Options.php:242
+#: include/module/options/SLP_Premier_Options.php:258
+#: include/module/admin/SLP_Premier_Admin_Info_Text.php:70
+msgid "Hourly"
+msgstr "Varje timme"
+
+#: include/module/options/SLP_Premier_Options.php:242
+#: include/module/options/SLP_Premier_Options.php:258
+msgid "Run every hour."
+msgstr "Kör varje timme."
+
+#: include/module/options/SLP_Premier_Options.php:243
+#: include/module/options/SLP_Premier_Options.php:259
+#: include/module/admin/SLP_Premier_Admin_Info_Text.php:71
+msgid "Twice Daily"
+msgstr "Två gånger dagligen"
+
+#: include/module/options/SLP_Premier_Options.php:243
+#: include/module/options/SLP_Premier_Options.php:259
+msgid "Run twice per day."
+msgstr "Kör två gånger per dag."
+
+#: include/module/options/SLP_Premier_Options.php:244
+#: include/module/options/SLP_Premier_Options.php:260
+msgid "Daily"
+msgstr "Dagligen"
+
+#: include/module/options/SLP_Premier_Options.php:244
+#: include/module/options/SLP_Premier_Options.php:260
+msgid "Run once per day."
+msgstr "Kör en gång per dag."
+
+#: include/module/options/SLP_Premier_Options.php:314
+msgid "Do not block access"
+msgstr "Blockera inte åtkomst"
+
+#: include/module/options/SLP_Premier_Options.php:315
+#: include/module/options/SLP_Premier_Options.php:326
+msgid "Hour"
+msgstr "Timmar"
+
+#: include/module/options/SLP_Premier_Options.php:315
+msgid "per hour"
+msgstr "per timme"
+
+#: include/module/options/SLP_Premier_Options.php:316
+#: include/module/options/SLP_Premier_Options.php:327
+msgid "Day"
+msgstr "Dag"
+
+#: include/module/options/SLP_Premier_Options.php:316
+msgid "per day"
+msgstr "per dag"
+
+#: include/module/options/SLP_Premier_Options.php:317
+#: include/module/options/SLP_Premier_Options.php:328
+msgid "Week"
+msgstr "Vecka"
+
+#: include/module/options/SLP_Premier_Options.php:317
+msgid "per week"
+msgstr "per vecka"
+
+#: include/module/options/SLP_Premier_Options.php:326
+msgid "clear after an hour"
+msgstr "rensa efter en timme"
+
+#: include/module/options/SLP_Premier_Options.php:327
+msgid "clear after a day"
+msgstr "rensa efter en dag"
+
+#: include/module/options/SLP_Premier_Options.php:328
+msgid "clear after a week"
+msgstr "rensa efter en vecka"
+
+#: include/module/options/SLP_Premier_Options.php:388
+#, php-format
+msgid "Territory Bounds has been %s."
+msgstr "Områdesgräns har varit %s."
+
+#: include/module/options/SLP_Premier_Options.php:388
+msgid "activated"
+msgstr "aktiverad"
+
+#: include/module/options/SLP_Premier_Options.php:388
+msgid "deactivated"
+msgstr "inaktiverad"
+
+#: include/module/category/SLP_Premier_Category.php:32
+msgid "Button Bar"
+msgstr "Knapplist"
+
+#: include/module/category/SLP_Premier_Category.php:41
+msgid "Checkboxes, Horizontal"
+msgstr "Checkrutor, horisontalt"
+
+#: include/module/category/SLP_Premier_Category.php:48
+msgid "Checkboxes, Vertical"
+msgstr "Checkrutor, vertikalt"
+
+#: include/module/category/SLP_Premier_Category.php:57
+msgid "Single Parents"
+msgstr "Single Parents"
+
+#: include/module/ajax/SLP_Premier_AJAX_Pagination.php:36
+msgid "Previous Page"
+msgstr "Föregående sida"
+
+#: include/module/ajax/SLP_Premier_AJAX_Pagination.php:55
+msgid "Next Page"
+msgstr "Nästa sida"
+
+#: include/module/woocommerce/SLP_Premier_WooCommerce_Glue.php:65
+msgid "Woo Products"
+msgstr "Wooprodukter"
+
+#: include/module/woocommerce/SLP_Premier_WooCommerce_Glue.php:70
+msgid "Related WooCommerce products and dynamic pricing."
+msgstr "Relaterade WooCommerceprodukter och dynamisk prissättning."
+
+#: include/module/woocommerce/SLP_Premier_WooCommerce_Glue.php:222
+#: include/module/woocommerce/SLP_Premier_WooCommerce_Glue.php:264
+msgid "Standard Pricing"
+msgstr "Standard prissättning"
+
+#: include/module/woocommerce/SLP_Premier_WooCommerce_Glue.php:283
+msgid "Location for service: "
+msgstr "Plats för service: "
+
+#: include/module/woocommerce/SLP_Premier_WooCommerce_Glue.php:305
+msgid "default"
+msgstr "standard"
+
+#: include/module/admin/SLP_Premier_Admin_General.php:35
+msgid ""
+"Enter your subscription details on the General Admin tab to access "
+"additional settings."
+msgstr ""
+"Ange dina prenumerationsuppgifter på fliken Allmänt/administratör för att "
+"komma åt ytterligare inställningar."
+
+#: include/module/admin/SLP_Premier_Admin_General.php:63
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: include/module/admin/SLP_Premier_Admin_General.php:64
+msgid ""
+"These settings impact how Store Locator Plus interacts with Woocommerce. "
+msgstr ""
+"Dessa inställningar påverkar hur Store Locator Plus samverkar med "
+"Woocommerce. "
+
+#: include/module/admin/SLP_Premier_Admin_General.php:72
+msgid "Order Email Location Info"
+msgstr "Platsinformation på e-post order"
+
+#: include/module/admin/SLP_Premier_Admin_General.php:73
+msgid "Shows location address, phone, and email on order email to customer."
+msgstr ""
+"Visar platsens adress, telefon och e-post på e-postbeställning för kunden."
+
+#: include/module/admin/SLP_Premier_Admin_Info.php:53
+msgid "There is nothing scheduled to run automatically on this site."
+msgstr "Det finns inget planerat att köra automatiskt på den här webbplatsen."
+
+#: include/module/admin/SLP_Premier_Admin_Info.php:83
+msgid ""
+"This list shows the internal ID for the WP Cron tasks followed by the next "
+"time the task will run. "
+msgstr ""
+"Den här listan visar internt ID för WP Cron-uppgifterna följt av nästa gång "
+"uppgiften ska köras. "
+
+#: include/module/admin/SLP_Premier_Admin_Info.php:84
+msgid ""
+"Store Locator Plus scheduled items are found under the General / Schedule "
+"tab and Location / Import tab."
+msgstr ""
+"Store Locator Plus planerade objekt finns under fliken Allmänt / schema och "
+"fliken Plats / Import."
+
+#: include/module/admin/SLP_Premier_Admin_Info.php:85
+msgid "The current time is "
+msgstr "Den aktuella tiden är"
+
+#: include/module/admin/SLP_Premier_Admin_Info_Text.php:64
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:137
+msgid "Schedule"
+msgstr "Schema"
+
+#: include/module/admin/SLP_Premier_Admin_Info_Text.php:66
+msgid "Events"
+msgstr "Händelser"
+
+#: include/module/admin/SLP_Premier_Admin_Info_Text.php:69
+msgid "Run Once"
+msgstr "Kör en gång"
+
+#: include/module/admin/SLP_Premier_Admin.php:122
+msgid "Bounds Center"
+msgstr "Områdets centrum"
+
+#: include/module/admin/SLP_Premier_Location_Add.php:37
+msgid "Location Coordinates"
+msgstr "Platskoordinater"
+
+#: include/module/admin/SLP_Premier_Location_Add.php:56
+#, php-format
+msgid "Territory %s Coordinate"
+msgstr "Områdeskoordinater %s"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:63
+msgid ""
+"Limit on the number of locations to be returned via the limit parameter."
+msgstr "Begränsa antalet platser som ska returneras med gränsvärdet."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:64
+msgid "Select a specific location to activate via the location parameter. "
+msgstr "Välj en specifik plats för att aktivera platsparametern."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:65
+msgid ""
+"Filter locations to those with the specified tag via the tag parameter. "
+msgstr ""
+"Filtrera platser till dem med en speciell etikett med hjälp av etikettvärdet."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:66
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:74
+msgid ""
+"What is the maximum number of requests a single IP address can make over the "
+"specified time span before they are blocked. "
+msgstr ""
+"Vad är det maximala antalet sökningar en unik IP adress kan göra inom en "
+"tidsram innan den blockeras. "
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:67
+msgid ""
+"The time span over which to apply the limit on maximum number of locator "
+"requests. "
+msgstr ""
+"Tidsintervallet för antalet sökningar som kan göras innan de blockeras."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:68
+msgid ""
+"If you change this from \"never\" to any other value it can generate a "
+"substantial volume of data. "
+msgstr ""
+"Om du ändrar detta från \"aldrig\" till något annat värde kan det generera "
+"en betydande mängd data."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:69
+msgid ""
+"Make sure your WordPress database can handle the logging of every page load "
+"IP address for over this period of time. "
+msgstr ""
+"Se till att din wordpressdatabas kan hantera att logga alla IP adresser för "
+"varje sida under den här tidsperioden."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:70
+msgid "How long is the IP address blocked for before making another request? "
+msgstr ""
+"Hur länge ska en unik IP adress blockeras innan den får göra nya sökningar?"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:71
+msgid "IP addresses on this list are whitelisted for locator access. "
+msgstr ""
+"IP-adresser på denna lista har inga restriktioner för att söka platser."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:72
+msgid "Enter one address per line. "
+msgstr "Skriv en IP-adress per rad."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:73
+msgid "CIDR \"slash-dot\" notation is allowed (001.002.003.000/24). "
+msgstr "CIDR \"slash-dot\" inmatning är inte tillåtet (001.002.003.000/24). "
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:75
+msgid "When should uncoded locations be automatically geocoded? "
+msgstr "När ska okodade platser automatiskt geokodas? "
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:76
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:79
+msgid "Will run on the hour and repeat every hour, 12 hour or 24 hours. "
+msgstr ""
+"Kommer att köra på timmen och upprepa varje timme, 12 timmar eller 24 timmar."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:78
+msgid ""
+"When should locations have their initial distance automatically calculated? "
+msgstr "När ska platser ha sitt ursprungliga avstånd automatiskt beräknat?"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:81
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:63
+msgid "Activate the territories module."
+msgstr "Aktivera områdes-funktionen."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:97
+msgid "Location Limit"
+msgstr "Platsgräns"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:98
+msgid "Location Selection"
+msgstr "Platsval"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:99
+msgid "Filter By Tag"
+msgstr "Filtrera med etikett"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:100
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:105
+msgid "Block Requests Limit"
+msgstr "Blockera sökgränsvärdet"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:101
+msgid "Block Requests Time Span"
+msgstr "Tidsgräns för att blockera sökningar."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:102
+msgid "Release IP After"
+msgstr "Släpp IP efter"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:103
+msgid "IP Whitelist"
+msgstr "IP Vitlista'"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:104
+msgid "Geocoding"
+msgstr "Geokodning"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:106
+msgid "Initial Distance"
+msgstr "Initialt avstånd"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:107
+msgid "Use Territory Bounds"
+msgstr "Använd områdesgränser"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:122
+msgid "Tasks"
+msgstr "Uppgifter"
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:154
+msgid "This event is not scheduled."
+msgstr "Den här händelsen är inte schemalagd."
+
+#: include/module/admin/SLP_Premier_Admin_General_Text.php:156
+#, php-format
+msgid "Next Event happens in %s on %s"
+msgstr "Nästa händelse sker om %s på %s"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:56
+msgid "The current position of Center Lat/Long Fallback."
+msgstr "Den aktuella positionen av center för lat/long reserv."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:57
+msgid ""
+"This what will be used to display the initial locations when Google "
+"Geocoding is offline."
+msgstr "Detta används vid första kartvisning Google geokodning är offline."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:58
+msgid ""
+"Only locations within the Results / Radius To Search Initially setting will "
+"be shown."
+msgstr ""
+"Endast platser inom inställningarna för resultat/sökradie visas vid start."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:74
+msgid "Category Name Separator"
+msgstr "Kategori namn avgränsare"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:76
+msgid ""
+"The string to be used to separate Tagalong category names in the map results."
+"  "
+msgstr ""
+"Strängen som används för att avgränsa Tagalong kategorinamn kartans resultat."
+" "
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:77
+msgid "Utilized with Taglong and the [slp_location category_names] shortcode. "
+msgstr "Används av Taglong och [slp_location category_names] kortkod. "
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:78
+msgid "Can include HTML such as <br>. "
+msgstr "Kan innefatta HTML som<br>. "
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:85
+msgid "Pagination Label"
+msgstr "Sidnummeretikett"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:86
+msgid ""
+"Enter a label to appear in front of the previous/next page icons in the "
+"results."
+msgstr ""
+"Skriv in en etikett som visas framför \"föregående/nästa sida\" ikonerna i "
+"resultaten."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:102
+msgid "Dropdown Autosubmit"
+msgstr "Skicka val vid rullgardinsmeny automatiskt"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:103
+msgid "If checked, automatically submit searches when a dropdown changes."
+msgstr ""
+"Om denna är markerad skickas sökningen automatiskt när en rullgardinsmeny "
+"ändras."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:109
+msgid "Search Form Address Processing"
+msgstr "Sökformulärs adressbehandling"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:116
+msgid "Show Address Guess"
+msgstr "Visa adressgissning"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:117
+msgid ""
+"If checked, replace the address the user typed into the address box with "
+"what Google thought they meant."
+msgstr ""
+"Välj denna för att ersätta adressen som användaren börjar skriva in i "
+"adressrutan med det Google tror de menar."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:124
+msgid "Country Influences Guess"
+msgstr "Land påverkar gissning"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:125
+msgid ""
+"When checked us the selected Map Domain to influence how Google guesses what "
+"the user meant when entering a search address."
+msgstr ""
+"Välj denna för att använda kartdomänen du valt för att styra det Google tror "
+"de menar när de skriver in en adress."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:142
+msgid "Map Center Fallback"
+msgstr "Kartcenter reserv"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:174
+#, php-format
+msgid "Boundaries are currently set to %s southwest and %s northeast."
+msgstr "Området är satt till %s sydväst och %s nordöst."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:194
+msgid ""
+"<strong>Always Use, address entered must be in territory</strong> - location "
+"must be within radius AND address entered but be in the location territory."
+"<br/>"
+msgstr ""
+"<strong>Använd alltid, adressen måste ligga i området</strong> - platsen "
+"måste ligga inom radien OCH adressen måste finnas i området.<br/>"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:196
+msgid ""
+"<strong>Use for locations without a territory, Do not use for "
+"territories</strong> - show locations within radius if they have no "
+"territory as well as locations with a territory that covers the entered "
+"address."
+msgstr ""
+"<strong>Använd för platser utanför område. Använd inte för områden</strong> -"
+" visa platser inom radien om de inte hör till ett område eller adressen inte "
+"finns inom området."
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:210
+msgid "Always Use, address entered must be in territory"
+msgstr "Använd alltid att adressen måste finnas inom området"
+
+#: include/module/admin/SLP_Premier_Admin_Experience.php:211
+msgid "Use for locations without a territory, Do not use for territories"
+msgstr "Använd för platser utanför området, använd inte för områden"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:33
+msgid ""
+"Search boundaries influence how Google determines the best match for an "
+"address."
+msgstr ""
+"Sökning i områden avgör hur Google hanterar vilken adress som matchar bä'st."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:34
+msgid ""
+"The text entered here will appear in the map info bubble where the "
+"[slp_option bubble_footnote] shortcode appears. "
+msgstr ""
+"Texten som anges här kommer att visas i kartans informationsbubbla där "
+"[slp_option bubble_footnote] kortkoden används. "
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:35
+msgid ""
+"When checked employ map clusters when markers are within close proximity."
+msgstr ""
+"Välj denna för att skapa grupper på kartan när markörer finns i närheten."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:36
+msgid "How close to markers need to be to cluster together. "
+msgstr "Hur nära markörer måste vara att gruppera sig."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:37
+msgid ""
+"The number is \"tile spaces\" which changes based on the map zoom level. "
+msgstr "Numret är \"fyrkanter\" som ändras baserat på kartan zoomnivån."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:38
+msgid "The minimum number of markers required to make a cluster."
+msgstr "Minsta antalet markörer som krävs för att gruppera."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:39
+msgid ""
+"Shows a tool tip of the location name when a user hovers over a map marker."
+msgstr ""
+"Visar en hjälptext vid platsnamnet när en användare pekar på en kartmarkör."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:40
+msgid "Hide the street view man on the Google map interface."
+msgstr "Döljer gatuvy figuren på Google-kartas gränssnitt."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:41
+msgid "When checked makes Google's default map icons clickable."
+msgstr "När den är markerad görs ikonerna klickbara på Googles standardkarta."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:42
+msgid ""
+"When checked the pagination label and previous/next page button is shown on "
+"results."
+msgstr ""
+"Välj denna för att visa sidnummeretikett och \"föregående/nästa sida\" "
+"knappen vid resultaten."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:43
+msgid ""
+"How to animate the map marker when a user clicks the corresponding result."
+msgstr ""
+"Hur animera kartmarkören när en användare klickar på motsvarande resultat."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:44
+msgid ""
+"How to label the map marker when a user clicks the corresponding result."
+msgstr ""
+"Hur animera platsikonen när en användare klickar på motsvarande resultat."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:45
+msgid "How should the map behave when a location is clicked?"
+msgstr "Hur ska kartan röra sig när en någon klickar på en plats?"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:46
+msgid "How should the marker icon change when a result is clicked?"
+msgstr "Hur ska kartmarkören ändras när någon klickar på ett resultat?"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:47
+msgid "What to change the marker to when clicked."
+msgstr "Vad ska markören ändras till när den klickas på."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:48
+msgid "If set, output the HTML + shortcodes before displaying results. "
+msgstr "Om vald skicka HTML + kortkoder innan visning av resultaten. "
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:49
+msgid ""
+"If you wish to attach the locations to an HTML element other than the "
+"default #map_sidebar div, "
+msgstr ""
+"Om du vill koppla platserna till ett annat HTML-element än standard "
+"#map_sidebar div, "
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:50
+msgid ""
+"add id=\"add_locations_here\" to one of your Results Header elements such as "
+"a &lt;tbody&gt; tag. "
+msgstr ""
+"lägg till id=\"add_locations_here\" till ett av dina resultat huvudelement "
+"såsom t.ex. <tbody>."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:55
+msgid "Output a header on the results for plugin styles that support it. "
+msgstr "Skapar en rubrik som visas över resultaten för teman som stöder det. "
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:56
+#, php-format
+msgid "Use the settings [slp_option name = \"%s\"] in the results layout. "
+msgstr "Använd inställningen [slp_option name = \"%s\"] i resultatlayouten."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:57
+msgid ""
+"When checked do not wrap the individual location search results in a div."
+msgstr "När detta väljs kommer inte resultaten att läggas in i en DIV tag."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:58
+msgid ""
+"Useful for plugin styles that provide their own non-div wrappers such as tr."
+msgstr ""
+"Användbar för tillägg och teman som har sin egen icke-DIV tag som till "
+"exempel TR."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:59
+msgid ""
+"The label that goes in the search form box header, for plugin themes that "
+"support it. "
+msgstr ""
+"Rubrik som visas i överkant på sökformuläret för teman som stöder det. "
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:60
+msgid ""
+"Put this in a search form using the [slp_option name=\"search_box_subtitle\"]"
+" shortcode. "
+msgstr ""
+"Använd denna titel i ett sökformulär med kortkoden [slp_option "
+"name=\"search_box_subtitle\"] för teman som stöder det. "
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:61
+msgid "What style do you want to display for your plugin."
+msgstr "Vilken stil vill du visa för ditt tillägg."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:62
+msgid "Replaces the plugin style system with an active online directory."
+msgstr "Byter tilläggs-stilen  med en aktiv online katalog."
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:78
+msgid "Boundaries Influence Guess"
+msgstr "Område påverkar gissning"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:79
+msgid "Bubble Footnote"
+msgstr "Bubbla fotnot"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:80
+msgid "Enable Clusters"
+msgstr "Aktivera kluster"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:81
+msgid "Cluster Radius"
+msgstr "Klusterradie"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:82
+msgid "Cluster Minimum"
+msgstr "Minsta avstånd för gruppering"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:83
+msgid "Cluster Markers"
+msgstr "Klustermarkörer"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:84
+msgid "Marker Tooltip"
+msgstr "Kartmarkörens hjälptext"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:85
+msgid "Hide Street View"
+msgstr "Dölj gatuvy"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:86
+msgid "Clickable Icons"
+msgstr "Klickbara ikoner"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:87
+msgid "Enable Pagination"
+msgstr "Aktivera sidindelning"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:88
+msgid "Animate Marker"
+msgstr "Animera markör"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:89
+msgid "Label Marker"
+msgstr "Platsikon"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:90
+msgid "Map Movement"
+msgstr "Kartrörelse"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:91
+msgid "Marker Icon Behavior"
+msgstr "Beteende för kartmarkör"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:92
+msgid "Active Marker Icon"
+msgstr "Vald ikon för markör"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:93
+msgid "Results Header"
+msgstr "Resultathuvud"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:94
+msgid "Results Header 1"
+msgstr "Resultathuvud 1"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:95
+msgid "Results Header 2"
+msgstr "Resultathuvud 2"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:96
+msgid "Results Header 3"
+msgstr "Resultathuvud 3"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:97
+msgid "Results Header 4"
+msgstr "Resultathuvud 4"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:98
+msgid "Do Not Wrap Results In Div"
+msgstr "Lägg inte in resultatet i en DIV tag"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:99
+msgid "Search Box Subtitle"
+msgstr "Text under sökrutan"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:100
+msgid "Style"
+msgstr "Design"
+
+#: include/module/text/SLP_Premier_Text_Admin_Experience.php:115
+msgid "Results Interaction"
+msgstr "Resultatinteraktion"
+
+#. Name of the plugin
+msgid "Store Locator Plus - Premier"
+msgstr "Store Locator Plus - Premier"
+
+msgid "Add Premier Subscription features to the Store Locator Plus plugin."
+msgstr ""
+"Lägg till Premier prenumerations funktioner till Store Locator Plus plugin."
+
+#. URI of the plugin
+msgid "https://wordpress.storelocatorplus.com/product/premier-subscription/"
+msgstr "https://wordpress.storelocatorplus.com/product/premier-subscription/"
+
+#. Author of the plugin
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+#. Author URI of the plugin
+msgid "https://wordpress.storelocatorplus.com/"
+msgstr "https://wordpress.storelocatorplus.com/"

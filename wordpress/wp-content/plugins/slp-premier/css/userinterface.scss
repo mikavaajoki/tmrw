@@ -1,0 +1,95 @@
+/** Premier userinterface.scss  **/
+
+$woo_gray: #60646c;
+
+.store_locator_plus {
+
+    @import 'loading_indicator';
+
+    // Category CheckLists
+    .search_item.category {
+        .category.checklist {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &.horizontal {
+                flex-direction: row;
+
+                li {
+                    flex: 0 1 auto;
+                }
+            }
+
+            &.vertical {
+                flex-direction: column;
+                width: 100%;
+
+                li {
+                    flex: 1 1 auto;
+                }
+            }
+        }
+    }
+}
+
+div#map {
+  .slp_info_bubble {
+    .woo_buy_block {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+
+#map_sidebar {
+  .results_pagination {
+      margin: 0.5em 0;
+      text-align: right;
+
+      a {
+          text-decoration: none;
+          border:none;
+      }
+  }
+
+  div.woo_buy_block {
+    display: block;
+    width: 100%;
+
+    span {
+      display: block;
+
+      &.woo_product_title {
+        font-weight: bold;
+      }
+
+      &.woo_price {
+        color: $woo_gray;
+        font-weight: 400;
+      }
+
+      &.woo_buy_link {
+        A {
+          color: white;
+          text-decoration: none;
+          text-align: center;
+        }
+        background-color: $woo_gray;
+        padding: 0.618em 1em;
+      }
+    }
+  }
+}
+
+
+
+
+

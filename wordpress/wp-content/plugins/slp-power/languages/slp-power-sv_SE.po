@@ -1,0 +1,1745 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus - Power\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-11 09:13+0000\n"
+"PO-Revision-Date: 2018-01-11 09:13+0000\n"
+"Last-Translator: Piani <webmaster@piani.se>\n"
+"Language-Team: Swedish\n"
+"Language: sv-SE\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:152
+msgid "Locations"
+msgstr "Platser"
+
+#: include/SLPPower.php:120
+msgid "Power"
+msgstr "Power"
+
+#: include/SLPPower.php:473 include/class.admin.reports.php:103
+msgid "Reports"
+msgstr "Rapporter"
+
+#: include/SLPPower.php:479 include/module/admin/SLP_Power_Admin.php:195
+#: include/module/admin/SLP_Power_Admin.php:409
+#: include/module/admin/SLP_Power_Admin.php:430
+msgid "Categories"
+msgstr "Kategorier"
+
+#: include/SLPPower.php:667
+msgid "Geocoding location ID is empty."
+msgstr "Geokodning plats-ID är tomt."
+
+#: include/class.admin.experience.php:44
+msgid "Show Tags In Output"
+msgstr "Visa koder i utdata"
+
+#: include/class.admin.experience.php:45
+msgid ""
+"How should tags be output in the results below the map and the info bubble?"
+msgstr ""
+"Hur ska koder visas i resultaten nedanför kartan och informationsbubblor?"
+
+#: include/class.admin.experience.php:47
+msgid "As Entered"
+msgstr "Som inmatad"
+
+#: include/class.admin.experience.php:48
+msgid "Hide Tags"
+msgstr "Dölj koder"
+
+#: include/class.admin.experience.php:49
+msgid "On Separate Lines"
+msgstr "På separata rader"
+
+#: include/class.admin.experience.php:74
+msgid "Search Form Tag Input"
+msgstr "Sökfält kod val"
+
+#: include/class.admin.experience.php:75
+msgid ""
+"Select the type of tag input that you would like to see on the search form."
+msgstr "Välj typ av kodval som du vill se i sökformuläret."
+
+#: include/class.admin.experience.php:77
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:245
+msgid "None"
+msgstr "Ingen"
+
+#: include/class.admin.experience.php:78
+#: include/module/category/SLP_Power_Category_Selector_Manager.php:38
+msgid "Hidden"
+msgstr "Dold"
+
+#: include/class.admin.experience.php:79
+msgid "Drop Down"
+msgstr "Rullgardin"
+
+#: include/class.admin.experience.php:80
+msgid "Radio Button"
+msgstr "Knapp"
+
+#: include/class.admin.experience.php:81
+msgid "Text Input"
+msgstr "Textinmatning"
+
+#: include/class.admin.experience.php:89
+msgid "Add All To Tags Dropdown"
+msgstr "Lägg till alla i rullgardinsmenyn för koder"
+
+#: include/class.admin.experience.php:90
+msgid ""
+"Add an \"any\" selection on the tag drop down list thus allowing the user to "
+"show all locations in the area, not just those matching a selected tag."
+msgstr ""
+"Lägga till ett \"alla\" val på rullgardinsvalet för koder så att användaren "
+"kan visa alla platser i området, inte bara de matchande en vald kod."
+
+#: include/class.admin.experience.php:97
+msgid "Tag Select All Text"
+msgstr "Kodval, text för \"alla\""
+
+#: include/class.admin.experience.php:98
+msgid "What should the \"any\" tag say? "
+msgstr "Hur ska \"alla\" koden se ut? "
+
+#: include/class.admin.experience.php:99
+msgid "The first entry on the search by tag pulldown."
+msgstr "Den första posten på rullgardinen för sökning av kod."
+
+#: include/class.admin.experience.php:113
+msgid "Default Tag Selections"
+msgstr "Standardval för kod"
+
+#: include/class.admin.experience.php:115
+msgid ""
+"For Hidden or Text tag input enter a default value to be used in the field, "
+"if any. "
+msgstr ""
+"För dolda eller textkod inmatning ange ett standardvärde som används i "
+"fältet, om någon. "
+
+#: include/class.admin.experience.php:116
+msgid ""
+"For Drop Down tag input enter a comma (,) separated list of tags to show in "
+"the search pulldown, mark the default selection with parenthesis (). "
+msgstr ""
+"För rullgardins kodinmatning ange en kommaseparerad (,) lista över koder som "
+"visas i rullgardinsmenyn, markera standardvalet med parentes (). "
+
+#: include/class.admin.experience.php:117
+msgid ""
+"This is a default setting that can be overriden on each page within the "
+"shortcode."
+msgstr ""
+"Detta är en standardinställning som kan åsidosättas på varje sida inom "
+"kortkoden."
+
+#: include/class.admin.experience.php:124
+msgid "Tag Autosubmit"
+msgstr "Kod autoskicka"
+
+#: include/class.admin.experience.php:125
+msgid ""
+"Force the form to auto-submit when the tag is selected with a radio button."
+msgstr "Tvinga formuläret att autoskicka när koden är vald med en knapp."
+
+#: include/class.admin.experience.php:138
+msgid "Tags Label"
+msgstr "Kod etikett"
+
+#: include/class.admin.experience.php:139
+msgid "Search form label to prefix the tag selector."
+msgstr "Sökformulärets etikett före kodväljaren."
+
+#: include/class.admin.experience.php:162
+#: include/module/pages/SLP_Power_Pages_Global.php:45
+#: include/module/pages/SLP_Power_Pages_Tab.php:24
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:159
+msgid "Pages"
+msgstr "Pages"
+
+#: include/class.admin.experience.php:173
+#: include/module/pages/SLP_Power_Pages_Tab.php:196
+msgid "Page Template"
+msgstr "Sidmall"
+
+#: include/class.admin.experience.php:176
+#: include/module/pages/SLP_Power_Pages_Tab.php:200
+msgid "The HTML that is used to create new store pages."
+msgstr "HTML-koden som används för att skapa nya butikssidor."
+
+#: include/class.admin.experience.php:177
+#: include/module/pages/SLP_Power_Pages_Tab.php:201
+msgid "Leave blank to reset to default layout."
+msgstr "Lämna tomt för att återställa till standardlayout."
+
+#: include/class.activation.php:55
+msgid "Identifier"
+msgstr "Identifierare"
+
+#: include/class.activation.php:61
+msgid ""
+"The identifier field is meant to store a unique location record ID from an "
+"external data source. "
+msgstr ""
+"Identifieraren är tänkt att lagra ett unikt plats-ID från en extern "
+"datakälla. "
+
+#: include/class.activation.php:62
+msgid ""
+"During a CSV import, this field is used to match up incoming data with "
+"existing locations. "
+msgstr ""
+"Under en CSV import används det här fältet för att matcha uppladdade data "
+"med befintliga platser. "
+
+#: include/class.activation.php:64
+msgid "Contact"
+msgstr "Kontakt"
+
+#: include/class.activation.php:65
+msgid "First Name"
+msgstr "Förnamn"
+
+#: include/class.activation.php:66
+msgid "Last Name"
+msgstr "Efternamn"
+
+#: include/class.activation.php:67
+msgid "Title"
+msgstr "Titel"
+
+#: include/class.activation.php:68
+msgid "Department"
+msgstr "Avdelning"
+
+#: include/class.activation.php:69
+msgid "Training"
+msgstr "Utbildning"
+
+#: include/class.activation.php:70
+msgid "Facility Type"
+msgstr "Lokaltyp"
+
+#: include/class.activation.php:71
+msgid "Office Phone"
+msgstr "Kontorstelefon"
+
+#: include/class.activation.php:72
+msgid "Mobile Phone"
+msgstr "Mobiltelefon"
+
+#: include/class.activation.php:73
+msgid "Contact Fax"
+msgstr "Kontakt fax"
+
+#: include/class.activation.php:74
+msgid "Contact Email"
+msgstr "Kontakt e-post"
+
+#: include/class.activation.php:75
+msgid "Office Hours"
+msgstr "Öppettider"
+
+#: include/class.activation.php:76
+msgid "Contact Address"
+msgstr "Kontakt adress"
+
+#: include/class.activation.php:77
+msgid "Notes"
+msgstr "Anteckningar"
+
+#: include/class.activation.php:78
+msgid "Introduction"
+msgstr "Beskrivning"
+
+#: include/class.activation.php:79
+msgid "Year Established"
+msgstr "Etableringsår"
+
+#: include/class.activation.php:80
+msgid "County"
+msgstr "Län"
+
+#: include/class.activation.php:81
+msgid "District"
+msgstr "Distrikt"
+
+#: include/class.activation.php:82
+msgid "Region"
+msgstr "Region"
+
+#: include/class.activation.php:83
+msgid "Territory"
+msgstr "Territorium"
+
+#: include/class.activation.php:84
+msgid "Image"
+msgstr "Bild"
+
+#: include/class.admin.reports.php:32
+msgid " - Reporting"
+msgstr " - Rapportering"
+
+#: include/class.admin.reports.php:34
+msgid "Save Settings"
+msgstr "Spara inställningarna"
+
+#: include/class.admin.reports.php:71
+msgid "Report Summary"
+msgstr "Rapport Sammanfattning"
+
+#: include/class.admin.reports.php:124
+msgid "Export To CSV"
+msgstr "Exportera till CSV"
+
+#: include/class.admin.reports.php:133
+msgid "Export all records"
+msgstr "Exportera alla poster"
+
+#: include/class.admin.reports.php:137
+msgid "Top Searches"
+msgstr "Toppsökningar"
+
+#: include/class.admin.reports.php:138
+msgid "Top Results"
+msgstr "Toppresultat"
+
+#: include/class.admin.reports.php:151
+msgid "Report Parameters"
+msgstr "Rapportparametrar"
+
+#: include/class.admin.reports.php:159
+msgid "Start Date"
+msgstr "Startdatum"
+
+#: include/class.admin.reports.php:165
+msgid "Only show data on or after this date.  YYYY-MM-DD."
+msgstr "Visa endast data på eller efter detta datum.  ÅÅÅÅ-MM-DD."
+
+#: include/class.admin.reports.php:175
+msgid "End Date"
+msgstr "Slutdatum"
+
+#: include/class.admin.reports.php:181
+msgid "Only show data on or before this date.  YYYY-MM-DD hh:mm:ss."
+msgstr "Visa endast data på eller före detta datum. YYYY-MM-DD hh:mm:ss."
+
+#: include/class.admin.reports.php:196
+msgid "Report Limit"
+msgstr "Rapportgräns"
+
+#: include/class.admin.reports.php:202
+msgid ""
+"Limit the report to this many detail records.  Default: 10.  Recommended "
+"maximum: 500."
+msgstr ""
+"Begränsa rapporten till detta antal poster.  Standard: 10.  Rekommenderat "
+"maximalt: 500."
+
+#: include/class.admin.reports.php:217
+#, php-format
+msgid "Total searches: <strong>%s</strong>"
+msgstr "Totalt sökningar: <strong>%s</strong>"
+
+#: include/class.admin.reports.php:218
+#, php-format
+msgid "Total results: <strong>%s</strong>"
+msgstr "Totalt resultat: <strong>%s</strong>"
+
+#: include/class.admin.reports.php:219
+#, php-format
+msgid "Days with activity: <strong>%s</strong>"
+msgstr "Dagar med aktivitet: <strong>%s</strong>"
+
+#: include/class.admin.reports.php:234 include/class.admin.reports.php:236
+#, php-format
+msgid "Top %s Results Returned"
+msgstr "Topp %s resultat visade"
+
+#: include/class.admin.reports.php:238
+msgid "Store"
+msgstr "Plats"
+
+#: include/class.admin.reports.php:239
+msgid "City"
+msgstr "Stad"
+
+#: include/class.admin.reports.php:240
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:129
+msgid "State"
+msgstr "Län"
+
+#: include/class.admin.reports.php:241
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:100
+msgid "Zip"
+msgstr "Postnr"
+
+#: include/class.admin.reports.php:242
+#: include/module/admin/SLP_Power_Admin.php:178
+#: include/module/admin/SLP_Power_Admin.php:476
+msgid "Tags"
+msgstr "Taggar"
+
+#: include/class.admin.reports.php:243 include/class.admin.reports.php:285
+msgid "Total"
+msgstr "Summa"
+
+#: include/class.admin.reports.php:269
+msgid "topresults"
+msgstr "toppresultat"
+
+#: include/class.admin.reports.php:280 include/class.admin.reports.php:282
+#, php-format
+msgid "Top %s Addresses Searched"
+msgstr "Topp %s adresser sökta"
+
+#: include/class.admin.reports.php:284
+msgid "Address"
+msgstr "Adress"
+
+#: include/class.admin.reports.php:307
+msgid "topsearches"
+msgstr "toppsökningar"
+
+#: include/class.admin.reports.php:317 include/class.admin.reports.php:341
+#: include/module/pages/SLP_Power_Pages_Tab.php:44
+msgid "Settings"
+msgstr "Inställningar"
+
+#: include/class.admin.reports.php:326
+msgid "Enable reporting to start recording location search data. "
+msgstr "Aktivera rapportering att starta inspelning av sökdata. "
+
+#: include/class.admin.reports.php:327
+msgid "Once enabled the report section will appear on this tab."
+msgstr "När detta är aktiverat kommer rapporterna att visas på den här fliken."
+
+#: include/class.admin.reports.php:346
+msgid "Enable Reporting"
+msgstr "Aktivera rapportering"
+
+#: include/class.admin.reports.php:352
+msgid ""
+"Enables tracking of searches and returned results.  The added overhead can "
+"increase how long it takes to return location search results."
+msgstr ""
+"Aktiverar spårning av sökningar och returnerade resultat.  Detta kan öka "
+"tiden för att returnera sökresultat för besökarna."
+
+#: include/base/loader.php:16
+#, php-format
+msgid "%s requires Store Locator Plus to function properly. "
+msgstr "%s kräver Store Locator Plus för att fungera korrekt. "
+
+#: include/base/loader.php:19 include/base/loader.php:41
+msgid "This plugin has been deactivated."
+msgstr "Detta tillägg har inaktiverats."
+
+#: include/base/loader.php:20
+msgid "Please install Store Locator Plus."
+msgstr "Vänligen installera Store Locator Plus."
+
+#: include/base/loader.php:37
+#, php-format
+msgid "%s requires WordPress %s to function properly. "
+msgstr "%s kräver Wordpress %s för att fungera korrekt. "
+
+#: include/base/loader.php:42
+msgid "Please upgrade WordPress."
+msgstr "Vänligen uppgradera Wordpress."
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:34
+msgid "Create SEO Page"
+msgstr "Skapa SEO sida"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:200
+msgid "Description"
+msgstr "Beskrivning"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:202
+msgid "Contact Info"
+msgstr "Kontaktinfo"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:262
+msgid "Pages, Create"
+msgstr "Butiksida, skapa"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:266
+msgid "Pages, Delete Permanently"
+msgstr "Butiksida, ta bort permanent"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:280
+msgid "Pages URL"
+msgstr "Butiksida URL"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:317
+#: include/module/pages/SLP_Power_Pages_Admin.php:401
+msgid "Edit"
+msgstr "Ändra"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:327
+#, php-format
+msgid "Store Page ID %d is at "
+msgstr "Butiksida ID %d är "
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:390
+msgid "Recreate"
+msgstr "Återskapa"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:413
+msgid "Trash"
+msgstr "Papperskorg"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:426
+msgid "Delete"
+msgstr "Ta bort"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:444
+msgid "View"
+msgstr "Visa"
+
+#: include/module/pages/SLP_Power_Pages_Admin.php:459
+msgid "Preview"
+msgstr "Förhandsvisning"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:49
+msgid "Behavior"
+msgstr "Beteende"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:54
+msgid "Default Page Status"
+msgstr "Standard sidstatus"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:59
+msgid "Draft"
+msgstr "Utkast"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:64
+msgid "Published"
+msgstr "Publicerad"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:69
+msgid "Pending Review"
+msgstr "Inväntar granskning"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:74
+msgid "Future"
+msgstr "Framtid"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:79
+msgid "Private"
+msgstr "Privat"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:85
+msgid "When creating new Store Pages, what should the default status be?."
+msgstr "När du skapar nya butikssidor, vad standard status vara?."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:86
+msgid "Default mode is draft."
+msgstr "Standardstatus är utkast."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:93
+msgid "Pages Replace Websites"
+msgstr "Butikssidor ersätter webbplatser"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:95
+msgid ""
+"Use the Store Pages local URL in place of the website URL on the map results "
+"list."
+msgstr ""
+"Använd butikssidans lokala URL istället för webbadressen på kartans "
+"resultatlista."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:103
+msgid "Prevent New Window"
+msgstr "Förhindra nytt fönster"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:105
+msgid "Prevent Store Pages web links from opening in a new window."
+msgstr "Förhindrar att butikssidors öppnas i ett nytt fönster."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:113
+msgid "Prepend URL With Blog Path"
+msgstr "Lägg till bloggsökväg i URL"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:115
+msgid "If this is unchecked it will be /store-page."
+msgstr "Om detta är avmarkerad blir det /store-page."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:125
+msgid "Permalink Starts With"
+msgstr "Permalink börjar med"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:128
+msgid ""
+"This process takes a long time to update WordPress fils and ALL of your "
+"location data."
+msgstr ""
+"Denna process tar lång tid för att uppdatera WordPress-filer och all din "
+"platsinformation."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:129
+msgid "Set the middle part of the store page URLs, defaults to \"store_page\"."
+msgstr ""
+"Sätter den mellersta delen av butikssidornas webbadresser till "
+"\"store_page\" som förval."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:131
+#, php-format
+msgid ""
+"<a href=\"%s\">Permalinks</a> needs to be set to something other than "
+"default."
+msgstr ""
+"<a href=\"%s\">Permalänkar</a> måste ställas in till något annat än standard."
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:140
+msgid "Initial Page Features"
+msgstr "Förvalda funktioner för butikssidor"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:152
+#, php-format
+msgid "These settings determine how your custom %s pages are built. "
+msgstr "Dessa inställningar bestämmer hur dina unika %s butikssidor byggs. "
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:156
+msgid "You have Force Load JavaScript ON. "
+msgstr "Du har Tvinga laddning av JavaScript PÅ. "
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:157
+msgid ""
+"Themes that follow WordPress best practices and employ wp_footer() properly "
+"do not need this. "
+msgstr ""
+"Teman som följer Wordpress bästa praxis och utnyttjar wp_footer() korrekt "
+"behöver inte detta. "
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:158
+msgid ""
+"Leaving it on slows down your site and disables a lot of extra features with "
+"the plugin and add-on packs. "
+msgstr ""
+"Att lämna detta PÅ saktar ner din webbplats och inaktiverar en massa extra "
+"funktioner med tema och tillägg. "
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:162
+msgid ""
+"For example, your Store Pages template has had the map element removed. "
+msgstr "Till exempel, på ditt sökformulär tas kartan bort. "
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:172
+msgid "Default Comments"
+msgstr "Tillåt kommentarer"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:175
+msgid ""
+"Should comments be on or off by default when a new store page is created?"
+msgstr ""
+"Ska kommentarer vara aktiverat eller inte som standard när en ny butiksida "
+"skapas?"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:182
+msgid "Default Trackbacks"
+msgstr "Tillåt trackbacks"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:185
+msgid ""
+"Should pingbacks/trackbacks be on or off by default when a new store page is "
+"created?"
+msgstr ""
+"Ska pingbacks/trackbacks vara aktiverat som standard när en ny butiksida "
+"skapas?"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:209
+msgid "Read More Text"
+msgstr "Läs mer text"
+
+#: include/module/pages/SLP_Power_Pages_Tab.php:211
+msgid "Read more text to be used with [slp_pages] <!--more--> page breaks."
+msgstr ""
+"\"Läs mer\" text för att användas med [slp_pages] <!--more--> sidbrytningar."
+
+#: include/module/options/SLP_Power_Options.php:43
+msgid "Extended contact fields have been activated."
+msgstr "Utökade kontaktfält har aktiverats."
+
+#: include/module/options/SLP_Power_Options.php:133
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:94
+#: include/module/text/SLP_Power_Text.php:96
+msgid "Category"
+msgstr "Kategori"
+
+#: include/module/options/SLP_Power_Options.php:134
+msgid "Any"
+msgstr "Någon"
+
+#: include/module/category/SLP_Power_Category_Selector_Manager.php:46
+msgid "Single Drop Down"
+msgstr "Enkel rullgardin"
+
+#: include/module/category/SLP_Power_Category_Selector_Manager.php:55
+msgid "Cascading Drop Down"
+msgstr "Flervals-'dropdown"
+
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:153
+#: include/module/text/SLP_Power_Text.php:75
+msgid "Rank"
+msgstr "Sortering"
+
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:154
+msgid "Icon"
+msgstr "Ikon"
+
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:155
+msgid "Marker"
+msgstr "Kartmarkör"
+
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:218
+msgid "Item "
+msgstr "Artikel "
+
+#: include/module/category/SLP_Power_Category_Stores_Taxonomy.php:219
+msgid "Store category "
+msgstr "Platskategori "
+
+#: include/module/ajax/SLP_Power_AJAX.php:267
+#: include/module/ajax/SLP_Power_AJAX.php:273
+msgid "Cheatin' huh!"
+msgstr "Fuskar du?"
+
+#: include/module/ajax/SLP_Power_AJAX.php:521
+msgid "Creating the location export CSV file."
+msgstr "Skapar CSV-filen med platser för export."
+
+#: include/module/ajax/SLP_Power_AJAX.php:554
+msgid "Processing complete."
+msgstr "Process är klar."
+
+#: include/module/ajax/SLP_Power_AJAX.php:554
+msgid "Being processed."
+msgstr "Process pågår."
+
+#: include/module/ajax/SLP_Power_AJAX.php:561
+msgid "Original Name:"
+msgstr "Ursprungligt namn:"
+
+#: include/module/ajax/SLP_Power_AJAX.php:569
+msgid "Fields:"
+msgstr "Fält:"
+
+#: include/module/ajax/SLP_Power_AJAX.php:577
+#: include/module/ajax/SLP_Power_AJAX.php:611
+msgid "File Size:"
+msgstr "Filstorlek:"
+
+#: include/module/ajax/SLP_Power_AJAX.php:585
+msgid "Next process time:"
+msgstr "Nästa process tid:"
+
+#: include/module/ajax/SLP_Power_AJAX.php:591
+msgid "Last Processed Record:"
+msgstr "Senaste processrapport:"
+
+#: include/module/ajax/SLP_Power_AJAX.php:597
+msgid "Reading Offset:"
+msgstr "Läser offset:"
+
+#: include/module/ajax/SLP_Power_AJAX.php:603
+msgid "Records Loaded:"
+msgstr "Poster laddade:"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Actions.php:99
+msgid "No locations found to create pages."
+msgstr "Inga platser funna för att skapa sidor."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Actions.php:117
+msgid "Store Page could not be created."
+msgstr "Platssida kunde inte skapas."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:30
+msgid "Import"
+msgstr "Importera"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:73
+#, php-format
+msgid "Download your %s"
+msgstr "Lada ner din %s"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:73
+msgid "locations CSV file."
+msgstr "'CSV-fil med platser."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:74
+msgid "Uploading"
+msgstr "Laddar upp"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:75
+msgid "Loading locations from "
+msgstr "Laddar platser från "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:76
+msgid "Finished loading "
+msgstr "Laddat färdigt "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:100
+#, php-format
+msgid "CSV file imports are currently scheduled to run %s."
+msgstr "CSV-fil import är för närvarande planerade att köra %s."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:103
+msgid "There are no scheduled imports."
+msgstr "Det finns ingen schemalagd import."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:114
+msgid "File Settings"
+msgstr "Fil Inställningar"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:117
+msgid "These settings apply to both Upload CSV File and Remote File Retrieval."
+msgstr ""
+"Dessa inställningar gäller för både Ladda upp CSV-filen och filhämtning."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:125
+msgid "Skip Geocoding"
+msgstr "Hoppa över geokodning"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:126
+msgid ""
+"Do not check with the Geocoding service to get latitude/longitude.  "
+"Locations without a latitude/longitude will NOT appear on map base searches."
+msgstr ""
+"Kontrollera inte med tjänsten geokodning för att få latitud/longitud.  "
+"Platser utan en latitud/longitud visas inte på kartsökningar."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:134
+msgid "Load Data"
+msgstr "Läs in data."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:135
+msgid "If checked use the faster MySQL Load Data method of file processing."
+msgstr ""
+"Om markerad används den snabbare MySQL Load Data metoden för filbearbetning."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:136
+#, php-format
+msgid ""
+"Only base plugin data can be loaded, see the <a href=\"%s\">approved field "
+"name list</a>."
+msgstr ""
+"Endast bas data för tillägget kan laddas, se <a href=\"%s\">listan för "
+"godkända fält namn</a>."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:145
+msgid "Clear Messages"
+msgstr "Rensa meddelanden"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:146
+msgid "Clear import messages at the start of each new import."
+msgstr "Rensa importmeddelanden i början av varje ny import."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:154
+msgid "Duplicates Handling"
+msgstr "Dubbletthantering"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:155
+msgid "How should duplicates be handled? "
+msgstr "Hur ska dubbletter hanteras? "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:156
+msgid ""
+"Duplicates are records that match on name and complete address with country. "
+msgstr ""
+"Dubbletter är poster som matchar namn och fullständig adress med land. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:157
+msgid "Add (default) will add new records when duplicates are encountered. "
+msgstr ""
+"Lägg till (standard) - Kommer att lägga till nya poster när dubbletter "
+"påträffas. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:158
+msgid "Skip will not process duplicate records. "
+msgstr "Hoppa över - Kommer inte att lägga till dubblettposter. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:159
+msgid "Update will update duplicate records. "
+msgstr "Uppdatera - Kommer att uppdatera dubblettposter. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:160
+msgid ""
+"To update name and address fields the CSV must have the ID column with the "
+"ID of the existing location."
+msgstr ""
+"För att uppdatera namn- och adressfälten måste CSV-filen ha identiska ID som "
+"den befintliga platsen."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:162
+msgid "Add"
+msgstr "Lägg till"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:163
+msgid "Skip"
+msgstr "Hoppa över"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:164
+msgid "Update"
+msgstr "Uppdatera"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:179
+msgid "Import Messages"
+msgstr "Importmeddelanden"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:193
+msgid "Clear import messages."
+msgstr "Rensa importmeddelanden."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:211
+msgid "Remote File Retrieval"
+msgstr "Hämtning av fjärrfil"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:222
+#, php-format
+msgid "The current WordPress time (GMT) is %s."
+msgstr "Den nuvarande WordPress tiden (GMT) är %s."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:229
+msgid "CSV File URL"
+msgstr "CSV-filens URL"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:230
+msgid "Enter a full URL for a CSV file you wish to import"
+msgstr "Ange en fullständig URL för den CSV-fil du vill importera"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:238
+msgid "Import Schedule"
+msgstr "Importera schema"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:239
+msgid "How often to fetch the file from the URL. "
+msgstr "Hur ofta du vill hämta filen från detta URL. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:240
+msgid "None loads the remote file immediately with no background processing. "
+msgstr "Ingen - Laddar fjärrfilen direkt utan att något körs i bakgrunden. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:241
+msgid "At loads the file one time on or after the time specified. "
+msgstr "Klockan - Laddar filen en gång på eller efter den tid som anges. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:242
+msgid "Set to none and leave the URL blank to clear the cron job.  "
+msgstr "Välj \"Ingen\" och lämna URL tomt för att rensa cron-jobb. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:246
+msgid "At"
+msgstr "Klockan"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:247
+msgid "Hourly"
+msgstr "Varje timme"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:248
+msgid "Twice Daily"
+msgstr "Två gånger dagligen"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:249
+msgid "Daily"
+msgstr "Dagligen"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:257
+msgid "Import Time"
+msgstr "Tid för import"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:258
+msgid "What time to run the recurring import from this URL.  "
+msgstr "Vilken tid ska återkommande import köras från denna URL. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:259
+msgid ""
+"WordPress cron is not exact, it executes the next time a visitor comes to "
+"your site.  "
+msgstr ""
+"WordPress cron är inte exakt, det körs nästa gång en besökare kommer till "
+"din webbplats. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:260
+msgid "WordPress times are UTC/GMT time NOT local time.  "
+msgstr "WordPress tid är UTC/GMT och inte lokal tid. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:261
+msgid "PHP Date and Time formats"
+msgstr "PHP tid- och datumformat"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:262
+msgid "are acceptable, such as \"now\" or \"14:00\" or \"sunday\""
+msgstr "är acceptabla, som \"nu\" eller \"14:00\" eller \"söndag\""
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:269
+msgid "Import Locations"
+msgstr "Importera platser"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:282
+msgid "Scheduled Activity"
+msgstr "Planerad aktivitet"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:304
+msgid "Upload A File"
+msgstr "Ladda upp en fil"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:314
+msgid "CSV files need a header row to define the columns. "
+msgstr "CSV-filer måste en rubrikrad för att definiera kolumner."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:315
+msgid "Files should be in UTF-8 format with comma delimiters. "
+msgstr "Filerna ska vara i formatet kommaseparerad UTF-8. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:317
+msgid "Imports are a 3-step process. "
+msgstr "Import är en 3-stegs process."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:319
+msgid "1) The file is uploaded to the WP Media Library. "
+msgstr "1) Filen laddas upp till WP media biblioteket."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:321
+msgid "2) A background process reads the CSV into the locations list. "
+msgstr "2) En bakgrundsprocess läser in CSV-filen till plats listan."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:322
+msgid ""
+"It may run this process multiple times on slow servers or with lists over "
+"2500 locations. "
+msgstr ""
+"Processen kan köras flera gånger på långsamma servrar eller med listor över "
+"2500 platser."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:324
+msgid ""
+"3) A background process geocodes the locations without a latitude or "
+"longitude. "
+msgstr ""
+"3) En bakgrundsprocess geokodar platserna som inte har latitud eller "
+"longitud."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:325
+msgid ""
+"It may run this process multiple times if the goecoding servers are slow or "
+"you have hit your daily limit on Google goecoding services. "
+msgstr ""
+"Processen kan köras flera gånger om geokodning-servrarna är långsamma eller "
+"du har nått din dagliga gräns på Googles geokodning-tjänster."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:328
+msgid ""
+"Importing a file twice before the first file is done processing can result "
+"in duplicate entries. "
+msgstr ""
+"Att importera en fil två gånger innan den första importen är helt klar kan "
+"resultera i dubbletter. "
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:329
+msgid ""
+"You do not have to stay on this import page after the blue uploaded "
+"notification or the Import progress box appears. "
+msgstr ""
+"Du behöver inte stanna kvar på importsidan efter det att det blå uppladdat-"
+"meddelandet eller importrutan visas."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:330
+msgid ""
+"Check progress by coming back to this page and checking messages at the "
+"bottom of this page or click on the CSV file in the media library. "
+msgstr ""
+"Kontrollera framstegen genom att komma tillbaka till den här sidan och kolla "
+"meddelanden längst ner på den här sidan eller klicka på CSV-filen i "
+"mediebiblioteket."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:331
+msgid "Having issues with the import not doing what you expect? "
+msgstr ""
+"Har du problem med importen eller att den inte gör vad du förväntar dig?"
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:332
+msgid ""
+"Excel likes to mangle CSV files; Try using Google Sheets to create and "
+"maintain your CSV files. "
+msgstr ""
+"Excel gillar att förstöra CSV-filer. Försök använda Google Sheets för att "
+"skapa och ändra i dina CSV-filer."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:348
+msgid "You have reached the maximum locations allowed for your plan."
+msgstr "Du nått maxgränsen för antal platser för din prenumeration."
+
+#: include/module/admin/SLP_Power_Admin_Locations_Import.php:359
+msgid "Select Your CSV File"
+msgstr "Välj din CSV-fil"
+
+#: include/module/admin/SLP_Power_Admin.php:180
+msgid "List of tags assigned to location. "
+msgstr "Lista över Taggar tilldelade plats. "
+
+#: include/module/admin/SLP_Power_Admin.php:181
+msgid "Separate with commas."
+msgstr "Avdela med komma."
+
+#: include/module/admin/SLP_Power_Admin.php:305
+msgid "Location Processing Info"
+msgstr "Plats bearbetninginformation"
+
+#: include/module/admin/SLP_Power_Admin.php:349
+#, php-format
+msgid "The %s add-on deactivated the conflicting %s add-on. "
+msgstr "%s tillägget inaktiverade %s tillägget som var i konflikt. "
+
+#: include/module/admin/SLP_Power_Admin.php:384
+msgid "No data recorded yet. "
+msgstr "Inga data sparade ännu. "
+
+#: include/module/admin/SLP_Power_Admin.php:385
+msgid ""
+"Chart will be available after a Store Locator Plus search has been performed."
+msgstr ""
+"Diagrammet kommer att synas efter en Store Locator Plus sökning har utförts."
+
+#: include/module/admin/SLP_Power_Admin.php:458
+msgid "Category Marker"
+msgstr "Kategorimarkör"
+
+#: include/module/admin/SLP_Power_Admin.php:536
+msgid "Select your categories: "
+msgstr "Välj dina kategorier: "
+
+#: include/module/admin/SLP_Power_Admin.php:559
+msgid "Categorize"
+msgstr "Kategorisera"
+
+#: include/module/admin/SLP_Power_Admin.php:562
+msgid "Export, Download CSV"
+msgstr "Exportera, Ladda ner CSV"
+
+#: include/module/admin/SLP_Power_Admin.php:563
+msgid "Export, Hosted CSV"
+msgstr "Exportera, CSV till server"
+
+#: include/module/admin/SLP_Power_Admin.php:565
+msgid "Geocode Selected"
+msgstr "Geokodning valt"
+
+#: include/module/admin/SLP_Power_Admin.php:569
+msgid "Geocode All Uncoded"
+msgstr "Geokoda alla okodade"
+
+#: include/module/admin/SLP_Power_Admin.php:573
+msgid "Tag"
+msgstr "Kod"
+
+#: include/module/admin/SLP_Power_Admin.php:577
+msgid "Enter your comma-separated tags:"
+msgstr "Ange dina kommaseparerade koder:"
+
+#: include/module/admin/SLP_Power_Admin.php:582
+msgid "Tag, Remove"
+msgstr "Ta bort kod"
+
+#: include/module/admin/SLP_Power_Admin.php:599
+msgid "Show Uncoded"
+msgstr "Visa okodade"
+
+#: include/module/admin/SLP_Power_Admin.php:603
+msgid "With These Properties"
+msgstr "Med dessa egenskaper"
+
+#: include/module/admin/SLP_Power_Admin.php:612
+msgid "In These Categories"
+msgstr "I dessa kategorier"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:38
+msgid "Location Filter: "
+msgstr "Platsfilter: "
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:81
+msgid "and"
+msgstr "och"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:82
+msgid "or"
+msgstr "eller"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:98
+msgid "Store Name My Place or My* or *Place"
+msgstr "Platsnamn Min plats eller Min* eller *Plats"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:98
+msgid "Name"
+msgstr "Namn"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:100
+msgid "Zip Code 29464 or 294* or *464"
+msgstr "Postnummer 29464 eller 294* eller *464"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:123
+msgid "Country"
+msgstr "Land"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:124
+msgid "All Countries"
+msgstr "Alla länder"
+
+#: include/module/admin/SLP_Power_Admin_Location_Filters.php:130
+msgid "All States"
+msgstr "Alla län"
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:19
+msgid "Highlight the uncoded locations in the Manage Locations panel."
+msgstr "Markera de okodade platserna i panelen Hantera platser."
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:20
+msgid "Log import messages."
+msgstr "Logga importmeddelanden."
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:21
+msgid "Add detailed contacts fields to your locations data. "
+msgstr "Lägg till detaljerade kontaktfält till dina platsdata. "
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:22
+msgid ""
+"Includes an intelligent \"Identifier\" field that maintains links to "
+"external data sources through CSV import."
+msgstr ""
+"Lägger till ett fält med en unik Identifierare för att koppla externa data "
+"vid CSV import."
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:23
+msgid "Use use nonces on [slp_directory] shortcode links. "
+msgstr "Använder unikt index (nonces) på [slp_directory] kortkodlänkar. "
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:24
+msgid ""
+"Nonces make it harder to build search engine optimized links but harder for "
+"competitors to steal data. "
+msgstr ""
+"Wordpress nonces göra det svårare att bygga sökmotoroptimerad länkar men "
+"svårare för konkurrenter att stjäla data. "
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:25
+msgid ""
+"Pages are search engine friendly and are linked directly to your live "
+"location data."
+msgstr ""
+"Pages är sökmotorvänliga och kopplas direkt till dina aktuella platsdata."
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:26
+msgid "Will ask visitors if they want to allow location sensing (gps). "
+msgstr "Frågar besökarna om de tillåter platslokalisering (GPS). "
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:27
+msgid "Your site MUST be using HTTPS for the location sensor to work."
+msgstr "Din webbplats måste använda HTTPS för att platssensorn ska fungera."
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:43
+msgid "Highlight Uncoded"
+msgstr "Markera okodade"
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:44
+msgid "Log Import Messages"
+msgstr "Logga importmeddelanden"
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:45
+msgid "Enable Contact Fields"
+msgstr "Aktivera kontaktfält"
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:46
+msgid "Use Nonces On Directory"
+msgstr "Använd unikt index på kataloger"
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:47
+msgid "Enable Pages"
+msgstr "Aktivera i butikssidor"
+
+#: include/module/admin/SLP_Power_Admin_General_Text.php:48
+msgid "Use Location Sensor"
+msgstr "Använd platssensor"
+
+#: include/module/text/SLP_Power_Text.php:45
+msgid ""
+"When enabled the results will be ordered by those with the most categories "
+"assigned appearing first."
+msgstr ""
+"När detta är aktiverat kommer resultaten att sorteras med de som har mest "
+"kategorier först."
+
+#: include/module/text/SLP_Power_Text.php:46
+msgid "The URL where you want the icon to be linked."
+msgstr "Den URL dit du vill att ikonen ska länka."
+
+#: include/module/text/SLP_Power_Text.php:47
+msgid ""
+"Do not use custom category destination markers on map, use default Map "
+"Settings markers."
+msgstr ""
+"Använd inte anpassad kategorimarkörer på kartan, använd standard "
+"kartmarkörer istället."
+
+#: include/module/text/SLP_Power_Text.php:48
+msgid ""
+"Hide the empty categories from the category selector. Location Pages in "
+"draft mode are considered \"empty\"."
+msgstr ""
+"Dölj de tomma kategorierna från kategoriväljaren. Platser i status "
+"\"Utkast\" hanteras som tomma."
+
+#: include/module/text/SLP_Power_Text.php:49
+msgid "The label for the category selector."
+msgstr "Etiketten för kategoriväljaren."
+
+#: include/module/text/SLP_Power_Text.php:50
+msgid "This is the graphic used as the map marker on the map."
+msgstr "Denna bild används som kartmarkör på kartan."
+
+#: include/module/text/SLP_Power_Text.php:51
+msgid ""
+"This graphic appears as the icon or icon array in the result listing or map "
+"info bubble."
+msgstr "Denna bild visas som ikon i resultatet eller kartabubblorna."
+
+#: include/module/text/SLP_Power_Text.php:52
+msgid ""
+"Rank for category (1, 2, 3...) lower numbers have higher precedence for map "
+"markers."
+msgstr ""
+"Rank för kategori (1, 2, 3...) lägre tal har högre prioritet för "
+"kartmarkörer."
+
+#: include/module/text/SLP_Power_Text.php:53
+msgid "How to show the category selector on the search form."
+msgstr "Hur visa kategoriväljaren på sökformuläret."
+
+#: include/module/text/SLP_Power_Text.php:54
+msgid "No will not show the category selector."
+msgstr "Nej - Visar inte kategoriväljaren."
+
+#: include/module/text/SLP_Power_Text.php:55
+msgid ""
+"Single shows the category selector as a single drop down with indents if "
+"there are parent/children relations."
+msgstr ""
+"Ensam - Visar kategoriväljaren som en rullgardinsmeny indrag om det är "
+"förälder/barn relation."
+
+#: include/module/text/SLP_Power_Text.php:56
+msgid ""
+"Cascading shows a single drop down showing parents then children drop downs "
+"on an as-needed basis."
+msgstr ""
+"Flera - Visar en rullgardinsmeny med föräldrar och sedan vid behov deras "
+"barn."
+
+#: include/module/text/SLP_Power_Text.php:57
+msgid ""
+"When enabled an array of icons will be created in the below map results and "
+"info bubble."
+msgstr ""
+"När detta är aktiverat kommer ett antal ikoner att skapas i resultaten och "
+"informationsbubblor."
+
+#: include/module/text/SLP_Power_Text.php:58
+msgid "When enabled text will appear under each category icon in the legend. "
+msgstr ""
+"När detta är aktiverat kommer text att visas under ikonfältet [tagalong "
+"legend] i ditt resultat. "
+
+#: include/module/text/SLP_Power_Text.php:59
+msgid ""
+"Add a category legend to the output with the [slp_category legend] shortcode "
+"under Settings / View / Layout."
+msgstr ""
+"Lägg till kategoriinformation i resultatet med [slp_category legend] "
+"kortkoden under Inställningar / Visa / Layout."
+
+#: include/module/text/SLP_Power_Text.php:61
+msgid ""
+"If set, prepends this text to select \"any category\" as an option to the "
+"selector. Set to blank to not provide the any selection."
+msgstr ""
+"Om vald, läggs denna texten för att välja \"alla kategorier\" som ett "
+"alternativ till väljaren. Sätt den till blank inte visa något val."
+
+#: include/module/text/SLP_Power_Text.php:62
+msgid ""
+"Target window for the URL (_blank = new window/tab, _self = same window/tab, "
+"csa = window/tab named \"csa\")."
+msgstr ""
+"Målfönstret för URL (_blank = nytt fönster/flik, _self = samma fönster/flik, "
+"csa = fönster/flik som heter \"csa\")."
+
+#: include/module/text/SLP_Power_Text.php:64
+msgid "Click to auto-refresh."
+msgstr "Klicka för att ladda om."
+
+#: include/module/text/SLP_Power_Text.php:65
+msgid "Category URL"
+msgstr "Kategori URL"
+
+#: include/module/text/SLP_Power_Text.php:66
+msgid "Download"
+msgstr "Ladda ner"
+
+#: include/module/text/SLP_Power_Text.php:67
+msgid "Geocoding"
+msgstr "Geokodning"
+
+#: include/module/text/SLP_Power_Text.php:68
+msgid "Locations will be geocoding after they are imported."
+msgstr "Platser kommer att geokodas efter de är importerade"
+
+#: include/module/text/SLP_Power_Text.php:69
+msgid "Locations are still being geocoded."
+msgstr "Platser geokodas fortfarande."
+
+#: include/module/text/SLP_Power_Text.php:70
+msgid "Geocoding Location ID"
+msgstr "Geokodar plats-ID"
+
+#: include/module/text/SLP_Power_Text.php:71
+msgid "Imports"
+msgstr "Importer"
+
+#: include/module/text/SLP_Power_Text.php:72
+msgid "Imported"
+msgstr "Importerade"
+
+#: include/module/text/SLP_Power_Text.php:73
+msgid "Importing: "
+msgstr "Importerar: "
+
+#: include/module/text/SLP_Power_Text.php:74
+msgid "Locations are being loaded from the CSV file."
+msgstr "Platser läses från CSV-filen."
+
+#: include/module/text/SLP_Power_Text.php:76
+msgid "Medium Icon"
+msgstr "Medium ikon"
+
+#: include/module/text/SLP_Power_Text.php:77
+msgid "There are no location imports running."
+msgstr "Det körs ingen platsimport."
+
+#: include/module/text/SLP_Power_Text.php:78
+msgid "Geocoding of locations has finished."
+msgstr "Geocoding av platser är färdig."
+
+#: include/module/text/SLP_Power_Text.php:79
+msgid "Processing"
+msgstr "Behandlar"
+
+#: include/module/text/SLP_Power_Text.php:80
+msgid "Reading Line"
+msgstr "Läser rad"
+
+#: include/module/text/SLP_Power_Text.php:81
+msgid "Store Locator Plus Settings"
+msgstr "SLP Inställningar"
+
+#: include/module/text/SLP_Power_Text.php:82
+msgid "URL Target"
+msgstr "URL mål"
+
+#: include/module/text/SLP_Power_Text.php:84
+msgid "Order By Category Count"
+msgstr "Sortera på kategoriantal"
+
+#: include/module/text/SLP_Power_Text.php:85
+msgid "CSV Imports"
+msgstr "CSV-import"
+
+#: include/module/text/SLP_Power_Text.php:86
+msgid "Do Not Use Category Markers"
+msgstr "Använd inte kategorimarkörer"
+
+#: include/module/text/SLP_Power_Text.php:87
+msgid "Category Selector Label"
+msgstr "Etiketten för kategoriväljaren'"
+
+#: include/module/text/SLP_Power_Text.php:88
+msgid "Hide Empty Categories"
+msgstr "Dölj tomma kategorier"
+
+#: include/module/text/SLP_Power_Text.php:89
+#: include/module/text/SLP_Power_Text.php:94
+msgid "Category Selector"
+msgstr "Kategoriväljare"
+
+#: include/module/text/SLP_Power_Text.php:90
+msgid "Show Category Icons"
+msgstr "Visa kategoriikoner"
+
+#: include/module/text/SLP_Power_Text.php:91
+msgid "Add Text To Category Legend"
+msgstr "Lägg till text till kategori information"
+
+#: include/module/text/SLP_Power_Text.php:92
+msgid "Category Selector First Entry"
+msgstr "Kategoriväljare första inmatning"
+
+#: include/module/locations/SLP_Power_Locations_Import.php:188
+msgid " new locations added."
+msgstr " nya platser har lagts till."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:189
+msgid " pre-existing locations skipped."
+msgstr " redan existerande platser hoppdes över."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:190
+msgid " locations skipped due to missing or malformed CSV data."
+msgstr "platser ignorerade på grund av saknad eller felaktig CSV data."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:191
+msgid " locations did not need to be updated."
+msgstr " platser behövde inte uppdateras."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:192
+msgid " locations were skipped due to duplicate address information."
+msgstr " platser har hoppats över på grund av dubbel adressinformation."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:193
+msgid " locations were updated."
+msgstr " platser har uppdaterats."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:262
+msgid "Could not fetch the remote file."
+msgstr "Kunde inte hämta fjärrfilen."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:304
+msgid "Location import started."
+msgstr "Platsimport startad."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:320
+msgid "CSV File Meta not set."
+msgstr "CSV-filens meta har inte angetts."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:331
+msgid "Import file name not set."
+msgstr "Importfilens namn har inte angetts."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:343
+msgid "Import file exceeds the upload_max_filesize in php.ini."
+msgstr "Importfilens storlek överskrider upload_max_filesize i php.ini."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:347
+msgid "Import file was only partially loaded."
+msgstr "Importfilen lästes endast in delvis."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:351
+msgid "Import file seems to have gone missing."
+msgstr "Importfilen verkar inte finnas."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:355
+msgid "Import file is empty."
+msgstr "Importfilen är tom."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:369
+msgid "Uploaded file needs to be in CSV format."
+msgstr "Importfilen måste vara i CSV-format."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:370
+#, php-format
+msgid "Type was %s."
+msgstr "Typ var %s."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:499
+#, php-format
+msgid "WordPress upload directory %s is missing, check directory permissions."
+msgstr ""
+"WordPress uppladdningskatalogen %s saknas, kontrollera katalogbehörigheter."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:530
+msgid "Imported CSV file could not be renamed."
+msgstr "Importerad CSV-fil kunde inte döpas om."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:531
+#, php-format
+msgid "Possibly out of disk space while trying to rename to %s"
+msgstr "Möjligen är diskutrymmet slut när du försöker byta namn till %s"
+
+#: include/module/locations/SLP_Power_Locations_Import.php:540
+msgid "Uploaded CSV file could not be moved."
+msgstr "Uppladdad CSV-fil kunde inte flyttas."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:541
+#, php-format
+msgid "Check folder permissions for %s"
+msgstr "Kolla mappbehörighet för %s"
+
+#: include/module/locations/SLP_Power_Locations_Import.php:559
+#, php-format
+msgid "You have reached your %s location limit."
+msgstr "Du har nått din %s gräns för antal platser."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:577
+#, php-format
+msgid "Could not open %s for import."
+msgstr "Kunde inte öppna %s för import."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:597
+#, php-format
+msgid "Continuing import at position %d record %d."
+msgstr "Fortsätt import vid position %d post %d."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:605
+#, php-format
+msgid "Starting import of %s ."
+msgstr "Startar import av %s ."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:606
+msgid "Your CSV file header is set to import the following fields: "
+msgstr "Din CSV-fils rubriker är inställd att importera följande fält: "
+
+#: include/module/locations/SLP_Power_Locations_Import.php:628
+#, php-format
+msgid "Starting CSV import - duplicates %s ."
+msgstr "Startar CSV import - dubbletter %s ."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:647
+#, php-format
+msgid "Loading locations from %s "
+msgstr "Laddar platser från %s "
+
+#: include/module/locations/SLP_Power_Locations_Import.php:661
+msgid "Reached maximum location limit. "
+msgstr "Uppnått maximal gräns för antal platser."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:674
+#, php-format
+msgid "%d data lines read from the CSV file."
+msgstr "%d datarader lästes från CSV-filen."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:676
+msgid "Could not find any records to import."
+msgstr "Kunde inte hitta några poster att importera."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:677
+msgid "Make sure you imported a valid CSV format."
+msgstr "Se till att du importerade en giltigt CSV-fil."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:701
+msgid "Finished CSV import."
+msgstr "CSV import är klar."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:837
+msgid "Local copy of CSV file could not be created."
+msgstr "Lokal kopia av CSV-filen kunde inte skapas."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:847
+#, php-format
+msgid "Could not schedule the event to load the %s into the database."
+msgstr "Kunde inte schemalägga händelsen att ladda %s till databasen."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:853
+msgid "Starting the process of loading of the CSV file into the database."
+msgstr "Starta processen för att ladda CSV-filen till databasen."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:857
+msgid "CSV Import Process File."
+msgstr "CSV Importfil."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:870
+msgid ""
+"The first line of your CSV file defines fields that do not match the data."
+msgstr "Den första raden i CSV-filen definierar fält som inte matchar data."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:871
+#, php-format
+msgid "At least one line had %d fields while the header defined %d."
+msgstr "Minst en rad hade %d fält men rubrikerna har %d fält."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:872
+msgid "Your header specified these fields: "
+msgstr "Dina rubriker anges dessa fält: "
+
+#: include/module/locations/SLP_Power_Locations_Import.php:930
+#, php-format
+msgid "Your are importing %s fields.  That seems wrong. "
+msgstr "Du importerar %s fält. Det verkar fel."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:937
+msgid "Could not read CSV file header. "
+msgstr "Kunde inte läsa CSV-filens rubriker."
+
+#: include/module/locations/SLP_Power_Locations_Import.php:938
+msgid "Is the file empty? "
+msgstr "Är filen tom?"
+
+#: include/module/locations/SLP_Power_Locations_Import.php:969
+#: include/module/locations/SLP_Power_Locations_Import.php:981
+msgid "File url is blank."
+msgstr "Fil URL är tomt."
+
+#: include/module/cron/SLP_Power_Cron.php:29
+msgid "Import CSV started."
+msgstr "Importera CSV började."
+
+#: include/module/cron/SLP_Power_Cron.php:38
+msgid "Import CSV finished."
+msgstr "Importera CSV färdig."
+
+#: include/module/cron/SLP_Power_Cron.php:101
+#, php-format
+msgid "Cron action %s initialized."
+msgstr "Cron åtgärd %s initierats."
+
+#: include/module/cron/SLP_Power_Cron.php:113
+#, php-format
+msgid "Action %s is unsupported"
+msgstr "Åtgärd %s stöds inte"
+
+#: include/module/cron/SLP_Power_Cron.php:138
+#, php-format
+msgid "Scheduled a one-time import at %s (%s)."
+msgstr "Schemalägg en engångsimport på %s (%s)."
+
+#: include/module/cron/SLP_Power_Cron.php:140
+#, php-format
+msgid "Could not a one-time import at %s (%s)."
+msgstr "Kunde inte köra engångsimport på %s (%s)."
+
+#: include/module/cron/SLP_Power_Cron.php:164
+#, php-format
+msgid "Scheduled a recurring %s import at %s (%s)."
+msgstr "Schemalade en återkommande %s import på %s (%s)."
+
+#: include/module/cron/SLP_Power_Cron.php:166
+#, php-format
+msgid "Could not schedule a recurring %s import at %s (%s)."
+msgstr "Kunde inte schemalägga en återkommande %s import på %s (%s)."
+
+#. Name of the plugin
+msgid "Store Locator Plus - Power"
+msgstr "Store Locator Plus - Power"
+
+#. Description of the plugin
+msgid ""
+"Adds power user features include location import, categorization, and SEO "
+"pages to Store Locator Plus."
+msgstr ""
+"Lägger till Power funktioner som platsimport, kategorisering och SEO sidor "
+"till Store Locator Plus."
+
+#. URI of the plugin
+msgid "https://wordpress.storelocatorplus.com/product/power/"
+msgstr "https://wordpress.storelocatorplus.com/product/power/"
+
+#. Author of the plugin
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+#. Author URI of the plugin
+msgid "https://wordpress.storelocatorplus.com"
+msgstr "https://wordpress.storelocatorplus.com"

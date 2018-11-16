@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,WAAY;EACR,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGd,0BAA2B;EACvB,WAAW,EAAE,KAAK;EAClB,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,QAAQ",
+"sources": ["userinterface.scss"],
+"names": [],
+"file": "userinterface.css"
+}

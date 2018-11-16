@@ -1,0 +1,427 @@
+/* Power Admin CSS
+ * Compiled with SCSS file watcher rules in phpStorm into admin.css and then admin.min.css
+ */
+.slp_power_admin_css{ font-size: 1em;  }  // help ID minified CSS
+
+@import '../../store-locator-le/assets/sass/slp/_vars_for_admin';
+
+@import "../../store-locator-le/assets/sass/base/variables";
+
+
+// <FOUNDATION>
+//@include foundation-everything;
+//
+@import '../../store-locator-le/assets/sass/base/settings';
+@import 'foundation';
+@include foundation-xy-grid-classes;
+@include foundation-card;
+@include foundation-float-classes;
+@include foundation-progress-bar;
+@include foundation-text-alignment;
+@include foundation-typography-helpers;
+// </FOUNDATION>
+
+// <FOUNDATION OVERRULES WP>
+// Rules that allow Foundation to replace WP
+
+// Any Foundation XY Grid Stuff
+.grid-x {
+    .card {
+        padding: 0;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+
+.dashicons {
+    &.stat {
+        width: auto;
+        height: auto;
+    }
+}
+// </FOUNDATION OVERRULES WP>
+
+//----- POWER Admin
+span.reload_icon {
+    float: right;
+    width: 100%;
+    text-align:right;
+    cursor:pointer;
+}
+
+$input_label_width: 185px;
+
+// Background Colors
+//
+$highlighted_selector: #FFFFDD; // Bright Yellow
+$notice_background: #FFFFE0; // Light Yellow
+$selected_menu: #0074A2; // WP 4.2 Blue
+
+// Border Colors
+//
+$notice_border: solid 1px #FFD700; // Gold
+
+// Text Colors
+$nav_text_color: white;
+
+div.section_description {
+    padding: 6px;
+}
+
+// New Button Style
+//
+#wpcsl_container {
+  a.new_button {
+    color: $gray_dark;
+    background-color: $white_yellow_tint;
+    border: $border_menu_bottom_divider;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    margin: 0.3em auto;
+    vertical-align: top;
+    box-shadow: none;
+
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+
+    height: 4em;
+    line-height: 4em;
+
+    width: 20em;
+    text-align: center;
+
+    .icon-label {
+      font-size: 1.5em;
+      font-weight: 400;
+      width:100%;
+      padding-top: 0.5em;
+
+      &:before {
+        padding-right:0.25em;
+      }
+    }
+  }
+
+  // Bulk action boxes
+    .ui-dialog {
+        z-index:999;
+
+        .ui-dialog-titlebar {
+            .ui-button {
+                float: right;
+            }
+        }
+    }
+
+
+  // File Status
+  .upload_status {
+    border: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: $gray_dark;
+    line-height: 3em;
+  }
+
+  // Progress Bar
+  .slp_progress {
+    .slp_upload_process {
+      border: none;
+    }
+    .ui-progressbar-value {
+      height: 1em;
+      background: $green_mid;
+      border: none;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+    }
+  }
+
+  // Upload Info (post processing)
+  .slp_upload_info {
+    margin: 0.5em auto;
+    text-align: left;
+
+    .upload_report {
+      display: block;
+    }
+
+  }
+}
+
+
+// Message Board
+//
+#slp-power_message_board {
+    display:none;
+    float: right;
+}
+
+
+/*
+ * Location Import
+ */
+form#importForm {
+    input.button-primary {
+        margin-left: 0.25em;
+    }
+
+  .metabox-holder {
+   // width:99%;
+  }
+
+  .cron_message {
+    display: block;
+  }
+
+
+  .cron_message_block,
+  .import_message_block
+  {
+    max-height: 30em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+/*
+ * Location Export
+ */
+div.filter_box {
+    padding-left: 12px;
+    margin-top: -10px;
+}
+div#csa-slp-power-location-filters {
+    input {
+        &#name {
+            width: 75%;
+        }
+    }
+    select {
+        clear: both;
+        float: none;
+        height: auto;
+    }
+    label {
+        width: 65px;
+    }
+    li {
+        list-style-type: none;
+    }
+}
+div#export_button_wrapper {
+    margin-top: 12px;
+    text-align: center;
+}
+
+/**
+ * Reports
+ */
+div#wpcsl-option-reports {
+    table {
+        margin: 0 1em;
+    }
+    caption,th,td {
+        line-height: 2em;
+        min-width: 3em;
+        padding: 0 0.3em;
+        vertical-align: top;
+    }
+    th {
+        background-color: #D0D0D0;
+        font-weight: 700;
+        cursor: s-resize;
+    }
+    .button-secondary {
+        margin: 0.25em;
+    }
+
+    div.total {
+        margin: 0.25em;
+    }
+}
+
+p {
+  &.footernote {
+    font-style: italic;
+    color: #666666;
+  }
+
+  &.lvl1 {
+    margin-left: 18px;
+  }
+
+
+}
+
+.dashicons.dashicons-media-document.haspage_icon {
+  color: green;
+}
+
+#slp_pages_fields {
+  div.row-actions {
+    margin-left: 5em;
+  }
+}
+
+/** WP Category Interface **/
+.fixed {
+    .column-locations,
+    .column-rank,
+    .column-icon
+    {
+        width: 10%;
+    }
+}
+
+
+/* Category list items */
+span.catname {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 150px;
+  text-align: right;
+}
+
+/* Category edit form */
+div#tagalog_editform {
+
+}
+
+/* Category add form */
+div#medium-icon_icon_row.slp_icon_row,
+div#map-marker_icon_row.slp_icon_row {
+  margin: 6px 3px 24px 3px;
+  width: 100%;
+}
+
+/* Inline manage location category editor */
+td#slp_manual_update_table_right_cell {
+  min-width: 400px;
+  position: relative;
+  display: block;
+}
+div#slp_edit_right_column {
+  min-width: 200px;
+  min-height: 300px;
+  float: left;
+}
+
+/* Manage Location Display */
+div.tagalong_entry {
+  margin-bottom: 6px;
+  margin-right: 8px;
+  text-align: center;
+}
+span.tagalong_entry_name {
+  width: 100%;
+  display:block;
+}
+img.slp_map_marker {
+  vertical-align: text-top;
+}
+
+/* Text formatting */
+p.lvl1 {
+  margin-left: 18px;
+}
+p.footernote {
+  font-style: italic;
+  color: #666666;
+}
+
+#slp_tagalong_fields {
+  ul {
+    clear: both;
+    float:none;
+    width: 100%;
+    margin: 0 0 0 2em;
+
+    &.children {
+      margin-left: 20px;
+      padding-bottom: 6px;
+      padding-top: 6px;
+    }
+  }
+  li {
+    clear: both;
+    float:none;
+    line-height: 1.25em;
+  }
+  label {
+    clear: both;
+    float: none;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+
+/**
+ * Tagalong Tab / Store Categories Panel / Category List
+ **/
+#wpcsl-option-store_categories #wpcsl_settings_group-list ul.children {
+  padding: 3px 0 3px 24px;
+}
+
+/** Manage Locations Page **/
+.slp_manage_locations_cell.categories span.legend_text {
+  display: block;
+}
+
+/**
+ * edit-tags.php (category editor)
+ **/
+div#slp_extended_data {
+
+  .form-field {
+    display: block;
+
+    &.icon_setting {
+      display: inline-block;
+
+      LABEL,
+      INPUT {
+        display:inline-block;
+      }
+
+      .slp_category_image {
+        border: 1px dotted #444444;
+        padding: 0.5em;
+        text-align: center;
+        width: 3em;
+      }
+    }
+
+    &.short_field INPUT {
+      max-width: 3em;
+    }
+  }
+}
+
+.slp_icon_row {
+  max-height: 12em;
+  overflow: auto;
+
+  .slp_icon_selector_box {
+    display: inline-block;
+    margin: 3px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    float: left;
+    min-height: 48px;
+    min-width: 48px;
+    text-align: center;
+
+    &:hover {
+      background-color: #FFFFDD;
+      border: 1px solid #AAAAAA;
+    }
+  }
+
+}
+

@@ -1,0 +1,38 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">store_page</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">stores</taxonomy>
+    </taxonomies>
+    <admin-texts>
+        <key name="csl-slplus-options">
+            <key name="message_bad_address" />
+            <key name="message_no_results" />
+            <key name="label_directions" />
+            <key name="label_email" />
+            <key name="label_fax" />
+            <key name="label_phone" />
+            <key name="results_header_1" />
+            <key name="results_header_2" />
+            <key name="results_header_3" />
+            <key name="results_header_4" />
+            <key name="search_box_subtitle" />
+        </key>
+    </admin-texts>
+    <admin-texts>
+        <key name="csl-slplus-options_nojs">
+            <key name="address_placeholder" />
+            <key name="instructions" />
+            <key name="invalid_query_message" />
+            <key name="label_category" />
+            <key name="label_hours" />
+            <key name="label_image" />
+            <key name="label_radius" />
+            <key name="label_search" />
+            <key name="show_option_all" />
+        </key>
+    </admin-texts>
+</wpml-config>
+
+

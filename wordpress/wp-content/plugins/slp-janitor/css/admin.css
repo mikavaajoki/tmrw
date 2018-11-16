@@ -1,0 +1,19 @@
+/**
+ * The admin SCSS file.
+ *
+ * Compiled with SCSS file watcher rules in phpStorm into ../../admin.css.
+ *
+ * ./css/admin.css files are enqueued automatically if an add-on pack extends the
+ * Store Locator Plus SLP_BaseClass_Admin class and keeps/calls the parent add_hooks_and_filters() method.
+ *
+ **/
+.wpcsl-submit_button {
+  margin-bottom: 1em; }
+
+.child {
+  display: table-row; }
+  .child label {
+    display: table-cell;
+    width: 20%; }
+
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,1295 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus - Experience\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-01 16:08+0000\n"
+"PO-Revision-Date: 2017-12-01 17:15+0000\n"
+"Last-Translator: Piani <webmaster@piani.se>\n"
+"Language-Team: Swedish\n"
+"Language: sv-SE\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: include/module/options/SLP_Experience_Options.php:44
+msgid "Display a map."
+msgstr "Visa en karta."
+
+#: include/module/options/SLP_Experience_Options.php:45
+msgid "Display nothing until an address is searched."
+msgstr "Visa inget förrän sökning sker på en adress."
+
+#: include/module/options/SLP_Experience_Options.php:46
+msgid "Display the image set by Starting Image. "
+msgstr "Visa bilden satt som \"Startbild\". "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:36
+msgid "If set, this image will be displayed until a search is performed. "
+msgstr "Om valt, kommer denna bild att visas tills en sökning är görs. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:37
+msgid "Enter the full URL for the image."
+msgstr "Ange fullständigt URL för bilden."
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:63
+msgid "Do Not Autozoom"
+msgstr "Autozooma inte"
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:87
+msgid "Your Closest Locations"
+msgstr "Dina närmaste platser"
+
+# @ slp-experience
+#: include/SLP_Experience.php:82
+msgid "Experience"
+msgstr "Experience"
+
+# @ slp-experience
+#: include/SLP_Experience.php:121
+msgid "All Cities..."
+msgstr "Alla städer..."
+
+# @ slp-experience
+#: include/SLP_Experience.php:122
+msgid "All Countries..."
+msgstr "Alla länder..."
+
+# @ slp-experience
+#: include/SLP_Experience.php:123
+msgid "All States..."
+msgstr "Alla län..."
+
+# @ slp-experience
+#: include/SLP_Experience.php:124
+msgid "City"
+msgstr "Stad"
+
+# @ slp-experience
+#: include/SLP_Experience.php:125
+msgid "Country"
+msgstr "Land"
+
+# @ slp-experience
+#: include/SLP_Experience.php:126
+msgid "Find Locations"
+msgstr "Hitta platser"
+
+# @ slp-experience
+#: include/SLP_Experience.php:127
+#: include/module/admin/SLP_Experience_Admin_Settings.php:565
+msgid "Name"
+msgstr "Namn"
+
+# @ slp-experience
+#: include/SLP_Experience.php:128
+msgid "Map"
+msgstr "Karta"
+
+# @ slp-experience
+#: include/SLP_Experience.php:129
+msgid "State"
+msgstr "Län"
+
+# @ slp-experience
+#: include/SLP_Experience.php:130
+msgid "Send An Email"
+msgstr "Skicka E-post"
+
+# @ slp-experience
+#: include/SLP_Experience.php:131
+msgid "Your email address."
+msgstr "Din e-postadress."
+
+# @ slp-experience
+#: include/SLP_Experience.php:132
+msgid "Email subject line."
+msgstr "E-postämne."
+
+# @ slp-experience
+#: include/SLP_Experience.php:133
+msgid "What do you want to say?"
+msgstr "Vad vill du säga?"
+
+# @ slp-experience
+#: include/SLP_Experience.php:134
+msgid "Find Our Locations"
+msgstr "Hitta våra platser"
+
+# @ slp-experience
+#: include/class.activation.php:86
+msgid "Featured"
+msgstr "Favoriter"
+
+# @ slp-experience
+#: include/class.activation.php:92
+msgid "If checked the location will be marked as featured. "
+msgstr "Om markerad kommer platsen att presenteras som favorit. "
+
+# @ slp-experience
+#: include/class.activation.php:93
+msgid ""
+"Featured locations may display differently depending on the plugin style "
+"selected. "
+msgstr ""
+"Favoritplatser kan visas olika beroende på vilken pluginstil som är vald. "
+
+# @ slp-experience
+#: include/class.activation.php:99
+msgid "Rank"
+msgstr "Sortering"
+
+# @ slp-experience
+#: include/class.activation.php:104
+msgid ""
+"Determine the sort order for this location, lower numbers are displayed "
+"first. "
+msgstr ""
+"Bestämmer sorteringsordning för denna plats, lägre siffror visas först. "
+
+# @ slp-experience
+#: include/class.activation.php:105
+msgid "Sort order is determined by the order by settings."
+msgstr "Sorteringsordning bestäms av olika inställningar."
+
+# @ slp-experience
+#: include/class.activation.php:111
+msgid "Map Marker"
+msgstr "Kartmarkör"
+
+# @ slp-experience
+#: include/class.activation.php:116
+msgid ""
+"This image will be the map marker at all times regardless of assigned "
+"category or other map marker settings."
+msgstr ""
+"Denna bild blir kartmarkör hela tiden oavsett tilldelad kategori eller andra "
+"markörinställningar."
+
+# @ slp-experience
+#: include/class.activation.php:238
+#, php-format
+msgid "As part of the %s upgrade, %s per-location map markers were updated."
+msgstr ""
+"Som en del av %s uppgraderingen, har %s platsmarkörer för platser "
+"uppdaterats."
+
+# @ slp-experience
+#: include/class.widget.settings.legacy.php.php:50
+msgid "Find nearby locations"
+msgstr "Hitta platser i närheten"
+
+# @ slp-experience
+#: include/class.widget.settings.legacy.php.php:51
+msgid "Within"
+msgstr "Inom"
+
+# @ slp-experience
+#: include/class.widget.settings.legacy.php.php:52
+msgid "Zip Code"
+msgstr "Postnr"
+
+# @ slp-experience
+#: include/class.widget.settings.legacy.php.php:53
+#: include/widgets/base_class.wp_widget_slp.php:198
+msgid "Go!"
+msgstr "Kör!"
+
+#: include/base/loader.php:16
+#, php-format
+msgid "%s requires Store Locator Plus to function properly. "
+msgstr "%s kräver Store Locator Plus för att fungera korrekt. "
+
+# @ slp-experience
+#: include/base/loader.php:19 include/base/loader.php:41
+msgid "This plugin has been deactivated."
+msgstr "Detta tillägg har inaktiverats."
+
+#: include/base/loader.php:20
+msgid "Please install Store Locator Plus."
+msgstr "Vänligen installera Store Locator Plus."
+
+# @ slp-experience
+#: include/base/loader.php:37
+#, php-format
+msgid "%s requires WordPress %s to function properly. "
+msgstr "%s kräver Wordpress %s för att fungera korrekt. "
+
+# @ slp-experience
+#: include/base/loader.php:42
+msgid "Please upgrade WordPress."
+msgstr "Vänligen uppgradera Wordpress ."
+
+# @ slp-experience
+#: include/base/loader.php:62
+#, php-format
+msgid "%s deactivated the conflicting SLP Widget Pack add-on. "
+msgstr "%s inaktiverade SLP widgets (legacy) tillägget som var i konflikt. "
+
+# @ slp-experience
+#: include/widgets/class.search.php:17
+msgid "Send the user to the map when doing a search."
+msgstr "Flytta användaren till kartan när sökning pågår."
+
+# @ slp-experience
+#: include/widgets/class.search.php:18
+msgid "SLP Search Form"
+msgstr "SLP sökformulär"
+
+# @ slp-experience
+#: include/widgets/class.search.php:19
+msgid "Find Us"
+msgstr "Hitta oss"
+
+# @ slp-experience
+#: include/widgets/class.search.php:30
+msgid "Search Label"
+msgstr "Söketikett"
+
+# @ slp-experience
+#: include/widgets/class.search.php:31
+msgid "Address"
+msgstr "Adress"
+
+# @ slp-experience
+#: include/widgets/class.search.php:37
+msgid "Use Placeholder"
+msgstr "Använda etiketter"
+
+# @ slp-experience
+#: include/widgets/class.search.php:44
+msgid "Radius"
+msgstr "Radie"
+
+# @ slp-experience
+#: include/widgets/base_class.wp_widget_slp.php:79
+msgid "Documentation"
+msgstr "Dokumentation"
+
+# @ slp-experience
+#: include/widgets/base_class.wp_widget_slp.php:91
+msgctxt "separator after a field label"
+msgid ":"
+msgstr ":"
+
+# @ slp-experience
+#: include/widgets/base_class.wp_widget_slp.php:191
+msgid "Title"
+msgstr "Titel"
+
+# @ slp-experience
+#: include/widgets/base_class.wp_widget_slp.php:197
+msgid "Button Label"
+msgstr "Knapptext"
+
+# @ slp-experience
+#: include/widgets/base_class.wp_widget_slp.php:203
+msgid "Map Page URL"
+msgstr "Kartasidans URL"
+
+# @ slp-experience
+#: include/widgets/class.cities.php:21
+msgid "List the cities for your locations and link to the map or listing page."
+msgstr ""
+"Lista städerna för dina platser och länka till kartan eller platsens sida."
+
+# @ slp-experience
+#: include/widgets/class.cities.php:22
+msgid "SLP Cities"
+msgstr "SLP städer"
+
+# @ slp-experience
+#: include/widgets/class.cities.php:23
+msgid "We Are In These Cities"
+msgstr "Vi finns i dessa städer"
+
+# @ slp-experience
+#: include/widgets/class.cities.php:33
+msgid "All Cities Text"
+msgstr "Alla städer text"
+
+# @ slp-experience
+#: include/widgets/class.cities.php:34
+msgid "All Cities"
+msgstr "Alla städer"
+
+# @ slp-experience
+#: include/widgets/class.cities.php:40
+msgid "Hide Cities At Start"
+msgstr "Dölj städer vid start"
+
+# @ slp-experience
+#: include/widgets/class.states.php:22
+msgid "List the states for your locations and link to the map or listing page."
+msgstr ""
+"Lista länen för dina platser och länka till kartan eller sida med lista."
+
+# @ slp-experience
+#: include/widgets/class.states.php:23
+msgid "SLP States"
+msgstr "SLP län"
+
+# @ slp-experience
+#: include/widgets/class.states.php:24
+msgid "We Are In These States"
+msgstr "Vi är i dessa län"
+
+# @ slp-experience
+#: include/module/options/SLP_Experience_Options.php:44
+msgid "Show Map"
+msgstr "Visa Karta"
+
+# @ slp-experience
+#: include/module/options/SLP_Experience_Options.php:45
+msgid "Hide Until Search"
+msgstr "Dölj  till sökning görs"
+
+# @ slp-experience
+#: include/module/options/SLP_Experience_Options.php:46
+msgid "Image Until Search"
+msgstr "Bild  till sökning görs"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:19
+msgid "When checked, wraps the phone number in the results in a tel: href tag."
+msgstr ""
+"När detta väljs kommer telefonnumren i resultaten att sättas i en tel: href "
+"tag."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:20
+msgid "Instructions to place in the address input."
+msgstr "Instruktioner som skrivs i adressfältet."
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:21
+msgid ""
+"Anything you enter in this box will automatically be appended to the address "
+"a user types into the locator search form address box on your site."
+msgstr ""
+"Allt du anger i den här rutan läggs automatiskt till den adress en användare "
+"skriver in i adressfältet för platssökning på din sida."
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:22
+msgid ""
+"Set the HTML and shortcodes that determine how the inside of the map info "
+"bubble is rendered. "
+msgstr ""
+"Ställ in HTML och kortkoder som bestämmer hur insidan av kartbubblor återges."
+" "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:23
+msgid "Enter the JSON-style map style rules. "
+msgstr "Ange JSON-stil för kartdesign regler. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:24
+msgid ""
+"Hide the user input on the search page, regardless of the SLP theme used."
+msgstr ""
+"Dölj inmatning för användare på söksidan, oavsett vilket SLP tema som "
+"används."
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:25
+msgid ""
+"Set the HTML and shortcodes to determine the macro-level layout for the "
+"locator. "
+msgstr ""
+"Ställ in HTML och kortkoder för att bestämma macro-nivå layouten för SLP. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:26
+msgid "Does the search box go before or after the map, for example.  "
+msgstr "Visas sökfältet före eller efter kartan som exempel. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:27
+msgid "Set what to display when the page loads. "
+msgstr "Ange vad som ska visas när sidan laddas. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:28
+msgid "Set the HTML and shortcodes use to display the map and tagline. "
+msgstr "Ställ in HTML och kortkoder för att visa kartan och olika fält. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:29
+msgid ""
+"Use only the \"zoom level\" setting when rendering the initial map for show "
+"locations at startup. "
+msgstr ""
+"Använd bara \"zoomnivå\" inställningen vid första rendering av kartan för "
+"\"Visa platser vid start\". "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:30
+msgid "Do not automatically zoom the map to show all initial locations."
+msgstr "Autozooma inte kartan för att visa alla platser vid start."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:31
+msgid ""
+"Do not include the home map marker for the initial map loading with show "
+"locations at startup enabled."
+msgstr ""
+"Visa inte hem-markören när kartan laddar med \"Visa platser vid start\" "
+"aktiverad."
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:32
+msgid ""
+"Displayed where [slp_option nojs=\"search_box_title\"] appears in layout "
+"settings. "
+msgstr "Visas där [slp_option nojs=\"search_box_title\"] används i designen. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:33
+msgid "Newer plugin styles that support the Experience add on may use this. "
+msgstr "Nyare tillägg som stödjer Experience kan använda denna. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:34
+msgid ""
+"Set the HTML and shortcodes that determine how each location is rendered in "
+"the location list. "
+msgstr ""
+"Ställ in HTML och kortkoder som bestämmer hur varje plats återges i "
+"resultatlistan. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:35
+msgid ""
+"Set the HTML and shortcodes to display the location search form to the user."
+msgstr ""
+"Ställa in HTML och kortkoder för att bestämma hur sökfältet visas för "
+"användaren."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:38
+#: include/module/admin/SLP_Experience_Admin_General_Text.php:34
+msgid ""
+"If checked an address can be pre-loaded via a URL string ?address=my+town. "
+msgstr ""
+"Om markerad kan en adress bli förladdas via en URL-sträng ?adress=min+stad. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:39
+msgid ""
+"This will disable the location sensor whenever the address is used in the "
+"URL."
+msgstr "Detta inaktiverar platssensor när adressen används i URL."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:54
+msgid "Use Dial Link For Phone"
+msgstr "Använda länk för telefonnummer"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:55
+msgid "Address Placeholder"
+msgstr "Adressetikett"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:56
+msgid "Append This To Searches"
+msgstr "Lägg till detta i sökningar"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:57
+msgid "Bubble Layout"
+msgstr "Bubbeldesign"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:58
+msgid "Map Style"
+msgstr "Kartstil"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:59
+msgid "Hide Search Form"
+msgstr "Dölj sökformulär"
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:60
+msgid "Layout"
+msgstr "Design"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:61
+msgid "Map Display"
+msgstr "Kartdesign"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:62
+msgid "Map Layout"
+msgstr "Kartdesign"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:64
+msgid "Hide Home Marker"
+msgstr "Dölj hem-markör"
+
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:65
+msgid "Results Box Title"
+msgstr "Resultattitel"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:66
+msgid "Results Layout"
+msgstr "Resultatlayout"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:67
+msgid "Search Layout"
+msgstr "Sökdesign"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:68
+msgid "Starting Image"
+msgstr "Startbild"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings_Text.php:69
+#: include/module/admin/SLP_Experience_Admin_General_Text.php:19
+msgid "Allow Address In URL"
+msgstr "Tillåta adress i URL"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin.php:80
+#, php-format
+msgid "The %s add-on deactivated the conflicting %s add-on. "
+msgstr "%s inaktiverade tillägget %s som var i konflikt. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin.php:153
+msgid "Feature Location"
+msgstr "Favoritplats"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin.php:157
+msgid "Stop Featuring Location"
+msgstr "Stäng av favoritplatser"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:62
+msgid "Hide Info Bubble"
+msgstr "Dölj Informationsbubblor"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:63
+msgid "Disable the on-map info bubble."
+msgstr "Stänger av informationsbubblor på kartan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:72
+msgid "Hide The Map"
+msgstr "Dölj kartan"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:73
+msgid "Do not show the map on the user interface."
+msgstr "Visa inte kartan på användargränssnittet."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:79
+msgid "Show Map Scale"
+msgstr "Visa kartskala"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:80
+msgid "Show the scale on the map."
+msgstr "Visa skalan på kartan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:87
+msgid "Show Map Type Selector"
+msgstr "Visa väljare av karttyp"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:88
+msgid "Show the map type selector on the map."
+msgstr "Visar väljaren av karttyp på kartan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:96
+msgid "Add Map Toggle On UI"
+msgstr "Lägg till kartaväxling på användargränssnittet"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:97
+msgid "Add a map on/off toggle to the user interface."
+msgstr ""
+"Lägger till en funktion för att växla karta på/av i användargränssnittet."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:103
+msgid "Toggle Label"
+msgstr "Kartvisningsetikett"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:104
+msgid "The text that appears before the display map on/off toggle."
+msgstr "Texten som visas framför funktionen för \"Kartvisning på/av\"."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:119
+msgid "Use Scrollwheel To Zoom"
+msgstr "Använd scrollhjulet för att zooma"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:120
+msgid "When checked, using the scrollwheel will zoom the map."
+msgstr ""
+"När detta är valt kommer scrollhjulet att användas för att zooma kartan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:146
+msgid "No Results Message"
+msgstr "Inget Resultat meddelande"
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:147
+msgid "No results found message that appears under the map. "
+msgstr "\"Inga platser hittade\" meddelandet som visas under kartan. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:155
+msgid "Hide Distance"
+msgstr "Dölj avstånd"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:156
+msgid "Do not show the distance to the location in the results table."
+msgstr "Visa inte avståndet till platsen i resultaten."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:163
+msgid "Show Country"
+msgstr "Visa land"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:164
+msgid "Display the country in the results table address."
+msgstr "Visa landet i adressen i resultaten."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:171
+msgid "Show Hours"
+msgstr "Visa öppettider"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:172
+msgid "Display the hours in the results table under the Directions link."
+msgstr "Visa öppettider i resultaten."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:179
+msgid "Email Format"
+msgstr "E-postformat"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:180
+msgid "How email will be displayed and function in the results list."
+msgstr "Hur e-post ska visas och fungera i i resultaten."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:183
+msgid "Email Label with Email Link"
+msgstr "E-postnamn med e-postlänk"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:187
+msgid "Email Address with Email Link"
+msgstr "E-postadress med e-postlänk"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:191
+msgid "Popup Form Linked To Email"
+msgstr "Popup formulär kopplat till e-post"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:208
+msgid "Order Results By"
+msgstr "Sortera resultat"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:209
+msgid "Select a sort order for the results.  Default is Closest..Furthest."
+msgstr ""
+"Välj en sorteringsordning för resultaten.  Standard är \"Närmast, Längst "
+"bort\"."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:212
+msgid "Featured, Rank, Closest"
+msgstr "Favorit, rank, närmast"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:216
+msgid "Featured, Rank, A..Z"
+msgstr "Favorit, Rank, A-Ö"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:220
+msgid "Featured Then Closest"
+msgstr "Rank, närmast"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:224
+msgid "Featured Then A..Z"
+msgstr "Favorit, A-Ö"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:228
+msgid "Rank Then Closest"
+msgstr "Rank, närmast"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:232
+msgid "Rank Then A..Z"
+msgstr "Rank, A-Ö"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:236
+msgid "Closest..Furthest"
+msgstr "Närmast, Längst bort"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:240
+msgid "Name A..Z"
+msgstr "Namn, A-Ö"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:244
+msgid "Random"
+msgstr "Slumpvis"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:254
+msgid "Featured Locations"
+msgstr "Favoritplatser"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:255
+msgid "When to show feature locations.  "
+msgstr "När favoritplatser ska visas. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:257
+msgid "Show If In Radius - Only when the locations are in radius. "
+msgstr "Visa om inom radien - Endast när platser finns inom vald radie. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:259
+msgid ""
+"Always Show - Featured locations always appear in results regardless of "
+"distance."
+msgstr "Visa alltid - Favoritplatser visas alltid i resultat oavsett avstånd."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:261
+msgid "Show If In Radius"
+msgstr "Visa om i radie"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:262
+msgid "Always Show"
+msgstr "Visa alltid"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:278
+msgid "Popup Email Title"
+msgstr "Popup E-posttitel"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:279
+msgid "The title on the popup email dialogue form."
+msgstr "Titeln på popupformuläret för E-post."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:285
+msgid "Popup From Placeholder"
+msgstr "Popup \"Från\" etikett"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:286
+msgid "The placeholder for the from field on the popup email dialogue form."
+msgstr "Etiketten för \"från fältet\" i popupformuläret för E-post."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:292
+msgid "Popup Subject Placeholder"
+msgstr "Popup \"Ämne\" etikett"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:293
+msgid "The placeholder for the subject field on the popup email dialogue form."
+msgstr "Etiketten för \"ämne\" i popupformuläret för E-post."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:299
+msgid "Popup Message Placeholder"
+msgstr "Popup \"Meddelande\" etikett"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:300
+msgid "The placeholder for the message box on the popup email dialogue form."
+msgstr "Etiketten för \"meddelande\" i popupformuläret för E-post."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:314
+msgid "Disable Initial Directory"
+msgstr "Inaktivera inledande visning"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:315
+msgid ""
+"Do not display the listings under the map when show locations at startup is "
+"checked."
+msgstr ""
+"Visa inte resultaten under kartan när\" Visa platser vid start\" är markerad."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:336
+msgid ""
+"Consider setting Radius Behavior to \"Use only when address is entered\" "
+"when using discrete settings here."
+msgstr ""
+"Överväg att ange radiebeteende till \"Använd endast när adress anges\" när "
+"du använder diskret inställning här."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:340
+msgid "Hidden"
+msgstr "Dold"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:344
+msgid "Dropdown, Address Input"
+msgstr "Rullgardin, Adressinmatning"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:348
+msgid "Dropdown, Discrete Filter"
+msgstr "Rullgardin, Diskret filter"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:352
+msgid "Dropdown, Discrete + Address Input"
+msgstr "Rullgardin, Diskret + Adressinmatning"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:360
+msgid "Hide Radius Selections"
+msgstr "Dölj radiealternativen"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:361
+msgid "Hide the radius selection drop down."
+msgstr "Dölj rullgardinsfältet för val av radie i sökfunktionen."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:368
+msgid "Hide Address Entry"
+msgstr "Dölj adressfältet"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:369
+msgid "Hide the address input box on the locator search form."
+msgstr "Dölj inmatning i adressfältet för användare på söksidan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:377
+msgid "Show Search By Name"
+msgstr "Visa Sök med namn"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:378
+msgid "Shows the name search entry box to the user."
+msgstr "Visa inmatning av namn för användare på söksidan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:385
+#: include/module/admin/SLP_Experience_Admin_Settings.php:395
+#: include/module/admin/SLP_Experience_Admin_Settings.php:405
+#, php-format
+msgid "%s Selector"
+msgstr "%s väljare"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:386
+msgid "How to display the city selector on the search form. "
+msgstr "Hur visa stadväljaren på sökformuläret. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:396
+msgid "How to display the state selector on the search form. "
+msgstr "Hur visa länväljaren på sökformuläret. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:406
+msgid "How to display the country selector on the search form. "
+msgstr "Hur visa landväljaren på sökformuläret. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:422
+msgid "Address Autocomplete"
+msgstr "Automatiskt komplettering av adress"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:423
+msgid ""
+"When 2 or more characters are typed in the address input, show input "
+"suggestions based on location data. "
+msgstr ""
+"När 2 eller fler tecken skrivs in i adressfältet visas förslag av platser "
+"utifrån användarens plats. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:424
+msgid "None (default) - do not suggest address input. "
+msgstr "Ingen (standard) - föreslår inte adressinmatning. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:425
+msgid "Zipcode - suggest matching zip codes. "
+msgstr "Postnr - Föreslå liknande postnr. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:427
+msgid ""
+"Formatting of the autocomplete not to your liking?  Set the Search Form "
+"Style under appearance. "
+msgstr ""
+"Om du vill ändra formateringen för autokomplettera sökfältet så ställer du "
+"in det på sökformulärets stil under utseende. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:431
+msgid "None"
+msgstr "Ingen"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:435
+msgid "Zipcode"
+msgstr "Postnr"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:445
+msgid "Selector Behavior"
+msgstr "Funktioner för val"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:446
+msgid ""
+"Should the address input be disabled when city, state, or country selectors "
+"are used? "
+msgstr ""
+"Ska adressinmatning inaktiveras när stad, län eller land väljare används? "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:447
+msgid ""
+"Allow means address and city/state/zip selectors are both left active at all "
+"times. "
+msgstr "Tillåt att adress och stad/län/postnr-väljare är aktiva hela tiden. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:448
+msgid ""
+"disable means users can interact with either the city/state/zip OR the "
+"address but not both at the same time. "
+msgstr ""
+"inaktivera innebär att användare kan välja antingen stad/län/postnr ELLER "
+"adress men inte båda samtidigt. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:451
+msgid "Allow Selector and Address Input"
+msgstr "Tillåt väljaren och adress inmatning"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:455
+msgid "Disable Address When Using Selector"
+msgstr "Inaktivera adress när väljaren används"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:465
+msgid "Search Address Nearest"
+msgstr "Sök närmaste adress"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:466
+msgid ""
+"Worldwide is the default search, letting Google make the best guess which "
+"addres the user wants. "
+msgstr ""
+"Hela världen är standard för sökning. Den låter Google göra den bästa "
+"gissningen av vilken adress användaren menar. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:467
+msgid ""
+"Current Map will find the best matching address nearest the current area "
+"shown on the map."
+msgstr ""
+"Vald karta kommer att hitta den bästa matchningen av adress närmast platsen "
+"på den aktuella kartan."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:470
+msgid "Worldwide"
+msgstr "Globalt"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:474
+msgid "Current Map"
+msgstr "Aktuell karta"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:491
+msgid "Search Box Title"
+msgstr "Sökformulärets rubrik"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:492
+msgid ""
+"The label that goes in the search form box header, for plugin themes that "
+"support it."
+msgstr "Rubrik som visas i överkant på sökformuläret för teman som stöder det."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:493
+msgid ""
+"Put this in a search form using the [slp_option nojs=\"search_box_title\"] "
+"shortcode."
+msgstr ""
+"Visa detta i sökformuläret genom att använda  [slp_option "
+"nojs=\"search_box_title\"] kortkoden."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:499
+#: include/module/admin/SLP_Experience_Admin_Settings.php:515
+#: include/module/admin/SLP_Experience_Admin_Settings.php:532
+#, php-format
+msgid "%s Selector Label "
+msgstr "%s Väljarens etikett "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:500
+msgid "The label that precedes the city selector."
+msgstr "Etiketten före väljaren av stad."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:507
+#: include/module/admin/SLP_Experience_Admin_Settings.php:524
+#: include/module/admin/SLP_Experience_Admin_Settings.php:540
+#, php-format
+msgid "%s Selector First Entry "
+msgstr "%s väljarens första inmatning "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:508
+msgid "The first entry on the search by city selector."
+msgstr "Texten på första posten vid sökning av stad."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:516
+msgid "The label that precedes the state selector."
+msgstr "Etiketten före väljaren av län."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:525
+msgid "The first entry on the search by state selector."
+msgstr "Texten på första posten vid sökning av län."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:533
+msgid "The label that precedes the country selector."
+msgstr "Etiketten före väljaren av land."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:541
+msgid "The first entry on the search by country selector."
+msgstr "Texten på första posten vid sökning av land."
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:548
+msgid "Radius First Entry"
+msgstr "Radie första inmatningen"
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:549
+msgid "Show this text as the first entry on the radius drop down. "
+msgstr "Visa denna text som det första valet radie-rullgardinen. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:550
+msgid "If not left blank it will default to this being the selected radius. "
+msgstr "Om inte denna är blank kommer detta att vara standardradie. "
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:551
+msgid ""
+"The value, when selected, will be set to the default in Radii Options . "
+msgstr ""
+"Värdet, när det är valt, kommer att anges som standard i radie-alternativet. "
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:558
+msgid "Find Button"
+msgstr "Hitta knapp"
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:559
+msgid "Enter the text you would like to see on the find locations button."
+msgstr "Ange den text du vill se på knappen \"Sök platser\"."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:566
+msgid "The label that precedes the name input box."
+msgstr "Etiketten som visas innan inmatningsrutan för namn."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:573
+msgid "Name Placeholder"
+msgstr "Namnetikett"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:574
+msgid "Instructions to place in the name input."
+msgstr "Instruktioner som skrivs i namnfältet."
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:597
+msgid "Custom CSS"
+msgstr "Anpassad CSS"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:598
+msgid ""
+"Enter your custom CSS, preferably for SLPLUS styling only but it can be used "
+"for any page element as this will go in your page header."
+msgstr ""
+"Skriv din egen CSS, helst med SLP+ kodning, men det kan användas för alla "
+"sidfunktioner som fungerar med ditt tema."
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:612
+msgid "Do not use - always ignore the radius.<br/>"
+msgstr "Använd inte - ignorera alltid radien.<br/>"
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:613
+msgid "Use only when address is entered - ignore unless user typed an address."
+msgstr ""
+"Använd endast om en adress är ifylld - ignorera om inte användaren har "
+"skrivit in en adress."
+
+#: include/module/admin/SLP_Experience_Admin_Settings.php:614
+msgid "Useful when city, state, country discrete selector is in use.<br/>"
+msgstr "Användbar när stad, län, land väljare är dolda.<br/>"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:625
+msgid "Do not use"
+msgstr "Använd inte"
+
+# @ slp-experience
+#: include/module/admin/SLP_Experience_Admin_Settings.php:627
+msgid "Use only when address is entered"
+msgstr "Använd endast när en adress är inmatad"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:23
+msgid "Immediate Search:"
+msgstr "Omedelbar sökning:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:31
+msgid "Immediate Address:"
+msgstr "Omedelbar adress:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:38
+msgid "Maximum Results to display:"
+msgstr "Maximalt antal resultat att visa:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:45
+msgid "Search Label:"
+msgstr "Söketikett:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:46
+msgid "Address:"
+msgstr "Adress:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:52
+msgid "Search Label As Placeholder:"
+msgstr "Söktitel som etikett:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:59
+msgid "Radius Label:"
+msgstr "Radie etikett:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:60
+msgid "Within:"
+msgstr "Inom:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:66
+msgid "Default Radius:"
+msgstr "Standardradie:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:73
+msgid "Nothing Found Text:"
+msgstr "Ingenting hittades text:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:74
+msgid "No locations found."
+msgstr "Inga platser hittade."
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:80
+msgid "Use Simple Output:"
+msgstr "Använd enkelt resultat:"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:90
+msgid ""
+"The Store Locator Plus search form, with results appearing below the form."
+msgstr ""
+"Store Locator Plus sökformulär, med resultat som visas nedanför formuläret."
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:91
+msgid "SLP Search and Results"
+msgstr "SLP sök och resultat"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.php:92
+msgid "Find Nearby Locations"
+msgstr "Hitta platser i närheten"
+
+# @ slp-experience
+#: include/widgets/incomplete/class.search_and_results.ui.php:65
+msgid "Nothing Found!"
+msgstr "Ingenting hittades!"
+
+#. Name of the plugin
+msgid "Store Locator Plus - Experience"
+msgstr "Store Locator Plus - Experience"
+
+# @ slp-experience
+#. translators: plugin header field 'Description'
+msgid ""
+"Extends the Store Locator Plus plugin with features that allow site authors "
+"and developers to create a customized robust user experience."
+msgstr ""
+"Utökar Store Locator Plus med funktioner som gör att webbplatsen "
+"administratörer kan skapa ett unikt användargränssnitt."
+
+#. URI of the plugin
+msgid "https://wordpress.storelocatorplus.com/product/experience/"
+msgstr "https://wordpress.storelocatorplus.com/product/experience/"
+
+# @ slp-experience
+#. translators: plugin header field 'Author'
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+# @ slp-experience
+#. translators: plugin header field 'AuthorURI'
+msgid "https://wordpress.storelocatorplus.com"
+msgstr "https://wordpress.storelocatorplus.com"

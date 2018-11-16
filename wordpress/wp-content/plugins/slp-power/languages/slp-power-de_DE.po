@@ -1,0 +1,1683 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Locator Plus - Power\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 16:36+0000\n"
+"PO-Revision-Date: 2016-08-29 16:37+0000\n"
+"Last-Translator: Asmus Wanke <rolfing@wanke.net>\n"
+"Language-Team: German\n"
+"Language: de-DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the plugin
+#: slp-power.php:50
+msgid "Store Locator Plus - Power"
+msgstr "Store Locator Plus - Power"
+
+#: slp-power.php:62
+#, c-format
+msgid "%s requires Store Locator Plus to function properly. "
+msgstr "%s erwartet, dass Store Locator Plus richtig funktioniert."
+
+#: slp-power.php:65 slp-power.php:90
+msgid "This plugin has been deactivated."
+msgstr "Das Plugin wurde deaktiviert"
+
+#: slp-power.php:66
+msgid "Please install Store Locator Plus."
+msgstr "Installieren Sie bitte Store Locator Plus."
+
+#: slp-power.php:86
+#, c-format
+msgid "%s requires WordPress %s to function properly. "
+msgstr "%s erwartet, dass Wordpress %s richtig funktioniert"
+
+#: slp-power.php:91
+msgid "Please upgrade WordPress."
+msgstr "Aktualisieren Sie bitte Ihre WordPress"
+
+#: include/class.slp-power.php:135
+msgid "Power"
+msgstr "Power"
+
+#: include/class.slp-power.php:535 include/class.admin.reports.php:109
+msgid "Reports"
+msgstr "Berichte"
+
+#: include/class.slp-power.php:540 include/class.admin.php:175 
+#: include/class.admin.php:488 include/class.admin.php:508
+msgid "Categories"
+msgstr "Kategorien"
+
+#: include/class.admin.reports.php:38
+msgid " - Reporting"
+msgstr " - Berichte"
+
+#: include/class.admin.reports.php:40 
+#: include/module/category/SLPPower_Admin_Categories.php:32
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: include/class.admin.reports.php:77
+msgid "Report Summary"
+msgstr "Berichtszusammenfassung"
+
+#: include/class.admin.reports.php:130
+msgid "Export To CSV"
+msgstr "Export nach CSV"
+
+#: include/class.admin.reports.php:139
+msgid "Export all records"
+msgstr "Alle Datensätze exportieren"
+
+#: include/class.admin.reports.php:143
+msgid "Top Searches"
+msgstr "Top Suchanfragen"
+
+#: include/class.admin.reports.php:144
+msgid "Top Results"
+msgstr "Top Ergebnisse"
+
+#: include/class.admin.reports.php:157
+msgid "Report Parameters"
+msgstr "Berichtsparameter"
+
+#: include/class.admin.reports.php:165
+msgid "Start Date"
+msgstr "Startdatum"
+
+#: include/class.admin.reports.php:171
+msgid "Only show data on or after this date.  YYYY-MM-DD."
+msgstr "Zeige nur Daten an oder nach diesem Datum. JJJJ-MM-DD."
+
+#: include/class.admin.reports.php:181
+msgid "End Date"
+msgstr "Enddatum"
+
+#: include/class.admin.reports.php:187
+msgid "Only show data on or before this date.  YYYY-MM-DD hh:mm:ss."
+msgstr "Zeige nur Daten an oder vor diesem Datum. JJJJ-MM-TT hh:mm:ss"
+
+#: include/class.admin.reports.php:202
+msgid "Report Limit"
+msgstr "Berichtslimit"
+
+#: include/class.admin.reports.php:208
+msgid ""
+"Limit the report to this many detail records.  Default: 10.  Recommended "
+"maximum: 500."
+msgstr ""
+"Begrenzt den Bericht auf soviel Detail-Datensätze. Standard: 10. Empfohlenes "
+"Maximum: 500."
+
+#: include/class.admin.reports.php:223
+#, c-format
+msgid "Total searches: <strong>%s</strong>"
+msgstr "Gesamt Suchanfragen: <strong>%s</strong>"
+
+#: include/class.admin.reports.php:224
+#, c-format
+msgid "Total results: <strong>%s</strong>"
+msgstr "Gesamt Ergenisse: <strong>%s</strong>"
+
+#: include/class.admin.reports.php:225
+#, c-format
+msgid "Days with activity: <strong>%s</strong>"
+msgstr "Tage mit Aktivitäten: <strong>%s</strong>"
+
+#: include/class.admin.reports.php:240 include/class.admin.reports.php:242
+#, c-format
+msgid "Top %s Results Returned"
+msgstr "Top %s Ergebnisse zurückgegeben"
+
+#: include/class.admin.reports.php:244
+msgid "Store"
+msgstr "Geschäft"
+
+#: include/class.admin.reports.php:245
+msgid "City"
+msgstr "Stadt"
+
+#: include/class.admin.reports.php:246 
+#: include/class.admin.location.filters.php:127
+msgid "State"
+msgstr "Bundesstaat"
+
+#: include/class.admin.reports.php:247 
+#: include/class.admin.location.filters.php:98
+msgid "Zip"
+msgstr "PLZ"
+
+#: include/class.admin.reports.php:248 include/class.admin.php:160 
+#: include/class.admin.php:534
+msgid "Tags"
+msgstr "\"Tags\""
+
+#: include/class.admin.reports.php:249 include/class.admin.reports.php:291
+msgid "Total"
+msgstr "Gesamt"
+
+#: include/class.admin.reports.php:275
+msgid "topresults"
+msgstr "Top-Ergebnisse"
+
+#: include/class.admin.reports.php:286 include/class.admin.reports.php:288
+#, c-format
+msgid "Top %s Addresses Searched"
+msgstr "Top %s Adressen durchsucht"
+
+#: include/class.admin.reports.php:290
+msgid "Address"
+msgstr "Adresse"
+
+#: include/class.admin.reports.php:313
+msgid "topsearches"
+msgstr "Top-Suchanfragen"
+
+#: include/class.admin.reports.php:323 include/class.admin.reports.php:347 
+#: include/module/category/SLPPower_Admin_Categories.php:60 
+#: include/module/pages/class.admin.pages.tab.php:49
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: include/class.admin.reports.php:332
+msgid "Enable reporting to start recording location search data. "
+msgstr "Bericht startet die Speicherung von Standortsuchanfragen."
+
+#: include/class.admin.reports.php:333
+msgid "Once enabled the report section will appear on this tab."
+msgstr ""
+"Einmal aktiviert, wird die Berichts-Sektion auf diesem Reiter angezeigt."
+
+#: include/class.admin.reports.php:352
+msgid "Enable Reporting"
+msgstr "Berichtswesen aktivieren"
+
+#: include/class.admin.reports.php:358
+msgid ""
+"Enables tracking of searches and returned results.  The added overhead can "
+"increase how long it takes to return location search results."
+msgstr ""
+"Aktiviert das Nachverfolgen von Suchanfragen und deren Ergebnis. Der "
+"zusätzliche Aufwand verlängert die Dauer, bis die Ergebnisse einer "
+"Standortsuchen angezeigt werden."
+
+#: include/class.admin.php:154 include/module/pages/class.admin.pages.php:335 
+#: include/module/pages/class.admin.pages.php:419
+msgid "Edit"
+msgstr "Editieren"
+
+#: include/class.admin.php:155 include/class.admin.locations.import.php:146
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: include/class.admin.php:162
+msgid "List of tags assigned to location. "
+msgstr "Liste der \"tags\" die Standorten beigefügt wurden."
+
+#: include/class.admin.php:163
+msgid "Separate with commas."
+msgstr "Trenne mit Komma."
+
+#: include/class.admin.php:343
+msgid "Location Processing Info"
+msgstr "Standortverarbeitungs-Info"
+
+#: include/class.admin.php:393
+#, c-format
+msgid "The %s add-on deactivated the conflicting %s add-on. "
+msgstr ""
+"The %s add-on deaktivierte das %s add-on, das einen Konflikt produzierte.\n"
+
+#: include/class.admin.php:432
+msgid "No data recorded yet. "
+msgstr "Noch keine Datensätze aufgezeichnet."
+
+#: include/class.admin.php:434
+msgid ""
+"Chart will be available after a Store Locator Plus search has been performed."
+msgstr ""
+"Diagramm wird verfügbar, nachdem eine Store Locator Plus Suchanfrage "
+"durchgeführt wurde."
+
+#: include/class.admin.php:455
+#, c-format
+msgid "Download your %s"
+msgstr "Ihre %s runterladen."
+
+#: include/class.admin.php:455
+msgid "locations CSV file."
+msgstr "Speicherort der CSV Datei."
+
+#: include/class.admin.php:456
+msgid "Uploading"
+msgstr "Hochladen"
+
+#: include/class.admin.php:457
+msgid "Loading locations from "
+msgstr "Lade Standorte von"
+
+#: include/class.admin.php:458
+msgid "Finished loading "
+msgstr "Laden abgeschlossen"
+
+#: include/class.admin.php:593
+msgid "Categorize"
+msgstr "Kategorisiere"
+
+#: include/class.admin.php:613
+msgid "Select your categories: "
+msgstr "Wählen Sie ihre Kategorien:"
+
+#: include/class.admin.php:624
+msgid "Export, Download CSV"
+msgstr "Export, Runterladen CSV"
+
+#: include/class.admin.php:628
+msgid "Export, Hosted CSV"
+msgstr "Export, gehosteter CSV"
+
+#: include/class.admin.php:632
+msgid "Geocode Selected"
+msgstr ""
+"Ausgewählter Geocode\n"
+
+#: include/class.admin.php:636
+msgid "Geocode All Uncoded"
+msgstr "Alle uncodierten Geocodes"
+
+#: include/class.admin.php:640
+msgid "Tag"
+msgstr "\"Tag\""
+
+#: include/class.admin.php:644
+msgid "Enter your comma-separated tags:"
+msgstr "Geben Sie ihre mit Kommas getrennten \"Tags\" an:"
+
+#: include/class.admin.php:649
+msgid "Tag, Remove"
+msgstr "\"Tag\", Entfernen"
+
+#: include/class.admin.php:669
+msgid "Show Uncoded"
+msgstr "Zeige unkodierte"
+
+#: include/class.admin.php:673
+msgid "With These Properties"
+msgstr "Mit diesen Eigenschaften"
+
+#: include/class.admin.php:678
+msgid "In These Categories"
+msgstr "In diesen Kategorien"
+
+#: include/class.admin.php:732
+msgid " Extended Data"
+msgstr " Erweiterte Daten"
+
+#: include/class.admin.php:740
+msgid ""
+"Rank for category (1, 2, 3...) lower numbers have higher precedence for map "
+"markers."
+msgstr ""
+"Rangfolge von Kategorien (1,2,3,..) niedrige Zahlen haben höhere Rangfolge "
+"bei Karten-Markern"
+
+#: include/class.admin.php:749
+msgid ""
+"This graphic appears as the icon or icon array in the result listing or map "
+"info bubble."
+msgstr ""
+"This Grafik wird in der Karten-Info-Blase als Ikon oder Ikon-Array angezeigt"
+
+#: include/class.admin.php:761
+msgid "This is the graphic used as the map marker on the map."
+msgstr "Diese Grafik wird als Karten Marker auf der Karte verwendet."
+
+#: include/class.admin.php:773
+msgid "The URL where you want the icon to be linked."
+msgstr "Die URL mit der Sie dieses Ikon verbinden wollen."
+
+#: include/class.admin.php:782
+msgid ""
+"Target window for the URL (_blank = new window/tab, _self = same window/tab, "
+"csa = window/tab named \"csa\")."
+msgstr ""
+"Ziel-Fenster der URL (_blank = neues Fenster/tab,_self = gleiches "
+"Fenster/tab, csa  = Fenster/tab \"csa\" betitelt)."
+
+#: include/class.admin.php:805
+msgid "Extended contact fields have been activated."
+msgstr "Erweiterte Kontakt-Felder wurden aktiviert."
+
+#: include/class.admin.locations.import.php:28
+msgid "Import"
+msgstr "Import"
+
+#: include/class.admin.locations.import.php:61
+#, c-format
+msgid "CSV file imports are currently scheduled to run %s."
+msgstr "Import der CSV Datei ist für %s eingeplant."
+
+#: include/class.admin.locations.import.php:64
+msgid "There are no scheduled imports."
+msgstr "Es gibt keine eingeplanten Importe."
+
+#: include/class.admin.locations.import.php:78
+msgid "Upload a file"
+msgstr "Hochladen einer Datei"
+
+#: include/class.admin.locations.import.php:98
+msgid "File Settings"
+msgstr "Datei Einstellungen"
+
+#: include/class.admin.locations.import.php:102
+msgid "These settings apply to both Upload CSV File and Remote File Retrieval."
+msgstr ""
+"Diese Einstellungen beziehen sich sowohl auf CSV Dateien als auch auf remote "
+"Datei-Abfragen."
+
+#: include/class.admin.locations.import.php:110
+msgid "Skip Geocoding"
+msgstr "Geo-Kodierung überspringen"
+
+#: include/class.admin.locations.import.php:111
+msgid ""
+"Do not check with the Geocoding service to get latitude/longitude.  "
+"Locations without a latitude/longitude will NOT appear on map base searches."
+msgstr ""
+"Nutze nicht den Geo-Kodierungsdienst um Längen- und Breitengrad zu erhalten. "
+"Standorte ohne Längen- und Breitengrand erscheinen NICHT in "
+"kartenbasierenden Suchanfragen."
+
+#: include/class.admin.locations.import.php:119
+msgid "Load Data"
+msgstr "Daten laden"
+
+#: include/class.admin.locations.import.php:120
+msgid "If checked use the faster MySQL Load Data method of file processing."
+msgstr ""
+"Wenn aktiviert, dann wird die schnellere MySQL Datenlademethode für "
+"Dateiverarbeitung verwendet,"
+
+#: include/class.admin.locations.import.php:121
+#, c-format
+msgid ""
+"Only base plugin data can be loaded, see the <a href=\"%s\">approved field "
+"name list</a>."
+msgstr ""
+"Nur Basis-Plugin Daten können geladen werden, siehe <a href=\"%s\">approved "
+"field name list</a>."
+
+#: include/class.admin.locations.import.php:129
+msgid "Clear Messages"
+msgstr "Meldungen löschen"
+
+#: include/class.admin.locations.import.php:130
+msgid "Clear import messages at the start of each new import."
+msgstr "Lösche Import Meldungen beim Start jedes neuen Imports."
+
+#: include/class.admin.locations.import.php:138
+msgid "Duplicates Handling"
+msgstr "Behandlung von Duplikaten."
+
+#: include/class.admin.locations.import.php:139
+msgid "How should duplicates be handled? "
+msgstr ""
+"Wie sollen Duplikate behandelt werden?\n"
+
+#: include/class.admin.locations.import.php:140
+msgid ""
+"Duplicates are records that match on name and complete address with country. "
+msgstr ""
+"Duplikate sind Datensätze, die hinsichtlich Name und vollständiger Adresse "
+"inkl. Land doppelt vorkommen."
+
+#: include/class.admin.locations.import.php:141
+msgid "Add (default) will add new records when duplicates are encountered. "
+msgstr ""
+"Hinzufügen (Voreinstellung) - es werden neue Datensätze hinzugefügt, wenn "
+"Duplicate vorliegen."
+
+#: include/class.admin.locations.import.php:142
+msgid "Skip will not process duplicate records. "
+msgstr ""
+"Überspringen -  es werden keine Duplicate verarbeitet.\n"
+
+#: include/class.admin.locations.import.php:143
+msgid "Update will update duplicate records. "
+msgstr "Aktualisieren - es werden Duplicate aktualisiert."
+
+#: include/class.admin.locations.import.php:144
+msgid ""
+"To update name and address fields the CSV must have the ID column with the "
+"ID of the existing location."
+msgstr ""
+"Um Name und Adressfelder zu aktualisieren, muss die ID-Spalte in der CSV "
+"Datei die ID des vorhandenen Standort enthalten."
+
+#: include/class.admin.locations.import.php:147
+msgid "Skip"
+msgstr "Überspringen"
+
+#: include/class.admin.locations.import.php:148
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: include/class.admin.locations.import.php:161
+msgid "Import Messages"
+msgstr "Import Meldung"
+
+#: include/class.admin.locations.import.php:176
+msgid "Clear import messages."
+msgstr "Import Meldung löschen"
+
+#: include/class.admin.locations.import.php:194
+msgid "Log Import Messages"
+msgstr "Import Meldungen aufzeichnen"
+
+#: include/class.admin.locations.import.php:195
+msgid "When checked logs the import processing messages."
+msgstr "Wenn aktiviert, dann werden die Importmeldungen aufgezeichnet."
+
+#: include/class.admin.locations.import.php:206
+msgid "Remote File Retrieval"
+msgstr "Remote Dateiwiederherstellung"
+
+#: include/class.admin.locations.import.php:218
+#, c-format
+msgid "The current WordPress time (GMT) is %s."
+msgstr "Die aktuelle WordPress Zeit (GMT) ist %s."
+
+#: include/class.admin.locations.import.php:224
+msgid "CSV File URL"
+msgstr "URL der CSV Datei"
+
+#: include/class.admin.locations.import.php:225
+msgid "Enter a full URL for a CSV file you wish to import"
+msgstr ""
+"Geben Sie die vollständige URL der CSV Datei an, die Sie importieren wollen."
+
+#: include/class.admin.locations.import.php:232
+msgid "Import Schedule"
+msgstr "Import Zeitplanung"
+
+#: include/class.admin.locations.import.php:233
+msgid "How often to fetch the file from the URL. "
+msgstr "Wie oft die Datei von der URL geholt werden soll."
+
+#: include/class.admin.locations.import.php:234
+msgid "None loads the remote file immediately with no background processing. "
+msgstr ""
+"Keine - die remote Datei wird sofort geladen ohne Hintergrundverarbeitung."
+
+#: include/class.admin.locations.import.php:235
+msgid "At loads the file one time on or after the time specified. "
+msgstr "Zu - die Datei wird einmalig zu einer Zeit oder danach geladen."
+
+#: include/class.admin.locations.import.php:236
+msgid "Set to none and leave the URL blank to clear the cron job.  "
+msgstr ""
+"Auf \"Nichts\" setzen und die URL leer lassen, um den Cron-Dienst "
+"zurückzusetzen."
+
+#: include/class.admin.locations.import.php:239 
+#: include/class.admin.experience.php:105 
+#: include/class.category.selector.manager.php:39
+msgid "None"
+msgstr "Nichts"
+
+#: include/class.admin.locations.import.php:240
+msgid "At"
+msgstr "Zu"
+
+#: include/class.admin.locations.import.php:241
+msgid "Hourly"
+msgstr "Stündlich"
+
+#: include/class.admin.locations.import.php:242
+msgid "Twice Daily"
+msgstr "zweimal täglich"
+
+#: include/class.admin.locations.import.php:243
+msgid "Daily"
+msgstr "Täglich"
+
+#: include/class.admin.locations.import.php:250
+msgid "Import Time"
+msgstr "Import Zeitpunkt"
+
+#: include/class.admin.locations.import.php:251
+msgid "What time to run the recurring import from this URL.  "
+msgstr "Zu welchem Zeitpunkt soll der periodische Import von der URL laufen."
+
+#: include/class.admin.locations.import.php:252
+msgid ""
+"WordPress cron is not exact, it executes the next time a visitor comes to "
+"your site.  "
+msgstr ""
+"WordPress Cron ist nicht exact, der Dienst wird ausgeführt, wenn wieder ein "
+"Besucher auf die Site kommt."
+
+#: include/class.admin.locations.import.php:253
+msgid "WordPress times are UTC/GMT time NOT local time.  "
+msgstr "WordPress Zeiten sind UTC/GMT Zeit und nicht Lokalzeit."
+
+#: include/class.admin.locations.import.php:254
+msgid "PHP Date and Time formats"
+msgstr "PHP Datums- und Zeit-Formatierung."
+
+#: include/class.admin.locations.import.php:255
+msgid "are acceptable, such as \"now\" or \"14:00\" or \"sunday\""
+msgstr "wird akzeptiert, z.B. \"now\" oder \"14:00\" oder \"sunday\""
+
+#: include/class.admin.locations.import.php:264
+msgid "Import Locations"
+msgstr "Import Standort"
+
+#: include/class.admin.locations.import.php:277
+msgid "Scheduled Activity"
+msgstr "zeitlich geplante Aktivität"
+
+#: include/class.admin.locations.import.php:298
+msgid "Schedule Messages"
+msgstr "Zeitplan-Meldung"
+
+#: include/class.admin.locations.import.php:314
+msgid "Clear schedule messages."
+msgstr "Lösche Zeitplan-Meldungen"
+
+#: include/class.admin.locations.import.php:332
+msgid "Log Schedule Messages"
+msgstr "Zeichne Zeitplan-Meldungen auf"
+
+#: include/class.admin.locations.import.php:333
+msgid "When checked logs the schedule messages."
+msgstr ""
+"Wenn aktiviert werden Zeitplan-Meldungen aufgezeichnet\n"
+
+#: include/class.admin.locations.import.php:344
+msgid "Upload A File"
+msgstr "Eine Datei hochladen"
+
+#: include/class.admin.locations.import.php:355
+msgid "CSV files need a header row to define the columns. "
+msgstr "CSV Datei benötigt eine Kopfzeile, um die Spalten zu definieren."
+
+#: include/class.admin.locations.import.php:356
+msgid "Files should be in UTF-8 format with comma delimeters."
+msgstr "Datei muss im UTF-8 Format sein mit Komma-Trennzeichen."
+
+#: include/class.admin.locations.import.php:357
+#, c-format
+msgid "See the %s for more details on the import format."
+msgstr "Siehe %s für mehr Details bzgl. des Importformats."
+
+#: include/class.admin.locations.import.php:359
+msgid "online documentation"
+msgstr "Onlinedokumentation"
+
+#: include/class.admin.experience.php:64
+msgid "Appearance"
+msgstr "Design"
+
+#: include/class.admin.experience.php:67
+msgid "Show Tags In Output"
+msgstr "Zeige \"Tags\" in der Ausgabe an"
+
+#: include/class.admin.experience.php:68
+msgid ""
+"How should tags be output in the results below the map and the info bubble?"
+msgstr ""
+"Wie sollten \"Tags\" angezeigt werden, in den Ergebnissen unter de Karte "
+"oder in der Info-Blase."
+
+#: include/class.admin.experience.php:71
+msgid "As Entered"
+msgstr "Wie eingegeben"
+
+#: include/class.admin.experience.php:75
+msgid "Hide Tags"
+msgstr "\"Tags\" ausblenden"
+
+#: include/class.admin.experience.php:79
+msgid "On Separate Lines"
+msgstr "in separaten Zeilen"
+
+#: include/class.admin.experience.php:99
+msgid "Search Features"
+msgstr "Suchangaben"
+
+#: include/class.admin.experience.php:102
+msgid "Search Form Tag Input"
+msgstr "Suchformular \"Tag\"-Eingabe"
+
+#: include/class.admin.experience.php:102
+msgid ""
+"Select the type of tag input that you would like to see on the search form."
+msgstr ""
+"Wähle den Typ der \"Tag\"-Eingabe, die Sie im Suchformular sehen wollen."
+
+#: include/class.admin.experience.php:109
+msgid "Hidden"
+msgstr "Ausgeblendet"
+
+#: include/class.admin.experience.php:113
+msgid "Drop Down"
+msgstr "Drop Down"
+
+#: include/class.admin.experience.php:117
+msgid "Radio Button"
+msgstr "Radio Button"
+
+#: include/class.admin.experience.php:121
+msgid "Text Input"
+msgstr "Texteingabe"
+
+#: include/class.admin.experience.php:127
+msgid "Default Tag Selections"
+msgstr "Standard Tag-Auswahl"
+
+#: include/class.admin.experience.php:128
+msgid ""
+"For Hidden or Text tag input enter a default value to be used in the field, "
+"if any. "
+msgstr ""
+"Geben Sie ein Standardwert an (falls verwendet), wenn \"Ausgeblendet\" oder "
+"\"Texteingabe\" gewählt wurde."
+
+#: include/class.admin.experience.php:129
+msgid ""
+"For Drop Down tag input enter a comma (,) separated list of tags to show in "
+"the search pulldown, mark the default selection with parenthesis (). "
+msgstr ""
+"Für die Eingabe über \"Drop Down\" geben Sie eine kommagetrennte (,) Liste "
+"an \"tags\" an, die im Pulldown angezeigt werden sollen. Markieren Sie die "
+"Standardauswahl mit Klammern ()."
+
+#: include/class.admin.experience.php:130
+msgid ""
+"This is a default setting that can be overriden on each page within the "
+"shortcode."
+msgstr ""
+"Dies ist eine Standardeinstellung, die auf jeder Seite mit Shortcodes "
+"überschrieben werden kann."
+
+#: include/class.admin.experience.php:133
+msgid "Show Select All Option"
+msgstr "\"Alle auswählen\" Option anzeigen"
+
+#: include/class.admin.experience.php:133
+msgid ""
+"Add an \"any\" selection on the tag drop down list thus allowing the user to "
+"show all locations in the area, not just those matching a selected tag."
+msgstr ""
+"Füge die Auswahl \"alle\" am Anfang der \"Tag\"-Drop-down Liste ein, um dem "
+"Anwender die Möglichkeit zu geben, alle Standorte in der Gegend anzuzeigen, "
+"nicht nur denjenigen, der einem bestimmten \"Tag\" entspricht."
+
+#: include/class.admin.experience.php:134
+msgid "Tag Autosubmit"
+msgstr "\"Tag\" automatisch bereitstellen"
+
+#: include/class.admin.experience.php:134
+msgid ""
+"Force the form to auto-submit when the tag is selected with a radio button."
+msgstr ""
+"Automatischen Bereitstellen durch das Formula erzwingen, wenn das \"Tag\" "
+"durch Radio-Button ausgewählt wird."
+
+#: include/class.admin.experience.php:141
+msgid "Search Labels"
+msgstr "Such Bezeichner"
+
+#: include/class.admin.experience.php:144
+msgid "Tags Label"
+msgstr "Tags Bezeichner"
+
+#: include/class.admin.experience.php:144
+msgid "Search form label to prefix the tag selector."
+msgstr "Bezeichner vor der \"Tag\"-Auswahl im Suchformular"
+
+#: include/class.admin.experience.php:146
+msgid "Tag Select All Text"
+msgstr "Tag-Auswahl \"Alles\" Text"
+
+#: include/class.admin.experience.php:147
+msgid "What should the \"any\" tag say? "
+msgstr "Was sollte der Tag \"Alle\" sagen?"
+
+#: include/class.admin.experience.php:148
+msgid "The first entry on the search by tag pulldown."
+msgstr "Erster Eintrag in der Suche im Tag-Pull-Down"
+
+#: include/class.activation.php:39
+msgid "Identifier"
+msgstr "ID"
+
+#: include/class.activation.php:45
+msgid ""
+"The identifier field is meant to store a unique location record ID from an "
+"external data source. "
+msgstr ""
+"Das ID-Feld ist dafür vorgesehen eine eindeutige ID eines Standorts aus "
+"einer externen Datenquelle zu speichern."
+
+#: include/class.activation.php:46
+msgid ""
+"During a CSV import, this field is used to match up incoming data with "
+"existing locations. "
+msgstr ""
+"Während eins CSV Import wird diese Feld genutzt, um eingelesene Daten mit "
+"bestehenden Standorten abzugleichen."
+
+#: include/class.activation.php:48
+msgid "Contact"
+msgstr "Kontakt"
+
+#: include/class.activation.php:49
+msgid "First Name"
+msgstr "Vorname"
+
+#: include/class.activation.php:50
+msgid "Last Name"
+msgstr "Nachname"
+
+#: include/class.activation.php:51
+msgid "Title"
+msgstr "Titel"
+
+#: include/class.activation.php:52
+msgid "Department"
+msgstr "Abteilung"
+
+#: include/class.activation.php:53
+msgid "Training"
+msgstr "Training"
+
+#: include/class.activation.php:54
+msgid "Facility Type"
+msgstr "Standorttyp"
+
+#: include/class.activation.php:55
+msgid "Office Phone"
+msgstr "Büro-Telefon"
+
+#: include/class.activation.php:56
+msgid "Mobile Phone"
+msgstr "Handy"
+
+#: include/class.activation.php:57
+msgid "Contact Fax"
+msgstr "Fax"
+
+#: include/class.activation.php:58
+msgid "Contact Email"
+msgstr "E-Mail"
+
+#: include/class.activation.php:59
+msgid "Office Hours"
+msgstr "Bürozeiten"
+
+#: include/class.activation.php:60
+msgid "Contact Address"
+msgstr "Kontaktadresse"
+
+#: include/class.activation.php:61
+msgid "Notes"
+msgstr "Notizen"
+
+#: include/class.activation.php:62
+msgid "Introduction"
+msgstr "Vorstellung"
+
+#: include/class.activation.php:63
+msgid "Year Established"
+msgstr "Gründungsjahr"
+
+#: include/class.activation.php:64
+msgid "County"
+msgstr "Kreis"
+
+#: include/class.activation.php:65
+msgid "District"
+msgstr "Distrikt"
+
+#: include/class.activation.php:66
+msgid "Region"
+msgstr "Region"
+
+#: include/class.activation.php:67
+msgid "Territory"
+msgstr "Gebiet"
+
+#: include/class.admin.general.php:45
+msgid "Enable Contact Fields"
+msgstr "Aktiviere Kontakt Felder"
+
+#: include/class.admin.general.php:46
+msgid "Add detailed contacts fields to your locations data. "
+msgstr "Fügt detaillierte Kontaktfelder den Standortdaten hinzu."
+
+#: include/class.admin.general.php:47
+msgid ""
+"Includes an intelligent \"Identifier\" field that maintains links to "
+"external data sources through CSV import."
+msgstr ""
+"Fügt ein intelligentes ID-Feld ein, das Beziehungen zu externen Datenquellen "
+"durch CSV Importe aufrecht erhält."
+
+#: include/class.admin.general.php:55
+msgid "Enable Pages"
+msgstr "Aktiviere \"Pages\""
+
+#: include/class.admin.general.php:56
+msgid "Create pages for one or all locations using a template system. "
+msgstr ""
+"Anlage von \"pages\" für einen oder alle Standorte durch ein Vorlagen-System."
+
+#: include/class.admin.general.php:57
+msgid ""
+"Pages are search engine friendly and are linked directly to your live "
+"location data. "
+msgstr ""
+"\"Pages\" für Suchmaschinen optimiert und direkt zu ihren Online-"
+"Standortdaten verbunden."
+
+#: include/class.admin.general.php:77
+msgid "Highlight Uncoded"
+msgstr "Unkodierte hervorheben"
+
+#: include/class.admin.general.php:78
+msgid "Highlight the uncoded locations in the Manage Locations panel."
+msgstr "Unkodierte Standorte im Standorte-Verwalten Panel hervorheben."
+
+#: include/class.admin.general.php:100
+msgid "Use location sensor"
+msgstr "Nutze Standort Sensort"
+
+#: include/class.admin.general.php:101
+msgid ""
+"This can be slow to load and customers are prompted whether or not to allow "
+"location sensing."
+msgstr ""
+"Dies kann beim Laden langsam sein und Nutzer werden gefragt, ob sie der "
+"eigenen Standortbestimmung zustimmen."
+
+#: include/class.admin.general.php:106
+msgid "Security"
+msgstr "Sicherheit"
+
+#: include/class.admin.general.php:113
+msgid "Use Nonces On Directory"
+msgstr "Nutze vorläufig für Verzeichnis"
+
+#: include/class.admin.general.php:114
+msgid "Use use nonces on [slp_directory] shortcode links. "
+msgstr "Nutze vorläufig bei [slp_directory] Shortcode Links."
+
+#: include/class.admin.general.php:115
+msgid ""
+"Nonces make it harder to build search engine optimized links but harder for "
+"competitors to steal data. "
+msgstr ""
+"Vorläufige Bezeichnungen sind schwieriger für Suchmaschinen-Optimisierung "
+"aber auch schwerer für den Wettbewerb, um Daten zu stehlen."
+
+#: include/class.cron.php:28
+#, c-format
+msgid "Cron action %s initialized."
+msgstr "Cron Aktion %s initialisiert."
+
+#: include/class.cron.php:49
+msgid "Import CSV started."
+msgstr "Import CSV gestartet."
+
+#: include/class.cron.php:58
+msgid "Import CSV finished."
+msgstr "Import CSV beendet."
+
+#: include/class.cron.php:77
+#, c-format
+msgid "Action %s is unsupported"
+msgstr "Aktion %s wird nicht unterstütz."
+
+#: include/class.cron.php:98
+#, c-format
+msgid "Scheduled a one-time import at %s (%s)."
+msgstr "Einmaliger Import um %s (%s) eingeplant."
+
+#: include/class.cron.php:100
+#, c-format
+msgid "Could not a one-time import at %s (%s)."
+msgstr "Einmaliger Import geht nicht um  %s (%s)."
+
+#: include/class.cron.php:120
+#, c-format
+msgid "Scheduled a recurring %s import at %s (%s)."
+msgstr "Periodischer %s Import um  %s (%s) eingeplant."
+
+#: include/class.cron.php:122
+#, c-format
+msgid "Could not schedule a recurring %s import at %s (%s)."
+msgstr "Konnte den periodischen Import %s um  %s (%s) nicht einplanen."
+
+#: include/class.admin.location.filters.php:36
+msgid "Location Filter: "
+msgstr "Standortfilter:"
+
+#: include/class.admin.location.filters.php:79
+msgid "and"
+msgstr "und"
+
+#: include/class.admin.location.filters.php:80
+msgid "or"
+msgstr "oder"
+
+#: include/class.admin.location.filters.php:92
+msgid "Category"
+msgstr "Kategorie"
+
+#: include/class.admin.location.filters.php:96
+msgid "Store Name My Place or My* or *Place"
+msgstr "Speichername \"Mein Ort\" oder \"Mei*\" oder \"*Ort"
+
+#: include/class.admin.location.filters.php:96
+msgid "Name"
+msgstr "Name"
+
+#: include/class.admin.location.filters.php:98
+msgid "Zip Code 29464 or 294* or *464"
+msgstr "PLZ 29464 oder 294* oder *464"
+
+#: include/class.admin.location.filters.php:121
+msgid "Country"
+msgstr "Land"
+
+#: include/class.admin.location.filters.php:122
+msgid "All Countries"
+msgstr "Alle Länder"
+
+#: include/class.admin.location.filters.php:128
+msgid "All States"
+msgstr "Alle Bundesstaaten"
+
+#: include/class.messages.php:57
+#, c-format
+msgid "There are no %s messages at this time. "
+msgstr "Es gibt im Augenblick keine %s Mitteilungen."
+
+#: include/class.taxonomy.stores.php:167
+msgid "Rank"
+msgstr "Rang"
+
+#: include/class.taxonomy.stores.php:168
+msgid "Icon"
+msgstr "Ikon"
+
+#: include/class.taxonomy.stores.php:169
+msgid "Marker"
+msgstr "Marker"
+
+#: include/class.taxonomy.stores.php:222
+msgid "Item "
+msgstr "Element"
+
+#: include/class.taxonomy.stores.php:223
+msgid "Store category "
+msgstr "Laden Kategorie"
+
+#: include/class.category.selector.manager.php:47
+msgid "Single"
+msgstr "Singel"
+
+#: include/class.category.selector.manager.php:56
+msgid "Cascading"
+msgstr "Kaskadierend"
+
+#: include/class.csvimport.php:176
+msgid " new locations added."
+msgstr " neuer Standort hinzugefügt."
+
+#: include/class.csvimport.php:177
+msgid " pre-existing locations skipped."
+msgstr " bereits bestehender Standort ausgelassen."
+
+#: include/class.csvimport.php:178
+msgid " locations skipped due to malformed CSV data."
+msgstr " Standort wegen fehlerhaften CSV Daten ausgelassen"
+
+#: include/class.csvimport.php:179
+msgid " locations did not need to be updated."
+msgstr " Standort benötigte keinen Aktualisierung."
+
+#: include/class.csvimport.php:180
+msgid " locations were skipped due to duplicate address information."
+msgstr " Standort wegen doppelter Adress-Information ausgelassen."
+
+#: include/class.csvimport.php:181
+msgid " locations were updated."
+msgstr " Standorte wurden aktualisiert."
+
+#: include/class.csvimport.php:216
+msgid "Could not fetch the remote file."
+msgstr "Remote Datei konnte nicht geholt werden."
+
+#: include/class.csvimport.php:231
+msgid "CSV File Meta not set."
+msgstr "CSV Datei Meta nicht angegeben"
+
+#: include/class.csvimport.php:242
+msgid "Import file name not set."
+msgstr "Importdateiname nicht angegeben."
+
+#: include/class.csvimport.php:254
+msgid "Import file exceeds the upload_max_filesize in php.ini."
+msgstr ""
+"Größe der Import-Datei überschreitet die upload_max_filesize in php.ini."
+
+#: include/class.csvimport.php:258
+msgid "Import file was only partially loaded."
+msgstr "Import-Datei wurde nur teilweise geladen"
+
+#: include/class.csvimport.php:262
+msgid "Import file seems to have gone missing."
+msgstr "Import-Datei scheint verloren gegangen zu sein."
+
+#: include/class.csvimport.php:266
+msgid "Import file is empty."
+msgstr "Import-Datei ist leer."
+
+#: include/class.csvimport.php:280
+msgid "Uploaded file needs to be in CSV format."
+msgstr "Hochgeladene Datei muss im CSV Format sein."
+
+#: include/class.csvimport.php:281
+#, c-format
+msgid "Type was %s."
+msgstr "Type war %s."
+
+#: include/class.csvimport.php:386
+#, c-format
+msgid "WordPress upload directory %s is missing, check directory permissions."
+msgstr ""
+"WordPress Upload-Verzeichnis %s fehlt, überprüfe die Verzeichnis-"
+"Zugriffsrechte."
+
+#: include/class.csvimport.php:417
+msgid "Imported CSV file could not be renamed."
+msgstr "Importierte CSV Datei konnte nicht umbenannt werden."
+
+#: include/class.csvimport.php:418
+#, c-format
+msgid "Possibly out of disk space while trying to rename to %s"
+msgstr "Möglicherweise kein Speicherplatz mehr während der Umbenennung zu %s"
+
+#: include/class.csvimport.php:427
+msgid "Uploaded CSV file could not be moved."
+msgstr "Hochgeladene CSV Datei konnte nicht verschoben werden."
+
+#: include/class.csvimport.php:428
+#, c-format
+msgid "Check folder permissions for %s"
+msgstr "Überprüfe Verzeichnis-Zugriffsrechte für %s"
+
+#: include/class.csvimport.php:465
+msgid "Could not open CSV file for processing."
+msgstr "Konnte CSV Datei für die Verarbeitung nicht öffnen"
+
+#: include/class.csvimport.php:491
+#, c-format
+msgid "Starting CSV import - duplicates %s ."
+msgstr "Starte CSV Import - dupliziere %s."
+
+#: include/class.csvimport.php:527
+#, c-format
+msgid "Loading locations %s "
+msgstr "Lade Standorte %s"
+
+#: include/class.csvimport.php:550
+msgid "Finished CSV import."
+msgstr "Beende CSV Import"
+
+#: include/class.csvimport.php:563
+#, c-format
+msgid "%d data lines read from the CSV file."
+msgstr "%d Datenzeilen wurden aus der CSV Datei gelesen"
+
+#: include/class.csvimport.php:687
+msgid "Local copy of CSV file could not be created."
+msgstr "Lokale Kopie der CSV Datei konnte nicht angelegt werden."
+
+#: include/class.csvimport.php:697
+#, c-format
+msgid "Could not schedule the event to load the %s into the database."
+msgstr ""
+"Der Dienst um %s in die Datenbank zu laden, konnte nicht eingeplant werden."
+
+#: include/class.csvimport.php:703
+msgid "Starting the process of loading of the CSV file into the database."
+msgstr ""
+"Starte den Verarbeitungsschritt, um die CSV Datei in die Datenbank "
+"einzulesen."
+
+#: include/class.csvimport.php:708
+msgid "CSV Import Process File."
+msgstr "CSV Import-Verarbeitungsdatei"
+
+#: include/class.csvimport.php:721
+msgid ""
+"The first line of your CSV file defines fields that do not match the data."
+msgstr ""
+"Die erste Zeile Ihrer CSV Datei definiert Felder, die nicht den Datensätzen "
+"entsprechen.."
+
+#: include/class.csvimport.php:722
+#, c-format
+msgid "At least one line had %d fields while the header defined %d."
+msgstr ""
+"Mindestens eine Zeile hatte %d Felder während die Kopfzeile %d Felder "
+"definiert."
+
+#: include/class.csvimport.php:723
+msgid "Your header specified these fields: "
+msgstr "Ihre Kopfzeile definiert diese Felder:"
+
+#: include/class.csvimport.php:757
+msgid "Your CSV file header is set to import the following fields: "
+msgstr ""
+"Die Kopfzeile Ihrer CSV Datei ist ausgelegt die folgenden Felder zu "
+"importieren:"
+
+#: include/class.csvimport.php:766
+msgid "Could not read CSV file header. "
+msgstr "Die Kopfzeile der CSV-Datei konnte nicht gelesen werden."
+
+#: include/class.csvimport.php:767
+msgid "Is the file empty? "
+msgstr ""
+"Ist die Datei leer?\n"
+
+#: include/class.csvimport.php:798 include/class.csvimport.php:810
+msgid "File url is blank."
+msgstr "Datei URL ist leer"
+
+#: include/class.ajax.php:234 include/class.ajax.php:240
+msgid "Cheatin' huh!"
+msgstr "Mogelei huh!"
+
+#: include/class.ajax.php:497
+msgid "Creating the location export CSV file."
+msgstr "Anlage der CSV-Export-Datei für Standorte"
+
+#: include/class.ajax.php:793
+msgid "Uploads folder is not writable."
+msgstr "Verzeichnis zum Hochladen ist nicht beschreibbar."
+
+#: include/class.ajax.php:814
+msgid "Uploaded file must be CSV"
+msgstr "Hochgeladene Datei muss CSV sein."
+
+#: include/class.ajax.php:850
+msgid "Failed to open temp directory."
+msgstr "Öffnen des Temp-Verzeichnis ist fehlgeschlagen."
+
+#: include/class.ajax.php:875 include/class.ajax.php:900
+msgid "Failed to open input stream."
+msgstr "Öffnen des Input-Stream ist fehlgeschlagen."
+
+#: include/class.ajax.php:882 include/class.ajax.php:907
+msgid "Failed to open output stream."
+msgstr "Öffnen des Output-Stream ist fehlgeschlagen."
+
+#: include/class.ajax.php:886
+msgid "Failed to move uploaded file."
+msgstr "Verschieben der hochgeladenen Datei ist fehlgeschlagen"
+
+#: include/class.ajax.php:925
+msgid "AJAX direct import."
+msgstr "AJAX direkt Import."
+
+#: include/module/category/SLPPower_Admin_Categories.php:30
+msgid " - Categories"
+msgstr " - Kategorien"
+
+#: include/module/category/SLPPower_Admin_Categories.php:64
+msgid "Search"
+msgstr "Suche"
+
+#: include/module/category/SLPPower_Admin_Categories.php:70
+msgid "Show Categories On Search"
+msgstr "Zeige Kategorien beim Suchen"
+
+#: include/module/category/SLPPower_Admin_Categories.php:74
+msgid "How to show the category selector on the search form."
+msgstr "Wie soll die Kategorien-Auswahl im Suchformular angezeigt werden"
+
+#: include/module/category/SLPPower_Admin_Categories.php:75
+msgid "No will not show the category selector."
+msgstr "Nicht - es wird keine Auswahl für Kategorien angezeigt."
+
+#: include/module/category/SLPPower_Admin_Categories.php:76
+msgid ""
+"Single shows the category selector as a single drop down with indents if "
+"there are parent/children relations."
+msgstr ""
+"Einzeln - es wird die Kategorien-Auswahl als einzelnes Drop-Down angezeigt, "
+"wobei Eltern/Kind Beziehungen eingerückt werden."
+
+#: include/module/category/SLPPower_Admin_Categories.php:77
+msgid ""
+"Cascading shows a single drop down showing parents then children drop downs "
+"on an as-needed basis."
+msgstr ""
+"Kaskadierend - zeigt ein einzelnes Drop-Down für die Eltern an und dann ein "
+"Kind-Drop-Down, falls benötigt"
+
+#: include/module/category/SLPPower_Admin_Categories.php:86
+msgid "Hide Unpublished Categories"
+msgstr "Nicht veröffentlichte Kategorien ausblenden"
+
+#: include/module/category/SLPPower_Admin_Categories.php:88
+msgid ""
+"Only works if Store Pages is installed.  Hide the empty categories from the "
+"category selector. Store Pages in draft mode are considered \"empty\"."
+msgstr ""
+"Funktioniert nur, wenn \"Store Pages\" installiert ist. Blendet die leeren "
+"Kategorien von der Kategorienauswahl aus. \"Store Pages\" im Entwurfsmodus "
+"werden als \"leer\" bewertet. "
+
+#: include/module/category/SLPPower_Admin_Categories.php:102
+msgid "Any Category Label"
+msgstr "\"Alle\" Kategorien Bezeichner"
+
+#: include/module/category/SLPPower_Admin_Categories.php:104
+msgid ""
+"If set, prepends this text to select \"any category\" as an option to the "
+"selector. Set to blank to not provide the any selection."
+msgstr ""
+"Falls gesetzt: Stellt diesen Text \"alle Kategorien\" als Auswahl im "
+"Auswahlfeld voran. Wenn auf leer gesetzt, wird die \"alle\" Auswahl "
+"unterbunden."
+
+#: include/module/category/SLPPower_Admin_Categories.php:118
+msgid "Category Select Label"
+msgstr "Kategorie-Auswahl Bezeichner"
+
+#: include/module/category/SLPPower_Admin_Categories.php:120
+msgid "The label for the category selector."
+msgstr "Der Bezeichner für die Kategorie Auswahl"
+
+#: include/module/category/SLPPower_Admin_Categories.php:125
+msgid "Map"
+msgstr "Karte"
+
+#: include/module/category/SLPPower_Admin_Categories.php:133
+msgid "Use Default Markers"
+msgstr "Nutze Standard Marker"
+
+#: include/module/category/SLPPower_Admin_Categories.php:135
+msgid ""
+"Do not use custom category destination markers on map, use default Map "
+"Settings markers."
+msgstr ""
+"Verwende nicht angepasste Kategorie Bestimmungsort Marker in der Karte "
+"sondern Standard Karteneinstellungen."
+
+#: include/module/category/SLPPower_Admin_Categories.php:140
+msgid "Results"
+msgstr "Ergebnisse"
+
+#: include/module/category/SLPPower_Admin_Categories.php:148
+msgid "Show Icon Array"
+msgstr "Zeige Ikon Array"
+
+#: include/module/category/SLPPower_Admin_Categories.php:150
+msgid ""
+"When enabled an array of icons will be created in the below map results and "
+"info bubble."
+msgstr ""
+"Wenn aktiviert, dann wird ein Ikon Array unterhalt der Karte in den "
+"Ergebnissen und in der Info-Blase angelegt."
+
+#: include/module/category/SLPPower_Admin_Categories.php:161
+msgid "Order By Category Count"
+msgstr "Sortiere nach Kategorieanzahl"
+
+#: include/module/category/SLPPower_Admin_Categories.php:163
+msgid ""
+"When enabled the results will be ordered by those with the most categories "
+"assigned appearing first."
+msgstr ""
+"Wenn aktiviert, dann werden die Ergebnisse absteigend danach sortiert, "
+"welche die meisten Kategorien haben."
+
+#: include/module/category/SLPPower_Admin_Categories.php:171 
+#: include/module/pages/class.admin.pages.php:462
+msgid "View"
+msgstr "Ansicht"
+
+#: include/module/category/SLPPower_Admin_Categories.php:179
+msgid "Show Text Under Legend"
+msgstr "Ziege Text unterhalb der Legende"
+
+#: include/module/category/SLPPower_Admin_Categories.php:181
+msgid "When enabled text will appear under each category icon in the legend. "
+msgstr ""
+"Wenn aktiviert, dann wird der Text unterhalb jedes Kategorie-Ikon in der "
+"Legende angezeigt."
+
+#: include/module/category/SLPPower_Admin_Categories.php:182
+#, c-format
+msgid ""
+"Add legend to the output with the [tagalong legend] shortcode via the %s "
+"view setting."
+msgstr ""
+"Füge eine Legende mittels [tagalong legend] shortcode via %s "
+"Ansichtseinstellung der Ausgabe hinzu."
+
+#: include/module/category/SLPPower_Admin_Categories.php:184
+msgid "Under the User Experience / View tab."
+msgstr "Unterhalb des Reiters \"Nutzer-Erlebnis (experience) / Ansicht\""
+
+#: include/module/category/SLPPower_Admin_Categories.php:192
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: include/module/category/SLPPower_Admin_Categories.php:197
+msgid "Manage"
+msgstr "Verwalte"
+
+#: include/module/category/SLPPower_Admin_Categories.php:207
+#, c-format
+msgid "The <a href=\"%s\">Category Manager</a>"
+msgstr "Der <a href=\"%s\">Kategorie-Manager</a>"
+
+#: include/module/category/SLPPower_Admin_Categories.php:210
+msgid " provides a full management interface for Store Categories."
+msgstr " stellt eine vollständige Verwaltung der \"store\"-Kategorien bereit."
+
+#: include/module/category/SLPPower_Admin_Categories.php:215
+msgid "List"
+msgstr "Liste"
+
+#: include/module/category/SLPPower_Admin_Categories.php:220
+msgid ""
+"This category list is based on the custom stores taxonomy setup by Store "
+"Locator Plus."
+msgstr ""
+"Die Liste der Kategorien basiert auf den Einstellungen der \"store "
+"taxonomy\" durch Store Locator Plus."
+
+#: include/module/category/SLPPower_Admin_Categories.php:225
+msgid ""
+"Clicking on a link will bring you to the most recently touched Store Page."
+msgstr ""
+"Anklicken eines Links führt sie auf die als letztes aufgerufene \"Store "
+"Page\"."
+
+#: include/module/category/SLPPower_Admin_Categories.php:227
+msgid ""
+"Depending on your theme, you may have an older/newer posts button on the "
+"bottom of each page to navigate the matching pages."
+msgstr ""
+"Je nach Theme haben Sie am Ende jeder Seite eine ältere/neuere Beitrags-"
+"Schaltfläche, um auf entsprechende Seiten zu navigieren."
+
+#: include/module/category/SLPPower_CategoryWalker_List.php:52
+#, c-format
+msgid "View all posts filed under %s (id %d)"
+msgstr "Anzeige aller Beiträge unter %s (id %d)"
+
+#: include/module/category/SLPPower_CategoryWalker_List.php:69
+#, c-format
+msgid "Feed for all posts filed under %s"
+msgstr "Feed für alle Beiträge unter %s"
+
+#: include/module/pages/class.admin.pages.php:46
+msgid "create page"
+msgstr "Seite anlegen"
+
+#: include/module/pages/class.admin.pages.php:46
+msgid "recreate page"
+msgstr "Seite erneut anlegen"
+
+#: include/module/pages/class.admin.pages.php:220
+msgid "Description"
+msgstr "Beschreibung"
+
+#: include/module/pages/class.admin.pages.php:222
+msgid "Contact Info"
+msgstr "Kontakt Info"
+
+#: include/module/pages/class.admin.pages.php:280
+msgid "Pages, Create"
+msgstr "\"Pages\", Anlage"
+
+#: include/module/pages/class.admin.pages.php:284
+msgid "Pages, Delete Permanently"
+msgstr "\"Pages\", endgültig löschen"
+
+#: include/module/pages/class.admin.pages.php:298
+msgid "Pages URL"
+msgstr "\"Pages\" URL"
+
+#: include/module/pages/class.admin.pages.php:345
+#, c-format
+msgid "Store Page ID %d is at "
+msgstr "\"Store Page\" ID %d ist"
+
+#: include/module/pages/class.admin.pages.php:408
+msgid "Recreate"
+msgstr "Neulegen"
+
+#: include/module/pages/class.admin.pages.php:431
+msgid "Trash"
+msgstr "Müll"
+
+#: include/module/pages/class.admin.pages.php:444
+msgid "Delete"
+msgstr "Löschen"
+
+#: include/module/pages/class.admin.pages.php:477
+msgid "Preview"
+msgstr "Vorschau"
+
+#: include/module/pages/class.pages.global.php:44 
+#: include/module/pages/class.admin.pages.tab.php:27
+msgid "Pages"
+msgstr "Pages"
+
+#: include/module/pages/class.admin.pages.tab.php:54
+msgid "Behavior"
+msgstr "Verhalten"
+
+#: include/module/pages/class.admin.pages.tab.php:59
+msgid "Default Page Status"
+msgstr "Standardstatus für \"Page\""
+
+#: include/module/pages/class.admin.pages.tab.php:64
+msgid "Draft"
+msgstr "Entwurf"
+
+#: include/module/pages/class.admin.pages.tab.php:69
+msgid "Published"
+msgstr "Veröffentlicht"
+
+#: include/module/pages/class.admin.pages.tab.php:74
+msgid "Pending Review"
+msgstr "Ausstehende Nachprüfung"
+
+#: include/module/pages/class.admin.pages.tab.php:79
+msgid "Future"
+msgstr "Künftig"
+
+#: include/module/pages/class.admin.pages.tab.php:84
+msgid "Private"
+msgstr "Privat"
+
+#: include/module/pages/class.admin.pages.tab.php:90
+msgid "When creating new Store Pages, what should the default status be?."
+msgstr "Wie soll der Standardstatus eine neu angelegten  \"Store Page\" sein?"
+
+#: include/module/pages/class.admin.pages.tab.php:91
+msgid "Default mode is draft."
+msgstr " Standard ist Entwurfsmodus."
+
+#: include/module/pages/class.admin.pages.tab.php:98
+msgid "Pages Replace Websites"
+msgstr "\"Pages\" ersetzten Websites"
+
+#: include/module/pages/class.admin.pages.tab.php:100
+msgid ""
+"Use the Store Pages local URL in place of the website URL on the map results "
+"list."
+msgstr ""
+"Nutze bei Ergebnisliste auf der Karte die lokale URL der \"Store Pages\" "
+"anstelle der URL der Website."
+
+#: include/module/pages/class.admin.pages.tab.php:108
+msgid "Prevent New Window"
+msgstr "Unterbinde neues Fenster"
+
+#: include/module/pages/class.admin.pages.tab.php:110
+msgid "Prevent Store Pages web links from opening in a new window."
+msgstr "Unterbinde, dass Weblinks der \"Store Pages\" neue Fenster öffnen."
+
+#: include/module/pages/class.admin.pages.tab.php:118
+msgid "Prepend URL With Blog Path"
+msgstr "Stelle der URL den Blog-Pfad voran."
+
+#: include/module/pages/class.admin.pages.tab.php:130
+msgid "Permalink Starts With"
+msgstr "Permalinks starten mit"
+
+#: include/module/pages/class.admin.pages.tab.php:133
+msgid ""
+"This process takes a long time to update WordPress fils and ALL of your "
+"location data."
+msgstr ""
+"Das Aktualisieren aller Dateien in Wordpress und aller Standortdaten dauert "
+"lange."
+
+#: include/module/pages/class.admin.pages.tab.php:134
+msgid "Set the middle part of the store page URLs, defaults to \"store_page\"."
+msgstr ""
+"Setze den Standartwert im Mitteilteil der URL der \"store page\" auf "
+"\"store_page\"."
+
+#: include/module/pages/class.admin.pages.tab.php:136
+#, c-format
+msgid ""
+"<a href=\"%s\">Permalinks</a> needs to be set to something other than "
+"default."
+msgstr ""
+"<a href=\"%s\">Permalinks</a> müssen auf etwas anderes als den Standardwert "
+"gesetzt werden."
+
+#: include/module/pages/class.admin.pages.tab.php:145
+msgid "Initial Page Features"
+msgstr "Eigenschaften der Startseite"
+
+#: include/module/pages/class.admin.pages.tab.php:157
+#, c-format
+msgid "These settings determine how your custom %s pages are built. "
+msgstr ""
+"Diese Eigenschaft bestimmt, wie angepasste %s \"pages\" (Seiten) erstellt "
+"werden."
+
+#: include/module/pages/class.admin.pages.tab.php:161
+msgid "You have Force Load JavaScript ON. "
+msgstr "Sie haben \"Force Load JavaScript ON. \""
+
+#: include/module/pages/class.admin.pages.tab.php:162
+msgid ""
+"Themes that follow WordPress best practices and employ wp_footer() properly "
+"do not need this. "
+msgstr ""
+"Themen, die entsprechend den WordPress Leitlinien entwickelt wurden und "
+"wp_footer() richtig verwenden, benötigen dies nicht."
+
+#: include/module/pages/class.admin.pages.tab.php:163
+msgid ""
+"Leaving it on slows down your site and disables a lot of extra features with "
+"the plugin and add-on packs. "
+msgstr ""
+"Diesen Schalter anzulassen verlangsamt Ihre Site und schaltet viele Extra-"
+"Eigenschaften dieses Plugins und Add-On Paketes ab."
+
+#: include/module/pages/class.admin.pages.tab.php:167
+msgid ""
+"For example, your Store Pages template has had the map element removed. "
+msgstr ""
+"Als Beispiel: Aus Ihrer Vorlage für \"Store Pages\" wurde das Kartenelement "
+"entfernt."
+
+#: include/module/pages/class.admin.pages.tab.php:177
+msgid "Default Comments"
+msgstr "Standard Kommentare"
+
+#: include/module/pages/class.admin.pages.tab.php:180
+msgid ""
+"Should comments be on or off by default when a new store page is created?"
+msgstr ""
+"Sollen Kommentare im Standard an- oder ausgeschaltet sein, wenn eine neue "
+"\"store page\" angelegt wird."
+
+#: include/module/pages/class.admin.pages.tab.php:187
+msgid "Default Trackbacks"
+msgstr "Standard Rückverfolgung (trackbacks)"
+
+#: include/module/pages/class.admin.pages.tab.php:190
+msgid ""
+"Should pingbacks/trackbacks be on or off by default when a new store page is "
+"created?"
+msgstr ""
+"Sollen Rückverfolgungen (pingbacks/trackbacks) als Standard an- oder "
+"ausgeschaltet sein, wenn eine neue \"store page\" angelegt wird?"
+
+#: include/module/pages/class.admin.pages.tab.php:201
+msgid "Page Template"
+msgstr "\"Page\" Vorlage"
+
+#: include/module/pages/class.admin.pages.tab.php:205
+msgid "The HTML that is used to create new store pages."
+msgstr "Das HTML, das zum Anlegen einer neue \"Store page\" genutzt wird."
+
+#: include/module/pages/class.admin.pages.tab.php:206
+msgid "Leave blank to reset to default layout."
+msgstr "Leer lassen, um auf das Standardlayout zurückzusetzen."
+
+#: include/module/pages/class.admin.pages.tab.php:214
+msgid "Read More Text"
+msgstr "\"Weiterlesen\" Text"
+
+#: include/module/pages/class.admin.pages.tab.php:216
+msgid "Read more text to be used with [slp_pages] <!--more--> page breaks."
+msgstr ""
+"\"Weiterlesen\" Text, der mit  [slp_pages] <!--more--> Seitenumbrüchen "
+"verwendet wird.."
+
+#. Description of the plugin
+msgid ""
+"Adds power user features include location import, categorization, and SEO "
+"pages to Store Locator Plus."
+msgstr ""
+"Zusätzlich Poweruser-Werkzeuge wie Standort-Import, Kategorisierung, SEO-"
+"Seiten für Store Locator Plus."
+
+#. URI of the plugin
+msgid "https://wordpress.storelocatorplus.com/product/power/"
+msgstr "https://wordpress.storelocatorplus.com/product/power/"
+
+#. Author of the plugin
+msgid "Store Locator Plus"
+msgstr "Store Locator Plus"
+
+#. Author URI of the plugin
+msgid "https://wordpress.storelocatorplus.com"
+msgstr "Store Locator Plus"
+

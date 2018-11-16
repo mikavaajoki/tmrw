@@ -1,0 +1,498 @@
+/** file: default_2014.css
+ ** label: Default Theme 2014
+ ** description: The default SLPLUS Theme during the WordPress 4.0 tenure.  Search form on top of the map on top of the results.  Add on packs are not required for this theme to function properly.
+ ** add-ons: slp-pro,slp-enhanced-map,slp-enhanced-results,slp-enhanced-search
+ ** Pro Pack Locator Layout: <div id="sl_div">[slp_search][slp_map][slp_results]</div>
+ ** Enhanced Map Bubble Layout: <div id="sl_info_bubble" class="[slp_location featured]"><span id="slp_bubble_name"><strong>[slp_location name  suffix  br]</strong></span><span id="slp_bubble_address">[slp_location address       suffix  br]</span><span id="slp_bubble_address2">[slp_location address2      suffix  br]</span><span id="slp_bubble_city">[slp_location city          suffix  comma]</span><span id="slp_bubble_state">[slp_location state suffix    space]</span><span id="slp_bubble_zip">[slp_location zip suffix  br]</span><span id="slp_bubble_country"><span id="slp_bubble_country">[slp_location country       suffix  br]</span></span><span id="slp_bubble_directions">[html br ifset directions][slp_option label_directions wrap directions]</span><span id="slp_bubble_website">[html br ifset url][slp_location url           wrap    website][slp_option label_website ifset url][html closing_anchor ifset url][html br ifset url]</span><span id="slp_bubble_email">[slp_location email         wrap    mailto ][slp_option label_email ifset email][html closing_anchor ifset email][html br ifset email]</span><span id="slp_bubble_phone">[html br ifset phone]<span class="location_detail_label">[slp_option   label_phone   ifset   phone]</span>[slp_location phone         suffix    br]</span><span id="slp_bubble_fax"><span class="location_detail_label">[slp_option   label_fax     ifset   fax  ]</span>[slp_location fax           suffix    br]<span><span id="slp_bubble_description"><span id="slp_bubble_description">[html br ifset description][slp_location description raw]</span>[html br ifset description]</span><span id="slp_bubble_hours">[html br ifset hours]<span class="location_detail_label">[slp_option   label_hours   ifset   hours]</span><span class="location_detail_hours">[slp_location hours         suffix    br]</span></span><span id="slp_bubble_img">[html br ifset img][slp_location image         wrap    img]</span><span id="slp_tags">[slp_location tags]</span></div>
+ ** Enhanced Results Results Layout: <div id="slp_results_[slp_location id]" class="results_entry  [slp_location featured]"><div class="results_row_left_column"   id="slp_left_cell_[slp_location id]"   ><span class="location_name">[slp_location name]</span><span class="location_distance">[slp_location distance_1] [slp_location distance_unit]</span></div><div class="results_row_center_column" id="slp_center_cell_[slp_location id]" ><span class="slp_result_address slp_result_street">[slp_location address]</span><span class="slp_result_address slp_result_street2">[slp_location address2]</span><span class="slp_result_address slp_result_citystatezip">[slp_location city_state_zip]</span><span class="slp_result_address slp_result_country">[slp_location country]</span><span class="slp_result_address slp_result_phone">[slp_location phone]</span><span class="slp_result_address slp_result_fax">[slp_location fax]</span></div><div class="results_row_right_column"  id="slp_right_cell_[slp_location id]"  ><span class="slp_result_contact slp_result_website">[slp_location web_link]</span><span class="slp_result_contact slp_result_email">[slp_location email_link]</span><span class="slp_result_contact slp_result_directions"><a href="http://[slp_location map_domain]/maps?saddr=[slp_location search_address]&daddr=[slp_location location_address]" target="_blank" class="storelocatorlink">[slp_location directions_text]</a></span><span class="slp_result_contact slp_result_hours">[slp_location hours]</span>[slp_location iconarray wrap="fullspan"]</div></div>
+ ** Enhanced Search Search Layout: <div id="address_search">[slp_search_element input_with_label="name"][slp_search_element input_with_label="address"][slp_search_element dropdown_with_label="city"][slp_search_element dropdown_with_label="state"][slp_search_element dropdown_with_label="country"][slp_search_element selector_with_label="tag"][slp_search_element dropdown_with_label="category"]<div class="search_item">[slp_search_element dropdown_with_label="radius"][slp_search_element button="submit"]</div></div>
+ ** Results Header:
+ **
+ ** Sass Source: ./assets/stylesheets/default.scss
+ **/
+.onoffswitch-block {
+  display: inline-block;
+  float: right;
+  margin-right: 8px; }
+
+.onoffswitch-pretext {
+  display: inline-block;
+  padding-right: 12px;
+  vertical-align: super; }
+
+.onoffswitch {
+  display: inline-block;
+  position: relative;
+  width: 56px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.onoffswitch-checkbox {
+  display: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px; }
+
+.onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s; }
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 17px;
+  padding: 0;
+  line-height: 17px;
+  font-size: 10px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 8px;
+  background-color: #2FCCFF;
+  color: #FFFFFF; }
+
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 8px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right; }
+
+.onoffswitch-switch {
+  width: 8px;
+  margin: 4.5px;
+  background: #FFFFFF;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 35px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0; }
+
+/* A div that looks like a button. */
+.like-a-button {
+  background: #FFF;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#DDDDDD');
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+  background: -moz-linear-gradient(top, #FFF, #DDD);
+  text-decoration: none;
+  border: 1px solid #BBBBBB;
+  margin: 0;
+  padding: 3px 12px;
+  text-align: center;
+  width: auto;
+  cursor: pointer;
+  color: #333;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -khtml-border-radius: 3px; }
+
+.like-a-button:hover {
+  background: #DDD;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF');
+  background: -webkit-gradient(linear, left top, left bottom, from(#DDD), to(#FFF));
+  background: -moz-linear-gradient(top, #DDD, #FFF); }
+
+.like-a-button A {
+  text-decoration: none; }
+
+#sl_info_bubble .location_detail_hours {
+  white-space: pre-wrap; }
+
+.slp_result_contact.slp_result_hours {
+  white-space: pre-wrap; }
+
+div#map img {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  max-width: none;
+  opacity: 1.0; }
+
+/* Fix IE11 Rules from Bad WP Themes */
+div#map div {
+  overflow: visible; }
+
+/* Fix IE10 Rules */
+div#map .gm-style-cc > div {
+  word-wrap: normal; }
+
+/* Hide the default Google bubble shadow */
+div#map img[src='http://maps.gstatic.com/mapfiles/iws3.png'] {
+  display: none; }
+
+#map_box_image {
+  display: block; }
+
+div.gm-style-iw div#sl_info_bubble {
+  min-width: 12em; }
+
+#map_box_map {
+  display: none; }
+
+div#slp_tagline {
+  background-color: #AABBDD;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  margin-bottom: 3px;
+  padding-right: 3px;
+  text-align: right;
+  width: 100%; }
+
+#search_by_tag span {
+  margin-right: 0.4em; }
+
+#search_by_tag span input[type="radio"] {
+  margin: 0 0.2em 0 1em;
+  width: 1em;
+  vertical-align: sub; }
+
+#tagalong_category_selector .category_selector.parent {
+  display: block;
+  float: left; }
+#tagalong_category_selector .category_selector.child {
+  display: none;
+  float: left;
+  margin-left: 0.2em; }
+
+#tagalong_cascade_dropdowns {
+  display: inline-block;
+  position: relative;
+  vertical-align: top; }
+
+#searchForm div.tagalong_category_selector {
+  display: inline;
+  white-space: nowrap;
+  padding-right: 1%; }
+  #searchForm div.tagalong_category_selector:first-child {
+    margin-left: 0; }
+    #searchForm div.tagalong_category_selector:first-child LABEL {
+      display: inline-block;
+      min-width: 21%; }
+    #searchForm div.tagalong_category_selector:first-child SELECT {
+      display: inline; }
+  #searchForm div.tagalong_category_selector span.ui-selectmenu-button {
+    width: 100% !important; }
+
+#tagalong_legend {
+  border: none;
+  padding: 0.75em;
+  text-align: inherit; }
+  #tagalong_legend .legend_text {
+    display: inline-block;
+    margin-left: 0.25em;
+    margin-right: 1em;
+    max-width: none;
+    padding-top: 0;
+    text-align: left;
+    vertical-align: middle; }
+  #tagalong_legend .tagalong_legend_icon {
+    display: inline-block;
+    margin-bottom: 0.75em;
+    min-width: 11.875em; }
+
+.results_line.location_iconarray > a {
+  display: inline-block;
+  height: auto;
+  width: auto; }
+
+ul.ui-autocomplete.ui-front.ui-widget {
+  color: gray;
+  background-color: white;
+  border: solid 1px #C0C0C0;
+  border-radius: 3px;
+  padding: 0.2em;
+  display: inline-block;
+  height: inherit; }
+  ul.ui-autocomplete.ui-front.ui-widget li {
+    list-style: none; }
+
+/**
+ * General SLP Div Only
+ **/
+#sl_div {
+  padding: 1px; }
+
+#sl_div a.storelocatorlink {
+  color: #0000FF; }
+
+#sl_div a:hover.storelocatorlink {
+  color: #4444FF; }
+
+#sl_div img {
+  background-color: transparent;
+  background-image: none;
+  max-width: none; }
+
+#sl_div table, #sl_div tr, #sl_div td {
+  border: none; }
+
+/*---------------------
+ * Search
+ *---------------------*/
+#searchForm .search_item {
+  clear: both;
+  display: block;
+  float: none;
+  vertical-align: middle; }
+
+#searchForm LABEL {
+  text-align: right;
+  min-width: 100px;
+  width: 25%;
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 8px;
+  vertical-align: top; }
+
+#searchForm SELECT {
+  margin: 0 6px 0 0; }
+
+#searchForm INPUT {
+  border: solid 1px silver;
+  color: black;
+  width: 70%; }
+
+/* Radius */
+#addy_in_radius {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%; }
+
+#searchForm #addy_in_radius LABEL {
+  width: 50%; }
+
+/* Submit Button */
+#radius_in_submit {
+  display: inline-block;
+  margin-bottom: 0.5em; }
+
+#addressSubmit.slp_ui_button {
+  width: auto;
+  /* like-a-button */
+  background: #FFF;
+  /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#DDDDDD');
+  /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, #FFF, #DDD);
+  /* for firefox 3.6+ */
+  text-decoration: none;
+  border: 1px solid #BBBBBB;
+  text-align: center;
+  cursor: pointer;
+  color: #5F5E5E;
+  /* Corners */
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -khtml-border-radius: 3px;
+  /* Shadow */
+  box-shadow: none; }
+
+#addressSubmit.slp_ui_button:hover {
+  background: #EEE;
+  /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEE', endColorstr='#CCC');
+  /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, #EEE, #CCC);
+  /* for firefox 3.6+ */ }
+
+#addy_in_city {
+  clear: both;
+  float: left;
+  margin-right: 6px; }
+
+#addy_in_country {
+  float: left; }
+
+#addy_in_address {
+  clear: both;
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+span.slp_checkbox_entry {
+  padding-right: 12px; }
+
+span.slp_checkbox_entry input[type="checkbox"] {
+  vertical-align: text-bottom; }
+
+/* Tagalong Search Inputs */
+#tagalong_category_selector {
+  display: inline-block;
+  height: 2em;
+  width: 100%; }
+
+#tagalong_category_selector .category_selector.parent {
+  display: block;
+  float: left; }
+
+#tagalong_cascade_dropdowns {
+  display: inline-block;
+  position: relative; }
+
+#tagalong_category_selector .category_selector.child {
+  display: none;
+  float: left; }
+
+/*---------------------
+ * Map
+ *---------------------*/
+div.entry-content div#sl_div #map IMG {
+  border-radius: 0;
+  padding: 0;
+  margin: 0; }
+
+div#map {
+  border-top: solid 1px #CCCCCC;
+  border-left: solid 1px #CCCCCC;
+  border-right: solid 1px #CCCCCC;
+  width: auto; }
+
+div#sl_div .gm-style-iw {
+  max-width: 90%;
+  width: auto !important; }
+
+#sl_info_bubble {
+  font-size: xx-small;
+  font-weight: normal; }
+
+#sl_info_bubble img {
+  width: 250px;
+  max-height: 200px;
+  border: 0; }
+
+#sl_info_bubble .your_location_label {
+  font-weight: normal; }
+
+#sl_info_bubble .location_detail_label {
+  font-weight: normal; }
+
+#sl_info_bubble .location_detail_hours {
+  white-space: pre-wrap; }
+
+div#slp_tagline {
+  background-color: #AABBDD;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  margin-bottom: 3px;
+  padding-right: 3px;
+  text-align: right;
+  width: 100%; }
+
+/*---------------------
+ * Results
+ *---------------------*/
+div.results_entry {
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 18px;
+  width: 100%; }
+  div.results_entry:hover {
+    background-color: #F2F2F2; }
+  div.results_entry.featured {
+    background-color: #EFF0DE; }
+    div.results_entry.featured:hover {
+      background-color: #E7F8D6; }
+  div.results_entry a {
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%; }
+    div.results_entry a:hover {
+      color: #4444FF;
+      background-color: #F2F2F2; }
+  div.results_entry span.location_name {
+    color: #CC0000;
+    display: block;
+    font-weight: bold; }
+
+div.results_row_left_column {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  width: 40%; }
+
+div.results_row_center_column {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  width: 40%; }
+
+div.results_row_right_column {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  vertical-align: top;
+  width: 18%; }
+
+span.slp_result_address {
+  width: 100%;
+  display: inline-block; }
+
+span.slp_result_phone {
+  padding-top: 6px; }
+
+span.slp_result_contact {
+  width: 100%;
+  white-space: nowrap; }
+
+span.slp_result_contact.slp_result_hours {
+  white-space: pre-line; }
+
+span.slp_result_realestate {
+  display: block; }
+
+div#map_sidebar {
+  overflow: auto; }
+  div#map_sidebar div.results_entry a {
+    color: #444444; }
+
+div.slp_directory.landing_page div.results_row_left_column,
+div.slp_directory.landing_page div.results_row_center_column,
+div.slp_directory.landing_page div.results_row_right_column {
+  display: block;
+  width: 100%; }
+div.slp_directory.landing_page span {
+  text-align: left; }
+
+/*# sourceMappingURL=default_2014.css.map */
