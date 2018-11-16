@@ -286,7 +286,7 @@ function reorder_woo_fields($fields) {
     'type' => 'select',
     'options'    => $countries,
     'label' => __('COUNTRY', 'woocommerce'),
-    'required' => false,
+    'required' => true,
     'priority' => 80,
     'type' => 'country',
     'class' => array('form-field custom-select'),
@@ -295,7 +295,7 @@ function reorder_woo_fields($fields) {
 
     $fields2['shipping']['shipping_address_2'] = array(
     'label' => __('APARTMENT / SUITE / ETC. ', 'woocommerce'),
-    'required' => false,
+    'required' => true,
     'priority' => 40,
     'class' => array('form-field'),
     'clear' => true
