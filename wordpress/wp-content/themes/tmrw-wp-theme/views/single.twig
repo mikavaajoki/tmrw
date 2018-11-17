@@ -4,9 +4,17 @@
 
 {% set writer = post.get_field('article_details_author') %}
 
+
+{% set recpost = TimberPost(options.recommended_feature) %}
+
+{% if recpost.link == post.link %}
+	{% set featured_id = "featured-article-anchor" %}
+{% else %} 
+	{% set featured_id = "article-anchor" %}
+{% endif %}	
+
 <section id="feature">
 		<div class="container">
-
 		<!-- Article Header -->
 			{% for image in post.get_field('article_details_opening_image') %}
 			<div class="featured-image" style="background-image: url('{{image.url}}');">
@@ -15,7 +23,7 @@
 			<div class="heading">
 				<h1>{{post.title}}<br class="tablet-hide"> <span class="poppins">{{post.get_field('article_details_subtitle')}}</span></h1>
 			</div>
-			<div class="author-date-category">
+			<div class="author-date-category" id="{{featured_id}}">
 				<h4>{{writer.display_name}} <span class="worksans mobile-hide">/</span> <br class="mobile-display">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
 			</div>
 			<div class="stand-first">
@@ -25,8 +33,6 @@
 			</div>
 
 		<!-- Article Body-->
-
-
 					{% for block in post.get_field('blocks') %}
 						{% if block.acf_fc_layout == 'paragraph' %}
 							{{block.paragraph}}
@@ -83,9 +89,9 @@
 	<!-- Recommended Feature Scroll -->
 	<script type="text/javascript">
 		$(document).ready(function(){
-			if (window.location.hash == "#feautured-article-anchor") {
+			if (window.location.hash == "#featured-article-anchor") {
 				$('html, body').animate({
-					scrollTop: $("#feautured-article-anchor").offset().top -60
+					scrollTop: $("#featured-article-anchor").offset().top -60
 				}, 1000);
 			}
 		});
