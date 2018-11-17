@@ -1,8 +1,18 @@
 .legacy-grid-container {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: ". . . . . . . . . . . . . .";
+    margin: 200px 0 100px;
+
+    & .featured-image {
+    	max-width: 400px;
+    }
+
+    & .author-date-category {
+    	text-align: center;
+    }
+
+    & .heading {
+    	max-width: 800px;
+    	margin: 0 auto;
+    }
 }
 
 .legacy-article {
@@ -12,6 +22,8 @@
 			margin: 30px 235px;
 		}
 	}
+
+
 
 	& img {
 		width: 100%;

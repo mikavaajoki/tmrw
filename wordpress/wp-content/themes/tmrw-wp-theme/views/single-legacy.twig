@@ -1,28 +1,28 @@
 {% extends "layout.twig" %}
 
 {% block content %}	
-	
+
+
 		<!-- Article Header -->
 		<section id="article-header" class="legacy-grid-container article-header-container">
 
-				<div class="article-header-image-container">
-						<img class="article-header-image" src="{{post.thumbnail}}" />
-				</div>
 
-				<div class="article-header-title-container">
-					<h1 class="article-header-title">{{post.title}}</h1>
-					<h1 class="article-header-subtitle">{{post.get_field('article_details_subtitle') }}</h1>
-				</div>
+			<!-- Article Header -->
+			<div class="featured-image" style="background-image: url('{{post.thumbnail}}');">
+			</div>
 
-
-				<div class="article-header-strapline-container">
-						<p class="article-header-strapline">{{post.author}} / {{post.post_date|date("M j, Y")}} / {{post.category}}</p>
-				</div>
-
-
-				<div class="article-header-standfirst-container">
-						<h2 class="article-header-standfirst">{{post.article_details_standfirst}}</h2>
-				</div>
+			<div class="heading">
+				<h1>{{post.title}}<br class="tablet-hide"> <span class="poppins">{{post.get_field('article_details_subtitle')}}</span></h1>
+			</div>
+			<div class="author-date-category" id="{{featured_id}}">
+				<h4>{{writer.display_name}} <span class="worksans mobile-hide">/</span> <br class="mobile-display">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
+			</div>
+			<div class="stand-first">
+				<h2>
+					{{post.article_details_standfirst}}
+				</h2>
+			</div>
+	
 
 
 		</section>
@@ -31,6 +31,7 @@
 		<!-- Article Content -->
 		<section class="article-content legacy-article">
 
+<div>
 			{{post.content}}
 
 
