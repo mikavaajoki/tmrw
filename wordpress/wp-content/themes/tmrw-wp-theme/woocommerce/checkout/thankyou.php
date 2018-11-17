@@ -64,7 +64,7 @@ $order_items = $order->get_items( apply_filters( 'woocommerce_purchase_order_ite
 					?>
 					<div class="container-nested row item">
 
-						<h3>
+						<h3 class="title">
 							<span class="poppins">	<?php echo ($product->get_name()) ?></span>
 						</h3>
 
