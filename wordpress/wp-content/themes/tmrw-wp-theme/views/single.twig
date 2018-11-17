@@ -65,21 +65,23 @@
 					{% endfor %}
 				</h4>
 			</div>
+ 
 
 
 
-
-	{# 		<div class="social-media">
-				<a class="nav-link" href="#">
+			<div class="social-media">
+				<a class="nav-link" href="https://www.facebook.com/sharer/sharer.php?u={{post.link|url_encode }}" target="_blank">
 					<i class="icon-facebook"></i>
 				</a>
-				<a class="nav-link" href="#">
+				<a class="nav-link" href="http://www.twitter.com/share?url={{post.link|url_encode }}">
 					<i class="icon-twitter"></i>
 				</a>
-				<a class="nav-link" href="#">
+				<a class="nav-link" href="http://pinterest.com/pin/create/button/?url={{post.link|url_encode }}" >
 					<i class="icon-pinterest"></i>
 				</a>
-			</div> #}
+			</div>
+
+
 		</div>
 	</section>
 
@@ -101,5 +103,22 @@
 			}
 		});
 	</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 {% endblock %}

@@ -81,6 +81,22 @@
 		}
 	</script>
 
+	
+	<!-- Radio Filters -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('input[type="radio"]').click(function(){
+				var inputValue = $(this).attr("value");
+        		var targetFeature = $("." + inputValue);
+        		$(".feature").not(targetFeature).hide();
+        		$(targetFeature).show();
+        		if ($(this).attr("value")=="all") {
+        			$(".feature").show();
+        		}
+			});
+		});
+	</script>
+
 	<!-- Line Clamp -->
 	<script type="text/javascript" src="js/clamp.min.js"></script>
 	<script type="text/javascript">
