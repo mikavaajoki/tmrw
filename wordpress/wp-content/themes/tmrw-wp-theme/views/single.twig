@@ -58,12 +58,17 @@
 
 			
 		<!-- Article Credits -->
-					<div class="credits">
-						<h4>Words by {{writer.display_name}} </h4>
-				{% for credit in post.get_field('article_details_credits') %}
-						<h4> {{credit.title}} by {{credit.name}}</h4>
+			<div class="credits">
+				<h4>Words by {{writer.display_name}} 
+					{% for credit in post.get_field('article_details_credits') %}
+						<span class="worksans">/</span> {{credit.title}} by {{credit.name}}
 					{% endfor %}
-				</div>
+				</h4>
+			</div>
+
+
+
+
 	{# 		<div class="social-media">
 				<a class="nav-link" href="#">
 					<i class="icon-facebook"></i>
