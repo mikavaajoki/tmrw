@@ -263,6 +263,25 @@ text-align: right;
 	grid-column: span 12;
 }
 
+
+#basket-checkout-confirmation .order-summary .row .title {
+
+    align-items: center;
+    display: grid;
+}    
+
+#basket-checkout-confirmation .order-summary .row.delivery .price {
+
+grid-column: span 4;
+text-align: right;
+
+}
+
+#basket-checkout-confirmation .order-summary .row.delivery .heading {
+	grid-column: span 8;
+}
+
+
 #basket-checkout-confirmation .product-list .row.delivery label {
 	grid-column: span 12;
 	margin-top: 15px;

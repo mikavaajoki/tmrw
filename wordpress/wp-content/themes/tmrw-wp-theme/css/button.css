@@ -1,4 +1,4 @@
-.button {
+/*.button {
   background-color: transparent;
   border: 2px solid black;
   color: black;
@@ -13,7 +13,7 @@
   padding: 20px 50px;
 }
 
-
+*/
 .woocommerce .button {
   background-color: transparent!important;
   border: 2px solid black!important;

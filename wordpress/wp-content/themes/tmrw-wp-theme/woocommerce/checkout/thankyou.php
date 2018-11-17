@@ -87,7 +87,7 @@ $order_items = $order->get_items( apply_filters( 'woocommerce_purchase_order_ite
 
 		<div class="container-nested row subtotal">
 			<h4 class="heading">Subtotal</h4>
-			<h4 class="price"><?php echo $order->get_subtotal(); ?></h4>
+			<h4 class="price">£<?php echo $order->get_subtotal(); ?></h4>
 		</div>
 
 
@@ -97,7 +97,7 @@ $order_items = $order->get_items( apply_filters( 'woocommerce_purchase_order_ite
 			</h4>
 			<h4 class="price">
 
-				<?php echo $order->get_total_shipping(); ?>
+				£<?php echo $order->get_total_shipping(); ?>
 
 
 			</h4>

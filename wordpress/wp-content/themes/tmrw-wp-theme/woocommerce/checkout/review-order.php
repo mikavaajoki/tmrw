@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					?>
 					<div class="container-nested row item">
 
-						<h3>
+						<h3 class="title">
 							<span class="poppins">	<?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;'; ?></span>
 						</h3>
 
