@@ -396,6 +396,11 @@ function billing_country_update_checkout() {
     <?php
 }
 
+// Remove WooCommerce CSS
+
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+
 // rewrites custom post type name
 global $wp_rewrite;
 $legacy_structure = '/%category%/%postname%';

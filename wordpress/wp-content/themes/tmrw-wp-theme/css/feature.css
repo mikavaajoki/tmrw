@@ -136,7 +136,8 @@
 }
 
 #feature .embed-container iframe,
-#feature .video-container iframe {
+#feature .video-container iframe,
+#feature .video-container video {
 	position: absolute;
 	top: 0;
 	left: 0;
