@@ -237,3 +237,10 @@
 	}
 }
 
+@media all and (max-width: 575px) {
+	#features.search-results .container-nested.features-list {
+			grid-column-gap: 0;
+	}
+}
+
+

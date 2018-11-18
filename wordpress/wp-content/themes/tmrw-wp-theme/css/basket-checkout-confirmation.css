@@ -55,14 +55,7 @@
 }
 
 
-
 /* Basket/Checkout/Confirmation */
-
-#basket-checkout-confirmation .form-field label abbr[title] {
-    text-decoration: none;
-    color: red;
-}
-
 
 #basket-checkout-confirmation {
 	margin: 145px 0 40px 0;
@@ -90,6 +83,47 @@
 	margin-bottom: 15px;
 }
 
+.woocommerce-error, 
+.woocommerce-message {
+    display: block;
+    border-top: 0 !important;
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    grid-column: 3 / span 8 !important;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.woocommerce-error li, 
+.woocommerce-message li {
+	list-style-type: none !important;
+}
+
+.woocommerce-message {
+	background-color: #32CD32 !important;
+}
+
+.woocommerce-error {
+	background-color: #FF6347 !important;
+}
+
+.woocommerce-message .button {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid #fff !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+}
+
 #basket-checkout-confirmation .product-list,
 #basket-checkout-confirmation .billing-details, 
 #basket-checkout-confirmation .delivery-check,
@@ -107,8 +141,10 @@
 	padding: 20px 0;
 }
 
-#basket-checkout-confirmation .product-list .row.item h3 {
+#basket-checkout-confirmation .product-list .row.item .name {
 	grid-column: span 6;
+	display: flex;
+	align-items: center;
 }
 
 #basket-checkout-confirmation .product-list .row.item .quantity {
@@ -252,35 +288,9 @@
 	text-align: right;
 }
 
-#basket-checkout-confirmation .product-list .row.delivery .flat {
-
-grid-column: span 12;
-text-align: right;
-
-}
-
 #basket-checkout-confirmation .product-list .row.delivery .heading {
 	grid-column: span 12;
 }
-
-
-#basket-checkout-confirmation .order-summary .row .title {
-
-    align-items: center;
-    display: grid;
-}    
-
-#basket-checkout-confirmation .order-summary .row.delivery .price {
-
-grid-column: span 4;
-text-align: right;
-
-}
-
-#basket-checkout-confirmation .order-summary .row.delivery .heading {
-	grid-column: span 8;
-}
-
 
 #basket-checkout-confirmation .product-list .row.delivery label {
 	grid-column: span 12;
@@ -338,29 +348,25 @@ text-align: right;
     color: red;
 }
 
-
 #basket-checkout-confirmation .form-field input[type=text],
-#basket-checkout-confirmation .form-field input[type=number],
-#basket-checkout-confirmation .form-field input[type=email],
-#basket-checkout-confirmation .form-field input[type=tel],
-#basket-checkout-confirmation .form-field .country_to_state {
+#basket-checkout-confirmation .form-field input[type=number] {
 	margin-top: 12px;
 	width: calc(100% - 34px);
 	margin-bottom: 25px;
 }
 
 /* Hide original select element */
-/*#basket-checkout-confirmation .form-field select {
+#basket-checkout-confirmation .form-field select {
 	display: none;
-}*/
+}
 
-#basket-checkout-confirmation .form-field .woocommerce-input-wrapper {
+#basket-checkout-confirmation .form-field .select-selected {
   background-color: white;
   margin-bottom: 25px;
 }
 
 /* Style the arrow inside the select element */
-/*#basket-checkout-confirmation .form-field .woocommerce-input-wrapper:after {
+#basket-checkout-confirmation .form-field .select-selected:after {
   position: absolute;
   content: "";
   top: 55px;
@@ -370,7 +376,7 @@ text-align: right;
   border: 6px solid transparent;
   border-color: black transparent transparent transparent;
 }
-*/
+
 /* Point the arrow upwards when the select box is open (active) */
 #basket-checkout-confirmation .form-field .select-selected.select-arrow-active:after {
   border-color: transparent transparent black transparent;
@@ -392,7 +398,7 @@ text-align: right;
 }
 
 /* Style items (options) list */
-#basket-checkout-confirmation .form-field .country_to_state {
+#basket-checkout-confirmation .form-field .select-items {
 	position: absolute;
 	background-color: white;
 	border: 2px solid black;
@@ -405,7 +411,7 @@ text-align: right;
 }
 
 /* Style the items (options) */
-#basket-checkout-confirmation .form-field .country_to_state div {
+#basket-checkout-confirmation .form-field .select-items div {
 	display: flex;
     align-items: center;
     min-height: 50px;
@@ -421,7 +427,7 @@ text-align: right;
 	display: none;
 }
 
-#basket-checkout-confirmation .form-field .country_to_state div:hover, .same-as-selected {
+#basket-checkout-confirmation .form-field .select-items div:hover, .same-as-selected {
 	background-color: rgba(0,0,0,.1);
 }
 
@@ -438,7 +444,7 @@ text-align: right;
 	margin-bottom: 15px; 
 }
 
-#basket-checkout-confirmation .product-list .row.item h3 {
+#basket-checkout-confirmation .product-list .row.item .name {
 	grid-column: span 6;
 }
 
@@ -554,6 +560,11 @@ text-align: right;
 		grid-column: 2 / span 10;
 	}
 
+	.woocommerce-error, 
+	.woocommerce-message {
+		grid-column: 2 / span 10 !important;
+	}
+
 	#basket-checkout-confirmation .product-list,
 	#basket-checkout-confirmation .billing-details, 
 	#basket-checkout-confirmation .delivery-check,
@@ -571,6 +582,11 @@ text-align: right;
 	#basket-checkout-confirmation .breadcrumb {
 		grid-column: span 12;
 		text-align: center;
+	}
+
+	.woocommerce-error, 
+	.woocommerce-message {
+		grid-column: span 12 !important;
 	}
 
 	#basket-checkout-confirmation .product-list,
@@ -632,7 +648,12 @@ text-align: right;
 		grid-column-gap: 0;
 	}
 
-	#basket-checkout-confirmation .product-list .row.item h3 {
+	.woocommerce-error, 
+	.woocommerce-message {
+		text-align: center;
+	}
+
+	#basket-checkout-confirmation .product-list .row.item .name {
 		grid-column: span 12;
 		margin-bottom: 20px;
 	}
@@ -731,3 +752,15 @@ text-align: right;
 	}
 }
 
+#basket-checkout-confirmation .woocommerce .return-to-shop .button {
+	height: 50px !important;
+	line-height: 50px !important;
+	padding: 0 30px !important;
+	transition: background-color .3s, color .3s !important;
+	margin: 20px 0 !important;
+}
+
+#basket-checkout-confirmation .woocommerce .return-to-shop .button:hover {
+	background-color: black !important;
+	color: white !important;
+}

@@ -94,5 +94,12 @@
 	{{ parent() }}
 		<script type="text/javascript">
 			$(document).ready(function() {$('.slp_results_container').addClass( 'container-nested' );});
+
+			$(document).ready(function() {
+				if ( $('#map_sidebar').children().length > 0 ) {
+					console.log('length')
+				}
+			});
+
 		</script>
 {% endblock %}

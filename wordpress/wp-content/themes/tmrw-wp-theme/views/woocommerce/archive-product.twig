@@ -121,6 +121,7 @@
 
 
 {% block btfad %}
+    {% include 'partials/store-locator-front.twig' %}
     {% include 'partials/instagram-module.twig' %}
 {% endblock %}  
 
@@ -133,7 +134,6 @@
 
   <script type="text/javascript">
 $(document).ready(function() {
-
     // parse the url:
     var link = window.location.search.match(/orderby=(\w+)/)[1];
     if (typeof link !== 'undefined') {

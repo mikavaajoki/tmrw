@@ -292,6 +292,9 @@
 	}
 }
 
+.quantity-counter {width: 50px;}
+	.quantity-button {outline: none;}
+
 /*Woo Subscription*/
 #product {
 	& .variations {
@@ -315,4 +318,18 @@
   width: 100%;
   background-color: white;
   margin-bottom: 25px;
+}
+
+#product .price {
+  margin-bottom: 25px;
+  font-family: Poppins,sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#product .info-column .woocommerce-variation-add-to-cart .quantity {
+	margin-top: 25px;
 }

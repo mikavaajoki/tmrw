@@ -54,6 +54,13 @@
 {% block scripts %}
 {{ parent() }}
 
+<script>
+	$(document).ready(function() {
+		$('.header-navbar-bottom a').removeClass('active');
+	});
+</script>
+
+
 	<!-- Hide Header on Scroll -->
 	<script type="text/javascript">
 		function onResize() {
