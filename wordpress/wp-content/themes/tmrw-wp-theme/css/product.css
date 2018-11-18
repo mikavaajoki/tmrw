@@ -292,3 +292,24 @@
 	}
 }
 
+/*Woo Subscription*/
+#product {
+	& .variations {
+		position: relative;
+		max-width: 280px;
+	}
+}
+
+
+.variations #shipping-address {
+  margin-top: 12px;
+  height: 46px;
+  color: black;
+  padding: 0 36px 0 15px;
+  line-height: 48px;
+  border: 2px solid black;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
