@@ -227,7 +227,8 @@
 	}
 
 	#features .container,
-	#features .container-nested.features-list {
+	#features .container-nested.features-list,
+	#features.search-results .container-nested.features-list {
 		grid-column-gap: 0;
 	}
 
@@ -236,11 +237,4 @@
 		grid-column: span 12;
 	}
 }
-
-@media all and (max-width: 575px) {
-	#features.search-results .container-nested.features-list {
-			grid-column-gap: 0;
-	}
-}
-
 
