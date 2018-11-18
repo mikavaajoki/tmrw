@@ -8,22 +8,27 @@
         <div class="side-nav-column">
             <div class="side-nav filters">
                 <h3>Sort <span class="poppins">Products</span></h3>
-                <label class="radio-container">Latest
-                    <input type="radio" name="gategory" value="latest" checked="checked">
-                    <span class="checkmark"></span>
-                </label><br class="tablet-hide">
-                <label class="radio-container">Popularity
-                    <input type="radio" name="gategory" value="popularity">
-                    <span class="checkmark"></span>
-                </label><br class="tablet-hide">
-                <label class="radio-container">Price: Low to High
-                    <input type="radio" name="gategory" value="price-low-to-high">
-                    <span class="checkmark"></span>
-                </label><br class="tablet-hide">
-                <label class="radio-container">Price: High to Low
-                    <input type="radio" name="gategory" value="price-high-to-low">
-                    <span class="checkmark"></span>
-                </label>
+
+                <form id="product-sort" method="post">
+
+                    <label class="radio-container">Latest
+                        <input type="radio" name="orderby" value="latest" checked onclick="document.location='{{site.url}}/shop?orderby=latest';">
+                        <span class="checkmark"></span>
+                    </label><br class="tablet-hide">
+                    <label class="radio-container">Popularity
+                        <input type="radio" name="orderby" value="popularity" onclick="document.location='{{site.url}}/shop?orderby=popularity';">
+                        <span class="checkmark"></span>
+                    </label><br class="tablet-hide">
+                    <label class="radio-container">Price: Low to High
+                        <input type="radio" name="orderby" value="price" onclick="document.location='{{site.url}}/shop?orderby=price';">
+                        <span class="checkmark"></span>
+                    </label><br class="tablet-hide">
+                    <label class="radio-container">Price: High to Low
+                        <input type="radio" name="orderby" value="pricedesc" onclick="document.location='{{site.url}}/shop?orderby=pricedesc';">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </form>
             </div>
         </div>
 
@@ -123,4 +128,22 @@
 {% endblock %}
 
 
+{% block scripts %}
+  {{ parent() }}
 
+  <script type="text/javascript">
+$(document).ready(function() {
+    $('input[type=radio]').click(function() {
+        window.location=$(this).attr('data-href');
+    });
+    // parse the url:
+    var link = window.location.search.match(/orderby=(\w+)/)[1];
+    if (typeof link !== 'undefined') {
+        // update the correct radio button:
+        $('input[value="' + link + '"]').prop("checked", true);
+    }
+});
+
+  </script>
+
+{% endblock %}
