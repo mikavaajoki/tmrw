@@ -36,7 +36,9 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			<!-- Drop Down -->
 
 			
-			<div class="variations">
+			<div class="form-field custom-select variations">
+				<label for="shipping-region">Select a shipping region</label>
+
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 						
 
@@ -47,7 +49,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 							$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) : $product->get_variation_default_attribute( $attribute_name );
 
 
-							wc_dropdown_variation_attribute_options( array( 'options' => $options, 'attribute' => $attribute_name, 'product' => $product, 'selected' => $selected ) );
+							wc_dropdown_variation_attribute_options( array( 'options' => $options, 'attribute' => $attribute_name, 'product' => $product, 'selected' => 'Europe',  'class' => 'shipping-region') );
 						
 							?>
 					
