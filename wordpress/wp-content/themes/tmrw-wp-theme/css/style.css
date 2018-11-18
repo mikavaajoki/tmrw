@@ -122,6 +122,11 @@ input[type=tel]
 	padding: 0 15px;
 }
 
+select {
+	border-radius: 0px !important;
+	-webkit-appearance: none;
+}
+
 .wc-stripe-elements-field {
 		font-family: Work Sans,sans-serif!important;
   font-size: 16px!important;

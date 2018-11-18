@@ -139,7 +139,7 @@
 
 /* Hide original select element */
 #product .info-column .form-field select {
-	display: none;
+	/*display: none;*/
 }
 
 #product .info-column .form-field .select-selected {
@@ -205,9 +205,9 @@
 }
 
 /* Hide the items when the select box is closed */
-#product .info-column .form-field .select-hide {
+/*#product .info-column .form-field .select-hide {
 	display: none;
-}
+}*/
 
 #product .info-column .form-field .select-items div:hover, .same-as-selected {
 	background-color: rgba(0,0,0,.1);
@@ -313,4 +313,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
 }
