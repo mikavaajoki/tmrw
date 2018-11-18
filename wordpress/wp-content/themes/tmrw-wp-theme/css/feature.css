@@ -27,7 +27,7 @@
 }
 
 #feature .credits {
-	grid-column: span 12;
+	grid-column: 3/span 8;
 	text-align: center;
 	margin: 40px 0 0 0;
 }
