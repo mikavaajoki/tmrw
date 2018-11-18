@@ -133,9 +133,7 @@
 
   <script type="text/javascript">
 $(document).ready(function() {
-    $('input[type=radio]').click(function() {
-        window.location=$(this).attr('data-href');
-    });
+
     // parse the url:
     var link = window.location.search.match(/orderby=(\w+)/)[1];
     if (typeof link !== 'undefined') {
