@@ -10,7 +10,7 @@
 
 4. `cd project-folder` 
 5. Run via terminal `vagrant up`
-6. Run via terminal `npm run gulp`
+6. Run via terminal `gulp`
 7. Go to http://tmrw-mag.test
 
 ## CSS
