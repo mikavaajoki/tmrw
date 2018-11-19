@@ -131,6 +131,9 @@
     font-size: 12px !important;
 }
 
+
+/* Main Content Area */
+
 #basket-checkout-confirmation .product-list,
 #basket-checkout-confirmation .billing-details, 
 #basket-checkout-confirmation .delivery-check,
@@ -148,9 +151,12 @@
 	padding: 20px 0;
 }
 
-#basket-checkout-confirmation .product-list .row.item h3 {
+#basket-checkout-confirmation .product-list .row.item .name {
 	grid-column: span 6;
+	display: flex;
+	align-items: center;
 }
+
 
 #basket-checkout-confirmation .product-list .row.item .quantity {
 	display: flex;

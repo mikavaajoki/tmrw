@@ -2,7 +2,14 @@
     margin: 200px 0 100px;
 
     & .featured-image {
-    	max-width: 400px;
+        max-width: 800px;
+        width: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: 50%;
+        margin-bottom: 60px;
+        margin: 0 auto;
     }
 
     & .author-date-category {
@@ -23,6 +30,9 @@
 		}
 	}
 
+    & h2 {
+        font-size: 24px;
+    }
 
 
 	& img {
