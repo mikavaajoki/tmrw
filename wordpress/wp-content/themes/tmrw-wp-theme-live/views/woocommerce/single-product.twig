@@ -17,7 +17,24 @@
                         {% if 'subscription' in current_url %}
                             <h3>Our Annual<br><span class="poppins">Subscription</span></h3>
                         {% else %}
-                            <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
+                           
+                       
+
+                        {% if post.number %}
+
+                             <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
+
+                            {% endif %} 
+
+                            {% if post.heading %}
+
+                             <h3>{{post.heading}}<br><span class="poppins">{{post.title}}</span></h3>
+
+                            {% endif %} 
+
+
+
+
                         {% endif %}
                         
                         {% if post.custom._stock_status == 'instock' %}

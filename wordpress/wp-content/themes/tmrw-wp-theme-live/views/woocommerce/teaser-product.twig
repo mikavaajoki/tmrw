@@ -1,3 +1,4 @@
+
 <div class="product">
     <a href="{{post.link}}">
         <img class="product-image" src="{{ post.thumbnail.src }}">
@@ -7,13 +8,38 @@
 {% if post.custom._stock_status == 'instock' %}
     
     <h4 class="price">{% do action('woocommerce_after_shop_loop_item_title') %} <span class="worksans">(</span>excl. delivery<span class="worksans">)</span></h4>
+     
+
+    {% if post.number %}
+
      <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
+
+    {% endif %} 
+
+    {% if post.heading %}
+
+     <h3>{{post.heading}}<br><span class="poppins">{{post.title}}</span></h3>
+
+    {% endif %} 
+
 
 {% else %}
 
   
     <h4 class="price">Sold Out</h4>
-    <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
+
+
+    {% if post.number %}
+
+     <h3>Volume N<sup>o</sup> {{post.number}}<br><span class="poppins">{{post.title}}</span></h3>
+
+    {% endif %} 
+
+    {% if post.heading %}
+
+     <h3>{{post.heading}}<br><span class="poppins">{{post.title}}</span></h3>
+
+    {% endif %} 
 
 
 {% endif %}
