@@ -1,0 +1,78 @@
+/* 404 Page Not Found */
+
+#page-not-found {
+	margin: 145px 0 40px 0;
+	min-height: calc(100% - 145px - 40px);
+}
+
+#page-not-found h1 {
+	grid-column: span 12;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+#page-not-found h3 {
+	grid-column: span 12;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+#page-not-found p {
+	grid-column: span 6;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.back-button {
+	grid-column: span 12;
+	margin-bottom: 60px;
+}
+
+@media all and (max-width: 1199px) {
+
+	#page-not-found {
+		margin: 225px 0 40px 0;
+		min-height: calc(100% - 225px - 40px);
+	}
+
+	#page-not-found p {
+		grid-column: span 8;
+	}
+}
+
+@media all and (max-width: 991px) {
+
+	#page-not-found p {
+		grid-column: span 8;
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	#page-not-found {
+		margin: 278px 0 40px 0;
+		min-height: calc(100% - 278px - 40px);
+	}
+
+	#page-not-found p {
+		grid-column: span 10;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#page-not-found {
+		margin: 95px 0 0 0;
+		min-height: calc(100% - 95px);
+	}
+
+	#page-not-found h1 {
+		margin-bottom: 20px;
+	}
+
+	#page-not-found p {
+		grid-column: span 12;
+	}
+}
+

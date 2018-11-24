@@ -14,9 +14,19 @@
 			<div class="heading">
 				<h1>{{post.title}}<br class="tablet-hide"> <span class="poppins">{{post.get_field('article_details_subtitle')}}</span></h1>
 			</div>
+
+			{% if post.author %}
 			<div class="author-date-category" id="{{featured_id}}">
-				<h4>{{writer.display_name}} <span class="worksans mobile-hide">/</span> <br class="mobile-display">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
+				<h4>{{post.author}} <span class="worksans mobile-hide">/</span> <br class="mobile-display">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
 			</div>
+
+			
+			
+		{% else %}
+			<div class="author-date-category" id="{{featured_id}}">
+				<h4 class="mobile-display">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
+			</div>
+		{% endif %}
 			<div class="stand-first">
 				<h2>
 					{{post.article_details_standfirst}}

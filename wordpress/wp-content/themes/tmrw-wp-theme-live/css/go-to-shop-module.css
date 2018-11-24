@@ -1,0 +1,60 @@
+/* Go to Shop Module */
+
+#go-to-shop {
+	background-color: #FFE303;
+	padding: 100px 0;
+}
+
+#go-to-shop .title {
+	grid-column: span 6;
+	text-align: right;
+}
+
+#go-to-shop .info {
+	grid-column: span 6;
+}
+
+#go-to-shop .info h4 {
+	margin: 6px 0 10px 0;
+}
+
+#go-to-shop .info p {
+	line-height: 1.2em;
+}
+
+#go-to-shop .info button {
+	margin-bottom: 36px;
+}
+
+#go-to-shop .info button:hover {
+	color: #FFE303;
+}
+
+@media all and (max-width: 828px) {
+
+	 #go-to-shoph2 {
+		font-size: 52px;
+		letter-spacing: .75px;
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	#go-to-shop .title {
+		grid-column: span 12;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	#go-to-shop .info {
+		grid-column: span 12;
+	}
+}
+
+@media all and (max-width: 575px) {
+
+	#subscription {
+		padding: 60px 0;
+	}
+}
+

@@ -19,7 +19,7 @@
 				<a href="{{post.link}}">
 					<div class="featured-image" style="background-image: url('{{post.thumbnail}}');"></div>
 				</a>
-				<h4 class="date-category">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> Style</h4>
+				<h4 class="date-category">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
 				<h3>{{post.title}}<br><span class="poppins">{{post.get_field('article_details_subtitle') }}</span></h3>
 				<p>{{post.article_details_standfirst}}</p>
 				<a href="{{post.link}}">

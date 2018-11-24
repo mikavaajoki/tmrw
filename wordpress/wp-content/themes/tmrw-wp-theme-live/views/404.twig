@@ -1,0 +1,24 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+	<section id="page-not-found">
+		<div class="container message">
+				<h1>
+					Sorry...<br>Something<br><span class="poppins">Went Wrong </span>
+				</h1>
+				<h3>
+					Error N<sup>o</sup> 404
+				</h3>
+				<p>
+					The page you were looking for appears to have been moved, deleted, or does not exist. You can use the button below to go back to where you were or use the top naviagtion to go elsewhere on our site.
+				</p>
+				<div class="back-button">
+					<button onclick="history.back()">Back</button>
+				</div>	
+		</div>
+	</section>
+
+
+{% endblock %}
+
