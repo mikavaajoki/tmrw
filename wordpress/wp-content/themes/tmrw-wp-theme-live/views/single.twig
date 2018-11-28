@@ -17,8 +17,7 @@
 		<div class="container">
 		<!-- Article Header -->
 			{% for image in post.get_field('article_details_opening_image') %}
-			<div class="featured-image" style="background-image: url('{{image.url}}');">
-			</div>
+				<img class="featured-image" src="{{image.url}}" />
 			{% endfor %}
 			<div class="heading">
 				<h1>{{post.title}}<br class="tablet-hide"> <span class="poppins">{{post.get_field('article_details_subtitle')}}</span></h1>

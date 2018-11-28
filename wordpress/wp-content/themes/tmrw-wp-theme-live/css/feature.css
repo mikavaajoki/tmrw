@@ -6,12 +6,8 @@
 
 #feature .featured-image {
 	grid-column: 5 / span 4;
-	background-color: #FFE303;
 	width: 100%;
-	padding-top: calc((3 / 2) * 100%);
-	overflow: hidden;
-	background-size: cover;
-	background-position: center;
+	height: auto;
 	margin-bottom: 60px;
 }
 
@@ -46,7 +42,7 @@
 	margin: 0 30px 0 0;
 }
 
-#feature .social-media  .nav-link i {
+#feature .social-media .nav-link i {
 	font-size: 15px;
 }
 
@@ -139,8 +135,8 @@
 	margin: 60px 0;
 }
 
-#feature .embed-container iframe,
-#feature .video-container iframe {
+#feature .video-container iframe,
+#feature .embed-container iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
