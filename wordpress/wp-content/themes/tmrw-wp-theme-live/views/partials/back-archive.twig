@@ -14,7 +14,7 @@
 				<div id="gradient-right"></div>
 			</div>
 			<div id="slide-container" class="slide-container">				
-			{% for issue in issues %}
+			{% for issue in issues|slice(1,20) %}
 				<div class="slide">
 					<img class="cover-image" src="{{Image(issue.cover_image).src}}">
 					<h3>Volume N<sup>o</sup> {{issue.volume_number}} <br><span class="poppins">{{issue.title}}</span></h3>
