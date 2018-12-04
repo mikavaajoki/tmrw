@@ -47,8 +47,8 @@
 
 #recommended-feature .gradient {
 	grid-column: span 12;
-	margin-top: -135px;
-	height: 135px;
+	margin-top: -155px;
+	height: 155px;
 	background: linear-gradient(to bottom, rgba(255,255,255,0), white);
 }
 
