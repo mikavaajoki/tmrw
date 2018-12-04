@@ -42,6 +42,7 @@
 
 #recommended-feature p  {
 	grid-column: 3 / span 8;
+	margin-bottom: 20px;
 }
 
 #recommended-feature .gradient {

@@ -67,6 +67,18 @@
 	text-decoration: underline;
 }
 
+#feature p strong {
+	font-weight: bold;
+}
+
+#feature p em {
+	font-style: italic;
+}
+
+#feature p u {
+	text-decoration: underline;
+}
+
 #feature p.pull-quote {
 	grid-column: 5 / span 4;
 	font-family: 'Clearface Serial', serif;

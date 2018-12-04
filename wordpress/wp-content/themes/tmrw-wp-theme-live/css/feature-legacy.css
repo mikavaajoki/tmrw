@@ -87,6 +87,18 @@
 	text-decoration: underline;
 }
 
+#feature p strong {
+	font-weight: bold;
+}
+
+#feature p em {
+	font-style: italic;
+}
+
+#feature p u {
+	text-decoration: underline;
+}
+
 .article-content.legacy-article blockquote {
 	grid-column: 5 / span 4;
 	margin: 35px 0 50px 0;
