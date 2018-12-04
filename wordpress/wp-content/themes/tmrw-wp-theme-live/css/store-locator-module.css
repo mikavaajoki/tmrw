@@ -6,22 +6,13 @@
 	color: white;
 }
 
-#store-locator-module .container {
-
-}
-
 #store-locator-module .title {
 	grid-column: span 6;
 	text-align: right;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 }
 
 #store-locator-module .info {
 	grid-column: span 6;
-	display: flex;
-	align-items: center;
 }
 
 #store-locator-module .info h4 {
@@ -30,6 +21,10 @@
 
 #store-locator-module .info .form-field {
 	width: 100%;
+}
+
+#store-locator-module .info p {
+	margin: 4px 0 20px 0;
 }
 
 #store-locator-module .info .form-field label {
@@ -59,7 +54,7 @@
 	color: white;
 }
 
-#store-locator-module .info .form-field button {
+#store-locator-module .info button {
 	color: white;
  	border: 2px solid white;
  	margin: 0;
