@@ -2,26 +2,27 @@
 
 {% block content %}	
 
+	{% for issue in issues|slice(0,1) %}
+		{% include 'partials/latest-issue.twig' %}
+	{% endfor %}
 
-{% for issue in issues|slice(0,1) %}
-	{% include 'partials/latest-issue.twig' %}
-{% endfor %}
+	{% include 'partials/back-archive.twig' %}
 
-{% include 'partials/back-archive.twig' %}
+	{% include 'partials/subscription.twig' %}
 
-{% include 'partials/recommended-feature.twig' %}
+	{% include 'partials/recommended-feature.twig' %}
 
-{% include 'partials/video-module.twig' %}
+	{% include 'partials/video-module.twig' %}
 
-{% include 'partials/digital-features.twig' %}
+	{% include 'partials/store-locator-front.twig' %}
+
+	{% include 'partials/digital-features.twig' %}
+
+	{% include 'partials/go-to-shop.twig' %}
+
+	{% include 'partials/instagram-module.twig' %}
 
 {% endblock %}
-
-{% block btfad %}
-	{% include 'partials/store-locator-front.twig' %}
-	{% include 'partials/instagram-module.twig' %}
-{% endblock %}	
-
 
 {% block scripts %}
 	{{ parent() }}

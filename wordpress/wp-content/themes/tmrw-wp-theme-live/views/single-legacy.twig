@@ -41,16 +41,19 @@
 		<!-- Article Content -->
 		<section class="article-content legacy-article">
 
-<div>
-			{{post.content}}
-
-
-		</div>
+			<div>
+				{{post.content}}
+			</div>
 		
-				<!-- Article Credits -->
-				<div class="article-credits grid-container">
-						<p>Words by {{post.author}}</p>
-				</div>
-		</section>	
+			<!-- Article Credits -->
+			<div class="article-credits grid-container">
+					<p>Words by {{post.author}}</p>
+			</div>
+			
+		</section>
+
+		{% include 'partials/store-locator-front.twig' %}
+
+		{% include 'partials/go-to-shop.twig' %}
 
 {% endblock %}

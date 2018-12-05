@@ -40,15 +40,15 @@
 	{% endif %}
 
 	<link rel="manifest" href="/manifest.json" />
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "b0fbd010-9870-4a6c-b472-7829739dcffe",
-    });
-  });
-</script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+	  var OneSignal = window.OneSignal || [];
+	  OneSignal.push(function() {
+	    OneSignal.init({
+	      appId: "b0fbd010-9870-4a6c-b472-7829739dcffe",
+	    });
+	  });
+	</script>
 
 	<title>   
 	{% if wp_title %}
@@ -57,10 +57,11 @@
 	    {{ site.name }}
 	{% endif %}
 	</title>
-  <link rel="stylesheet" type="text/css" href="{{theme.link}}/dist/css/bundle.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 
-  {{wp_head}}
+	<link rel="stylesheet" type="text/css" href="{{theme.link}}/dist/css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+
+	{{wp_head}}
 </head>
 <body id="{{slug}}">
 	
@@ -72,12 +73,6 @@
 {% block content %}
 {% endblock %}
 
-{% block btfad %}
-{% endblock %}
-
-{% block subscription %}
-	{% include 'partials/subscription.twig' %}
-{% endblock %}
 
 {% block footer %}
 	{% include 'partials/footer.twig' %}
@@ -85,9 +80,8 @@
 
 {% block scripts %}
 
-<!-- Google Analytics -->
-
-		<script>
+	<!-- Google Analytics -->
+	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -95,14 +89,13 @@
 
 		ga('create', 'UA-40448306-1', 'auto');
 		ga('send', 'pageview');
-		</script>
+	</script>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-			<!-- Mailing List Form Validator-->
+	<!-- Mailing List Form Validator-->
 	<script type="text/javascript">
 		function validateForm() {
 			if (isEmpty(document.getElementById('data_4').value.trim())) {
@@ -149,7 +142,6 @@
 		window.addEventListener("resize", onResize, true);
 		onResize();
 	</script>
-
 
 	<!-- Mobile Nav Toggle -->
 	<script type="text/javascript">
