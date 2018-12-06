@@ -406,3 +406,41 @@ global $wp_rewrite;
 $legacy_structure = '/%category%/%postname%';
 $wp_rewrite->add_rewrite_tag("%legacy%", '([^/]+)', "legacy=");
 $wp_rewrite->add_permastruct('legacy', $legacy_structure, false);
+
+
+// Remove links/menus from the admin bar
+function mytheme_admin_bar_render() {
+  global $wp_admin_bar;
+  $wp_admin_bar->remove_menu('customize');
+  $wp_admin_bar->remove_menu('comments');
+  $wp_admin_bar->remove_menu('updates');
+}
+add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+
+// Admin bar visible
+function custom_theme_setup() {
+  add_theme_support( 'admin-bar', array( 'callback' => 'my_admin_bar_css') );
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
+ 
+function my_admin_bar_css() { ?>
+  <style>
+    /*
+    * Put here your custom CSS rules to be added to the header 
+    * when the admin bar is visible 
+    */
+
+    header {
+      top: 32px;
+    }
+
+    @media all and (max-width: 782px) {
+      header {
+        top: 46px;
+      }
+    }
+
+  </style>
+<?php
+}
