@@ -1,15 +1,15 @@
 "use strict";
 
 /**
-*	Woo quantity Buttons
-*	Version: 1.0.0
-*	Description: Adds quantity buttons for WooCommerce
-*	Author: Greatives
+* Quantity Buttons
+*	Version: 2.0.0
+*	Description: Adds quantity buttons for Wordpress
+*	Author: Greatives/D.A
 */
 !function (t) {
   t(document).ready(function () {
     function e() {
-      t(".woocommerce .quantity input[type=number]").each(function () {
+      t(".quantity input[type=number]").each(function () {
         var e = t(this),
             n = parseFloat(e.attr("max")),
             a = parseFloat(e.attr("min")),

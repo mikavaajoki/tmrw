@@ -1,0 +1,2 @@
+// Main JS
+"use strict";
