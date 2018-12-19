@@ -36,27 +36,13 @@
 
 			<div class="container-nested features-list">
 				
-				{% for post in posts|slice(0,60) %}
 
-				<div class="feature {{post.category}}" style="display: none;">
-					<a href="{{post.link}}">
-						<div class="featured-image" style="background-image: url({{post.thumbnail}});"></div>
-					</a>
-					<h4 class="date-category">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
-					<h3>{{post.title}}<br><span class="poppins">{{post.get_field('article_details_subtitle') }}</span></h3>
-					<p>{{post.article_details_standfirst}}</p>
-					<a href="{{post.link}}">
-						<h4 class="link">Read Feature<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
-					</a>
-				</div>
+					{% include 'partials/features-cat.twig' %}
 
-			{% endfor %}
 				
 
-				<div class="call-to-action load-more">
-					<button id="load-more-button" >Load More</button>
-				</div>
 			</div>
+		
 		</div>
 	</section>
 
@@ -70,6 +56,8 @@
 
 {% block scripts %}
 {{ parent() }}
+
+	<script type="text/javascript" src="{{theme.link}}/dist/js/features.js"></script>
 
 	<!-- Mobile Nav Toggle -->
 	<script type="text/javascript">
@@ -86,20 +74,6 @@
 	</script>
 
 	
-	<!-- Radio Filters -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('input[type="radio"]').click(function(){
-				var inputValue = $(this).attr("value");
-        		var targetFeature = $("." + inputValue);
-        		$(".feature").not(targetFeature).hide();
-        		$(targetFeature).show();
-        		if ($(this).attr("value")=="all") {
-        			$(".feature").show();
-        		}
-			});
-		});
-	</script>
 
 	<!-- Line Clamp -->
 	<script type="text/javascript" src="js/clamp.min.js"></script>

@@ -23,6 +23,8 @@ include_once('custom-fields/issue-fields.php');
 
 add_filter('timber_context', 'add_to_context');
 
+
+
 function add_to_context($data){
 
   $data['menu'] = new TimberMenu();
@@ -69,6 +71,40 @@ function register_my_menu() {
 function responsive_embed($html, $url, $attr) {
     return $html!=='' ? '<div class="embed-container">'.$html.'</div>' : '';
 }
+
+
+function add_js_scripts() {
+  wp_enqueue_script( 'script', get_template_directory_uri().'/js/features.js', array('jquery'), '1.0', true );
+
+  // pass Ajax Url to script.js
+  wp_localize_script('script', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+}
+
+add_action('wp_enqueue_scripts', 'add_js_scripts');
+
+
+function get_cat() {
+
+  $param = $_POST['cat'];  
+
+  $posts = Timber::get_posts( array(
+    'post_type' => array('post','legacy'), 
+    'posts_per_page' => 200,
+    'category_name' => ''.$param.''
+
+
+  ) );
+
+  Timber::render( 'partials/features-cat.twig', array( 'posts' => $posts ) );
+
+  die();
+
+}
+
+
+add_action( 'wp_ajax_get_cat', 'get_cat' );
+add_action( 'wp_ajax_nopriv_get_cat', 'get_cat' );
+
 
 
 function register_issues() {

@@ -1,0 +1,21 @@
+{% for post in posts|slice(0,60) %}
+
+
+<div class="feature {{post.category}}" style="display: none;">
+	<a href="{{post.link}}">
+		<div class="featured-image" style="background-image: url({{post.thumbnail}});"></div>
+	</a>
+	<h4 class="date-category">{{post.post_date|date("M j, Y")}} <span class="worksans">/</span> {{post.category}}</h4>
+	<h3>{{post.title}}<br><span class="poppins">{{post.get_field('article_details_subtitle') }}</span></h3>
+	<p>{{post.article_details_standfirst}}</p>
+	<a href="{{post.link}}">
+		<h4 class="link">Read Feature<img class="chevron" src="{{theme.link}}/img/chevron-right-black.png"></h4>
+	</a>
+</div>
+
+{% endfor %}
+
+
+<div class="call-to-action load-more">
+	<button id="load-more-button" >Load More</button>
+</div>
