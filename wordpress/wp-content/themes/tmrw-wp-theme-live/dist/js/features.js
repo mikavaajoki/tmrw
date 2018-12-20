@@ -19,8 +19,8 @@ $(document).ready(function () {
     });
   });
   $(document).ajaxStart(function () {
-    $("#loading").show();
+    console.log('start');
   }).ajaxStop(function () {
-    $("#loading").hide();
+    console.log('end');
   });
 });

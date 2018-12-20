@@ -87,13 +87,29 @@ function get_cat() {
 
   $param = $_POST['cat'];  
 
+
+
+
+
+  if ( $param == "all" ) {
   $posts = Timber::get_posts( array(
+    'post_type' => array('post','legacy'), 
+    'posts_per_page' => 200
+
+  ) );
+
+  } else {
+
+     $posts = Timber::get_posts( array(
     'post_type' => array('post','legacy'), 
     'posts_per_page' => 200,
     'category_name' => ''.$param.''
 
 
-  ) );
+  ) ); 
+  }
+
+
 
   Timber::render( 'partials/features-cat.twig', array( 'posts' => $posts ) );
 
