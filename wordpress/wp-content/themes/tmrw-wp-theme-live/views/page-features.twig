@@ -82,22 +82,6 @@
 		$clamp(featureBody, {clamp: 6});
 	</script>
 
-	<!-- Load More -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".feature").slice(0, 6).show();
-			if ($(".feature:hidden").length != 0) {
-				$("#load-more-button").show();
-			}   
-			$("#load-more-button").on('click', function (e) {
-				e.preventDefault();
-				$(".feature:hidden").slice(0, 6).fadeIn('slow');
-				if ($(".feature:hidden").length == 0) {
-				$("#load-more-button").fadeOut('300');
-				}
-			});
-		});
-	</script>
 
 
 {% endblock %}

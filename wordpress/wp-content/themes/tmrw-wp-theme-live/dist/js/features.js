@@ -24,3 +24,13 @@ $(document).ready(function () {
     console.log('end');
   });
 });
+$('.features-list').on('click', '#load-more-button', function (e) {
+  console.log('being clicked'); // prevent new page load
+
+  e.preventDefault(); // store next page number
+
+  var next_page = $(this).attr("data-href"); // remove older posts button from DOM
+
+  console.log(next_page);
+  $('.feature-wrapper-load').append($('.feature-wrapper-load').load(next_page + ' .feature-wrapper-load'));
+});

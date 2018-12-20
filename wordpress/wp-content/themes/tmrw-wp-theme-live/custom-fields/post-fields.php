@@ -160,7 +160,6 @@ acf_add_local_field_group(array(
   'label_placement' => 'top',
   'instruction_placement' => 'label',
   'hide_on_screen' => array(
-    0 => 'permalink',
     1 => 'the_content',
     2 => 'excerpt',
     3 => 'discussion',

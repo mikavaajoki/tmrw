@@ -87,26 +87,44 @@ function get_cat() {
 
   $param = $_POST['cat'];  
 
-
+   global $paged;
+   if (!isset($paged) || !$paged){
+        $paged = 1;
+    }
 
 
 
   if ( $param == "all" ) {
-  $posts = Timber::get_posts( array(
-    'post_type' => array('post','legacy'), 
-    'posts_per_page' => 200
 
-  ) );
+  $args = array(
+    'post_type' => array('post','legacy'), 
+    'posts_per_page' => 6,
+    'paged' => $paged
+
+  );
+
+  $posts = new Timber\PostQuery($args);
+
+
+
+
+
+
 
   } else {
 
-     $posts = Timber::get_posts( array(
+  $args = array(
     'post_type' => array('post','legacy'), 
-    'posts_per_page' => 200,
-    'category_name' => ''.$param.''
+    'posts_per_page' => 6,
+    'category_name' => ''.$param.'',
+    'paged' => $paged 
+
+  );
+
+  $posts = new Timber\PostQuery($args);
 
 
-  ) ); 
+
   }
 
 

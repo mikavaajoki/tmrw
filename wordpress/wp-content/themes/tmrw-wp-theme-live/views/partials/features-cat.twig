@@ -1,4 +1,6 @@
-{% for post in posts|slice(0,60) %}
+<div class="feature-wrapper-load">
+
+{% for post in posts %}
 
 
 <div class="feature {{post.category}}">
@@ -15,7 +17,12 @@
 
 {% endfor %}
 
+</div>
+
+{% if posts.pagination.next %}
 
 <div class="call-to-action load-more">
-	<button id="load-more-button" >Load More</button>
+	<button data-href="{{posts.pagination.next.link}}" id="load-more-button" >Load More</button>
 </div>
+
+{% endif %}
