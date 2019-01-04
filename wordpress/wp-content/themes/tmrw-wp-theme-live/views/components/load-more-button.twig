@@ -1,0 +1,7 @@
+{% if posts.pagination.next %}
+
+<div class="call-to-action load-more">
+	<button data-href="{{posts.pagination.next.link}}" id="load-more-button" >Load More</button>
+</div>
+
+{% endif %}

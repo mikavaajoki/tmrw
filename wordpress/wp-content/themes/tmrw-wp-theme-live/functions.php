@@ -85,9 +85,10 @@ add_action('wp_enqueue_scripts', 'add_js_scripts');
 
 function get_cat() {
 
-  $param = $_POST['cat'];  
+  $param = $_POST['cat'];
 
-   global $paged;
+  $paged = $_POST['paged'];  
+  
    if (!isset($paged) || !$paged){
         $paged = 1;
     }

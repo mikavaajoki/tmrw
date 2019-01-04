@@ -1,13 +1,13 @@
  //Features JS
 
  console.log('features');
+ var inputValue;
+ var paged = 2;
 
 $(document).ready(function() {
 	
 	$('input[type="radio"]').click(function(){
-		var inputValue = $(this).attr("value").toLowerCase();
-
-		console.log(inputValue);
+		inputValue = $(this).attr("value").toLowerCase();
 
 		$.ajax({
 		  type: 'post',
@@ -26,24 +26,57 @@ $(document).ready(function() {
 
 	 $(document).ajaxStart(function () {
         console.log('start');
+        $('.features-list').addClass("features-loading");
     }).ajaxStop(function () {
         console.log('end');
+        $('.features-list').removeClass("features-loading");
     });
+
 
 
 });
 
 
-$('.features-list').on('click', '#load-more-button', function(e) {
-		console.log('being clicked');
-    // prevent new page load
+$('.load-more').on('click', '#load-more-button', function(e) {
     e.preventDefault();
-    // store next page number
-    var next_page = $(this).attr("data-href");
-    // remove older posts button from DOM
-    console.log(next_page);
 
-   $('.feature-wrapper-load').append( $('.feature-wrapper-load').load(next_page + ' .feature-wrapper-load') );
+		paged++;
+		console.log(paged);
+
+		//Update button URL
+		var buttonURL = `http://tmrw-mag.test/features/page/${paged}`;
+		console.log(buttonURL);
+
+
+		$(this).attr('data-href', buttonURL);
+
+
+
+		$.ajax({
+		  type: 'post',
+		  url: ajaxurl, 
+		  data: {
+		  		'action': 'get_cat',
+		      'cat': inputValue,
+		      'paged': paged,
+		  },
+		  success: function(data) {
+		  		var nextArticles = $('.features-list').html(data);
+		  		console.log(nextArticles);
+		  }
+		});
+
+
+
+
+
+
+
+
+
+    // store next page number
+
+   // $('.features-list').append( $('.feature-wrapper-load').load(next_page + ' .feature-wrapper-load') );
 
 
 });﻿
