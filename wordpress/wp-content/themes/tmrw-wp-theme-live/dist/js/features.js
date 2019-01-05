@@ -20,10 +20,8 @@ $(document).ready(function () {
     });
   });
   $(document).ajaxStart(function () {
-    console.log('start');
     $('.features-list').addClass("features-loading");
   }).ajaxStop(function () {
-    console.log('end');
     $('.features-list').removeClass("features-loading");
   });
 });
@@ -44,8 +42,7 @@ $('.load-more').on('click', '#load-more-button', function (e) {
       'paged': paged
     },
     success: function success(data) {
-      var nextArticles = $('.features-list').html(data);
-      console.log(nextArticles);
+      $(data).appendTo(".features-list").hide().fadeIn(500);
     }
   }); // store next page number
   // $('.features-list').append( $('.feature-wrapper-load').load(next_page + ' .feature-wrapper-load') );

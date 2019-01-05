@@ -25,10 +25,8 @@ $(document).ready(function() {
 	});
 
 	 $(document).ajaxStart(function () {
-        console.log('start');
         $('.features-list').addClass("features-loading");
     }).ajaxStop(function () {
-        console.log('end');
         $('.features-list').removeClass("features-loading");
     });
 
@@ -39,7 +37,6 @@ $(document).ready(function() {
 
 $('.load-more').on('click', '#load-more-button', function(e) {
     e.preventDefault();
-
 		paged++;
 		console.log(paged);
 
@@ -61,8 +58,10 @@ $('.load-more').on('click', '#load-more-button', function(e) {
 		      'paged': paged,
 		  },
 		  success: function(data) {
-		  		var nextArticles = $('.features-list').html(data);
-		  		console.log(nextArticles);
+
+		  	$(data).appendTo(".features-list").hide().fadeIn(500);
+
+		  	
 		  }
 		});
 
