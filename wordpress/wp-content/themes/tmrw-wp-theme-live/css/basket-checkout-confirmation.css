@@ -90,6 +90,9 @@
 	margin-bottom: 15px;
 }
 
+
+/* Errors & Messages */
+
 .woocommerce-error, 
 .woocommerce-message {
     display: block;
@@ -119,16 +122,31 @@
 	background-color: #FF6347 !important;
 }
 
-.woocommerce-message .button {
+.woocommerce .woocommerce-message .button,
+.woocommerce .woocommerce-message .button:hover {
     background-color: transparent !important;
     border: 0 !important;
-    border-bottom: 1px solid #fff !important;
     color: #fff !important;
-    text-decoration: none !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 800 !important;
-    text-transform: uppercase !important;
-    font-size: 12px !important;
+    text-decoration: underline;
+}
+
+.woocommerce .woocommerce-message a,
+.woocommerce .woocommerce-message a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.woocommerce .button.wc-backward {
+	height: 50px !important;
+	line-height: 50px !important;
+	padding: 0 30px !important;
+	transition: background-color .3s, color .3s !important;
+	margin: 20px 0 !important;
+}
+
+.woocommerce .button.wc-backward:hover {
+	background-color: black !important;
+	color: white !important;
 }
 
 

@@ -56,7 +56,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<span class="poppins">The Innovation Issue</span>
 					</h3>
 		-->
-						<span class="poppins" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+						<h3>
+							<span class="poppins" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 						<?php
 						if ( ! $product_permalink ) {
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -74,7 +75,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>' ) );
 						}
 						?>
-						</span>
+							</span>
+						</h3>
 
 					</div>
 
