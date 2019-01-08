@@ -82,6 +82,7 @@
 	border-radius: 0;
 	text-align: center;
 	color: black;
+	width: 50px;
 }
 
 #product .quantity .quantity-button {	
@@ -296,28 +297,41 @@
 	.quantity-button {outline: none;}
 
 /*Woo Subscription*/
-#product {
-	& .variations {
-		position: relative;
-		max-width: 280px;
-	}
+#product .variations {
+	position: relative;
+	max-width: 280px;
 }
 
-
 .variations #shipping-address {
-  margin-top: 12px;
-  height: 46px;
-  color: black;
-  padding: 0 36px 0 15px;
-  line-height: 48px;
-  border: 2px solid black;
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  background-color: white;
-  margin-bottom: 25px;
+	margin-top: 12px;
+	height: 46px;
+	color: black;
+	padding: 0 36px 0 15px;
+	line-height: 48px;
+	border: 2px solid black;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 25px;
+	font-family: 'Work Sans', sans-serif;
+	color: black;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+.custom-select.variations:after {
+	position: absolute;
+	content: "";
+	top: 52px;
+	right: 15px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: black transparent transparent transparent;
+	pointer-events: none;
 }
 
 #product .price {
