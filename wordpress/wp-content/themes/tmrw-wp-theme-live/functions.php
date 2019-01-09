@@ -100,6 +100,7 @@ function get_cat() {
   $args = array(
     'post_type' => array('post','legacy'), 
     'posts_per_page' => 6,
+    'post_status' => 'publish',
     'paged' => $paged
 
   );
@@ -118,6 +119,7 @@ function get_cat() {
     'post_type' => array('post','legacy'), 
     'posts_per_page' => 6,
     'category_name' => ''.$param.'',
+    'post_status' => 'publish',
     'paged' => $paged 
 
   );
