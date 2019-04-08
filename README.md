@@ -2,8 +2,8 @@
 
 ## Configuration
 
-1. Install Vagrant - http://wwww.virtualbox.org
-2. Install VirtualBox - http://www.vagrantup.com
+1. Install Vagrant - http://www.vagrantup.com
+2. Install VirtualBox - http://wwww.virtualbox.org
 3. Download Vagrant Box via terminal `$ vagrant box add vccw-team/xenial64`
 
 ### If you've already done the above skip to the steps below
